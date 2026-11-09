@@ -19,3 +19,10 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
   échelles « en échelle » (ladder) dans les bandeaux, noms de régions en capitales (ALAMANIA, VNGARIA).
 - Wikimedia bloque le téléchargement direct des autres images (403). Pas gênant.
 - Schéma de données écrit dans data/SCHEMA.md ; 5 lots de saints (~135) + 1 lot de toponymes confiés à des sous-agents.
+
+## 13:55 — géodonnées
+- data/land.json : Natural Earth 50m (world-atlas@2.0.2) décodé par tools/geo.py, fenêtre lon −28..120 / lat 3..73,
+  Douglas-Peucker 0,04°, 211 anneaux / 7 738 points (129 ko). Îlots < 0,01 deg² écartés.
+- data/rivers.json : shapefile NE 50m lu en pur Python (tools/rivers.py), ~45 fleuves nommés, 37 ko.
+  Pièges : noms NE en graphie locale (Dnipro, Tajo, Duero, Rhein, Severnaya Dvina) ; pas de Tibre ni de Kura au 50m.
+- Projection prévue : équirectangulaire simple (x = lon, y = −lat × 1,3), comme les portulans (pas de projection).
