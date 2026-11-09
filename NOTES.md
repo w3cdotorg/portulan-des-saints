@@ -59,3 +59,12 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 - dist/index.html : 830 ko (données inlinées). Publication artefact + push GitHub.
 
 - Artefact publié : https://claude.ai/artifact/4sqwWnR7kBwJtK3phhqQ3W (privé). Republier : même chemin dist/index.html.
+
+## 17:00 — retours de Clément (à traiter à partir de 18h30, après remise à zéro des quotas)
+1. Ajouter sainte Adèle (fête le 24 décembre) : Adèle de Pfalzel (v. 660-735, fille de Dagobert II, abbesse à Trèves, grand-mère de Grégoire d'Utrecht, correspondante de Boniface) → lot C.
+2. Lisibilité : les saints sélectionnés ne ressortent pas. Pistes : fond de carte atténué (calque blanc-vélin semi-transparent
+   sur rhumbs/villes/étiquettes quand deux saints sont choisis), trajets plus épais avec liseré clair, pastilles plus grandes,
+   pions plus visibles, halo de rencontre plus net.
+3. Une seule boussole : garder la grande à gauche (Atlantique) ou la centrale ; supprimer les autres.
+4. Mers et océans en bleu (comme la Caspienne), même si anachronique : fond bleu sous la terre vélin, rhumbs par-dessus.
+5. Clément peut fournir des images de référence : lui donner des URL.
