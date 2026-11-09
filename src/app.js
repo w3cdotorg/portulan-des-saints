@@ -329,7 +329,7 @@
       }
       if (f.name) {
         const mid = pts[Math.floor(pts.length / 2)];
-        svg('text', { class: 'region-label', x: mid[0].toFixed(1), y: (mid[1] + 14).toFixed(1), 'font-size': 7, style: 'letter-spacing:.1em' }, g).textContent = f.name;
+        svg('text', { class: 'region-label size-0', x: mid[0].toFixed(1), y: (mid[1] + 14).toFixed(1) }, g).textContent = f.name;
       }
     }
   }
@@ -347,6 +347,7 @@
       default: return { x: x + off, y: y + 2.5, rot: 0, anchor: 'start' };
     }
   }
+  const cityLabels = [];
   function drawCities() {
     for (const c of cities) {
       const [x, y] = P(c.lon, c.lat);
@@ -355,17 +356,20 @@
       const t = labelTransform(c);
       const txt = svg('text', { class: 'city-label t' + c.tier, x: t.x.toFixed(1), y: t.y.toFixed(1), 'text-anchor': t.anchor, transform: t.rot ? `rotate(${t.rot} ${t.x.toFixed(1)} ${t.y.toFixed(1)})` : null }, layers.labels);
       txt.textContent = c.name;
+      const cw = (c.tier === 1 ? 4 : 3.3) * c.name.length, ch = c.tier === 1 ? 8 : 7;
+      const bx = t.rot ? { x0: t.x - ch, x1: t.x + ch, y0: t.rot > 0 ? t.y : t.y - cw, y1: t.rot > 0 ? t.y + cw : t.y } : (t.anchor === 'end' ? { x0: t.x - cw, x1: t.x, y0: t.y - ch, y1: t.y + 1 } : { x0: t.x, x1: t.x + cw, y0: t.y - ch, y1: t.y + 1 });
+      cityLabels.push({ el: txt, c, x, y, off: { x0: bx.x0 - t.x, x1: bx.x1 - t.x, y0: bx.y0 - t.y, y1: bx.y1 - t.y }, ax: t.x, ay: t.y });
       svg('title', null, txt).textContent = c.modern && c.modern !== c.name ? `${c.name} (${c.modern})` : c.name;
     }
   }
   function drawLabels() {
     for (const r of DATA.places.regions || []) {
       const [x, y] = P(r.lon, r.lat);
-      svg('text', { class: 'region-label', x: x.toFixed(1), y: y.toFixed(1), 'font-size': r.size === 3 ? 22 : r.size === 2 ? 12 : 8.5 }, layers.labels).textContent = r.name;
+      svg('text', { class: 'region-label size-' + (r.size || 1), x: x.toFixed(1), y: y.toFixed(1) }, layers.labels).textContent = r.name;
     }
     for (const s of DATA.places.seas || []) {
       const [x, y] = P(s.lon, s.lat);
-      svg('text', { class: 'sea-label', x: x.toFixed(1), y: y.toFixed(1), 'font-size': 9 }, layers.labels).textContent = s.name;
+      svg('text', { class: 'sea-label', x: x.toFixed(1), y: y.toFixed(1) }, layers.labels).textContent = s.name;
     }
   }
   function drawDeco() {
@@ -402,9 +406,17 @@
   }
 
   /* ---------- Zoom et déplacement ---------- */
+  let ts = 1;
   function applyView() {
     chart.setAttribute('viewBox', `${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}`);
     chart.classList.toggle('zoomed', VIEW0.w / view.w > 2.1);
+    // en zoomant, textes et traits rétrécissent (en unités carte) pour rester à taille d'écran raisonnable
+    const nts = Math.max(0.3, Math.min(1, Math.pow(view.w / VIEW0.w, 0.7)));
+    if (Math.abs(nts - ts) > 0.01) {
+      ts = nts; chart.style.setProperty('--ts', ts.toFixed(3));
+      if (layers.pawns) layers.pawns.querySelectorAll('.pawn').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${ts.toFixed(3)})`));
+      if (currentLabels.length) placeLabels(currentLabels);
+    }
   }
   let anim = null;
   function animateTo(target, ms) {
@@ -627,16 +639,25 @@
         labels.push({ x, y, si, g, text: `${stopPlace(st)} ${years.length > 1 ? years[0] + '…' : years[0]}`, weight: (st.to - st.from) + (nums.length > 1 ? 50 : 0) });
       }
     });
+    currentLabels = labels;
     placeLabels(labels);
   }
+  let currentLabels = [];
   function placeLabels(labels) {
-    // placement glouton : les longs séjours d'abord, quatre positions candidates, on renonce plutôt que de chevaucher
+    // placement glouton, recalculé à chaque niveau de zoom : les longs séjours d'abord, quatre positions candidates,
+    // on renonce plutôt que de chevaucher (l'information reste dans l'infobulle de la pastille)
+    layers.routes.querySelectorAll('.stop-label').forEach(n => n.remove());
     const placed = [];
-    const H = 8, cw = 3.5;
+    const H = 12 * ts, cw = 5.4 * ts, o = 6.5 * ts;
     const cands = si => si === 0
-      ? [[-6, -4, 'end'], [6, -4, 'start'], [-6, 12, 'end'], [6, 12, 'start']]
-      : [[6, 12, 'start'], [-6, 12, 'end'], [6, -4, 'start'], [-6, -4, 'end']];
-    labels.forEach(l => { placed.push({ x0: l.x - 5, x1: l.x + 5, y0: l.y - 5, y1: l.y + 5 }); });   // les pastilles elles-mêmes
+      ? [[-o, -o * .6, 'end'], [o, -o * .6, 'start'], [-o, o * 1.9, 'end'], [o, o * 1.9, 'start']]
+      : [[o, o * 1.9, 'start'], [-o, o * 1.9, 'end'], [o, -o * .6, 'start'], [-o, -o * .6, 'end']];
+    for (const cl of cityLabels) {
+      const dup = labels.some(l => Math.hypot(l.x - cl.x, l.y - cl.y) < 9 * ts);
+      cl.el.style.display = dup ? 'none' : '';
+      if (!dup && cl.c.tier <= 2) placed.push({ x0: cl.ax + cl.off.x0 * ts, x1: cl.ax + cl.off.x1 * ts, y0: cl.ay + cl.off.y0 * ts, y1: cl.ay + cl.off.y1 * ts });
+    }
+    labels.forEach(l => { const r = 5.5 * ts; placed.push({ x0: l.x - r, x1: l.x + r, y0: l.y - r, y1: l.y + r }); });
     labels.sort((a, b) => b.weight - a.weight);
     for (const l of labels) {
       const w = l.text.length * cw;
@@ -794,13 +815,15 @@
       const p = posAt(s, tY);
       const dead = !p; const q = p || (tY < s.born ? s.stops[0] : s.stops[s.stops.length - 1]);
       const [x, y] = P(q.lon, q.lat);
-      const g = svg('g', { class: 'pawn ' + k + (dead ? ' dead' : ''), transform: `translate(${x.toFixed(1)} ${y.toFixed(1)})` }, layers.pawns);
+      const g = svg('g', { class: 'pawn ' + k + (dead ? ' dead' : ''), transform: `translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${ts.toFixed(3)})`, 'data-x': x.toFixed(1), 'data-y': y.toFixed(1) }, layers.pawns);
       svg('circle', { class: 'halo', cx: 0, cy: -13, r: 5.5 }, g);
       svg('circle', { cx: 0, cy: -12.5, r: 3.2, fill: '#f3d9b5', stroke: '#5b3f28', 'stroke-width': .5 }, g);
       svg('path', { class: 'body', d: 'M-5 2 L-3.5 -9 Q0 -11.5 3.5 -9 L5 2 Z', stroke: '#3b2a1b', 'stroke-width': .5 }, g);
-      const label = svg('text', { x: 0, y: 9, style: 'fill:#3b2a1b;font-size:6px' }, g);
       const n = F(s, 'name');
-      label.textContent = dead ? (tY < s.born ? t.pawnUnborn(n, s.sex === 'f') : t.pawnDead(n, s.died)) : t.pawnAge(n, tY - s.born);
+      const txt = dead ? (tY < s.born ? t.pawnUnborn(n, s.sex === 'f') : t.pawnDead(n, s.died)) : t.pawnAge(n, tY - s.born);
+      const w = txt.length * 3.4 + 6;
+      svg('rect', { class: 'pawn-card', x: -w / 2, y: 4, width: w, height: 8.5, rx: 1.5 }, g);
+      svg('text', { class: 'pawn-text', x: 0, y: 10.3 }, g).textContent = txt;
       svg('title', null, g).textContent = p ? (p.moving ? t.pawnMoving(n, stopPlace(p.from), stopPlace(p.to)) : t.pawnAt(n, stopPlace(p.stop))) : n;
     });
   }

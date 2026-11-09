@@ -41,3 +41,12 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 - Toponymes de la carte : graphie portulan commune aux deux langues (pas de traduction). Noms de langues : table EN à ajouter.
 - Lots reçus : B (25), E (28). Premier rendu : très proche de Maggiolo ; corrections : régions trop grandes, montagnes trop grosses,
   attribut transform="null" (warning), lueur de côte ajoutée.
+
+## 14:18 — lots complets, affichage retravaillé
+- 5 lots reçus : A 25, B 25, C 30, D 27, E 28 = 135 saints. Codes ajoutés : xtg (gaulois), ofs (vieux frison), osx (vieux saxon), frm (moyen français).
+- Clément (14:12) : textes les uns sur les autres en zoomant → textes et traits en unités carte multipliés par --ts = (vue/vue totale)^0,7
+  (borné 0,3..1) ; étiquettes d'étapes replacées à chaque niveau de zoom (glouton, 4 positions, villes tier 1-2 comme obstacles,
+  nom de ville masqué s'il double une étape) ; pion animé avec cartouche. Vérifié en capture à 3,8×.
+- À corriger après les traductions (fichiers data verrouillés par les agents) : Geneviève died 502 → 512 (tradition ; la rencontre
+  Clotilde 508 est hors vie sinon). Rencontres non réciproques tolérées par l'app (théodore/cuthbert, amand/éloi, henri/étienne, edmond/louis).
+- Traductions EN en cours (5 agents : A, B, C, E, puis D).
