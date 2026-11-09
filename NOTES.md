@@ -57,3 +57,5 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 - Nouveau cas de verdict « attested » : rencontre documentée par les sources alors que les itinéraires simplifiés ne coïncident pas
   (François/Dominique à Rome 1216 par exemple). 120 paires aléatoires testées sans erreur.
 - dist/index.html : 830 ko (données inlinées). Publication artefact + push GitHub.
+
+- Artefact publié : https://claude.ai/artifact/4sqwWnR7kBwJtK3phhqQ3W (privé). Republier : même chemin dist/index.html.
