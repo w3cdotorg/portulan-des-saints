@@ -68,3 +68,12 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 3. Une seule boussole : garder la grande à gauche (Atlantique) ou la centrale ; supprimer les autres.
 4. Mers et océans en bleu (comme la Caspienne), même si anachronique : fond bleu sous la terre vélin, rhumbs par-dessus.
 5. Clément peut fournir des images de référence : lui donner des URL.
+
+## 18:30-18:40 — retours traités
+- Sainte Adèle de Pfalzel (24/12) ajoutée au lot C, FR+EN, rencontre réciproque avec Boniface (Pfalzel 721). 136 saints.
+- Mers en bleu (#6a98bd, même teinte que la Caspienne), grain conservé sur mer et terre, étiquettes de mers en ivoire liseré.
+- Une seule rose des vents (la grande, Atlantique, r = 54). Les quatre autres supprimées.
+- Lisibilité : calque d'atténuation (#f4ead2 à 36 %) entre le fond et les trajets dès qu'un saint est choisi ;
+  trajets gainés d'ivoire, pastilles plus grandes avec ombre, étiquettes d'étapes en gras à la couleur du saint,
+  pions à 1,5× avec cartouche au-dessus de l'auréole. Vérifié en vue totale et à 12× sur Trèves.
+- Artefact republié (même URL). Pièges notés : navigation vers la même URL avec un autre hash ne recharge pas la page (ajouter ?v=N).

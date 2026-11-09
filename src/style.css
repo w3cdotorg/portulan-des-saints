@@ -167,10 +167,10 @@ h1::after { content: ""; display: block; width: 7rem; height: 2px; margin: .6rem
 .coast { fill: none; stroke: #6b4a2b; stroke-width: .9; stroke-linejoin: round; }
 .coast-glow { fill: none; stroke: #8a6a45; stroke-width: 3.2; stroke-linejoin: round; opacity: .14; }
 .land { fill: var(--vellum); }
-.river { fill: none; stroke: #4f7fa3; stroke-width: .9; stroke-linecap: round; stroke-linejoin: round; opacity: .85; }
-.rhumb-main { stroke: #5b3f28; stroke-width: .55; opacity: .55; }
-.rhumb-half { stroke: #3f7a3c; stroke-width: .45; opacity: .5; }
-.rhumb-quarter { stroke: #b23a2c; stroke-width: .45; opacity: .5; }
+.river { fill: none; stroke: #4a7ca3; stroke-width: .9; stroke-linecap: round; stroke-linejoin: round; opacity: .9; }
+.rhumb-main { stroke: #3b2a1b; stroke-width: .55; opacity: .5; }
+.rhumb-half { stroke: #2f6b2c; stroke-width: .45; opacity: .5; }
+.rhumb-quarter { stroke: #b23a2c; stroke-width: .45; opacity: .55; }
 #chart { --ts: 1; }
 .city-label { font-family: var(--font-body); font-style: italic; fill: #4a2f1a; }
 .city-label.t1 { fill: #a8321f; font-size: calc(9px * var(--ts)); font-style: normal; }
@@ -180,20 +180,22 @@ svg.zoomed .city-label.t3 { opacity: .9; }
 .city-dot { fill: #a8321f; stroke: #4a2f1a; stroke-width: .4; }
 .region-label { font-family: var(--font-display); fill: #5b3f28; letter-spacing: .22em; opacity: .55; text-anchor: middle; }
 .region-label.size-3 { font-size: calc(22px * var(--ts)); } .region-label.size-2 { font-size: calc(12px * var(--ts)); } .region-label.size-1 { font-size: calc(8.5px * var(--ts)); } .region-label.size-0 { font-size: calc(7px * var(--ts)); letter-spacing: .1em; }
-.sea-label { font-family: var(--font-body); font-style: italic; fill: #3f5f86; letter-spacing: .12em; opacity: .7; text-anchor: middle; font-size: calc(9px * var(--ts)); }
+.sea-label { font-family: var(--font-body); font-style: italic; fill: #f1ecdc; letter-spacing: .12em; opacity: .9; text-anchor: middle; font-size: calc(9px * var(--ts)); paint-order: stroke; stroke: #2f4a63; stroke-width: .35; }
 .mountain { fill: #86ab65; stroke: #4a6a33; stroke-width: .45; }
 .mountain-shade { fill: #5d8244; }
 .route { fill: none; stroke-width: calc(2.2px * var(--ts)); stroke-linecap: round; stroke-linejoin: round; }
 .route.a { stroke: #b4372b; } .route.b { stroke: #3f7a3c; }
-.route-travel { fill: none; stroke-width: calc(1.6px * var(--ts)); stroke-dasharray: 3 3; stroke-linecap: round; opacity: .9; }
+.route-casing { fill: none; stroke: #fff8e6; stroke-width: calc(5px * var(--ts)); stroke-linecap: round; opacity: .85; }
+.route-travel { fill: none; stroke-width: calc(2.6px * var(--ts)); stroke-dasharray: 4 3; stroke-linecap: round; }
 .route-travel.a { stroke: #b4372b; } .route-travel.b { stroke: #3f7a3c; }
-.stop { stroke: #fff8e6; stroke-width: 1; transform-box: fill-box; transform-origin: center; transform: scale(calc(var(--ts) * 1.25)); }
+.stop { stroke: #fff8e6; stroke-width: 1.4; transform-box: fill-box; transform-origin: center; transform: scale(calc(var(--ts) * 1.25)); filter: drop-shadow(0 0 1px rgba(40, 25, 10, .5)); }
 .stop.a { fill: #b4372b; } .stop.b { fill: #3f7a3c; }
 .stop.legende { stroke-dasharray: 1.5 1; }
-.stop-num { font-family: var(--font-caps); font-size: calc(6.5px * var(--ts)); fill: #fff8e6; text-anchor: middle; pointer-events: none; transform-box: fill-box; transform-origin: center; }
-.stop-label { font-family: var(--font-body); font-size: calc(12px * var(--ts)); fill: #3b2a1b; paint-order: stroke; stroke: var(--vellum); stroke-width: calc(3px * var(--ts)); stroke-linejoin: round; }
-.meet-halo { fill: #e9b949; opacity: .35; }
-.meet-halo-ring { fill: none; stroke: #c08f36; stroke-width: 1.2; }
+.stop-num { font-family: var(--font-caps); font-weight: 700; font-size: calc(7.5px * var(--ts)); fill: #fff8e6; text-anchor: middle; pointer-events: none; transform-box: fill-box; transform-origin: center; }
+.stop-label { font-family: var(--font-body); font-size: calc(13px * var(--ts)); fill: #3b2a1b; paint-order: stroke; stroke: #fff8e6; stroke-width: calc(3.5px * var(--ts)); stroke-linejoin: round; font-weight: 700; }
+.stop-label.a { fill: #8e2a20; } .stop-label.b { fill: #2f5f2b; }
+.meet-halo { fill: #e9b949; opacity: .5; }
+.meet-halo-ring { fill: none; stroke: #a8761e; stroke-width: 1.4; }
 .meet-label { font-family: var(--font-display); font-size: calc(13px * var(--ts)); fill: #7a5513; text-anchor: middle; paint-order: stroke; stroke: var(--vellum); stroke-width: 3; }
 .meet-halo, .meet-halo-ring { transform-box: fill-box; transform-origin: center; transform: scale(max(var(--ts), .6)); }
 .pawn-text { font-family: var(--font-caps); font-size: 6px; text-anchor: middle; fill: #3b2a1b; }

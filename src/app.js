@@ -237,9 +237,11 @@
     ['M10 8 Q4 6 1 10 Q6 8 10 9', 'M10 8 Q16 6 19 10 Q14 8 10 9', 'M10 8 Q5 2 4 3 Q8 4 10 8', 'M10 8 Q15 2 16 3 Q12 4 10 8', 'M10 8 Q10 1 12 1 Q10 4 10 8'].forEach(d => svg('path', { d, fill: '#5d8244', stroke: '#3d5f2c', 'stroke-width': .4 }, palm));
 
     const root = svg('g', { 'clip-path': 'url(#skin)' }, chart);
-    svg('path', { d: parchmentPath(), fill: '#efe4c9' }, root);
+    // la mer en bleu (choix de Clément, un peu anachronique mais lisible), la terre en vélin, le grain sur les deux
+    svg('path', { d: parchmentPath(), fill: '#6a98bd' }, root);
     svg('path', { d: parchmentPath(), fill: 'url(#grain)' }, root);
-    ['water', 'land', 'rhumbs', 'rivers', 'coast', 'lakes', 'mountains', 'cities', 'labels', 'deco', 'meet', 'routes', 'pawns'].forEach(k => { layers[k] = svg('g', { id: 'l-' + k }, root); });
+    ['water', 'land', 'rhumbs', 'rivers', 'coast', 'lakes', 'mountains', 'cities', 'labels', 'deco', 'dim', 'meet', 'routes', 'pawns'].forEach(k => { layers[k] = svg('g', { id: 'l-' + k }, root); });
+    layers.dimPath = svg('path', { d: parchmentPath(), fill: '#f4ead2', opacity: 0, 'pointer-events': 'none' }, layers.dim);
     svg('path', { d: parchmentPath(), fill: 'url(#vignette)', 'pointer-events': 'none' }, root);
     svg('path', { d: parchmentPath(), fill: 'none', stroke: '#6b4a2b', 'stroke-width': 1.4, opacity: .6 }, chart);
     drawWater(); drawLand(); drawRhumbs(); drawRivers(); drawMountains(); drawCities(); drawLabels(); drawDeco();
@@ -254,6 +256,7 @@
     const outer = DATA.land.filter(r => !r.hole), holes = DATA.land.filter(r => r.hole);
     const d = outer.map(r => ringPath(r.pts)).join('');
     svg('path', { class: 'land', d, 'fill-rule': 'evenodd' }, layers.land);
+    svg('path', { d, 'fill-rule': 'evenodd', fill: 'url(#grain)' }, layers.land);
     svg('path', { class: 'coast-glow', d }, layers.coast);
     svg('path', { class: 'coast', d }, layers.coast);
     for (const h of holes) svg('path', { d: ringPath(h.pts), fill: '#5f8fb8', stroke: '#2f4a63', 'stroke-width': .6, opacity: .9 }, layers.lakes);
@@ -377,11 +380,7 @@
     }
   }
   function drawDeco() {
-    compassRose(layers.deco, X(-19), Y(46), 46);
-    compassRose(layers.deco, X(66), Y(10), 40);
-    compassRose(layers.deco, X(8), Y(21), 34);
-    compassRose(layers.deco, X(100), Y(64), 30);
-    compassRose(layers.deco, X(17), Y(39), 14);
+    compassRose(layers.deco, X(-19), Y(46), 54);
     [[-21, 56], [-15, 36], [-22, 26], [60, 14], [78, 8], [-10, 48], [90, 16]].forEach(([lon, lat], i) => {
       const [x, y] = P(lon, lat); svg('use', { href: '#ship', x: x - 12, y: y - 12, width: 24, height: 22, transform: i % 2 ? `scale(-1 1) translate(${-2 * x} 0)` : null }, layers.deco);
     });
@@ -418,7 +417,7 @@
     const nts = Math.max(0.3, Math.min(1, Math.pow(view.w / VIEW0.w, 0.7)));
     if (Math.abs(nts - ts) > 0.01) {
       ts = nts; chart.style.setProperty('--ts', ts.toFixed(3));
-      if (layers.pawns) layers.pawns.querySelectorAll('.pawn').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${ts.toFixed(3)})`));
+      if (layers.pawns) layers.pawns.querySelectorAll('.pawn').forEach(g => g.setAttribute('transform', `translate(${g.dataset.x} ${g.dataset.y}) scale(${(ts * 1.5).toFixed(3)})`));
       if (currentLabels.length) placeLabels(currentLabels);
     }
   }
@@ -617,6 +616,7 @@
   }
   function drawRoutes() {
     layers.routes.innerHTML = ''; layers.meet.innerHTML = '';
+    layers.dimPath.setAttribute('opacity', (state.a || state.b) ? 0.36 : 0);
     const labels = [];
     slots.forEach((k, si) => {
       const s = byId[state[k]]; if (!s) return;
@@ -625,7 +625,9 @@
       for (let i = 0; i < s.stops.length - 1; i++) {
         const a = s.stops[i], b = s.stops[i + 1];
         if (a.lat === b.lat && a.lon === b.lon) continue;
-        svg('path', { class: 'route-travel ' + k, d: curve(P(a.lon, a.lat), P(b.lon, b.lat), bend) }, g);
+        const d = curve(P(a.lon, a.lat), P(b.lon, b.lat), bend);
+        svg('path', { class: 'route-casing', d }, g);
+        svg('path', { class: 'route-travel ' + k, d }, g);
       }
       const seen = new Map();
       s.stops.forEach((st, i) => {
@@ -637,9 +639,9 @@
       });
       for (const { st, nums, years, notes, legend } of seen.values()) {
         const [x, y] = P(st.lon, st.lat);
-        const c = svg('circle', { class: 'stop ' + k + (legend ? ' legende' : ''), cx: x.toFixed(1), cy: y.toFixed(1), r: nums.length > 1 ? 5.2 : 4.4 }, g);
+        const c = svg('circle', { class: 'stop ' + k + (legend ? ' legende' : ''), cx: x.toFixed(1), cy: y.toFixed(1), r: nums.length > 1 ? 6.2 : 5.4 }, g);
         svg('title', null, c).textContent = T().tipStop(stopPlace(st), years.join(', '), legend, notes.join(' '));
-        svg('text', { class: 'stop-num', x: x.toFixed(1), y: (y + 2.1).toFixed(1) }, g).textContent = nums.length > 2 ? nums[0] + '…' : nums.join('·');
+        svg('text', { class: 'stop-num', x: x.toFixed(1), y: (y + 2.4).toFixed(1) }, g).textContent = nums.length > 2 ? nums[0] + '…' : nums.join('·');
         labels.push({ x, y, si, g, text: `${stopPlace(st)} ${years.length > 1 ? years[0] + '…' : years[0]}`, weight: (st.to - st.from) + (nums.length > 1 ? 50 : 0) });
       }
     });
@@ -652,7 +654,7 @@
     // on renonce plutôt que de chevaucher (l'information reste dans l'infobulle de la pastille)
     layers.routes.querySelectorAll('.stop-label').forEach(n => n.remove());
     const placed = [];
-    const H = 12 * ts, cw = 5.4 * ts, o = 6.5 * ts;
+    const H = 13 * ts, cw = 5.8 * ts, o = 7.5 * ts;
     const cands = si => si === 0
       ? [[-o, -o * .6, 'end'], [o, -o * .6, 'start'], [-o, o * 1.9, 'end'], [o, o * 1.9, 'start']]
       : [[o, o * 1.9, 'start'], [-o, o * 1.9, 'end'], [o, -o * .6, 'start'], [-o, -o * .6, 'end']];
@@ -661,7 +663,7 @@
       cl.el.style.display = dup ? 'none' : '';
       if (!dup && cl.c.tier <= 2) placed.push({ x0: cl.ax + cl.off.x0 * ts, x1: cl.ax + cl.off.x1 * ts, y0: cl.ay + cl.off.y0 * ts, y1: cl.ay + cl.off.y1 * ts });
     }
-    labels.forEach(l => { const r = 5.5 * ts; placed.push({ x0: l.x - r, x1: l.x + r, y0: l.y - r, y1: l.y + r }); });
+    labels.forEach(l => { const r = 7 * ts; placed.push({ x0: l.x - r, x1: l.x + r, y0: l.y - r, y1: l.y + r }); });
     labels.sort((a, b) => b.weight - a.weight);
     for (const l of labels) {
       const w = l.text.length * cw;
@@ -673,7 +675,7 @@
       }
       if (!ok) continue;
       placed.push(ok.box);
-      svg('text', { class: 'stop-label', x: ok.x.toFixed(1), y: ok.y.toFixed(1), 'text-anchor': ok.anchor }, l.g).textContent = l.text;
+      svg('text', { class: 'stop-label ' + (l.si === 0 ? 'a' : 'b'), x: ok.x.toFixed(1), y: ok.y.toFixed(1), 'text-anchor': ok.anchor }, l.g).textContent = l.text;
     }
   }
   function drawMeet(v) {
@@ -824,15 +826,16 @@
       const p = posAt(s, tY);
       const dead = !p; const q = p || (tY < s.born ? s.stops[0] : s.stops[s.stops.length - 1]);
       const [x, y] = P(q.lon, q.lat);
-      const g = svg('g', { class: 'pawn ' + k + (dead ? ' dead' : ''), transform: `translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${ts.toFixed(3)})`, 'data-x': x.toFixed(1), 'data-y': y.toFixed(1) }, layers.pawns);
+      const g = svg('g', { class: 'pawn ' + k + (dead ? ' dead' : ''), transform: `translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${(ts * 1.5).toFixed(3)})`, 'data-x': x.toFixed(1), 'data-y': y.toFixed(1) }, layers.pawns);
       svg('circle', { class: 'halo', cx: 0, cy: -13, r: 5.5 }, g);
       svg('circle', { cx: 0, cy: -12.5, r: 3.2, fill: '#f3d9b5', stroke: '#5b3f28', 'stroke-width': .5 }, g);
       svg('path', { class: 'body', d: 'M-5 2 L-3.5 -9 Q0 -11.5 3.5 -9 L5 2 Z', stroke: '#3b2a1b', 'stroke-width': .5 }, g);
       const n = F(s, 'name');
       const txt = dead ? (tY < s.born ? t.pawnUnborn(n, s.sex === 'f') : t.pawnDead(n, s.died)) : t.pawnAge(n, tY - s.born);
       const w = txt.length * 3.4 + 6;
-      svg('rect', { class: 'pawn-card', x: -w / 2, y: 4, width: w, height: 8.5, rx: 1.5 }, g);
-      svg('text', { class: 'pawn-text', x: 0, y: 10.3 }, g).textContent = txt;
+      // cartouche au-dessus de l'auréole, pour ne pas couvrir les étiquettes d'étapes
+      svg('rect', { class: 'pawn-card', x: -w / 2, y: -29, width: w, height: 8.5, rx: 1.5 }, g);
+      svg('text', { class: 'pawn-text', x: 0, y: -22.7 }, g).textContent = txt;
       svg('title', null, g).textContent = p ? (p.moving ? t.pawnMoving(n, stopPlace(p.from), stopPlace(p.to)) : t.pawnAt(n, stopPlace(p.stop))) : n;
     });
   }

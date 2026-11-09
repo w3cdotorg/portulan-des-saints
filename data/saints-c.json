@@ -1236,6 +1236,14 @@
     "year": 753,
     "note": "Le jeune Ludger voit passer le vieil archevêque, souvenir fondateur rapporté par sa Vita.",
     "note_en": "Young Ludger sees the old archbishop pass by, a founding memory recorded in his Vita."
+   },
+   {
+    "with": "adele-de-pfalzel",
+    "where": "Pfalzel",
+    "where_en": "Pfalzel",
+    "year": 721,
+    "note": "Halte au monastère d'Adèle entre la Frise et la Hesse ; il y recrute le jeune Grégoire, petit-fils de l'abbesse, qui le suivra toute sa vie.",
+    "note_en": "A halt at Adela's abbey between Frisia and Hesse; there he recruits young Gregory, the abbess's grandson, who will follow him for life."
    }
   ],
   "blurb": "Il abat le chêne de Thor, fonde la moitié des évêchés d'Allemagne et finit massacré à près de quatre-vingts ans par des Frisons : Boniface est l'apôtre de la Germanie, avec un carnet d'adresses anglo-saxon.",
@@ -1244,6 +1252,87 @@
   "fun_en": "He is depicted with a book slashed by a sword: he is said to have tried to parry the fatal blow with a gospel book. A gashed codex is still kept at Fulda.",
   "sources": [
    "https://fr.wikipedia.org/wiki/Boniface_de_Mayence"
+  ]
+ },
+ {
+  "id": "adele-de-pfalzel",
+  "name": "Adèle",
+  "name_en": "Adela",
+  "full": "Sainte Adèle de Pfalzel",
+  "full_en": "Saint Adela of Pfalzel",
+  "feast": "12-24",
+  "feast_note": "",
+  "born": 660,
+  "died": 735,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Austrasie (royaume franc)",
+  "origin_en": "Austrasia (Frankish kingdom)",
+  "role": "veuve puis abbesse",
+  "role_en": "widow turned abbess",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "frk",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Metz (cour d'Austrasie)",
+    "place_en": "Metz (court of Austrasia)",
+    "lat": 49.12,
+    "lon": 6.18,
+    "from": 660,
+    "to": 690,
+    "note": "On la dit fille du roi Dagobert II et sœur d'Irmine d'Oeren ; élevée à la cour d'Austrasie, elle épouse un noble nommé Albéric.",
+    "note_en": "Said to be a daughter of King Dagobert II and sister of Irmina of Oeren; raised at the Austrasian court, she marries a nobleman named Alberic.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Trèves",
+    "place_en": "Trier",
+    "lat": 49.76,
+    "lon": 6.64,
+    "from": 690,
+    "to": 700,
+    "note": "Veuve et riche, elle se retire près de Trèves et prépare une fondation.",
+    "note_en": "Widowed and wealthy, she withdraws near Trier and prepares a foundation.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Pfalzel (Trèves)",
+    "place_en": "Pfalzel (Trier)",
+    "lat": 49.78,
+    "lon": 6.69,
+    "from": 700,
+    "to": 735,
+    "note": "Fonde vers 700 le monastère de Pfalzel dans une ancienne villa romaine au bord de la Moselle et le dirige jusqu'à sa mort ; elle y reçoit Boniface en 721.",
+    "note_en": "Founds Pfalzel abbey around 700 in a former Roman villa on the Moselle and rules it until her death; she receives Boniface there in 721.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "boniface",
+    "where": "Pfalzel",
+    "where_en": "Pfalzel",
+    "year": 721,
+    "note": "Boniface fait halte au monastère d'Adèle en remontant de Frise vers la Hesse ; il en repart avec son petit-fils Grégoire, quatorze ans, futur abbé d'Utrecht (d'après la Vie de Grégoire par Liudger).",
+    "note_en": "Boniface halts at Adela's abbey on his way from Frisia to Hesse; he leaves with her fourteen-year-old grandson Gregory, the future abbot of Utrecht (according to Liudger's Life of Gregory)."
+   }
+  ],
+  "blurb": "Petite-fille de roi, veuve fortunée, elle transforme une villa romaine au bord de la Moselle en monastère et en prend la tête : Adèle est l'abbesse qui a confié son petit-fils à Boniface.",
+  "blurb_en": "A king's granddaughter and a wealthy widow, she turns a Roman villa on the Moselle into an abbey and takes charge of it: Adela is the abbess who entrusted her grandson to Boniface.",
+  "fun": "Son testament de 732 est l'un des rares actes privés francs conservés : on y lit ses domaines un par un, de la Moselle à l'Eifel, légués à ses moniales de Pfalzel.",
+  "fun_en": "Her will of 732 is one of the very few surviving private Frankish deeds: it lists her estates one by one, from the Moselle to the Eifel, left to her nuns at Pfalzel.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Ad%C3%A8le_de_Pfalzel",
+   "https://en.wikipedia.org/wiki/Adela_of_Pfalzel"
   ]
  },
  {
