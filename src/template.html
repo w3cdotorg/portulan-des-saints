@@ -6,27 +6,31 @@
 </style>
 
 <header class="masthead">
+  <div class="lang-switch" role="group" aria-label="Langue / Language">
+    <button type="button" id="lang-fr" aria-pressed="true" lang="fr">Français</button>
+    <button type="button" id="lang-en" aria-pressed="false" lang="en">English</button>
+  </div>
   <div class="masthead-inner">
-    <p class="eyebrow">Carte marine à l'usage des curieux</p>
-    <h1>Portulan des saints</h1>
-    <p class="sub">Deux saints du calendrier auraient-ils pu se croiser de leur vivant ? Choisissez-en deux : la carte trace leurs chemins, cherche le carrefour et devine en quelle langue ils se seraient parlé.</p>
+    <p class="eyebrow" data-i18n="eyebrow">Carte marine à l'usage des curieux</p>
+    <h1 data-i18n="title">Portulan des saints</h1>
+    <p class="sub" data-i18n="sub">Deux saints du calendrier auraient-ils pu se croiser de leur vivant ? Choisissez-en deux : la carte trace leurs chemins, cherche le carrefour et devine en quelle langue ils se seraient parlé.</p>
   </div>
 </header>
 
 <main class="board">
   <aside class="pickers" aria-label="Choix des deux saints">
     <section class="picker picker-a" data-slot="a" aria-labelledby="label-a">
-      <h2 id="label-a"><span class="ink-dot"></span>Premier saint <small>encre rouge</small></h2>
+      <h2 id="label-a"><span class="ink-dot"></span><span data-i18n="first">Premier saint</span> <small data-i18n="redInk">encre rouge</small></h2>
       <div class="picker-body"></div>
     </section>
     <section class="picker picker-b" data-slot="b" aria-labelledby="label-b">
-      <h2 id="label-b"><span class="ink-dot"></span>Second saint <small>encre verte</small></h2>
+      <h2 id="label-b"><span class="ink-dot"></span><span data-i18n="second">Second saint</span> <small data-i18n="greenInk">encre verte</small></h2>
       <div class="picker-body"></div>
     </section>
     <div class="actions">
-      <button type="button" id="btn-random" class="btn">Tirer deux saints au sort</button>
-      <button type="button" id="btn-today" class="btn btn-ghost">Les saints du jour</button>
-      <button type="button" id="btn-swap" class="btn btn-ghost" title="Échanger les deux saints">Échanger</button>
+      <button type="button" id="btn-random" class="btn" data-i18n="random">Tirer deux saints au sort</button>
+      <button type="button" id="btn-today" class="btn btn-ghost" data-i18n="today">Les saints du jour</button>
+      <button type="button" id="btn-swap" class="btn btn-ghost" data-i18n="swap">Échanger</button>
     </div>
   </aside>
 
@@ -35,8 +39,8 @@
       <div class="zoom">
         <button type="button" id="zoom-in" class="tool" aria-label="Agrandir">+</button>
         <button type="button" id="zoom-out" class="tool" aria-label="Réduire">−</button>
-        <button type="button" id="zoom-fit" class="tool tool-text" aria-label="Cadrer sur les deux chemins">Cadrer</button>
-        <button type="button" id="zoom-all" class="tool tool-text" aria-label="Toute la carte">Tout</button>
+        <button type="button" id="zoom-fit" class="tool tool-text" data-i18n="fit">Cadrer</button>
+        <button type="button" id="zoom-all" class="tool tool-text" data-i18n="all">Tout</button>
       </div>
       <div class="timeline" id="timeline" hidden>
         <button type="button" id="play" class="tool" aria-label="Faire défiler les années">▶</button>
@@ -47,14 +51,14 @@
     <div class="chart-frame" id="chart-frame">
       <svg id="chart" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte façon portulan de l'Europe et de l'Asie"></svg>
     </div>
-    <p class="chart-hint">Molette ou pincement pour zoomer, glisser pour déplacer. Les noms des petits ports apparaissent en zoomant.</p>
+    <p class="chart-hint" data-i18n="hint">Molette ou pincement pour zoomer, glisser pour déplacer. Les noms des petits ports apparaissent en zoomant.</p>
   </section>
 
   <section class="verdict" id="verdict" aria-live="polite"></section>
 </main>
 
 <footer class="colophon">
-  <p>Itinéraires reconstitués d'après les vies des saints (Wikipédia, notices hagiographiques) : les dates sont souvent approximatives et certains voyages relèvent de la légende, signalée comme telle. Trait de côte Natural Earth. Dessin inspiré du portulan de Vesconte Maggiolo (1541) et de l'Atlas catalan (1375).</p>
+  <p data-i18n="colophon">Itinéraires reconstitués d'après les vies des saints (Wikipédia, notices hagiographiques) : les dates sont souvent approximatives et certains voyages relèvent de la légende, signalée comme telle. Trait de côte Natural Earth. Dessin inspiré du portulan de Vesconte Maggiolo (1541) et de l'Atlas catalan (1375).</p>
   <p id="colophon-count"></p>
 </footer>
 

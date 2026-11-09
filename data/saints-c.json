@@ -1,0 +1,1041 @@
+[
+  {
+    "id": "benoit-biscop",
+    "name": "Benoît Biscop",
+    "full": "Saint Benoît Biscop",
+    "feast": "01-12",
+    "feast_note": "",
+    "born": 628, "died": 689,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Northumbrie, Angleterre",
+    "role": "abbé bâtisseur",
+    "sex": "m",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Bamburgh (Northumbrie)", "lat": 55.61, "lon": -1.71, "from": 628, "to": 653, "note": "Biscop Baducing, jeune noble et thegn du roi Oswiu.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 653, "to": 654, "note": "Premier pèlerinage, parti avec Wilfrid, qui s'arrête en route à Lyon.", "certainty": "sur"},
+      {"place": "Bamburgh (Northumbrie)", "lat": 55.61, "lon": -1.71, "from": 654, "to": 665, "note": "Retour à la cour, puis nouveau départ.", "certainty": "probable"},
+      {"place": "Lérins", "lat": 43.51, "lon": 7.05, "from": 665, "to": 667, "note": "Tonsuré, il devient moine et prend le nom de Benoît.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 667, "to": 669, "note": "Troisième séjour ; il repart avec Théodore de Tarse comme guide et interprète.", "certainty": "sur"},
+      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 669, "to": 671, "note": "Abbé provisoire de Saint-Pierre-et-Saint-Paul en attendant Adrien.", "certainty": "sur"},
+      {"place": "Rome et Vienne", "lat": 41.90, "lon": 12.50, "from": 671, "to": 672, "note": "Quatrième voyage, pour acheter des livres.", "certainty": "sur"},
+      {"place": "Wearmouth (Sunderland)", "lat": 54.91, "lon": -1.38, "from": 674, "to": 679, "note": "Fondation de Saint-Pierre de Wearmouth avec des maçons et verriers francs.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 679, "to": 680, "note": "Cinquième voyage : livres, reliques, un privilège papal et le chantre Jean.", "certainty": "sur"},
+      {"place": "Jarrow", "lat": 54.98, "lon": -1.49, "from": 680, "to": 685, "note": "Fondation du monastère jumeau de Saint-Paul de Jarrow (682).", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 685, "to": 686, "note": "Sixième et dernier voyage.", "certainty": "sur"},
+      {"place": "Wearmouth (Sunderland)", "lat": 54.91, "lon": -1.38, "from": 686, "to": 689, "note": "Paralysé, il meurt dans son abbaye le 12 janvier 689.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "wilfrid", "where": "Cantorbéry puis route de Rome", "year": 653, "note": "Les deux jeunes Northumbriens partent ensemble pour Rome ; Wilfrid s'arrête à Lyon."},
+      {"with": "theodore-de-tarse", "where": "Rome puis Cantorbéry", "year": 668, "note": "Benoît guide le nouvel archevêque de Rome jusqu'au Kent."},
+      {"with": "adrien-de-cantorbery", "where": "Cantorbéry", "year": 671, "note": "Il lui remet l'abbaye Saint-Pierre-et-Saint-Paul qu'il dirigeait par intérim."},
+      {"with": "bede", "where": "Wearmouth", "year": 680, "note": "Bède, sept ans, lui est confié comme oblat."}
+    ],
+    "blurb": "Six allers-retours vers Rome au VIIe siècle : Benoît Biscop est le plus grand importateur de livres, de reliques et de vitraux de l'Angleterre anglo-saxonne.",
+    "fun": "Il rapporte de Rome des manteaux de soie qu'il troque contre des terres pour ses monastères, et fait venir des verriers francs : les premiers vitraux d'Angleterre sont à lui.",
+    "sources": ["https://fr.wikipedia.org/wiki/Beno%C3%AEt_Biscop"]
+  },
+  {
+    "id": "wilfrid",
+    "name": "Wilfrid",
+    "full": "Saint Wilfrid d'York",
+    "feast": "04-24",
+    "feast_note": "12 octobre en Angleterre",
+    "born": 633, "died": 710,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Northumbrie, Angleterre",
+    "role": "évêque procédurier",
+    "sex": "m",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Bamburgh (Northumbrie)", "lat": 55.61, "lon": -1.71, "from": 633, "to": 648, "note": "Enfance noble ; la reine Eanflæd le protège et l'envoie étudier à Lindisfarne.", "certainty": "sur"},
+      {"place": "Lindisfarne", "lat": 55.67, "lon": -1.80, "from": 648, "to": 652, "note": "Études dans le monastère d'Aidan.", "certainty": "sur"},
+      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 652, "to": 653, "note": "Un an au Kent, où il rencontre Benoît Biscop.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 654, "to": 655, "note": "Premier pèlerinage ; l'archidiacre Boniface lui enseigne le comput pascal.", "certainty": "sur"},
+      {"place": "Lyon", "lat": 45.76, "lon": 4.84, "from": 655, "to": 658, "note": "Trois ans auprès de l'archevêque Ennemond, qui est exécuté sous ses yeux.", "certainty": "sur"},
+      {"place": "Ripon", "lat": 54.14, "lon": -1.52, "from": 658, "to": 669, "note": "Abbé ; champion du parti romain au synode de Whitby (664), sacré évêque à Compiègne.", "certainty": "sur"},
+      {"place": "York", "lat": 53.96, "lon": -1.08, "from": 669, "to": 678, "note": "Évêque de toute la Northumbrie, fondateur de Hexham.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 679, "to": 680, "note": "Premier appel au pape, après un hiver chez les Frisons (678-679).", "certainty": "sur"},
+      {"place": "Selsey (Sussex)", "lat": 50.73, "lon": -0.79, "from": 681, "to": 686, "note": "Exilé, il évangélise les Saxons du Sud et l'île de Wight.", "certainty": "sur"},
+      {"place": "Leicester (Mercie)", "lat": 52.63, "lon": -1.13, "from": 686, "to": 703, "note": "Bref retour à Ripon (686-691), puis long exil en Mercie.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 703, "to": 704, "note": "Second appel au pape, à soixante-dix ans passés.", "certainty": "sur"},
+      {"place": "Oundle", "lat": 52.48, "lon": -0.47, "from": 705, "to": 710, "note": "Rétabli à Hexham et Ripon (706), il meurt dans son monastère d'Oundle.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "benoit-biscop", "where": "Cantorbéry puis route de Rome", "year": 653, "note": "Compagnons de pèlerinage ; Wilfrid lâche son aîné à Lyon."},
+      {"with": "cuthbert", "where": "Ripon", "year": 661, "note": "Wilfrid reçoit Ripon et la communauté d'Eata et Cuthbert doit plier bagage : croisement attesté, dialogue non conservé."},
+      {"with": "theodore-de-tarse", "where": "York puis Londres", "year": 669, "note": "Théodore le réinstalle à York, puis démembre son diocèse (678) ; réconciliation vers 686."},
+      {"with": "willibrord", "where": "Ripon puis Frise", "year": 670, "note": "Willibrord est son élève à Ripon ; Wilfrid passe en Frise en 678 et soutient sa mission."},
+      {"with": "bede", "where": "Northumbrie", "year": 707, "note": "Une conversation attestée par Bède lui-même, au sujet de sainte Æthelthryth."}
+    ],
+    "blurb": "Deux exils, deux procès à Rome, un synode gagné à Whitby : Wilfrid est l'évêque le plus plaideur de l'Angleterre anglo-saxonne.",
+    "fun": "À Rome, la curie délibère sur son cas en grec et Wilfrid, qui ne comprend rien, s'agace. Dans la crypte de Ripon, « l'aiguille de saint Wilfrid » aurait servi, dit la légende, à tester la vertu des jeunes filles.",
+    "sources": ["https://fr.wikipedia.org/wiki/Wilfrid_d%27York"]
+  },
+  {
+    "id": "cuthbert",
+    "name": "Cuthbert",
+    "full": "Saint Cuthbert de Lindisfarne",
+    "feast": "03-20",
+    "feast_note": "4 septembre : translation des reliques",
+    "born": 635, "died": 687,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Northumbrie (Lothian ?), Angleterre",
+    "role": "ermite et évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Lothian (Dunbar)", "lat": 56.00, "lon": -2.52, "from": 635, "to": 651, "note": "Enfance de berger ; une vision de l'âme d'Aidan décide de sa vocation.", "certainty": "probable"},
+      {"place": "Melrose", "lat": 55.60, "lon": -2.73, "from": 651, "to": 658, "note": "Formé par le prieur Boisil.", "certainty": "sur"},
+      {"place": "Ripon", "lat": 54.14, "lon": -1.52, "from": 658, "to": 661, "note": "Hôtelier de la nouvelle fondation d'Eata, chassée par Wilfrid.", "certainty": "sur"},
+      {"place": "Melrose", "lat": 55.60, "lon": -2.73, "from": 661, "to": 675, "note": "Prieur à partir de 664, après la peste qui emporte Boisil.", "certainty": "sur"},
+      {"place": "Lindisfarne", "lat": 55.67, "lon": -1.80, "from": 675, "to": 676, "note": "Prieur, chargé d'imposer la règle romaine aux moines.", "certainty": "sur"},
+      {"place": "Inner Farne", "lat": 55.62, "lon": -1.66, "from": 676, "to": 684, "note": "Ermite sur son îlot, parmi les eiders.", "certainty": "sur"},
+      {"place": "Lindisfarne", "lat": 55.67, "lon": -1.80, "from": 685, "to": 686, "note": "Sacré évêque à York le 26 mars 685 ; à Carlisle, il annonce la mort du roi Ecgfrith.", "certainty": "sur"},
+      {"place": "Inner Farne", "lat": 55.62, "lon": -1.66, "from": 687, "to": 687, "note": "Retour à l'ermitage ; il y meurt le 20 mars 687.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "wilfrid", "where": "Ripon", "year": 661, "note": "Wilfrid reçoit le monastère de Ripon et la communauté de Cuthbert doit repartir pour Melrose."}
+    ],
+    "blurb": "Un berger devenu prieur, puis ermite au milieu des eiders, puis évêque malgré lui : Cuthbert n'a jamais quitté la Northumbrie, mais son cercueil a fait le tour du Nord.",
+    "fun": "Il aurait interdit de déranger les eiders de Farne, première loi de protection des oiseaux. Onze ans après sa mort, son corps est retrouvé intact ; les moines le trimballent pendant plus d'un siècle en fuyant les Vikings, jusqu'à Durham.",
+    "sources": ["https://fr.wikipedia.org/wiki/Cuthbert_de_Lindisfarne"]
+  },
+  {
+    "id": "bede",
+    "name": "Bède",
+    "full": "Saint Bède le Vénérable",
+    "feast": "05-25",
+    "feast_note": "27 mai chez les orthodoxes et dans l'ancien calendrier",
+    "born": 673, "died": 735,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Northumbrie, Angleterre",
+    "role": "moine historien",
+    "sex": "m",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "grc", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Monkton (Sunderland)", "lat": 54.98, "lon": -1.50, "from": 673, "to": 680, "note": "Né sur les terres du monastère.", "certainty": "probable"},
+      {"place": "Wearmouth (Sunderland)", "lat": 54.91, "lon": -1.38, "from": 680, "to": 682, "note": "Oblat à sept ans, confié à Benoît Biscop puis à Ceolfrith.", "certainty": "sur"},
+      {"place": "Jarrow", "lat": 54.98, "lon": -1.49, "from": 682, "to": 733, "note": "Toute une vie d'étude ; la peste de 686 ne laisse debout que l'abbé et un enfant, sans doute lui.", "certainty": "sur"},
+      {"place": "York", "lat": 53.96, "lon": -1.08, "from": 733, "to": 733, "note": "Visite à son ancien élève Egbert, évêque d'York.", "certainty": "sur"},
+      {"place": "Jarrow", "lat": 54.98, "lon": -1.49, "from": 733, "to": 735, "note": "Il meurt le 26 mai 735, jour de l'Ascension, en dictant la fin d'une traduction.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "benoit-biscop", "where": "Wearmouth", "year": 680, "note": "Bède est confié à sept ans à l'abbé fondateur, son premier maître."},
+      {"with": "wilfrid", "where": "Northumbrie", "year": 707, "note": "Bède raconte lui-même avoir interrogé Wilfrid sur la virginité de la reine Æthelthryth."}
+    ],
+    "blurb": "Il n'a presque jamais quitté Jarrow et pourtant il a écrit l'histoire de toute l'Angleterre : Bède est l'historien le moins voyageur et le mieux informé du haut Moyen Âge.",
+    "fun": "Mourant, il distribue ses trésors aux moines : un peu de poivre, des mouchoirs et de l'encens. Il a popularisé la datation « anno Domini » que nous utilisons encore.",
+    "sources": ["https://fr.wikipedia.org/wiki/B%C3%A8de_le_V%C3%A9n%C3%A9rable"]
+  },
+  {
+    "id": "kilian",
+    "name": "Kilian",
+    "full": "Saint Kilian de Wurtzbourg",
+    "feast": "07-08",
+    "feast_note": "",
+    "born": 640, "died": 689,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Mullagh (Cavan), Irlande",
+    "role": "évêque martyr",
+    "sex": "m",
+    "languages": [
+      {"code": "sga", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "goh", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Mullagh (Cavan)", "lat": 53.81, "lon": -6.95, "from": 640, "to": 686, "note": "Naissance noble et vie monastique en Irlande ; un passage à Iona est parfois évoqué.", "certainty": "probable"},
+      {"place": "Wurtzbourg", "lat": 49.79, "lon": 9.95, "from": 686, "to": 686, "note": "Arrivée avec onze compagnons au château du duc païen Gozbert, après la traversée de la Gaule.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 686, "to": 687, "note": "Mandat de mission reçu du pape Conon.", "certainty": "sur"},
+      {"place": "Wurtzbourg", "lat": 49.79, "lon": 9.95, "from": 687, "to": 689, "note": "Conversion de Gozbert ; décapité avec Colman et Totnan sur ordre de la duchesse Geilana.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Un Irlandais qui convertit le duc de Franconie, puis lui reproche d'avoir épousé la veuve de son frère : la duchesse règle la question à la hache.",
+    "fun": "Les trois crânes des martyrs, sertis de pierres précieuses, défilent chaque juillet dans Wurtzbourg pendant la Kiliani, la grande fête de la ville.",
+    "sources": ["https://fr.wikipedia.org/wiki/Kilian_de_Wurtzbourg", "https://en.wikipedia.org/wiki/Saint_Kilian"]
+  },
+  {
+    "id": "eloi",
+    "name": "Éloi",
+    "full": "Saint Éloi de Noyon",
+    "feast": "12-01",
+    "feast_note": "25 juin : saint Éloi d'été",
+    "born": 588, "died": 660,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Chaptelat (Limousin), Gaule",
+    "role": "orfèvre et évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "frk", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Chaptelat (Limousin)", "lat": 45.92, "lon": 1.24, "from": 588, "to": 600, "note": "Enfance dans une famille gallo-romaine chrétienne.", "certainty": "sur"},
+      {"place": "Limoges", "lat": 45.83, "lon": 1.26, "from": 600, "to": 610, "note": "Apprenti chez Abbon, maître de l'atelier monétaire.", "certainty": "sur"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 610, "to": 641, "note": "Orfèvre puis grand argentier de Clotaire II et trésorier de Dagobert ; fonde Solignac (632) et Saint-Martial de Paris.", "certainty": "sur"},
+      {"place": "Noyon", "lat": 49.58, "lon": 3.00, "from": 641, "to": 645, "note": "Évêque de Noyon-Tournai, sacré le même jour que son ami Ouen.", "certainty": "sur"},
+      {"place": "Tournai et la Flandre", "lat": 50.61, "lon": 3.39, "from": 645, "to": 650, "note": "Tournées de prédication chez les Flamands, Frisons et Suèves de son vaste diocèse.", "certainty": "probable"},
+      {"place": "Noyon", "lat": 49.58, "lon": 3.00, "from": 650, "to": 660, "note": "Il meurt le 1er décembre 660 ; la reine Bathilde arrive trop tard pour lui dire adieu.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Orfèvre du roi, ministre des finances, puis évêque : Éloi est le seul saint à avoir d'abord fait fortune dans l'or sans en détourner un gramme.",
+    "fun": "Avec l'or prévu pour un trône, il en fabrique deux, ce qui lance sa carrière. La légende tardive en fait un maréchal-ferrant qui coupe la patte du cheval pour la ferrer tranquillement, puis la remet en place.",
+    "sources": ["https://fr.wikipedia.org/wiki/%C3%89loi_de_Noyon"]
+  },
+  {
+    "id": "willibrord",
+    "name": "Willibrord",
+    "full": "Saint Willibrord d'Utrecht",
+    "feast": "11-07",
+    "feast_note": "",
+    "born": 658, "died": 739,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Northumbrie, Angleterre",
+    "role": "évêque missionnaire",
+    "sex": "m",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "sga", "level": "courant"},
+      {"code": "ofs", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Ripon", "lat": 54.14, "lon": -1.52, "from": 658, "to": 678, "note": "Oblat dès l'enfance au monastère de Wilfrid.", "certainty": "sur"},
+      {"place": "Rath Melsigi (Carlow)", "lat": 52.78, "lon": -6.88, "from": 678, "to": 690, "note": "Douze ans d'études en Irlande auprès d'Egbert ; ordonné prêtre.", "certainty": "sur"},
+      {"place": "Utrecht (Frise)", "lat": 52.09, "lon": 5.12, "from": 690, "to": 695, "note": "Débarque avec onze compagnons, soutenu par Pépin de Herstal ; premier aller-retour à Rome en 690.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 695, "to": 696, "note": "Sacré archevêque des Frisons le 21 novembre 695 à Sainte-Cécile du Trastevere.", "certainty": "sur"},
+      {"place": "Utrecht", "lat": 52.09, "lon": 5.12, "from": 696, "to": 710, "note": "Siège épiscopal ; fondation d'Echternach en 698 grâce à l'abbesse Irmine.", "certainty": "sur"},
+      {"place": "Hedeby (Danemark)", "lat": 54.49, "lon": 9.57, "from": 710, "to": 710, "note": "Le roi Ongendus le laisse repartir avec trente jeunes Danois à baptiser.", "certainty": "probable"},
+      {"place": "Heligoland", "lat": 54.18, "lon": 7.88, "from": 710, "to": 711, "note": "Il baptise dans la source sacrée de Fosite et fait abattre les vaches du dieu : le roi Radbod tire au sort un seul martyr.", "certainty": "probable"},
+      {"place": "Utrecht", "lat": 52.09, "lon": 5.12, "from": 711, "to": 738, "note": "Chassé par Radbod en 716, de retour en 719 ; Boniface le seconde trois ans.", "certainty": "sur"},
+      {"place": "Echternach", "lat": 49.81, "lon": 6.42, "from": 738, "to": 739, "note": "Il meurt dans son abbaye le 7 novembre 739.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "wilfrid", "where": "Ripon puis Frise", "year": 670, "note": "Élève de Wilfrid dès l'enfance ; Wilfrid soutient ensuite la mission frisonne."},
+      {"with": "boniface", "where": "Utrecht", "year": 719, "note": "Boniface travaille trois ans sous ses ordres et refuse de devenir son coadjuteur."}
+    ],
+    "blurb": "Un Northumbrien formé en Irlande qui devient l'apôtre des Pays-Bas : Willibrord baptise les Frisons, visite les Danois et finit abbé au Luxembourg.",
+    "fun": "Chaque mardi de Pentecôte, Echternach honore sa tombe par une procession dansante où l'on avance en sautillant de côté : la seule procession d'Europe qui tient de la chorégraphie.",
+    "sources": ["https://fr.wikipedia.org/wiki/Willibrord"]
+  },
+  {
+    "id": "boniface",
+    "name": "Boniface",
+    "full": "Saint Boniface de Mayence",
+    "feast": "06-05",
+    "feast_note": "",
+    "born": 675, "died": 754,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Crediton (Wessex), Angleterre",
+    "role": "archevêque martyr",
+    "sex": "m",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "goh", "level": "courant"},
+      {"code": "ofs", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Crediton (Devon)", "lat": 50.79, "lon": -3.65, "from": 675, "to": 690, "note": "Wynfrith, enfant du Wessex, oblat à Exeter.", "certainty": "sur"},
+      {"place": "Nursling (Hampshire)", "lat": 50.94, "lon": -1.47, "from": 690, "to": 716, "note": "Moine, grammairien, prêtre vers 705 ; il écrit un manuel de latin.", "certainty": "sur"},
+      {"place": "Utrecht (Frise)", "lat": 52.09, "lon": 5.12, "from": 716, "to": 717, "note": "Première mission, échec : le roi Radbod est en guerre contre les Francs.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 718, "to": 719, "note": "Grégoire II le renomme Boniface et lui confie les Germains (15 mai 719).", "certainty": "sur"},
+      {"place": "Utrecht", "lat": 52.09, "lon": 5.12, "from": 719, "to": 721, "note": "Trois ans de mission en Frise aux côtés de Willibrord.", "certainty": "sur"},
+      {"place": "Amöneburg (Hesse)", "lat": 50.80, "lon": 8.92, "from": 721, "to": 722, "note": "Premier monastère hessois.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 722, "to": 723, "note": "Sacré évêque le 30 novembre 722 ; lettre de recommandation de Charles Martel.", "certainty": "sur"},
+      {"place": "Fritzlar et Geismar", "lat": 51.13, "lon": 9.28, "from": 723, "to": 737, "note": "Abat le chêne de Donar à Geismar ; fonde Fritzlar, Ohrdruf, Tauberbischofsheim, Kitzingen.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 737, "to": 738, "note": "Troisième séjour, nommé légat pour la Germanie.", "certainty": "sur"},
+      {"place": "Ratisbonne (Bavière)", "lat": 49.02, "lon": 12.10, "from": 738, "to": 739, "note": "Organise la Bavière en quatre diocèses.", "certainty": "sur"},
+      {"place": "Mayence", "lat": 50.00, "lon": 8.27, "from": 740, "to": 753, "note": "Fonde Fulda (744) avec Sturm, archevêque de Mayence à partir de 745.", "certainty": "sur"},
+      {"place": "Dokkum (Frise)", "lat": 53.33, "lon": 5.99, "from": 754, "to": 754, "note": "Massacré avec une cinquantaine de compagnons le 5 juin 754, un évangile à la main.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "willibrord", "where": "Utrecht", "year": 719, "note": "Trois ans d'apprentissage missionnaire sous Willibrord, dont il refuse la succession."},
+      {"with": "lioba", "where": "Tauberbischofsheim", "year": 735, "note": "Il appelle sa jeune parente de Wimborne et lui confie l'abbaye."},
+      {"with": "willibald", "where": "Eichstätt", "year": 741, "note": "Il ordonne prêtre son parent Willibald le 22 juillet 741, puis le sacre évêque."},
+      {"with": "walburge", "where": "Tauberbischofsheim", "year": 748, "note": "Sa nièce arrive de Wimborne avec un groupe de moniales à sa demande."},
+      {"with": "virgile-de-salzbourg", "where": "Bavière (par lettres interposées)", "year": 746, "note": "Querelle sur un baptême en latin fautif, puis sur les antipodes : Boniface dénonce Virgile au pape, sans face-à-face attesté."},
+      {"with": "ludger", "where": "Utrecht", "year": 753, "note": "Le jeune Ludger voit passer le vieil archevêque, souvenir fondateur rapporté par sa Vita."}
+    ],
+    "blurb": "Il abat le chêne de Thor, fonde la moitié des évêchés d'Allemagne et finit massacré à près de quatre-vingts ans par des Frisons : Boniface est l'apôtre de la Germanie, avec un carnet d'adresses anglo-saxon.",
+    "fun": "On le représente avec un livre tranché par une épée : il aurait tenté de parer le coup fatal avec un évangile. Un codex entaillé est encore conservé à Fulda.",
+    "sources": ["https://fr.wikipedia.org/wiki/Boniface_de_Mayence"]
+  },
+  {
+    "id": "willibald",
+    "name": "Willibald",
+    "full": "Saint Willibald d'Eichstätt",
+    "feast": "07-07",
+    "feast_note": "",
+    "born": 700, "died": 787,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Wessex, Angleterre",
+    "role": "pèlerin et évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "goh", "level": "courant"},
+      {"code": "grc", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Bishop's Waltham (Hampshire)", "lat": 50.95, "lon": -1.21, "from": 700, "to": 720, "note": "Oblat à cinq ans chez l'abbé Egwald ; il y apprend le latin.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 721, "to": 723, "note": "Parti avec son père Richard (mort à Lucques) et son frère Wunibald ; malaria pour tout le monde.", "certainty": "sur"},
+      {"place": "Naples et Syracuse", "lat": 37.08, "lon": 15.29, "from": 723, "to": 723, "note": "Embarquement à Naples pour l'Orient, escale en Sicile.", "certainty": "sur"},
+      {"place": "Éphèse", "lat": 37.94, "lon": 27.34, "from": 723, "to": 724, "note": "Prière sur la tombe de saint Jean ; hiver à Patara en Lycie.", "certainty": "sur"},
+      {"place": "Chypre (Paphos)", "lat": 34.78, "lon": 32.42, "from": 724, "to": 724, "note": "Traversée vers la Syrie.", "certainty": "sur"},
+      {"place": "Tartous (Syrie)", "lat": 34.89, "lon": 35.89, "from": 725, "to": 725, "note": "Arrêté comme espion par les Arabes, puis relâché.", "certainty": "sur"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 725, "to": 727, "note": "Quatre séjours en Ville sainte, Bethléem, Nazareth, Galilée, Gaza ; premier Anglais connu en Terre sainte.", "certainty": "sur"},
+      {"place": "Tyr", "lat": 33.27, "lon": 35.20, "from": 727, "to": 727, "note": "Embarquement pour Constantinople, avec du baume caché dans une calebasse.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 727, "to": 729, "note": "Deux ans dans une cellule attenante aux Saints-Apôtres ; visite de Nicée.", "certainty": "sur"},
+      {"place": "Mont-Cassin", "lat": 41.49, "lon": 13.81, "from": 729, "to": 739, "note": "Sacristain, doyen puis portier sous l'abbé Pétronax.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 739, "to": 740, "note": "Grégoire III l'envoie en Germanie auprès de Boniface.", "certainty": "sur"},
+      {"place": "Eichstätt", "lat": 48.89, "lon": 11.18, "from": 741, "to": 787, "note": "Prêtre (741) puis évêque (746) ; fonde Heidenheim avec Wunibald en 752.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "boniface", "where": "Eichstätt", "year": 741, "note": "Son parent Boniface l'ordonne prêtre le 22 juillet 741 et le sacre évêque en 746."},
+      {"with": "walburge", "where": "Heidenheim", "year": 761, "note": "Il installe sa sœur comme abbesse du monastère double après la mort de leur frère Wunibald."}
+    ],
+    "blurb": "Wessex, Rome, Jérusalem, Constantinople, Mont-Cassin, Bavière : Willibald est le premier Anglais connu à avoir vu la Terre sainte, et il a attendu quatre-vingts ans pour tout raconter.",
+    "fun": "À Tyr, il passe la douane avec du baume de contrebande caché dans une calebasse, sous une couche de pétrole pour tromper les gardes. Son récit, l'Hodoeporicon, est dicté à la moniale Hugeburc : premier récit de voyage anglais, écrit par une femme.",
+    "sources": ["https://fr.wikipedia.org/wiki/Willibald_d%27Eichst%C3%A4tt", "https://en.wikipedia.org/wiki/Willibald"]
+  },
+  {
+    "id": "walburge",
+    "name": "Walburge",
+    "full": "Sainte Walburge de Heidenheim",
+    "feast": "02-25",
+    "feast_note": "1er mai : translation des reliques à Eichstätt (870)",
+    "born": 710, "died": 779,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Crediton (Wessex), Angleterre",
+    "role": "abbesse",
+    "sex": "f",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "goh", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Crediton (Devon)", "lat": 50.79, "lon": -3.65, "from": 710, "to": 721, "note": "Fille de Richard du Wessex, sœur de Willibald et Wunibald ; son père part en pèlerinage quand elle a dix ans.", "certainty": "probable"},
+      {"place": "Wimborne (Dorset)", "lat": 50.80, "lon": -1.99, "from": 721, "to": 748, "note": "Éduquée au monastère double, amie de la novice Lioba.", "certainty": "sur"},
+      {"place": "Tauberbischofsheim", "lat": 49.62, "lon": 9.66, "from": 748, "to": 752, "note": "Arrivée en Germanie à l'appel de Boniface, auprès de Lioba.", "certainty": "probable"},
+      {"place": "Heidenheim (Franconie)", "lat": 49.02, "lon": 10.74, "from": 752, "to": 779, "note": "Moniale puis abbesse (761) du monastère double fondé par ses frères.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "lioba", "where": "Wimborne puis Tauberbischofsheim", "year": 730, "note": "Amies de noviciat ; elles traversent la Manche pour la même mission."},
+      {"with": "boniface", "where": "Tauberbischofsheim", "year": 748, "note": "Son oncle maternel l'a fait venir pour la mission germanique."},
+      {"with": "willibald", "where": "Heidenheim", "year": 761, "note": "Son frère, évêque d'Eichstätt, la met à la tête de Heidenheim."}
+    ],
+    "blurb": "Une Anglaise qui dirige hommes et femmes dans un monastère de Franconie : Walburge est la patronne la plus involontairement célèbre d'Allemagne, à cause d'une nuit qui n'a rien à voir avec elle.",
+    "fun": "La nuit de Walpurgis, sabbat des sorcières du 30 avril, porte son nom par simple coïncidence de calendrier : le 1er mai est la fête de sa translation. De sa tombe à Eichstätt suinte encore chaque hiver une « huile » que l'on recueille dans des fioles.",
+    "sources": ["https://fr.wikipedia.org/wiki/Walburge"]
+  },
+  {
+    "id": "lioba",
+    "name": "Lioba",
+    "full": "Sainte Lioba de Tauberbischofsheim",
+    "feast": "09-28",
+    "feast_note": "",
+    "born": 710, "died": 782,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Wessex, Angleterre",
+    "role": "abbesse",
+    "sex": "f",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "goh", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Wimborne (Dorset)", "lat": 50.80, "lon": -1.99, "from": 710, "to": 735, "note": "Née Leobgyth dans le Wessex, élevée à Minster-in-Thanet puis moniale à Wimborne sous l'abbesse Tetta.", "certainty": "sur"},
+      {"place": "Tauberbischofsheim", "lat": 49.62, "lon": 9.66, "from": 735, "to": 776, "note": "Abbesse du couvent fondé par Boniface ; elle y forme des moniales pour Kitzingen et Ochsenfurt.", "certainty": "sur"},
+      {"place": "Schornsheim (Hesse rhénane)", "lat": 49.84, "lon": 8.17, "from": 776, "to": 782, "note": "Retraite offerte par Charlemagne ; la reine Hildegarde l'invite à la cour.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "boniface", "where": "Tauberbischofsheim", "year": 735, "note": "Son parent et maître ; en partant pour la Frise (754), il lui lègue sa coule et demande à être enterré près d'elle."},
+      {"with": "walburge", "where": "Wimborne puis Tauberbischofsheim", "year": 730, "note": "Amies de noviciat, compagnes de mission."}
+    ],
+    "blurb": "Lioba quitte le Dorset pour tenir, pendant quarante ans, le principal couvent de la mission germanique : lettrée, posée, et la seule femme que Boniface voulait à ses côtés dans la tombe.",
+    "fun": "Enfant, elle rêve qu'un fil de pourpre sans fin lui sort de la bouche et qu'elle le pelote : une vieille moniale y lit ses futurs sermons. Les moines de Fulda, où aucune femme n'entrait, faisaient une exception pour elle.",
+    "sources": ["https://fr.wikipedia.org/wiki/Lioba_de_Tauberbischofsheim"]
+  },
+  {
+    "id": "virgile-de-salzbourg",
+    "name": "Virgile",
+    "full": "Saint Virgile de Salzbourg",
+    "feast": "11-27",
+    "feast_note": "",
+    "born": 700, "died": 784,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Irlande",
+    "role": "abbé et évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "sga", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "goh", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Aghaboe (Laois)", "lat": 52.92, "lon": -7.51, "from": 700, "to": 740, "note": "Fergal, abbé d'Aghaboe, formé peut-être à Iona ; géomètre et astronome.", "certainty": "probable"},
+      {"place": "Quierzy (cour de Pépin)", "lat": 49.57, "lon": 3.17, "from": 743, "to": 745, "note": "Parti en pèlerinage, il séduit Pépin le Bref, qui l'envoie en Bavière.", "certainty": "sur"},
+      {"place": "Salzbourg", "lat": 47.80, "lon": 13.05, "from": 745, "to": 784, "note": "Abbé de Saint-Pierre, puis évêque sacré en 749 ; il envoie des missionnaires en Carantanie et bâtit la cathédrale (774).", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "boniface", "where": "Bavière (par lettres interposées)", "year": 746, "note": "Boniface le dénonce au pape pour un baptême « in nomine patria et filia » validé par Virgile, puis pour sa théorie des antipodes."}
+    ],
+    "blurb": "Un Irlandais qui soutient qu'il existe des hommes aux antipodes, au VIIIe siècle, et qui finit évêque de Salzbourg malgré la fureur de Boniface : Virgile est le géomètre de la liste.",
+    "fun": "Boniface voulait le faire condamner pour sa « terre habitée de l'autre côté ». Le pape Zacharie tempête, mais rien ne suit : Virgile bâtit sa cathédrale et sera canonisé en 1233.",
+    "sources": ["https://fr.wikipedia.org/wiki/Virgile_de_Salzbourg"]
+  },
+  {
+    "id": "ludger",
+    "name": "Ludger",
+    "full": "Saint Ludger de Münster",
+    "feast": "03-26",
+    "feast_note": "",
+    "born": 742, "died": 809,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Zuilen près d'Utrecht, Frise",
+    "role": "évêque missionnaire",
+    "sex": "m",
+    "languages": [
+      {"code": "ofs", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "ang", "level": "courant"},
+      {"code": "osx", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Zuilen (Utrecht)", "lat": 52.11, "lon": 5.08, "from": 742, "to": 756, "note": "Né dans une famille frisonne chrétienne ; en 753, il voit passer Boniface.", "certainty": "sur"},
+      {"place": "Utrecht", "lat": 52.09, "lon": 5.12, "from": 756, "to": 767, "note": "École cathédrale de Grégoire d'Utrecht.", "certainty": "sur"},
+      {"place": "York", "lat": 53.96, "lon": -1.08, "from": 767, "to": 772, "note": "Deux séjours auprès d'Alcuin, ordonné diacre ; il repart avec une cargaison de livres.", "certainty": "sur"},
+      {"place": "Utrecht et Deventer", "lat": 52.09, "lon": 5.12, "from": 772, "to": 777, "note": "Écrit la vie de Grégoire ; relève la chapelle de Lebuin à Deventer (775) ; prêtre à Cologne en 777.", "certainty": "sur"},
+      {"place": "Dokkum (Frise orientale)", "lat": 53.33, "lon": 5.99, "from": 777, "to": 784, "note": "Mission sur le lieu du martyre de Boniface, chassé par la révolte de Widukind.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 785, "to": 785, "note": "Reçu par Adrien Ier.", "certainty": "sur"},
+      {"place": "Mont-Cassin", "lat": 41.49, "lon": 13.81, "from": 785, "to": 787, "note": "Deux ans sous la règle bénédictine, sans prononcer de vœux.", "certainty": "sur"},
+      {"place": "Heligoland et la Frise orientale", "lat": 54.18, "lon": 7.88, "from": 787, "to": 793, "note": "Transforme la source sacrée de Fosite en baptistère.", "certainty": "sur"},
+      {"place": "Münster (Mimigernaford)", "lat": 51.96, "lon": 7.63, "from": 793, "to": 809, "note": "Refuse Trèves, choisit les Saxons ; fonde Werden (800), sacré premier évêque de Münster en 805.", "certainty": "sur"},
+      {"place": "Billerbeck", "lat": 51.98, "lon": 7.29, "from": 809, "to": 809, "note": "Meurt le 26 mars 809 après avoir prêché deux fois dans la journée.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "boniface", "where": "Utrecht", "year": 753, "note": "Enfant, il voit l'archevêque octogénaire, souvenir qu'il racontera toute sa vie."}
+    ],
+    "blurb": "Un Frison qui évangélise Frisons et Saxons sans l'épée de Charlemagne : Ludger préfère la méthode douce et finit premier évêque de Münster, une ville qu'il a lui-même baptisée.",
+    "fun": "Il aurait rendu la vue à Bernlef, barde frison aveugle et dernier des skaldes païens, qui se mit alors à chanter des psaumes. Münster tire son nom du « monasterium » qu'il y a bâti.",
+    "sources": ["https://en.wikipedia.org/wiki/Ludger"]
+  },
+  {
+    "id": "anschaire",
+    "name": "Anschaire",
+    "full": "Saint Anschaire de Hambourg-Brême",
+    "feast": "02-03",
+    "feast_note": "",
+    "born": 801, "died": 865,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Fouilloy près d'Amiens, Picardie",
+    "role": "archevêque missionnaire",
+    "sex": "m",
+    "languages": [
+      {"code": "rom", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "osx", "level": "courant"},
+      {"code": "non", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Corbie", "lat": 49.91, "lon": 2.51, "from": 801, "to": 823, "note": "Né à Fouilloy, oblat à cinq ans à l'abbaye voisine de Corbie.", "certainty": "sur"},
+      {"place": "Corvey (Weser)", "lat": 51.78, "lon": 9.41, "from": 823, "to": 826, "note": "Écolâtre de la « Nouvelle Corbie » en Saxe.", "certainty": "sur"},
+      {"place": "Hedeby (Danemark)", "lat": 54.49, "lon": 9.57, "from": 826, "to": 828, "note": "Suit le roi Harald Klak, baptisé à Mayence ; école pour jeunes Danois rachetés. Lieu exact incertain.", "certainty": "probable"},
+      {"place": "Birka (Suède)", "lat": 59.34, "lon": 17.54, "from": 829, "to": 831, "note": "Pillé par des pirates en route ; première communauté chrétienne de Suède.", "certainty": "sur"},
+      {"place": "Hambourg", "lat": 53.55, "lon": 9.99, "from": 831, "to": 845, "note": "Premier archevêque de Hambourg ; la ville est rasée par les Danois de Horik en 845.", "certainty": "sur"},
+      {"place": "Brême", "lat": 53.08, "lon": 8.81, "from": 845, "to": 852, "note": "Repli sur Brême, réunie à Hambourg ; églises obtenues à Hedeby et Ribe.", "certainty": "sur"},
+      {"place": "Birka (Suède)", "lat": 59.34, "lon": 17.54, "from": 852, "to": 853, "note": "Second voyage : le roi Olof consulte les dieux par tirage au sort avant de l'autoriser à prêcher.", "certainty": "sur"},
+      {"place": "Brême", "lat": 53.08, "lon": 8.81, "from": 853, "to": 865, "note": "Meurt le 3 février 865, déçu de n'avoir pas été martyr.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Un Picard envoyé chez les Vikings : Anschaire fonde la première église de Suède à Birka, voit Hambourg brûler, recommence depuis Brême, et meurt dans son lit, ce qu'il considérait comme un échec.",
+    "fun": "En route pour la Suède, son navire est pris par des pirates qui raflent les quarante livres offerts par l'empereur ; il termine à pied. À Birka, les Suédois décident de l'accueillir en jetant les sorts : les dieux ont dit oui.",
+    "sources": ["https://fr.wikipedia.org/wiki/Anschaire_de_Br%C3%AAme"]
+  },
+  {
+    "id": "cyrille",
+    "name": "Cyrille",
+    "full": "Saint Cyrille (Constantin le Philosophe)",
+    "feast": "02-14",
+    "feast_note": "11 mai chez les orthodoxes, avec Méthode",
+    "born": 826, "died": 869,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Thessalonique, Empire byzantin",
+    "role": "missionnaire philologue",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "chu", "level": "courant"},
+      {"code": "lat", "level": "courant"},
+      {"code": "heb", "level": "notions"},
+      {"code": "syc", "level": "notions"},
+      {"code": "tur", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Thessalonique", "lat": 40.64, "lon": 22.94, "from": 826, "to": 841, "note": "Benjamin d'un drongaire ; le slave se parle dans les rues de la ville.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 841, "to": 851, "note": "Élève de Léon le Mathématicien et de Photius ; bibliothécaire de Sainte-Sophie, puis professeur de philosophie.", "certainty": "sur"},
+      {"place": "Samarra (califat)", "lat": 34.20, "lon": 43.87, "from": 851, "to": 852, "note": "Ambassade auprès du calife al-Mutawakkil, controverse sur la Trinité.", "certainty": "probable"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 852, "to": 856, "note": "Retour à l'enseignement.", "certainty": "sur"},
+      {"place": "Mont Olympe de Bithynie", "lat": 40.07, "lon": 29.22, "from": 856, "to": 860, "note": "Il rejoint son frère Méthode au monastère.", "certainty": "sur"},
+      {"place": "Chersonèse (Crimée)", "lat": 44.61, "lon": 33.49, "from": 860, "to": 861, "note": "Apprend l'hébreu et retrouve les reliques de Clément de Rome, en route vers les Khazars.", "certainty": "sur"},
+      {"place": "Cour du khagan khazar (Caspienne)", "lat": 43.00, "lon": 47.50, "from": 861, "to": 861, "note": "Disputation avec juifs et musulmans devant le khagan.", "certainty": "probable"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 861, "to": 863, "note": "Invente l'alphabet glagolitique et commence la traduction des Évangiles en slave.", "certainty": "sur"},
+      {"place": "Grande-Moravie (Mikulčice)", "lat": 48.81, "lon": 17.09, "from": 863, "to": 867, "note": "Mission auprès du prince Rastislav, liturgie en slave, formation des disciples.", "certainty": "sur"},
+      {"place": "Mosapurc (Pannonie)", "lat": 46.67, "lon": 17.16, "from": 867, "to": 867, "note": "Hôte du prince Kocel, qui lui confie cinquante élèves.", "certainty": "sur"},
+      {"place": "Venise", "lat": 45.44, "lon": 12.33, "from": 867, "to": 867, "note": "Dispute contre les « trilingues » qui n'admettent que l'hébreu, le grec et le latin.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 868, "to": 869, "note": "Adrien II approuve la liturgie slave ; devenu moine sous le nom de Cyrille, il meurt le 14 février 869 et repose à Saint-Clément.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "methode", "where": "Thessalonique, Constantinople, Moravie, Rome", "year": 826, "note": "Son frère aîné et compagnon de toutes ses missions."},
+      {"with": "clement-d-ohrid", "where": "Mont Olympe puis Moravie", "year": 856, "note": "Clément s'attache aux deux frères dès sa jeunesse et les suit en Moravie et à Rome."}
+    ],
+    "blurb": "Philosophe, diplomate chez le calife et chez les Khazars, puis inventeur d'un alphabet pour les Slaves : Constantin le Philosophe meurt à Rome à quarante-deux ans sous le nom de Cyrille.",
+    "fun": "L'alphabet cyrillique ne porte son nom que par hommage : lui a inventé le glagolitique, aux lettres rondes et étranges. À Venise, aux clercs qui n'admettent que trois langues saintes, il répond que la pluie tombe sur tous de la même façon.",
+    "sources": ["https://fr.wikipedia.org/wiki/Cyrille_et_M%C3%A9thode"]
+  },
+  {
+    "id": "methode",
+    "name": "Méthode",
+    "full": "Saint Méthode de Thessalonique",
+    "feast": "02-14",
+    "feast_note": "6 avril chez les orthodoxes ; 5 juillet en Tchéquie et Slovaquie",
+    "born": 815, "died": 885,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Thessalonique, Empire byzantin",
+    "role": "archevêque missionnaire",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "chu", "level": "courant"},
+      {"code": "lat", "level": "courant"},
+      {"code": "goh", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Thessalonique", "lat": 40.64, "lon": 22.94, "from": 815, "to": 835, "note": "Michel, fils aîné du drongaire Léon, formé au droit et à l'administration.", "certainty": "sur"},
+      {"place": "Strymon (archontie slave)", "lat": 41.09, "lon": 23.55, "from": 835, "to": 856, "note": "Gouverneur d'une province peuplée de Slaves ; lieu exact discuté.", "certainty": "probable"},
+      {"place": "Mont Olympe de Bithynie", "lat": 40.07, "lon": 29.22, "from": 856, "to": 860, "note": "Moine sous le nom de Méthode, bientôt rejoint par son frère.", "certainty": "sur"},
+      {"place": "Chersonèse et Khazarie", "lat": 44.61, "lon": 33.49, "from": 860, "to": 861, "note": "Accompagne Constantin chez les Khazars ; refuse ensuite un archevêché et devient higoumène de Polychron.", "certainty": "sur"},
+      {"place": "Grande-Moravie (Mikulčice)", "lat": 48.81, "lon": 17.09, "from": 863, "to": 867, "note": "Mission chez Rastislav, liturgie slave.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 868, "to": 869, "note": "Ordonné prêtre ; son frère meurt dans ses bras ; sacré archevêque de Pannonie et de Sirmium.", "certainty": "sur"},
+      {"place": "Mosapurc (Pannonie)", "lat": 46.67, "lon": 17.16, "from": 869, "to": 870, "note": "Archevêque chez le prince Kocel, au grand dam des évêques bavarois.", "certainty": "sur"},
+      {"place": "Ellwangen (Souabe)", "lat": 48.96, "lon": 10.13, "from": 870, "to": 873, "note": "Jugé à Ratisbonne, emprisonné près de trois ans par les évêques francs ; libéré par le pape Jean VIII.", "certainty": "sur"},
+      {"place": "Grande-Moravie (Velehrad)", "lat": 49.11, "lon": 17.39, "from": 873, "to": 880, "note": "Archevêque de Moravie sous Svatopluk, en butte au clergé latin.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 880, "to": 881, "note": "Jean VIII confirme la liturgie slave par la bulle Industriae tuae.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 881, "to": 882, "note": "Dernier voyage, reçu par Basile Ier et Photius.", "certainty": "sur"},
+      {"place": "Grande-Moravie (Velehrad)", "lat": 49.11, "lon": 17.39, "from": 882, "to": 885, "note": "Achève la traduction de la Bible ; meurt le 6 avril 885, Gorazd désigné successeur.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "cyrille", "where": "Thessalonique, Constantinople, Moravie, Rome", "year": 826, "note": "Son frère cadet, qu'il accompagne partout et enterre à Rome."},
+      {"with": "clement-d-ohrid", "where": "Mont Olympe puis Moravie", "year": 856, "note": "Son plus illustre disciple, présent jusqu'à sa mort."}
+    ],
+    "blurb": "Gouverneur de province, moine, puis archevêque des Slaves emprisonné trois ans par ses collègues bavarois : Méthode est l'apôtre qui a connu les deux empires et les deux Églises, et s'est fâché avec la moitié de chacune.",
+    "fun": "Il aurait traduit toute la Bible en slave en huit mois, avec deux prêtres sténographes. Quelques mois après sa mort, ses disciples sont vendus comme esclaves à Venise : c'est ainsi que l'alphabet slave arrive en Bulgarie.",
+    "sources": ["https://fr.wikipedia.org/wiki/Cyrille_et_M%C3%A9thode"]
+  },
+  {
+    "id": "clement-d-ohrid",
+    "name": "Clément",
+    "full": "Saint Clément d'Ohrid",
+    "feast": "07-27",
+    "feast_note": "25 novembre chez les orthodoxes",
+    "born": 840, "died": 916,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Macédoine (Empire bulgare)",
+    "role": "évêque et lettré",
+    "sex": "m",
+    "languages": [
+      {"code": "chu", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "lat", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Région d'Ohrid", "lat": 41.12, "lon": 20.80, "from": 840, "to": 856, "note": "Né dans le sud-ouest de l'Empire bulgare selon Théophylacte ; lieu précis inconnu.", "certainty": "probable"},
+      {"place": "Mont Olympe de Bithynie", "lat": 40.07, "lon": 29.22, "from": 856, "to": 863, "note": "Il s'attache à Méthode dès l'entrée de celui-ci au monastère.", "certainty": "probable"},
+      {"place": "Grande-Moravie (Mikulčice)", "lat": 48.81, "lon": 17.09, "from": 863, "to": 867, "note": "Compagnon des deux frères dans la mission morave.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 868, "to": 869, "note": "Ordonné prêtre par Adrien II.", "certainty": "sur"},
+      {"place": "Grande-Moravie (Velehrad)", "lat": 49.11, "lon": 17.39, "from": 869, "to": 885, "note": "Collaborateur de Méthode ; emprisonné puis expulsé après sa mort.", "certainty": "sur"},
+      {"place": "Belgrade", "lat": 44.82, "lon": 20.46, "from": 885, "to": 886, "note": "Accueilli avec Naum et Angelar par le gouverneur bulgare, qui les envoie au khan.", "certainty": "sur"},
+      {"place": "Pliska", "lat": 43.37, "lon": 27.13, "from": 886, "to": 886, "note": "Boris Ier lui confie la formation du clergé en slave.", "certainty": "sur"},
+      {"place": "Devol (Kutmichevitsa)", "lat": 40.62, "lon": 20.78, "from": 886, "to": 893, "note": "Maître d'école de la région d'Ohrid : 3 500 élèves, dit sa Vita.", "certainty": "sur"},
+      {"place": "Ohrid", "lat": 41.12, "lon": 20.80, "from": 893, "to": 916, "note": "Premier évêque de langue slave ; fonde Saint-Pantéleimon, meurt le 27 juillet 916.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "cyrille", "where": "Mont Olympe, Moravie, Rome", "year": 856, "note": "Disciple de la première heure, présent à Rome à sa mort."},
+      {"with": "methode", "where": "Mont Olympe, Moravie", "year": 856, "note": "Il suit son maître jusqu'à la fin et subit la prison après lui."}
+    ],
+    "blurb": "Chassé de Moravie, Clément reconstruit la mission slave en Bulgarie et forme, dit-on, 3 500 élèves à Ohrid : le premier évêque d'Europe à prêcher et écrire en slave.",
+    "fun": "On lui attribue souvent l'alphabet cyrillique, mais il a sans doute été composé à Preslav par d'autres. L'Université de Sofia porte son nom depuis 1888, et Ohrid reste « la Jérusalem des Balkans ».",
+    "sources": ["https://fr.wikipedia.org/wiki/Cl%C3%A9ment_d%27Ohrid"]
+  },
+  {
+    "id": "elie-le-jeune",
+    "name": "Élie",
+    "full": "Saint Élie le Jeune d'Enna",
+    "feast": "08-17",
+    "feast_note": "",
+    "born": 823, "died": 903,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Enna, Sicile byzantine",
+    "role": "moine voyageur",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "ara", "level": "courant"},
+      {"code": "lat", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Enna (Sicile)", "lat": 37.57, "lon": 14.28, "from": 823, "to": 859, "note": "Jean Rachites, fils de famille ; déjà capturé enfant et racheté, dit sa Vita.", "certainty": "sur"},
+      {"place": "Kairouan (Ifriqiya)", "lat": 35.68, "lon": 10.10, "from": 859, "to": 868, "note": "Vendu comme esclave après la chute d'Enna ; affranchi, il prêche au péril de sa vie.", "certainty": "sur"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 868, "to": 871, "note": "Reçoit l'habit monastique du patriarche et le nom d'Élie.", "certainty": "sur"},
+      {"place": "Mont Sinaï", "lat": 28.56, "lon": 33.98, "from": 871, "to": 874, "note": "Trois ans au monastère ; puis passage à Alexandrie.", "certainty": "sur"},
+      {"place": "Perse", "lat": 33.31, "lon": 44.37, "from": 875, "to": 876, "note": "Voyage en terre abbasside dont la Vita dit peu de chose.", "certainty": "probable"},
+      {"place": "Antioche", "lat": 36.20, "lon": 36.16, "from": 876, "to": 877, "note": "Retour vers la Méditerranée, puis nouveau passage en Afrique.", "certainty": "sur"},
+      {"place": "Palerme", "lat": 38.12, "lon": 13.36, "from": 878, "to": 880, "note": "Retrouve sa vieille mère après la chute de Syracuse.", "certainty": "sur"},
+      {"place": "Taormine", "lat": 37.85, "lon": 15.29, "from": 880, "to": 884, "note": "Rencontre Daniel, disciple fidèle jusqu'à la fin.", "certainty": "sur"},
+      {"place": "Mont Aulinas (Palmi, Calabre)", "lat": 38.36, "lon": 15.85, "from": 884, "to": 895, "note": "Fonde son monastère dans la vallée des Salines ; un raid arabe le pousse un temps à Patras.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 895, "to": 896, "note": "Pèlerinage sur les tombes des apôtres.", "certainty": "probable"},
+      {"place": "Mont Aulinas (Palmi, Calabre)", "lat": 38.36, "lon": 15.85, "from": 896, "to": 902, "note": "Retiré en Aspromonte ; Léon VI l'invite à Constantinople.", "certainty": "sur"},
+      {"place": "Thessalonique", "lat": 40.64, "lon": 22.94, "from": 903, "to": 903, "note": "Tombé malade en route, il meurt le 17 août 903 ; Daniel ramène son corps à Palmi.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Esclave en Tunisie, moine à Jérusalem, pèlerin au Sinaï et en Perse, fondateur en Calabre : Élie le Jeune a fait le tour de la Méditerranée du IXe siècle dans les deux sens.",
+    "fun": "Il avait, dit sa Vita, le don de prophétie : il aurait annoncé la chute de Taormine et les victoires byzantines. Il meurt en route vers l'empereur qui voulait le consulter, à Thessalonique, ville de Cyrille et Méthode.",
+    "sources": ["https://en.wikipedia.org/wiki/Elias_of_Enna"]
+  },
+  {
+    "id": "euloge-de-cordoue",
+    "name": "Euloge",
+    "full": "Saint Euloge de Cordoue",
+    "feast": "03-11",
+    "feast_note": "",
+    "born": 810, "died": 859,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Cordoue, al-Andalus",
+    "role": "prêtre martyr",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "ara", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Cordoue", "lat": 37.88, "lon": -4.78, "from": 810, "to": 848, "note": "Famille sénatoriale mozarabe ; élève de l'abbé Speraindeo à Saint-Zoïle avec son ami Paul Alvare.", "certainty": "sur"},
+      {"place": "Pampelune et Leyre (Navarre)", "lat": 42.60, "lon": -1.17, "from": 848, "to": 849, "note": "Parti chercher ses frères, bloqué par la guerre, il visite les monastères pyrénéens et rapporte Virgile, Horace, Juvénal et la Cité de Dieu.", "certainty": "sur"},
+      {"place": "Cordoue", "lat": 37.88, "lon": -4.78, "from": 849, "to": 859, "note": "Chroniqueur des martyrs volontaires, emprisonné en 851-852, élu évêque de Tolède sans être sacré ; décapité le 11 mars 859.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Dans la Cordoue des émirs, Euloge consigne les martyrs volontaires, rapporte des Pyrénées des classiques latins que l'Andalousie a oubliés, et finit décapité pour avoir caché une convertie.",
+    "fun": "Giflé par un eunuque avant son exécution, il tend l'autre joue. Sa tête repose à Oviedo depuis 884 ; ses écrits contiennent la plus ancienne mention latine connue d'un verset du Coran.",
+    "sources": ["https://fr.wikipedia.org/wiki/Euloge_de_Cordoue", "https://en.wikipedia.org/wiki/Eulogius_of_C%C3%B3rdoba"]
+  },
+  {
+    "id": "joseph-l-hymnographe",
+    "name": "Joseph",
+    "full": "Saint Joseph l'Hymnographe",
+    "feast": "04-03",
+    "feast_note": "4 avril dans le rite slave",
+    "born": 816, "died": 886,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Palerme, Sicile byzantine",
+    "role": "moine hymnographe",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "lat", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Palerme", "lat": 38.12, "lon": 13.36, "from": 816, "to": 831, "note": "Enfance sicilienne, jusqu'à la prise de la ville par les Aghlabides.", "certainty": "sur"},
+      {"place": "Péloponnèse", "lat": 37.50, "lon": 22.30, "from": 831, "to": 832, "note": "Fuite de la famille en Grèce.", "certainty": "probable"},
+      {"place": "Thessalonique", "lat": 40.64, "lon": 22.94, "from": 832, "to": 840, "note": "Moine calligraphe au monastère Tou Latomou, ordonné prêtre.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 840, "to": 841, "note": "Avec Grégoire le Décapolite à Saint-Antipas, dans la défense des images.", "certainty": "sur"},
+      {"place": "Crète (Chandax)", "lat": 35.34, "lon": 25.13, "from": 841, "to": 842, "note": "Envoyé à Rome, capturé par des pirates arabes et détenu en Crète ; libéré contre rançon.", "certainty": "probable"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 843, "to": 858, "note": "Atelier de copistes, fondation du monastère Saint-Barthélemy vers 855.", "certainty": "sur"},
+      {"place": "Chersonèse (Crimée)", "lat": 44.61, "lon": 33.49, "from": 858, "to": 867, "note": "Exilé par le césar Bardas pour avoir soutenu le patriarche Ignace.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 867, "to": 886, "note": "Skévophylax de Sainte-Sophie sous Photius ; meurt le 3 avril 886.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Un Sicilien réfugié à Byzance, capturé par des pirates, exilé en Crimée, et qui écrit entre deux malheurs plusieurs centaines de canons liturgiques encore chantés aujourd'hui.",
+    "fun": "Il aurait été libéré de sa prison crétoise grâce à une vision de saint Nicolas. On lui attribue quelque 440 canons, mais des centaines d'autres signés « Joseph » en acrostiche sont d'un homonyme de Thessalonique.",
+    "sources": ["https://fr.wikipedia.org/wiki/Joseph_l%27Hymnographe"]
+  },
+  {
+    "id": "odon-de-cluny",
+    "name": "Odon",
+    "full": "Saint Odon de Cluny",
+    "feast": "11-18",
+    "feast_note": "",
+    "born": 879, "died": 942,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Maine ou Touraine, Francie occidentale",
+    "role": "abbé réformateur",
+    "sex": "m",
+    "languages": [
+      {"code": "rom", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "ita", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Le Mans (Maine)", "lat": 48.00, "lon": 0.20, "from": 879, "to": 895, "note": "Fils d'Abbon, lettré au service des comtes ; éduqué à la cour d'Anjou puis chez Guillaume le Pieux.", "certainty": "probable"},
+      {"place": "Tours", "lat": 47.39, "lon": 0.69, "from": 895, "to": 899, "note": "Chanoine de Saint-Martin à dix-neuf ans.", "certainty": "sur"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 899, "to": 905, "note": "Dialectique et musique auprès de Rémi d'Auxerre.", "certainty": "sur"},
+      {"place": "Tours", "lat": 47.39, "lon": 0.69, "from": 905, "to": 909, "note": "Retour au chapitre ; la lecture de la règle de saint Benoît le bouleverse.", "certainty": "sur"},
+      {"place": "Baume-les-Messieurs", "lat": 46.71, "lon": 5.64, "from": 910, "to": 924, "note": "Reçoit l'habit de Bernon, dirige l'école ; les sources hésitent entre 909 et 912.", "certainty": "sur"},
+      {"place": "Aurillac", "lat": 44.93, "lon": 2.44, "from": 925, "to": 927, "note": "Abbé, ordonné prêtre par Turpin de Limoges ; il écrira la Vie de Géraud.", "certainty": "sur"},
+      {"place": "Cluny", "lat": 46.43, "lon": 4.66, "from": 927, "to": 936, "note": "Deuxième abbé ; privilège d'exemption de Jean XI (931), réformes de Fleury et de nombreuses abbayes.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 936, "to": 937, "note": "Médiateur entre Hugues de Provence et Albéric ; réforme Saint-Paul-hors-les-Murs.", "certainty": "sur"},
+      {"place": "Cluny", "lat": 46.43, "lon": 4.66, "from": 937, "to": 941, "note": "Allers-retours en Italie (Pavie, Rome) pour la paix et la réforme.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 942, "to": 942, "note": "Dernière mission de paix, tombé malade.", "certainty": "sur"},
+      {"place": "Tours", "lat": 47.39, "lon": 0.69, "from": 942, "to": 942, "note": "Venu mourir près de saint Martin, le 18 novembre 942.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Chanoine, musicien, puis patron de la réforme monastique : Odon fait de Cluny la tête de pont de la chrétienté et sert de casque bleu entre les potentats italiens.",
+    "fun": "On lui attribue à tort la notation musicale par lettres, mais il a bien décrit l'organistrum, ancêtre de la vielle à roue. Il voulait mourir chez saint Martin : il quitte Rome malade et expire à Tours, juste après la fête du saint.",
+    "sources": ["https://fr.wikipedia.org/wiki/Odon_de_Cluny"]
+  },
+  {
+    "id": "dunstan",
+    "name": "Dunstan",
+    "full": "Saint Dunstan de Cantorbéry",
+    "feast": "05-19",
+    "feast_note": "",
+    "born": 909, "died": 988,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Baltonsborough (Somerset), Angleterre",
+    "role": "archevêque réformateur",
+    "sex": "m",
+    "languages": [
+      {"code": "ang", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "odt", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Baltonsborough (Somerset)", "lat": 51.12, "lon": -2.65, "from": 909, "to": 923, "note": "Famille aristocratique proche de la dynastie ; son oncle est l'évêque Ælfheah.", "certainty": "sur"},
+      {"place": "Glastonbury", "lat": 51.15, "lon": -2.71, "from": 923, "to": 930, "note": "Études auprès de moines irlandais de passage.", "certainty": "sur"},
+      {"place": "Cour d'Æthelstan (Cheddar)", "lat": 51.28, "lon": -2.78, "from": 930, "to": 935, "note": "Page du roi, accusé de magie par des rivaux et jeté dans une mare.", "certainty": "sur"},
+      {"place": "Winchester", "lat": 51.06, "lon": -1.31, "from": 935, "to": 939, "note": "Chez son oncle Ælfheah, qui le pousse vers l'état monastique ; ordonné prêtre.", "certainty": "sur"},
+      {"place": "Glastonbury", "lat": 51.15, "lon": -2.71, "from": 939, "to": 956, "note": "Abbé en 943 ; renouveau bénédictin, école, orfèvrerie et cloches.", "certainty": "sur"},
+      {"place": "Gand (Saint-Pierre du Mont-Blandin)", "lat": 51.05, "lon": 3.72, "from": 956, "to": 957, "note": "Exilé par le roi Eadwig, il découvre la réforme lotharingienne.", "certainty": "sur"},
+      {"place": "Worcester puis Londres", "lat": 52.19, "lon": -2.22, "from": 957, "to": 959, "note": "Évêque de Worcester (957) puis de Londres (958) sous Edgar.", "certainty": "sur"},
+      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 959, "to": 960, "note": "Archevêque.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 960, "to": 960, "note": "Reçoit le pallium de Jean XII.", "certainty": "sur"},
+      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 960, "to": 988, "note": "Couronne Edgar à Bath (973), enseigne et prie jusqu'au 19 mai 988.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Orfèvre, musicien, abbé, exilé, puis archevêque faiseur de rois : Dunstan réforme l'Église anglaise et invente le rituel de couronnement encore utilisé à Westminster.",
+    "fun": "La légende le montre saisissant le nez du diable avec ses pinces de forgeron, ou lui clouant un fer au sabot jusqu'à ce qu'il jure de ne plus entrer dans une maison ornée d'un fer à cheval : voilà pourquoi on en accroche aux portes.",
+    "sources": ["https://fr.wikipedia.org/wiki/Dunstan_de_Cantorb%C3%A9ry"]
+  },
+  {
+    "id": "olga-de-kiev",
+    "name": "Olga",
+    "full": "Sainte Olga de Kiev",
+    "feast": "07-11",
+    "feast_note": "",
+    "born": 890, "died": 969,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Pskov, Rus' de Kiev",
+    "role": "princesse régente",
+    "sex": "f",
+    "languages": [
+      {"code": "orv", "level": "natif"},
+      {"code": "non", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Pskov", "lat": 57.82, "lon": 28.33, "from": 890, "to": 903, "note": "Origine varègue probable ; la légende en fait une passeuse de bac dont Igor tombe amoureux.", "certainty": "probable"},
+      {"place": "Kiev", "lat": 50.45, "lon": 30.52, "from": 903, "to": 945, "note": "Épouse du prince Igor ; mère de Sviatoslav.", "certainty": "sur"},
+      {"place": "Iskorosten (pays drevliane)", "lat": 50.95, "lon": 28.64, "from": 946, "to": 946, "note": "Campagne de vengeance contre les Drevlianes qui ont tué Igor ; la ville brûle.", "certainty": "probable"},
+      {"place": "Kiev", "lat": 50.45, "lon": 30.52, "from": 946, "to": 957, "note": "Régente : elle réorganise tributs et relais (pogosts).", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 957, "to": 957, "note": "Reçue par Constantin VII ; baptisée sous le nom d'Hélène, date et lieu discutés (955 ou 957).", "certainty": "sur"},
+      {"place": "Kiev", "lat": 50.45, "lon": 30.52, "from": 957, "to": 969, "note": "Ambassade à Otton Ier (959), élève ses petits-fils, défend Kiev contre les Petchenègues (968) ; meurt en 969.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "vladimir-de-kiev", "where": "Kiev", "year": 960, "note": "Grand-mère de Vladimir, qu'elle élève pendant les campagnes de son père Sviatoslav."}
+    ],
+    "blurb": "Veuve vengeresse, régente avisée, première princesse baptisée de la Rus' : Olga a tout essayé avant que son petit-fils ne finisse le travail.",
+    "fun": "Selon la Chronique des temps passés, elle fait enterrer vivants les ambassadeurs drevlianes, en brûle d'autres dans un bain, puis incendie leur capitale avec des moineaux porteurs de mèches soufrées. La chronique mêle histoire et légende, et la légende est ici très inventive.",
+    "sources": ["https://fr.wikipedia.org/wiki/Olga_de_Kiev"]
+  },
+  {
+    "id": "vladimir-de-kiev",
+    "name": "Vladimir",
+    "full": "Saint Vladimir de Kiev",
+    "feast": "07-15",
+    "feast_note": "",
+    "born": 958, "died": 1015,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Volhynie, Rus' de Kiev",
+    "role": "grand-prince",
+    "sex": "m",
+    "languages": [
+      {"code": "orv", "level": "natif"},
+      {"code": "non", "level": "notions"},
+      {"code": "grc", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Budyatyn (Volhynie)", "lat": 50.90, "lon": 24.60, "from": 958, "to": 960, "note": "Fils de Sviatoslav et de l'intendante Maloucha ; lieu de naissance incertain.", "certainty": "probable"},
+      {"place": "Kiev", "lat": 50.45, "lon": 30.52, "from": 960, "to": 969, "note": "Élevé par sa grand-mère Olga.", "certainty": "sur"},
+      {"place": "Novgorod", "lat": 58.52, "lon": 31.27, "from": 970, "to": 977, "note": "Prince de Novgorod, sous la tutelle de son oncle Dobrynia.", "certainty": "sur"},
+      {"place": "Scandinavie", "lat": 59.62, "lon": 17.72, "from": 977, "to": 979, "note": "Fuite chez les Varègues après le meurtre de son frère Oleg ; il revient avec une armée.", "certainty": "probable"},
+      {"place": "Polotsk", "lat": 55.49, "lon": 28.77, "from": 979, "to": 980, "note": "Prend la ville et épouse de force Rogneda.", "certainty": "sur"},
+      {"place": "Kiev", "lat": 50.45, "lon": 30.52, "from": 980, "to": 988, "note": "Grand-prince après l'élimination de Iaropolk ; panthéon païen, puis enquête sur les religions.", "certainty": "sur"},
+      {"place": "Chersonèse (Crimée)", "lat": 44.61, "lon": 33.49, "from": 988, "to": 989, "note": "Siège de la ville byzantine, baptême sous le nom de Basile, mariage avec Anne Porphyrogénète.", "certainty": "sur"},
+      {"place": "Kiev", "lat": 50.45, "lon": 30.52, "from": 989, "to": 1015, "note": "Baptême collectif dans le Dniepr, église de la Dîme ; meurt à Berestove le 15 juillet 1015.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "olga-de-kiev", "where": "Kiev", "year": 960, "note": "Sa grand-mère chrétienne l'élève jusqu'à sa mort en 969."},
+      {"with": "bruno-de-querfurt", "where": "Kiev", "year": 1008, "note": "Vladimir héberge Bruno un mois, tente de le dissuader d'aller chez les Petchenègues, puis l'escorte jusqu'à la frontière."}
+    ],
+    "blurb": "Fratricide, polygame, puis baptiseur de tout un peuple dans le Dniepr : Vladimir choisit le christianisme grec et fait basculer l'Europe de l'Est.",
+    "fun": "Selon la Chronique, il écarte l'islam parce qu'il interdit le vin : « Boire est la joie des Rus', nous ne pouvons vivre sans cela. » Ses envoyés, eux, reviennent de Sainte-Sophie en disant ne plus savoir s'ils étaient au ciel ou sur terre.",
+    "sources": ["https://fr.wikipedia.org/wiki/Vladimir_Ier"]
+  },
+  {
+    "id": "adalbert-de-prague",
+    "name": "Adalbert",
+    "full": "Saint Adalbert de Prague",
+    "feast": "04-23",
+    "feast_note": "",
+    "born": 956, "died": 997,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Libice, Bohême",
+    "role": "évêque martyr",
+    "sex": "m",
+    "languages": [
+      {"code": "ces", "level": "natif"},
+      {"code": "goh", "level": "courant"},
+      {"code": "lat", "level": "courant"},
+      {"code": "pol", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Libice nad Cidlinou", "lat": 50.13, "lon": 15.18, "from": 956, "to": 972, "note": "Vojtěch, fils du prince Slavník, rival des Přemyslides.", "certainty": "sur"},
+      {"place": "Magdebourg", "lat": 52.13, "lon": 11.63, "from": 972, "to": 981, "note": "Dix ans d'école auprès de l'archevêque Adalbert, dont il prend le nom.", "certainty": "sur"},
+      {"place": "Prague", "lat": 50.09, "lon": 14.42, "from": 981, "to": 989, "note": "Évêque en 983, investi à Vérone, sacré à Mayence ; se heurte aux mœurs des Tchèques.", "certainty": "sur"},
+      {"place": "Mont-Cassin et Valleluce", "lat": 41.49, "lon": 13.81, "from": 989, "to": 990, "note": "Voulait aller à Jérusalem ; les moines et Nil de Rossano le renvoient vers Rome.", "certainty": "sur"},
+      {"place": "Rome (Aventin)", "lat": 41.89, "lon": 12.48, "from": 990, "to": 992, "note": "Moine aux Saints-Boniface-et-Alexis.", "certainty": "sur"},
+      {"place": "Prague", "lat": 50.09, "lon": 14.42, "from": 992, "to": 994, "note": "Rappelé ; fonde Břevnov (993) ; nouveau conflit après un asile violé.", "certainty": "sur"},
+      {"place": "Esztergom (Hongrie)", "lat": 47.79, "lon": 18.74, "from": 994, "to": 995, "note": "Séjour à la cour de Géza ; il aurait baptisé ou confirmé le jeune Étienne.", "certainty": "probable"},
+      {"place": "Rome (Aventin)", "lat": 41.89, "lon": 12.48, "from": 995, "to": 996, "note": "Retour au monastère ; proche d'Otton III et de Gerbert d'Aurillac ; sa famille est massacrée à Libice.", "certainty": "sur"},
+      {"place": "Gniezno (Pologne)", "lat": 52.53, "lon": 17.60, "from": 996, "to": 997, "note": "Accueilli par Boleslas le Vaillant, qui l'envoie chez les Prussiens.", "certainty": "sur"},
+      {"place": "Truso (Prusse)", "lat": 54.16, "lon": 19.40, "from": 997, "to": 997, "note": "Tué le 23 avril 997 par des Prussiens, pour avoir foulé un bois sacré.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "nil-de-rossano", "where": "Valleluce (Mont-Cassin)", "year": 990, "note": "Nil refuse de le garder chez des Latins et l'envoie, avec une lettre, à l'abbé Léon de l'Aventin."},
+      {"with": "etienne-de-hongrie", "where": "Esztergom", "year": 995, "note": "Selon la Grande Légende d'Étienne, Adalbert baptise ou confirme le jeune prince ; tradition non confirmée par la Vita d'Adalbert."},
+      {"with": "bruno-de-querfurt", "where": "Rome et cour d'Otton III", "year": 996, "note": "Bruno, chapelain d'Otton III, croise Adalbert à la cour impériale et deviendra son biographe."}
+    ],
+    "blurb": "Évêque de Prague qui démissionne deux fois, moine à Rome, hôte des Hongrois et des Polonais, martyr chez les Prussiens : Adalbert est le saint patron de quatre pays qui ne sont pas d'accord entre eux.",
+    "fun": "Boleslas de Pologne aurait racheté son corps aux Prussiens à son poids en or. Trois ans plus tard, l'empereur Otton III vient pieds nus à Gniezno se recueillir sur la tombe de son ami.",
+    "sources": ["https://fr.wikipedia.org/wiki/Adalbert_de_Prague"]
+  },
+  {
+    "id": "bruno-de-querfurt",
+    "name": "Bruno",
+    "full": "Saint Bruno de Querfurt",
+    "feast": "03-09",
+    "feast_note": "15 octobre chez les orthodoxes",
+    "born": 974, "died": 1009,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Querfurt, Saxe",
+    "role": "archevêque martyr",
+    "sex": "m",
+    "languages": [
+      {"code": "goh", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "pol", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Querfurt", "lat": 51.38, "lon": 11.60, "from": 974, "to": 986, "note": "Fils du comte Bruno, parent d'Otton III.", "certainty": "sur"},
+      {"place": "Magdebourg", "lat": 52.13, "lon": 11.63, "from": 986, "to": 995, "note": "École cathédrale, chanoine.", "certainty": "sur"},
+      {"place": "Rome (cour d'Otton III)", "lat": 41.90, "lon": 12.50, "from": 996, "to": 998, "note": "Chapelain impérial ; témoin de la mort d'Adalbert (997), il entre aux Saints-Boniface-et-Alexis.", "certainty": "sur"},
+      {"place": "Rome (Aventin)", "lat": 41.89, "lon": 12.48, "from": 998, "to": 1001, "note": "Moine sous le nom de Boniface.", "certainty": "sur"},
+      {"place": "Pereum (Ravenne)", "lat": 44.42, "lon": 12.20, "from": 1001, "to": 1002, "note": "Ermite auprès de Romuald ; il envoie deux frères fonder Międzyrzecz en Pologne.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1002, "to": 1004, "note": "Attend sa nomination, apprend le slave ; Sylvestre II le fait « archevêque des gentils ».", "certainty": "sur"},
+      {"place": "Magdebourg", "lat": 52.13, "lon": 11.63, "from": 1004, "to": 1004, "note": "Sacré archevêque par Tagino en février 1004 ; Henri II est en guerre contre la Pologne.", "certainty": "sur"},
+      {"place": "Hongrie (Esztergom, Csanád)", "lat": 47.79, "lon": 18.74, "from": 1004, "to": 1007, "note": "Mission chez les « Hongrois noirs » et auprès d'Ajtony ; rédige sa Vie d'Adalbert.", "certainty": "sur"},
+      {"place": "Kiev", "lat": 50.45, "lon": 30.52, "from": 1008, "to": 1008, "note": "Un mois chez Vladimir, qui l'escorte jusqu'au rempart de la steppe.", "certainty": "sur"},
+      {"place": "Steppe petchenègue", "lat": 47.50, "lon": 31.50, "from": 1008, "to": 1008, "note": "Cinq mois chez les nomades, une trentaine de baptêmes, une paix négociée avec Kiev.", "certainty": "sur"},
+      {"place": "Gniezno (Pologne)", "lat": 52.53, "lon": 17.60, "from": 1008, "to": 1008, "note": "Chez Boleslas ; écrit la Vie des Cinq Frères et sa lettre à Henri II.", "certainty": "sur"},
+      {"place": "Yotvingie (Suwałki)", "lat": 54.11, "lon": 22.93, "from": 1009, "to": 1009, "note": "Décapité avec dix-huit compagnons le 9 mars 1009, à la frontière de la Prusse et de la Rus'.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "adalbert-de-prague", "where": "Rome et cour d'Otton III", "year": 996, "note": "Le jeune chapelain croise l'évêque exilé ; il écrira deux versions de sa Vie."},
+      {"with": "vladimir-de-kiev", "where": "Kiev", "year": 1008, "note": "Vladimir l'héberge un mois, le met en garde, puis le conduit lui-même à la frontière petchenègue."},
+      {"with": "etienne-de-hongrie", "where": "Hongrie", "year": 1005, "note": "Mission de trois ans dans le royaume d'Étienne ; l'entrevue avec le roi est probable, mais non décrite par les sources."}
+    ],
+    "blurb": "Chapelain d'empereur, ermite camaldule, puis archevêque sans diocèse qui court de Hongrie en Ukraine et chez les nomades petchenègues avant de mourir en Prusse : Bruno est le missionnaire le plus kilométrique de l'an mil.",
+    "fun": "Dans sa lettre à Henri II, il ose reprocher à l'empereur de s'allier aux païens liutices contre la Pologne chrétienne. Il raconte aussi que, chez les Petchenègues, on faillit le tuer avant de l'écouter, « car Dieu voulait que je souffre un peu ».",
+    "sources": ["https://fr.wikipedia.org/wiki/Bruno_de_Querfurt", "https://en.wikipedia.org/wiki/Bruno_of_Querfurt"]
+  },
+  {
+    "id": "nil-de-rossano",
+    "name": "Nil",
+    "full": "Saint Nil de Rossano",
+    "feast": "09-26",
+    "feast_note": "",
+    "born": 910, "died": 1004,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Rossano, Calabre byzantine",
+    "role": "abbé ermite",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "lat", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Rossano", "lat": 39.58, "lon": 16.63, "from": 910, "to": 940, "note": "Nicolas, lettré de bonne famille, marié et père d'une fille.", "certainty": "sur"},
+      {"place": "Mercurion (Pollino)", "lat": 39.80, "lon": 15.91, "from": 940, "to": 950, "note": "Moine sous le nom de Nil, auprès des ermites du Mercurion ; calligraphe hors pair.", "certainty": "probable"},
+      {"place": "Saint-Adrien (San Demetrio Corone)", "lat": 39.57, "lon": 16.36, "from": 950, "to": 981, "note": "Higoumène d'une communauté près de Rossano ; refuse l'archevêché.", "certainty": "sur"},
+      {"place": "Valleluce (Mont-Cassin)", "lat": 41.54, "lon": 13.86, "from": 981, "to": 994, "note": "Chassé par les Sarrasins, accueilli quinze ans sur une terre offerte par l'abbé Aligerne ; il y reçoit Adalbert.", "certainty": "sur"},
+      {"place": "Serperi (Gaète)", "lat": 41.21, "lon": 13.57, "from": 994, "to": 998, "note": "Nouvel ermitage sur la côte.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 998, "to": 998, "note": "Plaide pour l'antipape Jean Philagathos, son compatriote mutilé ; maudit Grégoire V et Otton III.", "certainty": "sur"},
+      {"place": "Serperi (Gaète)", "lat": 41.21, "lon": 13.57, "from": 998, "to": 1004, "note": "Otton III vient le visiter pieds nus et lui offre ce qu'il veut : « le salut de ton âme », répond Nil.", "certainty": "sur"},
+      {"place": "Grottaferrata (Tusculum)", "lat": 41.79, "lon": 12.67, "from": 1004, "to": 1004, "note": "Fonde l'abbaye grecque de Grottaferrata et meurt à Sainte-Agathe de Tusculum, à près de cent ans.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "adalbert-de-prague", "where": "Valleluce (Mont-Cassin)", "year": 990, "note": "Adalbert vient lui demander l'habit ; Nil, hôte des Latins, l'adresse au monastère de l'Aventin."}
+    ],
+    "blurb": "Un Grec de Calabre qui traverse le Xe siècle entier, fonde la dernière abbaye byzantine du Latium à quatre-vingt-quatorze ans et fait la leçon à un empereur.",
+    "fun": "Otton III, venu à pied lui demander une faveur à lui accorder, s'entend répondre : « Je ne te demande rien, sinon le salut de ton âme. » Grottaferrata célèbre encore la liturgie en grec, mille ans plus tard.",
+    "sources": ["https://fr.wikipedia.org/wiki/Nil_de_Rossano", "https://en.wikipedia.org/wiki/Nilus_the_Younger"]
+  },
+  {
+    "id": "athanase-l-athonite",
+    "name": "Athanase",
+    "full": "Saint Athanase l'Athonite",
+    "feast": "07-05",
+    "feast_note": "",
+    "born": 930, "died": 1000,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Trébizonde, Empire byzantin",
+    "role": "moine fondateur",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Trébizonde", "lat": 41.00, "lon": 39.72, "from": 930, "to": 945, "note": "Abramios, orphelin de haute naissance.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 945, "to": 952, "note": "Études, puis chaire de professeur : trop d'élèves, il s'enfuit.", "certainty": "sur"},
+      {"place": "Mont Kyminas (Bithynie)", "lat": 40.20, "lon": 29.60, "from": 952, "to": 957, "note": "Disciple de Michel Maleinos, dont le neveu Nicéphore Phocas devient son ami.", "certainty": "probable"},
+      {"place": "Mont Athos", "lat": 40.17, "lon": 24.38, "from": 958, "to": 960, "note": "Ermite incognito sous le nom de Barnabé, démasqué par les envoyés de Nicéphore.", "certainty": "sur"},
+      {"place": "Crète (Chandax)", "lat": 35.34, "lon": 25.13, "from": 961, "to": 961, "note": "Appelé par Nicéphore pendant la reconquête de l'île.", "certainty": "sur"},
+      {"place": "Mont Athos", "lat": 40.17, "lon": 24.38, "from": 961, "to": 969, "note": "Fonde la Grande Laure (963) avec l'or de la Crète ; Nicéphore devenu empereur ne viendra jamais.", "certainty": "sur"},
+      {"place": "Chypre", "lat": 35.17, "lon": 33.36, "from": 969, "to": 971, "note": "Fuite après l'assassinat de Nicéphore, jusqu'à la charte de Jean Tzimiskès (971).", "certainty": "probable"},
+      {"place": "Mont Athos", "lat": 40.17, "lon": 24.38, "from": 971, "to": 1000, "note": "Higoumène bâtisseur ; écrasé le 5 juillet 1000 par la coupole de son église en chantier.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Un professeur de Constantinople qui fuit ses élèves, se cache sur l'Athos et y fonde, avec l'or du butin de Crète, la première grande laure : la république des moines commence avec lui.",
+    "fun": "Il meurt sur son chantier, écrasé par la coupole qu'il bâtissait de ses mains : maçon, charpentier et higoumène. Son ami Nicéphore Phocas lui avait promis de le rejoindre comme moine, puis a préféré le trône.",
+    "sources": ["https://fr.wikipedia.org/wiki/Athanase_l%27Athonite"]
+  },
+  {
+    "id": "hilarion-le-georgien",
+    "name": "Hilarion",
+    "full": "Saint Hilarion le Géorgien",
+    "feast": "12-02",
+    "feast_note": "19 novembre dans l'ancien calendrier",
+    "born": 822, "died": 875,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Kakhétie, Géorgie",
+    "role": "moine pèlerin",
+    "sex": "m",
+    "languages": [
+      {"code": "kat", "level": "natif"},
+      {"code": "grc", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Kakhétie (Telavi)", "lat": 41.92, "lon": 45.47, "from": 822, "to": 838, "note": "Fils de nobles, moine dès l'adolescence.", "certainty": "sur"},
+      {"place": "David Garedja", "lat": 41.45, "lon": 45.38, "from": 838, "to": 845, "note": "Ermite dans les grottes du désert de Garedja, puis higoumène.", "certainty": "sur"},
+      {"place": "Laure de Saint-Sabas (Judée)", "lat": 31.70, "lon": 35.33, "from": 845, "to": 852, "note": "Pèlerin au Thabor et au Jourdain, puis sept ans dans une grotte de la laure.", "certainty": "sur"},
+      {"place": "Kakhétie (Telavi)", "lat": 41.92, "lon": 45.47, "from": 852, "to": 860, "note": "Retour au pays, fondation d'un monastère de femmes pour sa mère et sa sœur.", "certainty": "probable"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 860, "to": 864, "note": "Passage dans la capitale avant de gagner la Bithynie.", "certainty": "probable"},
+      {"place": "Mont Olympe de Bithynie", "lat": 40.07, "lon": 29.22, "from": 864, "to": 869, "note": "Fonde une laure pour les moines géorgiens, d'abord mal reçu par les Grecs.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 869, "to": 871, "note": "Deux ans de pèlerinage sur les tombes des apôtres.", "certainty": "probable"},
+      {"place": "Thessalonique", "lat": 40.64, "lon": 22.94, "from": 871, "to": 875, "note": "Dernières années dans un monastère de la ville ; Basile Ier fera transférer ses reliques à Constantinople.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Un Géorgien qui prie dans le désert de Garedja, puis en Judée, en Bithynie et à Rome avant de finir à Thessalonique : Hilarion a tracé la route que suivront les moines géorgiens de l'Athos.",
+    "fun": "Sa Vita raconte que les moines grecs de l'Olympe voulurent chasser cet étranger ; une apparition les convainquit de le garder. L'empereur Basile Ier, impressionné, fonda pour ses reliques le monastère de Romana à Constantinople.",
+    "sources": ["https://en.wikipedia.org/wiki/Hilarion_the_Iberian"]
+  },
+  {
+    "id": "etienne-de-hongrie",
+    "name": "Étienne",
+    "full": "Saint Étienne Ier de Hongrie",
+    "feast": "08-16",
+    "feast_note": "20 août en Hongrie (translation des reliques, 1083)",
+    "born": 975, "died": 1038,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Esztergom, Hongrie",
+    "role": "roi fondateur",
+    "sex": "m",
+    "languages": [
+      {"code": "hun", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "goh", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Esztergom", "lat": 47.79, "lon": 18.74, "from": 975, "to": 996, "note": "Vajk, fils du grand-prince Géza ; baptisé Étienne, peut-être par Adalbert.", "certainty": "sur"},
+      {"place": "Scheyern (Bavière)", "lat": 48.50, "lon": 11.46, "from": 996, "to": 996, "note": "Mariage avec Gisèle de Bavière, sœur du futur Henri II.", "certainty": "probable"},
+      {"place": "Esztergom", "lat": 47.79, "lon": 18.74, "from": 996, "to": 998, "note": "Grand-prince à la mort de Géza (997).", "certainty": "sur"},
+      {"place": "Veszprém", "lat": 47.09, "lon": 17.91, "from": 998, "to": 998, "note": "Victoire sur son cousin païen Koppány, dont le corps est écartelé et exposé.", "certainty": "probable"},
+      {"place": "Esztergom", "lat": 47.79, "lon": 18.74, "from": 998, "to": 1003, "note": "Couronné roi le 25 décembre 1000 ou le 1er janvier 1001 avec une couronne envoyée par le pape.", "certainty": "sur"},
+      {"place": "Gyulafehérvár (Transylvanie)", "lat": 46.07, "lon": 23.57, "from": 1003, "to": 1003, "note": "Campagne contre son oncle Gyula, annexion de la Transylvanie.", "certainty": "probable"},
+      {"place": "Esztergom", "lat": 47.79, "lon": 18.74, "from": 1003, "to": 1018, "note": "Dix évêchés, comitats, lois, monastères ; accueil de Bruno de Querfurt et de Gérard.", "certainty": "sur"},
+      {"place": "Székesfehérvár", "lat": 47.19, "lon": 18.41, "from": 1018, "to": 1038, "note": "Nouvelle capitale et basilique ; perd son fils Émeric (1031) ; meurt le 15 août 1038.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "adalbert-de-prague", "where": "Esztergom", "year": 995, "note": "Selon la Grande Légende, Adalbert le baptise ou le confirme ; tradition hongroise, non confirmée du côté tchèque."},
+      {"with": "bruno-de-querfurt", "where": "Hongrie", "year": 1005, "note": "Bruno missionne trois ans dans son royaume ; la rencontre est probable mais les sources n'en gardent pas le détail."}
+    ],
+    "blurb": "Prince païen baptisé Étienne, roi couronné à Noël de l'an mil : il fait entrer les Hongrois dans la chrétienté latine, impose dix évêchés, et lègue son royaume à la Vierge faute d'héritier.",
+    "fun": "Sa main droite momifiée, la Sainte Dextre, défile encore à Budapest chaque 20 août. La « couronne de saint Étienne » conservée au Parlement est en réalité postérieure, mais personne n'ose trop le dire.",
+    "sources": ["https://fr.wikipedia.org/wiki/%C3%89tienne_Ier_de_Hongrie"]
+  }
+]

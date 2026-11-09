@@ -1,4 +1,4 @@
-/* Portulan des saints : carte, sélecteurs, rencontre, verdict. Aucune dépendance. */
+/* Portulan des saints : carte, sélecteurs, rencontre, verdict. Bilingue FR/EN. Aucune dépendance. */
 (function () {
   'use strict';
   const SVGNS = 'http://www.w3.org/2000/svg';
@@ -9,23 +9,121 @@
   const X = lon => (lon - LON0) * SX, Y = lat => (LAT1 - lat) * SY;
   const P = (lon, lat) => [X(lon), Y(lat)];
 
-  const LANG = {
-    lat: 'latin', grc: 'grec', syc: 'syriaque', cop: 'copte', hye: 'arménien', xcl: 'arménien', kat: 'géorgien',
-    sga: 'vieil irlandais', gla: 'gaélique', cym: 'brittonique', bre: 'breton', cor: 'cornique', ang: 'vieil anglais',
-    enm: 'moyen anglais', non: 'vieux norrois', got: 'gotique', frk: 'francique', goh: 'vieux haut-allemand',
-    gmh: 'moyen haut-allemand', odt: 'vieux néerlandais', fro: 'ancien français', frm: 'moyen français', xno: 'anglo-normand',
-    oci: 'occitan', cat: 'catalan', spa: 'castillan', por: 'galaïco-portugais', ita: 'italien', chu: 'vieux slave',
-    orv: 'vieux russe', pol: 'vieux polonais', ces: 'vieux tchèque', srp: 'serbe', bul: 'bulgare', hun: 'hongrois',
-    fin: 'finnois', kom: 'komi', ara: 'arabe', fas: 'persan', pal: 'moyen-perse', heb: 'hébreu', arc: 'araméen',
-    tur: 'turc', kip: 'kiptchak', mon: 'mongol', ber: 'berbère', mal: 'malayalam', gez: 'guèze', egy: 'égyptien',
-    rom: 'roman commun', xtg: 'gaulois', khz: 'khazar', sla: 'slave', dan: 'vieux danois', swe: 'vieux suédois',
-    isl: 'vieil islandais', lit: 'lituanien', prg: 'vieux prussien', est: 'estonien', alb: 'albanais', ron: 'roumain',
-    sem: 'sémitique', xpr: 'parthe', sog: 'sogdien', uig: 'ouïghour', zho: 'chinois', tam: 'tamoul', san: 'sanskrit',
-    pli: 'pali', nub: 'nubien', wln: 'wallon', frp: 'francoprovençal', sco: 'scots', lad: 'ladin', fur: 'frioulan'
+  /* ---------- Langues (de l'interface et des saints) ---------- */
+  const LANG_NAMES = {
+    fr: { lat: 'latin', grc: 'grec', syc: 'syriaque', cop: 'copte', hye: 'arménien', xcl: 'arménien', kat: 'géorgien', sga: 'vieil irlandais', gla: 'gaélique', cym: 'brittonique', bre: 'breton', cor: 'cornique', ang: 'vieil anglais', enm: 'moyen anglais', non: 'vieux norrois', got: 'gotique', frk: 'francique', goh: 'vieux haut-allemand', gmh: 'moyen haut-allemand', odt: 'vieux néerlandais', fro: 'ancien français', frm: 'moyen français', xno: 'anglo-normand', oci: 'occitan', cat: 'catalan', spa: 'castillan', por: 'galaïco-portugais', ita: 'italien', chu: 'vieux slave', orv: 'vieux russe', pol: 'vieux polonais', ces: 'vieux tchèque', srp: 'serbe', bul: 'bulgare', hun: 'hongrois', fin: 'finnois', kom: 'komi', ara: 'arabe', fas: 'persan', pal: 'moyen-perse', heb: 'hébreu', arc: 'araméen', tur: 'turc', kip: 'kiptchak', mon: 'mongol', ber: 'berbère', mal: 'malayalam', gez: 'guèze', egy: 'égyptien', rom: 'roman commun', xtg: 'gaulois', khz: 'khazar', sla: 'slave', dan: 'vieux danois', swe: 'vieux suédois', isl: 'vieil islandais', lit: 'lituanien', prg: 'vieux prussien', est: 'estonien', alb: 'albanais', ron: 'roumain', xpr: 'parthe', sog: 'sogdien', uig: 'ouïghour', zho: 'chinois', tam: 'tamoul', san: 'sanskrit', nub: 'nubien', wln: 'wallon', frp: 'francoprovençal', sco: 'scots', lad: 'ladin', fur: 'frioulan' },
+    en: { lat: 'Latin', grc: 'Greek', syc: 'Syriac', cop: 'Coptic', hye: 'Armenian', xcl: 'Armenian', kat: 'Georgian', sga: 'Old Irish', gla: 'Gaelic', cym: 'Brittonic', bre: 'Breton', cor: 'Cornish', ang: 'Old English', enm: 'Middle English', non: 'Old Norse', got: 'Gothic', frk: 'Frankish', goh: 'Old High German', gmh: 'Middle High German', odt: 'Old Dutch', fro: 'Old French', frm: 'Middle French', xno: 'Anglo-Norman', oci: 'Occitan', cat: 'Catalan', spa: 'Castilian', por: 'Galician-Portuguese', ita: 'Italian', chu: 'Old Church Slavonic', orv: 'Old East Slavic', pol: 'Old Polish', ces: 'Old Czech', srp: 'Serbian', bul: 'Bulgarian', hun: 'Hungarian', fin: 'Finnish', kom: 'Komi', ara: 'Arabic', fas: 'Persian', pal: 'Middle Persian', heb: 'Hebrew', arc: 'Aramaic', tur: 'Turkish', kip: 'Kipchak', mon: 'Mongolian', ber: 'Berber', mal: 'Malayalam', gez: 'Geʿez', egy: 'Egyptian', rom: 'Common Romance', xtg: 'Gaulish', khz: 'Khazar', sla: 'Slavic', dan: 'Old Danish', swe: 'Old Swedish', isl: 'Old Icelandic', lit: 'Lithuanian', prg: 'Old Prussian', est: 'Estonian', alb: 'Albanian', ron: 'Romanian', xpr: 'Parthian', sog: 'Sogdian', uig: 'Uyghur', zho: 'Chinese', tam: 'Tamil', san: 'Sanskrit', nub: 'Nubian', wln: 'Walloon', frp: 'Franco-Provençal', sco: 'Scots', lad: 'Ladin', fur: 'Friulian' }
   };
   const LEVEL = { natif: 3, courant: 2, notions: 1 };
-  const LEVEL_WORD = { natif: 'langue maternelle', courant: 'couramment', notions: 'quelques notions' };
-  const MONTHS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+
+  const I18N = {
+    fr: {
+      eyebrow: 'Carte marine à l\'usage des curieux', title: 'Portulan des saints',
+      sub: 'Deux saints du calendrier auraient-ils pu se croiser de leur vivant ? Choisissez-en deux : la carte trace leurs chemins, cherche le carrefour et devine en quelle langue ils se seraient parlé.',
+      first: 'Premier saint', second: 'Second saint', redInk: 'encre rouge', greenInk: 'encre verte',
+      random: 'Tirer deux saints au sort', today: 'Les saints du jour', swap: 'Échanger', fit: 'Cadrer', all: 'Tout',
+      hint: 'Molette ou pincement pour zoomer, glisser pour déplacer. Les noms des petits ports apparaissent en zoomant.',
+      colophon: 'Itinéraires reconstitués d\'après les vies des saints (Wikipédia, notices hagiographiques) : les dates sont souvent approximatives et certains voyages relèvent de la légende, signalée comme telle. Trait de côte Natural Earth. Dessin inspiré du portulan de Vesconte Maggiolo (1541) et de l\'Atlas catalan (1375).',
+      byName: 'Par nom', byDate: 'Par date de fête', searchPh: 'Un nom, un lieu, un siècle…', searchAria: 'Chercher un saint par nom', month: 'Mois', day: 'Jour',
+      none: 'Aucun saint ne répond à cet appel.', noneOnDay: d => `Aucun saint du portulan n'est fêté le ${d}. Les plus proches :`,
+      feast: d => `fête le ${d}`, nobody: 'Personne pour l\'instant : tapez un nom, un lieu (« Irlande », « Rome ») ou un siècle (« 7e »).',
+      months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+      dayLabel: (d, m) => (d === 1 ? '1er' : d) + ' ' + m, circa: 'v. ', year: t => `an ${t}`,
+      level: { natif: 'langue maternelle', courant: 'couramment', notions: 'quelques notions' },
+      how: { natif: 'langue maternelle', courant: 'couramment', notions: 'avec quelques notions' },
+      tradition: { catholique: 'catholique', orthodoxe: 'orthodoxe', commune: 'vénéré des deux côtés' },
+      legend: 'légende', probable: 'probable', attested: 'rencontre attestée', inTransit: 'de passage',
+      tipStop: (place, years, legend, note) => `${place} (${years})${legend ? ' · légende' : ''}\n${note || ''}`,
+      pawnAge: (n, age) => `${n}, ${age} ans`, pawnUnborn: (n, f) => `${n} (pas encore né${f ? 'e' : ''})`, pawnDead: (n, y) => `${n} († ${y})`,
+      pawnMoving: (n, a, b) => `${n} voyage de ${a} vers ${b}`, pawnAt: (n, p) => `${n} est à ${p}`,
+      missing: 'Il manque un second saint', missingLede: 'Choisissez-en un autre pour savoir s\'ils auraient pu se croiser.',
+      neverHead: gap => `Impossible : ${gap >= 100 ? Math.round(gap / 100) + ' siècle' + (gap >= 150 ? 's' : '') : gap + ' ans'} les séparent`,
+      neverLede: (f, fd, s, gap, sb) => `Quand ${f} meurt en ${fd}, ${s} ne naîtra que ${gap} ans plus tard, en ${sb}.`,
+      samePlacesOtherTimes: 'Mêmes lieux, autres temps', samePlacesOtherYears: 'Mêmes lieux, autres années', missed: 'Les occasions manquées', crossroads: 'Les carrefours', sources: 'Ce que disent les sources',
+      sharedNever: (place, A, ra, B, rb, gap) => `${place} : ${A} y est ${ra}, ${B} ${rb}. Ils ont peut-être foulé les mêmes dalles, à ${gap} ans d'écart.`,
+      sharedMissed: (place, A, ra, B, rb, gap) => `${place} : ${A} ${ra}, ${B} ${rb} : raté de ${gap} an${gap > 1 ? 's' : ''}.`,
+      rangeIn: y => `en ${y}`, rangeFromTo: (a, b) => `de ${a} à ${b}`,
+      twoWorlds: 'Leurs chemins ne passent même pas par les mêmes villes. Deux mondes.',
+      noCross: 'Leurs itinéraires ne se recoupent nulle part. Il aurait fallu une lettre, ou un pèlerinage de plus.',
+      onlyNear: d => `Aucune ville commune, seulement ce voisinage de ${d} km.`,
+      contemporaries: (n, a, b) => `Contemporains pendant ${n} an${n > 1 ? 's' : ''} (${a} à ${b}).`,
+      meetHead: place => `Rencontre possible à ${place}`,
+      meetLede: (when, transit, A, ageA, B, ageB, contemp) => `${when}${transit ? ', l\'un des deux étant de passage' : ''}. ${A} a alors ${ageA} ans, ${B} en a ${ageB}. ${contemp}`,
+      whenIn: y => `En ${y}`, whenBetween: (a, b) => `Entre ${a} et ${b}`,
+      nearHead: km => `Presque : ${km} km les séparent au plus près`,
+      nearLede: (y, A, pa, B, pb, contemp) => `Vers ${y}, ${A} est à ${pa} et ${B} à ${pb} : quelques jours de marche, mais personne n'a fait le détour. ${contemp}`,
+      apartHead: 'Contemporains, mais jamais à portée de voix',
+      apartLede: (contemp, km, y) => `${contemp} Au plus près, ${km} km les séparent vers ${y}.`,
+      onTheWay: 'en chemin',
+      langHead: 'En quelle langue ?',
+      langNone: (A, la, B, lb) => `Aucune langue commune : il aurait fallu un interprète, ou beaucoup de gestes. ${A} parle ${la} ; ${B} parle ${lb}.`,
+      langIntro: hyp => hyp ? 'S\'ils avaient été contemporains, ils auraient pu se parler' : 'Ils auraient pu se parler',
+      langIn: l => ` en <b>${l}</b>`,
+      langSame: { natif: ', leur langue maternelle à tous deux.', courant: ', que tous deux pratiquent couramment.', notions: ', avec des notions de part et d\'autre : conversation laborieuse mais possible.' },
+      langDiff: (ha, A, hb, B) => ` : ${ha} pour ${A}, ${hb} pour ${B}.`,
+      todayTwo: (d, names, more) => `Aujourd'hui ${d} : ${names}${more ? ' (les deux premiers sont affichés)' : ''}.`,
+      todayOne: (d, n, other, od) => `Aujourd'hui ${d} : ${n}. Pour lui tenir compagnie, le plus proche au calendrier : ${other} (${od}).`,
+      todayNone: (d, list) => `Personne du portulan n'est fêté ce ${d}. Les plus proches au calendrier : ${list}.`,
+      and: ' et ', count: (n, a, b, c) => `${n} saints et saintes, de ${a} à ${b}, ${c} lieux nommés.`,
+      play: 'Faire défiler les années', pause: 'Arrêter', zoomIn: 'Agrandir', zoomOut: 'Réduire',
+      stTitle: s => (s.sex === 'f' ? 'sainte ' : 'saint ') + s.name
+    },
+    en: {
+      eyebrow: 'A sea chart for the curious', title: 'Portolan of the Saints',
+      sub: 'Could two saints of the calendar have met in their lifetimes? Pick two: the chart draws their journeys, looks for the crossroads and guesses which language they would have spoken.',
+      first: 'First saint', second: 'Second saint', redInk: 'red ink', greenInk: 'green ink',
+      random: 'Draw two saints at random', today: 'Today\'s saints', swap: 'Swap', fit: 'Frame', all: 'All',
+      hint: 'Scroll or pinch to zoom, drag to pan. Small ports show their names as you zoom in.',
+      colophon: 'Itineraries reconstructed from the lives of the saints (Wikipedia, hagiographical notices): dates are often approximate and some journeys belong to legend, flagged as such. Coastlines from Natural Earth. Drawing inspired by Vesconte Maggiolo\'s portolan chart (1541) and the Catalan Atlas (1375).',
+      byName: 'By name', byDate: 'By feast day', searchPh: 'A name, a place, a century…', searchAria: 'Search a saint by name', month: 'Month', day: 'Day',
+      none: 'No saint answers that call.', noneOnDay: d => `No saint of this chart is celebrated on ${d}. The nearest:`,
+      feast: d => `feast on ${d}`, nobody: 'Nobody yet: type a name, a place ("Ireland", "Rome") or a century ("7th").',
+      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      dayLabel: (d, m) => d + ' ' + m, circa: 'c. ', year: t => `AD ${t}`,
+      level: { natif: 'mother tongue', courant: 'fluent', notions: 'some notions' },
+      how: { natif: 'mother tongue', courant: 'fluently', notions: 'with some notions' },
+      tradition: { catholique: 'Catholic', orthodoxe: 'Orthodox', commune: 'venerated by both' },
+      legend: 'legend', probable: 'probable', attested: 'documented meeting', inTransit: 'passing through',
+      tipStop: (place, years, legend, note) => `${place} (${years})${legend ? ' · legend' : ''}\n${note || ''}`,
+      pawnAge: (n, age) => `${n}, aged ${age}`, pawnUnborn: n => `${n} (not yet born)`, pawnDead: (n, y) => `${n} († ${y})`,
+      pawnMoving: (n, a, b) => `${n} travels from ${a} to ${b}`, pawnAt: (n, p) => `${n} is in ${p}`,
+      missing: 'A second saint is missing', missingLede: 'Pick another one to find out whether they could have met.',
+      neverHead: gap => `Impossible: ${gap >= 100 ? Math.round(gap / 100) + (gap >= 150 ? ' centuries' : ' century') : gap + ' years'} apart`,
+      neverLede: (f, fd, s, gap, sb) => `When ${f} dies in ${fd}, ${s} will not be born for another ${gap} years, in ${sb}.`,
+      samePlacesOtherTimes: 'Same places, other times', samePlacesOtherYears: 'Same places, other years', missed: 'Missed opportunities', crossroads: 'The crossroads', sources: 'What the sources say',
+      sharedNever: (place, A, ra, B, rb, gap) => `${place}: ${A} is there ${ra}, ${B} ${rb}. They may have trodden the same flagstones, ${gap} years apart.`,
+      sharedMissed: (place, A, ra, B, rb, gap) => `${place}: ${A} ${ra}, ${B} ${rb}: missed by ${gap} year${gap > 1 ? 's' : ''}.`,
+      rangeIn: y => `in ${y}`, rangeFromTo: (a, b) => `from ${a} to ${b}`,
+      twoWorlds: 'Their paths do not even pass through the same towns. Two worlds.',
+      noCross: 'Their routes never overlap. It would have taken a letter, or one more pilgrimage.',
+      onlyNear: d => `No town in common, only this ${d} km proximity.`,
+      contemporaries: (n, a, b) => `Contemporaries for ${n} year${n > 1 ? 's' : ''} (${a} to ${b}).`,
+      meetHead: place => `A meeting was possible in ${place}`,
+      meetLede: (when, transit, A, ageA, B, ageB, contemp) => `${when}${transit ? ', one of them passing through' : ''}. ${A} is then ${ageA}, ${B} is ${ageB}. ${contemp}`,
+      whenIn: y => `In ${y}`, whenBetween: (a, b) => `Between ${a} and ${b}`,
+      nearHead: km => `Almost: ${km} km apart at their closest`,
+      nearLede: (y, A, pa, B, pb, contemp) => `Around ${y}, ${A} is in ${pa} and ${B} in ${pb}: a few days\' walk, but nobody made the detour. ${contemp}`,
+      apartHead: 'Contemporaries, but never within earshot',
+      apartLede: (contemp, km, y) => `${contemp} At their closest, ${km} km separate them around ${y}.`,
+      onTheWay: 'on the road',
+      langHead: 'In which language?',
+      langNone: (A, la, B, lb) => `No common language: they would have needed an interpreter, or a lot of gestures. ${A} speaks ${la}; ${B} speaks ${lb}.`,
+      langIntro: hyp => hyp ? 'Had they been contemporaries, they could have talked' : 'They could have talked',
+      langIn: l => ` in <b>${l}</b>`,
+      langSame: { natif: ', the mother tongue of both.', courant: ', which both speak fluently.', notions: ', with notions on both sides: a laborious but possible conversation.' },
+      langDiff: (ha, A, hb, B) => `: ${ha} for ${A}, ${hb} for ${B}.`,
+      todayTwo: (d, names, more) => `Today, ${d}: ${names}${more ? ' (the first two are shown)' : ''}.`,
+      todayOne: (d, n, other, od) => `Today, ${d}: ${n}. To keep company, the nearest in the calendar: ${other} (${od}).`,
+      todayNone: (d, list) => `Nobody on this chart is celebrated on ${d}. The nearest in the calendar: ${list}.`,
+      and: ' and ', count: (n, a, b, c) => `${n} saints, from ${a} to ${b}, ${c} named places.`,
+      play: 'Play the years', pause: 'Pause', zoomIn: 'Zoom in', zoomOut: 'Zoom out',
+      stTitle: s => 'St ' + F(s, 'name')
+    }
+  };
+  let lang = 'fr';
+  const T = () => I18N[lang];
+  const F = (o, field) => (lang === 'en' && o[field + '_en']) ? o[field + '_en'] : o[field];
+  const langName = code => LANG_NAMES[lang][code] || LANG_NAMES.fr[code] || code;
 
   const saints = DATA.saints.slice().sort((a, b) => a.born - b.born);
   const byId = Object.fromEntries(saints.map(s => [s.id, s]));
@@ -48,9 +146,10 @@
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const roman = n => { const t = [[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'], [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'], [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']]; let r = ''; for (const [v, s] of t) while (n >= v) { r += s; n -= v; } return r; };
   const haversine = (a, b) => { const R = 6371, d2r = Math.PI / 180; const dLat = (b.lat - a.lat) * d2r, dLon = (b.lon - a.lon) * d2r; const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * d2r) * Math.cos(b.lat * d2r) * Math.sin(dLon / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
-  const feastLabel = f => { const [m, d] = f.split('-').map(Number); return (d === 1 ? '1er' : d) + ' ' + MONTHS[m - 1]; };
-  const datesLabel = s => (s.approx ? 'v. ' : '') + s.born + ' – ' + s.died;
-  const nameWithSaint = s => (s.sex === 'f' ? 'sainte ' : 'saint ') + s.name;
+  const feastLabel = f => { const [m, d] = f.split('-').map(Number); return T().dayLabel(d, T().months[m - 1]); };
+  const datesLabel = s => (s.approx ? T().circa : '') + s.born + ' – ' + s.died;
+  const shortPlace = p => String(p).replace(/\s*\(.*\)$/, '');
+  const stopPlace = st => shortPlace(F(st, 'place'));
 
   /* ---------- Position d'un saint à une date ---------- */
   function posAt(s, t) {
@@ -81,7 +180,6 @@
   const layers = {};
 
   function parchmentPath() {
-    // peau de vélin : bords légèrement irréguliers, « cou » à gauche comme chez Maggiolo
     const x0 = -34, y0 = -42, x1 = MAP_W + 34, y1 = MAP_H + 42;
     return `M ${x0 + 60} ${y0} Q ${MAP_W / 2} ${y0 - 6} ${x1 - 70} ${y0 + 2} Q ${x1 + 4} ${y0 + 10} ${x1} ${y0 + 80}
       L ${x1 + 3} ${y1 - 90} Q ${x1} ${y1 + 4} ${x1 - 80} ${y1} Q ${MAP_W / 2} ${y1 + 8} ${x0 + 90} ${y1 - 2} Q ${x0 - 2} ${y1 - 6} ${x0} ${y1 - 120}
@@ -112,59 +210,42 @@
     const vig = svg('radialGradient', { id: 'vignette', cx: '50%', cy: '50%', r: '72%' }, defs);
     svg('stop', { offset: '55%', 'stop-color': '#7a5a30', 'stop-opacity': 0 }, vig);
     svg('stop', { offset: '100%', 'stop-color': '#6b4a26', 'stop-opacity': .28 }, vig);
-    // symbole : petite ville à tours
     const town = svg('symbol', { id: 'town', viewBox: '0 0 20 18' }, defs);
     svg('path', { d: 'M2 17 V9 H6 V5 H8 V9 H12 V5 H14 V9 H18 V17 Z', fill: '#e8b48a', stroke: '#6b4a2b', 'stroke-width': .9 }, town);
     svg('path', { d: 'M8 17 V12 H12 V17 Z', fill: '#6b4a2b' }, town);
     svg('path', { d: 'M9.5 5 V1 L13 2.3 L9.5 3.6 Z', fill: '#b4372b' }, town);
     svg('path', { d: 'M9.5 1 V5', stroke: '#6b4a2b', 'stroke-width': .6 }, town);
-    // symbole : bateau
     const ship = svg('symbol', { id: 'ship', viewBox: '0 0 40 36' }, defs);
     svg('path', { class: 'ship', d: 'M4 24 Q20 30 36 24 L33 32 Q20 36 7 32 Z' }, ship);
     svg('path', { d: 'M20 24 V4', stroke: '#5b3f28', 'stroke-width': 1 }, ship);
     svg('path', { class: 'ship-sail', d: 'M20 6 Q32 12 28 22 L20 22 Z' }, ship);
     svg('path', { class: 'ship-sail', d: 'M20 8 Q10 14 13 22 L20 22 Z' }, ship);
     svg('path', { class: 'ship-flag', d: 'M20 4 L27 6 L20 8 Z' }, ship);
+    const palm = svg('symbol', { id: 'palm', viewBox: '0 0 20 24' }, defs);
+    svg('path', { d: 'M10 23 Q9 14 10 8', stroke: '#6b4a2b', 'stroke-width': 1.4, fill: 'none' }, palm);
+    ['M10 8 Q4 6 1 10 Q6 8 10 9', 'M10 8 Q16 6 19 10 Q14 8 10 9', 'M10 8 Q5 2 4 3 Q8 4 10 8', 'M10 8 Q15 2 16 3 Q12 4 10 8', 'M10 8 Q10 1 12 1 Q10 4 10 8'].forEach(d => svg('path', { d, fill: '#5d8244', stroke: '#3d5f2c', 'stroke-width': .4 }, palm));
 
     const root = svg('g', { 'clip-path': 'url(#skin)' }, chart);
-    const skin = svg('path', { d: parchmentPath(), fill: '#efe4c9' }, root);
+    svg('path', { d: parchmentPath(), fill: '#efe4c9' }, root);
     svg('path', { d: parchmentPath(), fill: 'url(#grain)' }, root);
-    layers.water = svg('g', { id: 'l-water' }, root);
-    layers.land = svg('g', { id: 'l-land' }, root);
-    layers.rhumbs = svg('g', { id: 'l-rhumbs' }, root);
-    layers.rivers = svg('g', { id: 'l-rivers' }, root);
-    layers.coast = svg('g', { id: 'l-coast' }, root);
-    layers.lakes = svg('g', { id: 'l-lakes' }, root);
-    layers.mountains = svg('g', { id: 'l-mountains' }, root);
-    layers.cities = svg('g', { id: 'l-cities' }, root);
-    layers.labels = svg('g', { id: 'l-labels' }, root);
-    layers.deco = svg('g', { id: 'l-deco' }, root);
-    layers.meet = svg('g', { id: 'l-meet' }, root);
-    layers.routes = svg('g', { id: 'l-routes' }, root);
-    layers.pawns = svg('g', { id: 'l-pawns' }, root);
+    ['water', 'land', 'rhumbs', 'rivers', 'coast', 'lakes', 'mountains', 'cities', 'labels', 'deco', 'meet', 'routes', 'pawns'].forEach(k => { layers[k] = svg('g', { id: 'l-' + k }, root); });
     svg('path', { d: parchmentPath(), fill: 'url(#vignette)', 'pointer-events': 'none' }, root);
     svg('path', { d: parchmentPath(), fill: 'none', stroke: '#6b4a2b', 'stroke-width': 1.4, opacity: .6 }, chart);
-
     drawWater(); drawLand(); drawRhumbs(); drawRivers(); drawMountains(); drawCities(); drawLabels(); drawDeco();
   }
-
   function ringPath(pts) { return 'M' + pts.map(p => fmt(X(p[0])) + ' ' + fmt(Y(p[1]))).join('L') + 'Z'; }
   function polyPath(pts) { return 'M' + pts.map(p => X(p[0]).toFixed(1) + ' ' + Y(p[1]).toFixed(1)).join('L'); }
-
   function drawWater() {
-    // la mer Rouge, peinte en rouge comme sur tous les portulans ; la terre dessinée par-dessus rogne les bords
     const red = [[32.3, 30.2], [34.6, 29.6], [35.2, 28], [37, 25], [38.6, 22], [40, 18.5], [42, 15.5], [43.6, 12.6], [43.4, 12.2], [41.5, 13.8], [39.8, 16.5], [38.6, 20], [36.6, 23.5], [34.6, 27.5], [33.9, 28.6], [32.9, 29.4]];
     svg('path', { d: ringPath(red), fill: '#c4473a', opacity: .85 }, layers.water);
   }
   function drawLand() {
     const outer = DATA.land.filter(r => !r.hole), holes = DATA.land.filter(r => r.hole);
-    svg('path', { class: 'land', d: outer.map(r => ringPath(r.pts)).join(''), 'fill-rule': 'evenodd' }, layers.land);
-    svg('path', { class: 'coast-glow', d: outer.map(r => ringPath(r.pts)).join('') }, layers.coast);
-    svg('path', { class: 'coast', d: outer.map(r => ringPath(r.pts)).join('') }, layers.coast);
-    // les trous du continent sont des lacs : Caspienne, Aral, Baïkal… en bleu comme chez Maggiolo
-    for (const h of holes) {
-      svg('path', { d: ringPath(h.pts), fill: '#5f8fb8', stroke: '#2f4a63', 'stroke-width': .6, opacity: .9 }, layers.lakes);
-    }
+    const d = outer.map(r => ringPath(r.pts)).join('');
+    svg('path', { class: 'land', d, 'fill-rule': 'evenodd' }, layers.land);
+    svg('path', { class: 'coast-glow', d }, layers.coast);
+    svg('path', { class: 'coast', d }, layers.coast);
+    for (const h of holes) svg('path', { d: ringPath(h.pts), fill: '#5f8fb8', stroke: '#2f4a63', 'stroke-width': .6, opacity: .9 }, layers.lakes);
   }
   function drawRhumbs() {
     const cx = X(17), cy = Y(39), R = 430, L = 2600;
@@ -175,12 +256,11 @@
       for (let k = 0; k < 32; k++) {
         const a = k * Math.PI / 16;
         const cls = k % 4 === 0 ? 'main' : (k % 2 === 0 ? 'half' : 'quarter');
-        if (ni > 0 && cls === 'quarter' && (ni % 2 === 0)) continue;   // on allège un peu le réseau
+        if (ni > 0 && cls === 'quarter' && (ni % 2 === 0)) continue;
         groups[cls].push(`M${nx.toFixed(1)} ${ny.toFixed(1)}l${(L * Math.cos(a)).toFixed(1)} ${(L * Math.sin(a)).toFixed(1)}`);
       }
     });
     for (const k in groups) svg('path', { class: 'rhumb-' + k, d: groups[k].join(''), fill: 'none' }, layers.rhumbs);
-    // nœuds : petites étoiles à 8 branches
     nodes.slice(1).forEach(([nx, ny]) => star(layers.rhumbs, nx, ny, 7, 8, '#b23a2c', '#5b3f28'));
   }
   function star(parent, cx, cy, r, n, c1, c2) {
@@ -209,21 +289,26 @@
     for (let k = 2; k < 32; k += 4) kite(k * Math.PI / 16 - Math.PI / 2, r * 0.75, r * 0.08, '#6f8fc4', '#3a5c98');
     for (let k = 0; k < 32; k += 4) kite(k * Math.PI / 16 - Math.PI / 2, r, r * 0.11, '#f0d9a0', k === 0 ? '#b4372b' : '#2f2418');
     svg('circle', { cx, cy, r: r * 0.09, fill: '#c08f36', stroke: '#3b2a1b', 'stroke-width': .4 }, g);
-    // fleur de lys au nord
     const fy = cy - r * 1.02, s = r * 0.16;
     svg('path', { d: `M${cx} ${fy - s * 1.6} C${cx - s * .9} ${fy - s * .6} ${cx - s * 1.2} ${fy + s * .2} ${cx - s * .3} ${fy + s * .1} L${cx} ${fy + s * .9} L${cx + s * .3} ${fy + s * .1} C${cx + s * 1.2} ${fy + s * .2} ${cx + s * .9} ${fy - s * .6} ${cx} ${fy - s * 1.6}Z`, fill: '#b4372b', stroke: '#3b2a1b', 'stroke-width': .4 }, g);
     return g;
   }
-  function drawRivers() {
-    const d = DATA.rivers.map(r => polyPath(r.pts)).join('');
-    svg('path', { class: 'river', d }, layers.rivers);
+  function tent(parent, cx, cy, w, h, c1, c2) {
+    // tente de souverain, comme celles du Sahara et de Tartarie chez Maggiolo
+    const g = svg('g', null, parent);
+    svg('path', { d: `M${cx - w / 2} ${cy} L${cx} ${cy - h} L${cx + w / 2} ${cy} Z`, fill: c1, stroke: '#3b2a1b', 'stroke-width': .6 }, g);
+    for (let i = -2; i <= 2; i++) svg('path', { d: `M${cx} ${cy - h} L${cx + i * w / 6} ${cy}`, stroke: c2, 'stroke-width': 1.1 }, g);
+    svg('path', { d: `M${cx - w / 2} ${cy} Q${cx} ${cy + h * .18} ${cx + w / 2} ${cy}`, fill: c2, stroke: '#3b2a1b', 'stroke-width': .5 }, g);
+    svg('path', { d: `M${cx - w * .12} ${cy} L${cx} ${cy - h * .4} L${cx + w * .12} ${cy} Z`, fill: '#2f2418' }, g);
+    svg('path', { d: `M${cx} ${cy - h} V${cy - h - 6} L${cx + 5} ${cy - h - 4.5} L${cx} ${cy - h - 3}`, fill: '#b4372b', stroke: '#3b2a1b', 'stroke-width': .4 }, g);
+    return g;
   }
+  function drawRivers() { svg('path', { class: 'river', d: DATA.rivers.map(r => polyPath(r.pts)).join('') }, layers.rivers); }
   function drawMountains() {
     for (const f of DATA.places.features || []) {
       if (f.type !== 'mountain' || !f.points || f.points.length < 2) continue;
       const pts = f.points.map(p => P(p[0], p[1]));
       const g = svg('g', { class: 'range' }, layers.mountains);
-      // chenille : bosses régulières le long de l'axe
       let acc = 0, step = 6;
       for (let i = 0; i < pts.length - 1; i++) {
         const [x0, y0] = pts[i], [x1, y1] = pts[i + 1];
@@ -237,14 +322,13 @@
       }
       if (f.name) {
         const mid = pts[Math.floor(pts.length / 2)];
-        svg('text', { class: 'region-label', x: mid[0].toFixed(1), y: (mid[1] + 16).toFixed(1), 'font-size': 8, style: 'letter-spacing:.1em' }, g).textContent = f.name;
+        svg('text', { class: 'region-label', x: mid[0].toFixed(1), y: (mid[1] + 14).toFixed(1), 'font-size': 7, style: 'letter-spacing:.1em' }, g).textContent = f.name;
       }
     }
   }
   function labelTransform(c) {
     const [x, y] = P(c.lon, c.lat);
     const off = c.tier === 1 ? 5 : 3.2;
-    // nom écrit vers l'intérieur des terres, perpendiculairement à la côte, comme sur les portulans
     switch (c.coastal ? c.side : null) {
       case 'N': return { x: x + 2, y: y + off, rot: 90, anchor: 'start' };
       case 'S': return { x: x - 2, y: y - off, rot: -90, anchor: 'start' };
@@ -283,39 +367,37 @@
     compassRose(layers.deco, X(8), Y(21), 34);
     compassRose(layers.deco, X(100), Y(64), 30);
     compassRose(layers.deco, X(17), Y(39), 14);
-    // navires
-    [[-21, 56], [-15, 36], [-22, 26], [60, 14], [78, 8], [-10, 48]].forEach(([lon, lat], i) => {
+    [[-21, 56], [-15, 36], [-22, 26], [60, 14], [78, 8], [-10, 48], [90, 16]].forEach(([lon, lat], i) => {
       const [x, y] = P(lon, lat); svg('use', { href: '#ship', x: x - 12, y: y - 12, width: 24, height: 22, transform: i % 2 ? `scale(-1 1) translate(${-2 * x} 0)` : null }, layers.deco);
     });
-    // un monstre marin dans l'océan Indien
-    const [mx, my] = P(90, 9);
+    const [mx, my] = P(92, 9);
     svg('path', { class: 'monster', d: `M${mx} ${my} c-8 -10 -18 -8 -22 0 c6 -3 10 -1 12 3 c-6 2 -10 8 -6 12 c2 -5 6 -7 10 -5 c4 6 12 6 16 -2 c-4 2 -7 0 -8 -4 c6 -1 10 -5 8 -10 c-2 4 -6 6 -10 6z` }, layers.deco);
     svg('circle', { cx: mx - 18, cy: my - 5, r: 1, fill: '#1c2a3a' }, layers.deco);
-    // cartouche de titre, en haut à gauche, et échelle de lieues en bas
+    // tentes des souverains : Sahara (Maggiolo) et Grand Khan en Tartarie
+    [[-2, 23, '#3a5c98', '#e3c37a'], [6, 22, '#b4372b', '#e3c37a'], [14, 22.5, '#c08f36', '#3a5c98'], [22, 23, '#3a5c98', '#b4372b'], [30, 21.5, '#b4372b', '#f0d9a0']].forEach(([lon, lat, c1, c2]) => { const [x, y] = P(lon, lat); tent(layers.deco, x, y, 26, 20, c1, c2); });
+    [[70, 50, '#b4372b', '#e3c37a'], [78, 48.5, '#3a5c98', '#e3c37a'], [86, 50.5, '#c08f36', '#b4372b']].forEach(([lon, lat, c1, c2]) => { const [x, y] = P(lon, lat); tent(layers.deco, x, y, 30, 24, c1, c2); });
+    // palmiers en Arabie et au Sahara
+    [[46, 23], [50, 20], [10, 27], [-3, 27], [54, 25]].forEach(([lon, lat]) => { const [x, y] = P(lon, lat); svg('use', { href: '#palm', x: x - 7, y: y - 16, width: 14, height: 17 }, layers.deco); });
+    // cartouche de titre et échelle
     const g = svg('g', { transform: `translate(${X(-24)} ${Y(70)})` }, layers.deco);
     svg('rect', { x: 0, y: 0, width: 230, height: 54, fill: '#f6ecd4', stroke: '#5b3f28', 'stroke-width': 1, rx: 2 }, g);
     svg('rect', { x: 4, y: 4, width: 222, height: 46, fill: 'none', stroke: '#c08f36', 'stroke-width': 1 }, g);
-    svg('text', { class: 'cartouche-text', x: 115, y: 22, 'font-size': 15 }, g).textContent = 'Portulan des saints';
+    svg('text', { class: 'cartouche-text', id: 'cartouche-title', x: 115, y: 22, 'font-size': 15 }, g).textContent = 'Portulan des saints';
     svg('text', { class: 'cartouche-text', x: 115, y: 40, 'font-size': 9, style: 'font-family: var(--font-body); font-style: italic; letter-spacing: .02em' }, g).textContent = 'ubi sancti convenire potuissent';
-    const sx = X(-24), sy = Y(6);
-    const sg = svg('g', { transform: `translate(${sx} ${sy})` }, layers.deco);
+    const sg = svg('g', { transform: `translate(${X(-24)} ${Y(6)})` }, layers.deco);
     svg('rect', { x: 0, y: 0, width: 220, height: 8, fill: '#f6ecd4', stroke: '#5b3f28', 'stroke-width': .8 }, sg);
     for (let i = 0; i < 10; i++) svg('rect', { x: i * 22, y: 0, width: 22, height: 8, fill: i % 2 ? '#5b3f28' : 'none' }, sg);
     for (let i = 0; i <= 10; i++) svg('line', { x1: i * 22, y1: 8, x2: i * 22, y2: 12, stroke: '#5b3f28', 'stroke-width': .6 }, sg);
     svg('text', { class: 'scale-text', x: 0, y: 20 }, sg).textContent = '0';
-    svg('text', { class: 'scale-text', x: 220, y: 20, 'text-anchor': 'end' }, sg).textContent = '1000 milles (≈ 1 850 km à cette latitude)';
-    // bandeaux dorés haut et bas
-    const bandTop = svg('rect', { x: -40, y: -46, width: MAP_W + 80, height: 7, fill: '#d9a84a', opacity: .8 }, layers.deco);
+    svg('text', { class: 'scale-text', id: 'scale-label', x: 220, y: 20, 'text-anchor': 'end' }, sg).textContent = '1000 milia';
+    svg('rect', { x: -40, y: -46, width: MAP_W + 80, height: 7, fill: '#d9a84a', opacity: .8 }, layers.deco);
     svg('rect', { x: -40, y: MAP_H + 36, width: MAP_W + 80, height: 7, fill: '#d9a84a', opacity: .8 }, layers.deco);
-    void bandTop;
   }
 
   /* ---------- Zoom et déplacement ---------- */
   function applyView() {
     chart.setAttribute('viewBox', `${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}`);
     chart.classList.toggle('zoomed', VIEW0.w / view.w > 2.1);
-    const k = Math.max(1, Math.min(2.4, Math.sqrt(VIEW0.w / view.w)));
-    chart.style.setProperty('--k', k);
   }
   let anim = null;
   function animateTo(target, ms) {
@@ -342,8 +424,7 @@
     const r = chart.getBoundingClientRect();
     const mx = view.x + (px - r.left) / r.width * view.w, my = view.y + (py - r.top) / r.height * view.h;
     const nw = view.w * factor;
-    const t = clampView({ x: mx - (mx - view.x) * factor, y: my - (my - view.y) * factor, w: nw, h: nw * VIEW0.h / VIEW0.w });
-    animateTo(t, 160);
+    animateTo(clampView({ x: mx - (mx - view.x) * factor, y: my - (my - view.y) * factor, w: nw, h: nw * VIEW0.h / VIEW0.w }), 160);
   }
   function fitTo(points, pad) {
     if (!points.length) return animateTo({ ...VIEW0 }, 600);
@@ -363,7 +444,7 @@
       pointers.set(e.pointerId, [e.clientX, e.clientY]);
       const r = chart.getBoundingClientRect();
       if (pointers.size === 2 && pinch) {
-        const [a, b] = [...pointers.values()]; const d = Math.hypot(a[0] - b[0], a[1] - b[1]);
+        const [a, b] = [...pointers.values()]; const d = Math.hypot(a[0] - b[0], a[1] - b[1]) || 1;
         const cx = (a[0] + b[0]) / 2, cy = (a[1] + b[1]) / 2;
         const mx = view.x + (cx - r.left) / r.width * view.w, my = view.y + (cy - r.top) / r.height * view.h;
         const nw = pinch.w * pinch.d / d, f = nw / view.w;
@@ -384,47 +465,53 @@
   }
 
   /* ---------- Sélection ---------- */
-  const state = { a: null, b: null, year: null, playing: false };
+  const state = { a: null, b: null, year: null };
   const slots = ['a', 'b'];
+  const pickers = {};
 
+  function resultButton(s, slot, metaText) {
+    const b = el('button', { type: 'button', role: 'option' });
+    b.appendChild(el('span', { class: 'r-name', text: F(s, 'name') }));
+    b.appendChild(el('span', { class: 'r-dates', text: datesLabel(s) }));
+    b.appendChild(el('span', { class: 'r-meta', text: metaText }));
+    b.addEventListener('click', () => { select(slot, s.id); pickers[slot].clear(); });
+    return el('li', null, [b]);
+  }
   function buildPicker(slot) {
     const body = $(`.picker-${slot} .picker-body`);
     const modes = el('div', { class: 'modes', role: 'tablist' });
-    const tabName = el('button', { type: 'button', role: 'tab', 'aria-selected': 'true', text: 'Par nom' });
-    const tabDate = el('button', { type: 'button', role: 'tab', 'aria-selected': 'false', text: 'Par date de fête' });
+    const tabName = el('button', { type: 'button', role: 'tab', 'aria-selected': 'true', 'data-i18n': 'byName', text: T().byName });
+    const tabDate = el('button', { type: 'button', role: 'tab', 'aria-selected': 'false', 'data-i18n': 'byDate', text: T().byDate });
     modes.append(tabName, tabDate);
     const search = el('div', { class: 'search' });
-    const input = el('input', { type: 'search', id: `search-${slot}`, placeholder: 'Un nom, un lieu, un siècle…', autocomplete: 'off', 'aria-label': 'Chercher un saint par nom' });
+    const input = el('input', { type: 'search', id: `search-${slot}`, autocomplete: 'off' });
     search.appendChild(input);
     const datepick = el('div', { class: 'datepick', hidden: '' });
-    const selM = el('select', { id: `month-${slot}`, 'aria-label': 'Mois' }); const selD = el('select', { id: `day-${slot}`, 'aria-label': 'Jour' });
-    MONTHS.forEach((m, i) => selM.appendChild(el('option', { value: i + 1, text: m })));
+    const selM = el('select', { id: `month-${slot}` }); const selD = el('select', { id: `day-${slot}` });
     for (let d = 1; d <= 31; d++) selD.appendChild(el('option', { value: d, text: d }));
     datepick.append(selD, selM);
     const results = el('ul', { class: 'results', role: 'listbox' });
     const chosen = el('div', { class: 'chosen' });
     body.append(modes, search, datepick, results, chosen);
-
+    let mode = 'name';
+    const fillMonths = () => { const v = selM.value || 1; selM.innerHTML = ''; T().months.forEach((m, i) => selM.appendChild(el('option', { value: i + 1, text: m }))); selM.value = v; };
+    const relabel = () => {
+      input.placeholder = T().searchPh; input.setAttribute('aria-label', T().searchAria);
+      selM.setAttribute('aria-label', T().month); selD.setAttribute('aria-label', T().day); fillMonths();
+    };
     const show = list => {
       results.innerHTML = '';
-      if (!list.length) { results.appendChild(el('li', { class: 'r-empty', text: 'Aucun saint ne répond à cet appel.' })); return; }
-      list.slice(0, 40).forEach(s => {
-        const b = el('button', { type: 'button', role: 'option' });
-        b.appendChild(el('span', { class: 'r-name', text: s.name }));
-        b.appendChild(el('span', { class: 'r-dates', text: datesLabel(s) }));
-        b.appendChild(el('span', { class: 'r-meta', text: `${s.role}, ${s.origin} · fête le ${feastLabel(s.feast)}` }));
-        b.addEventListener('click', () => { select(slot, s.id); results.innerHTML = ''; input.value = ''; });
-        results.appendChild(el('li', null, [b]));
-      });
+      if (!list.length) { results.appendChild(el('li', { class: 'r-empty', text: T().none })); return; }
+      list.slice(0, 40).forEach(s => results.appendChild(resultButton(s, slot, `${F(s, 'role')}, ${F(s, 'origin')} · ${T().feast(feastLabel(s.feast))}`)));
     };
     const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
     input.addEventListener('input', () => {
       const q = norm(input.value.trim());
       if (!q) { results.innerHTML = ''; return; }
-      const century = q.match(/^(\d{1,2})e?$/);
+      const century = q.match(/^(\d{1,2})(e|er|th|st|nd|rd)?$/);
       show(saints.filter(s => {
         if (century) { const c = Number(century[1]); return Math.floor((s.born - 1) / 100) + 1 === c || Math.floor((s.died - 1) / 100) + 1 === c; }
-        return norm(`${s.name} ${s.full} ${s.origin} ${s.role} ${s.born}`).includes(q);
+        return norm(`${s.name} ${s.full} ${s.origin} ${s.role} ${s.name_en || ''} ${s.full_en || ''} ${s.origin_en || ''} ${s.role_en || ''} ${s.born}`).includes(q);
       }));
     });
     input.addEventListener('focus', () => { if (!input.value) show(saints.filter(s => s.id !== state[slot === 'a' ? 'b' : 'a'])); });
@@ -435,72 +522,64 @@
       if (e.key === 'ArrowUp') { e.preventDefault(); (i > 0 ? items[i - 1] : input).focus(); }
       if (e.key === 'Escape') { results.innerHTML = ''; input.focus(); }
     });
-    document.addEventListener('click', e => { if (!body.contains(e.target)) results.innerHTML = ''; });
+    document.addEventListener('click', e => { if (!body.contains(e.target) && mode === 'name') results.innerHTML = ''; });
     const byDate = () => {
       const key = String(selM.value).padStart(2, '0') + '-' + String(selD.value).padStart(2, '0');
       const hits = saints.filter(s => s.feast === key);
       if (hits.length) return show(hits);
       results.innerHTML = '';
-      results.appendChild(el('li', { class: 'r-empty', text: `Aucun saint du portulan n'est fêté le ${feastLabel(key)}. Les plus proches :` }));
-      const near = nearestFeasts(key, 5);
-      near.forEach(s => {
-        const b = el('button', { type: 'button', role: 'option' });
-        b.appendChild(el('span', { class: 'r-name', text: s.name }));
-        b.appendChild(el('span', { class: 'r-dates', text: datesLabel(s) }));
-        b.appendChild(el('span', { class: 'r-meta', text: `fête le ${feastLabel(s.feast)} · ${s.role}, ${s.origin}` }));
-        b.addEventListener('click', () => { select(slot, s.id); results.innerHTML = ''; });
-        results.appendChild(el('li', null, [b]));
-      });
+      results.appendChild(el('li', { class: 'r-empty', text: T().noneOnDay(feastLabel(key)) }));
+      nearestFeasts(key, 5).forEach(s => results.appendChild(resultButton(s, slot, `${T().feast(feastLabel(s.feast))} · ${F(s, 'role')}, ${F(s, 'origin')}`)));
     };
     selM.addEventListener('change', byDate); selD.addEventListener('change', byDate);
     const setMode = m => {
+      mode = m;
       tabName.setAttribute('aria-selected', String(m === 'name')); tabDate.setAttribute('aria-selected', String(m === 'date'));
       search.hidden = m !== 'name'; datepick.hidden = m !== 'date'; results.innerHTML = '';
       if (m === 'date') byDate();
     };
     tabName.addEventListener('click', () => setMode('name')); tabDate.addEventListener('click', () => setMode('date'));
-    search.hidden = false;
-    return { chosen, setDate(m, d) { selM.value = m; selD.value = d; setMode('date'); } };
+    relabel();
+    return { chosen, relabel, clear() { results.innerHTML = ''; input.value = ''; if (mode === 'date') byDate(); } };
   }
   function dayOfYear(key) { const [m, d] = key.split('-').map(Number); const cum = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]; return cum[m - 1] + d; }
   function nearestFeasts(key, n) {
     const d0 = dayOfYear(key);
     return saints.map(s => { let d = Math.abs(dayOfYear(s.feast) - d0); d = Math.min(d, 365 - d); return [d, s]; }).sort((a, b) => a[0] - b[0] || a[1].born - b[1].born).slice(0, n).map(x => x[1]);
   }
-
   function figureSVG(slot, s) {
-    // petite figure de saint : tête auréolée, habit coloré à l'encre du camp
     const color = slot === 'a' ? '#b4372b' : '#3f7a3c';
     return `<svg viewBox="0 0 46 60" width="46" height="60" aria-hidden="true"><circle cx="23" cy="14" r="12.5" fill="none" stroke="#c08f36" stroke-width="2"/><circle cx="23" cy="15" r="7" fill="#f3d9b5" stroke="#5b3f28" stroke-width=".8"/><path d="M9 58 L13 30 Q23 24 33 30 L37 58 Z" fill="${color}" stroke="#3b2a1b" stroke-width=".8"/>${s.sex === 'f' ? '<path d="M14 22 Q23 10 32 22 L31 30 Q23 26 15 30 Z" fill="#f6ecd4" stroke="#5b3f28" stroke-width=".7"/>' : ''}<path d="M23 34 V52 M17 41 H29" stroke="#f6ecd4" stroke-width="1.8" stroke-linecap="round"/></svg>`;
   }
-  function langChip(l, slotClass) {
-    return `<span class="lang ${l.level} ${slotClass || ''}">${esc(LANG[l.code] || l.code)} <small>${esc(LEVEL_WORD[l.level] || l.level)}</small></span>`;
-  }
   function renderChosen(slot) {
     const s = byId[state[slot]], box = pickers[slot].chosen;
-    if (!s) { box.innerHTML = '<p class="c-blurb" style="grid-column:1/-1;color:var(--muted);font-style:italic;margin:0">Personne pour l\'instant : tapez un nom, un lieu (« Irlande », « Rome ») ou un siècle (« 7e »).</p>'; return; }
+    if (!s) { box.innerHTML = `<p class="c-blurb" style="grid-column:1/-1;color:var(--muted);font-style:italic;margin:0">${esc(T().nobody)}</p>`; return; }
+    const note = F(s, 'feast_note');
     box.innerHTML = `<div class="figure">${figureSVG(slot, s)}</div>
-      <div class="c-name">${esc(s.name)}</div>
-      <div class="c-full">${esc(s.full)} · ${esc(s.role)}, ${esc(s.origin)}</div>
-      <div class="c-dates"><b>${esc(datesLabel(s))}</b> · fête le ${esc(feastLabel(s.feast))}${s.feast_note ? ' <span class="tag">' + esc(s.feast_note) + '</span>' : ''} · <span class="tag">${esc(s.tradition)}</span></div>
-      <p class="c-blurb">${esc(s.blurb)}</p>
-      <div class="c-langs">${s.languages.map(l => langChip(l)).join('')}</div>`;
+      <div class="c-name">${esc(F(s, 'name'))}</div>
+      <div class="c-full">${esc(F(s, 'full'))} · ${esc(F(s, 'role'))}, ${esc(F(s, 'origin'))}</div>
+      <div class="c-dates"><b>${esc(datesLabel(s))}</b> · ${esc(T().feast(feastLabel(s.feast)))}${note ? ' <span class="tag">' + esc(note) + '</span>' : ''} · <span class="tag">${esc(T().tradition[s.tradition] || s.tradition)}</span></div>
+      <p class="c-blurb">${esc(F(s, 'blurb'))}</p>
+      <div class="c-langs">${s.languages.map(l => `<span class="lang ${l.level}">${esc(langName(l.code))} <small>${esc(T().level[l.level] || l.level)}</small></span>`).join('')}</div>`;
   }
   function select(slot, id, opts) {
     if (!byId[id]) return;
-    if (state[slot === 'a' ? 'b' : 'a'] === id) { const other = slot === 'a' ? 'b' : 'a'; state[other] = state[slot]; renderChosen(other); }
+    const other = slot === 'a' ? 'b' : 'a';
+    if (state[other] === id) { state[other] = state[slot]; renderChosen(other); }
     state[slot] = id;
     renderChosen(slot);
     update(opts);
   }
+  function hashFor() { const h = [state.a, state.b].filter(Boolean).join('--'); return h ? '#' + h + (lang === 'en' ? '--en' : '') : ''; }
   function update(opts) {
     opts = opts || {};
+    stopPlay();
     drawRoutes();
     const v = verdict();
     renderVerdict(v);
     setupTimeline(v);
     if (!opts.keepView) fitRoutes();
-    if (!opts.noHash) { const h = [state.a, state.b].filter(Boolean).join('--'); if (h && location.hash.slice(1) !== h) history.replaceState(null, '', '#' + h); }
+    if (!opts.noHash) { const h = hashFor(); if (h && location.hash !== h) history.replaceState(null, '', h); }
   }
 
   /* ---------- Tracés ---------- */
@@ -522,23 +601,23 @@
         if (a.lat === b.lat && a.lon === b.lon) continue;
         svg('path', { class: 'route-travel ' + k, d: curve(P(a.lon, a.lat), P(b.lon, b.lat), bend) }, g);
       }
-      // regrouper les étapes au même endroit
       const seen = new Map();
       s.stops.forEach((st, i) => {
         const key = st.lat.toFixed(1) + ',' + st.lon.toFixed(1);
-        if (!seen.has(key)) seen.set(key, { st, nums: [], years: [] });
-        seen.get(key).nums.push(i + 1); seen.get(key).years.push(st.from === st.to ? String(st.from) : `${st.from}-${st.to}`);
-        if (st.certainty === 'legende') seen.get(key).legend = true;
+        if (!seen.has(key)) seen.set(key, { st, nums: [], years: [], notes: [] });
+        const e = seen.get(key);
+        e.nums.push(i + 1); e.years.push(st.from === st.to ? String(st.from) : `${st.from}-${st.to}`); if (F(st, 'note')) e.notes.push(F(st, 'note'));
+        if (st.certainty === 'legende') e.legend = true;
       });
       let j = 0;
-      for (const { st, nums, years, legend } of seen.values()) {
+      for (const { st, nums, years, notes, legend } of seen.values()) {
         const [x, y] = P(st.lon, st.lat);
         const c = svg('circle', { class: 'stop ' + k + (legend ? ' legende' : ''), cx: x.toFixed(1), cy: y.toFixed(1), r: nums.length > 1 ? 5.2 : 4.4 }, g);
-        svg('title', null, c).textContent = `${st.place} (${years.join(', ')})${legend ? ' · légende' : ''}\n${st.note || ''}`;
+        svg('title', null, c).textContent = T().tipStop(stopPlace(st), years.join(', '), legend, notes.join(' '));
         svg('text', { class: 'stop-num', x: x.toFixed(1), y: (y + 2.1).toFixed(1) }, g).textContent = nums.length > 2 ? nums[0] + '…' : nums.join('·');
-        const side = si === 0 ? -1 : 1, lx = x + 6 * (side < 0 ? -1 : 1), ly = y + (si === 0 ? -5 : 9) + (j % 2) * 4;
+        const side = si === 0 ? -1 : 1, lx = x + 6 * side, ly = y + (si === 0 ? -5 : 9) + (j % 2) * 4;
         const t = svg('text', { class: 'stop-label', x: lx.toFixed(1), y: ly.toFixed(1), 'text-anchor': side < 0 ? 'end' : 'start' }, g);
-        t.textContent = `${st.place.replace(/\s*\(.*\)$/, '')} ${years.length > 1 ? years[0] + '…' : years[0]}`;
+        t.textContent = `${stopPlace(st)} ${years.length > 1 ? years[0] + '…' : years[0]}`;
         j++;
       }
     });
@@ -549,9 +628,10 @@
       const [x, y] = P(w.lon, w.lat);
       svg('circle', { class: 'meet-halo', cx: x.toFixed(1), cy: y.toFixed(1), r: i === 0 ? 22 : 15 }, layers.meet);
       svg('circle', { class: 'meet-halo-ring', cx: x.toFixed(1), cy: y.toFixed(1), r: i === 0 ? 22 : 15, 'stroke-dasharray': '3 2' }, layers.meet);
-      if (i === 0) svg('text', { class: 'meet-label', x: x.toFixed(1), y: (y - 26).toFixed(1) }, layers.meet).textContent = `✶ ${w.placeName} · ${w.t0 === w.t1 ? w.t0 : w.t0 + '-' + w.t1}`;
+      if (i === 0) svg('text', { class: 'meet-label', x: x.toFixed(1), y: (y - 26).toFixed(1) }, layers.meet).textContent = `✶ ${placeName(w)} · ${w.t0 === w.t1 ? w.t0 : w.t0 + '-' + w.t1}`;
     });
   }
+  function placeName(w) { return w.stopRef ? stopPlace(w.stopRef) : w.city ? (w.city.modern || w.city.name) : T().onTheWay; }
 
   /* ---------- Rencontre ---------- */
   function verdict() {
@@ -559,37 +639,31 @@
     if (!A || !B) return { kind: 'incomplete', A, B };
     const start = Math.max(A.born, B.born), end = Math.min(A.died, B.died);
     const common = commonLanguages(A, B);
-    const attested = (A.met || []).filter(m => m.with === B.id).concat((B.met || []).filter(m => m.with === A.id).map(m => ({ ...m, reversed: true })));
+    const attested = (A.met || []).filter(m => m.with === B.id).concat((B.met || []).filter(m => m.with === A.id && !(A.met || []).some(x => x.with === B.id)));
     const sharedPlaces = sharedStops(A, B);
     if (start > end) {
       const first = A.died < B.born ? A : B, second = first === A ? B : A;
       return { kind: 'never', A, B, first, second, gap: second.born - first.died, common, sharedPlaces, attested };
     }
-    const windows = [], near = []; let minD = Infinity, minAt = null;
-    let cur = null, curNear = null;
+    const windows = [], near = []; let minD = Infinity, minAt = null, cur = null, curNear = null;
     for (let t = start; t <= end + 1e-9; t += 0.25) {
       const pa = posAt(A, t), pb = posAt(B, t);
       if (!pa || !pb) continue;
       const d = haversine(pa, pb);
       if (d < minD) { minD = d; minAt = { t, pa, pb }; }
-      if (d <= MEET_KM) {
-        if (!cur) cur = { t0: t, t1: t, samples: [] };
-        cur.t1 = t; cur.samples.push({ t, pa, pb, d });
-      } else if (cur) { windows.push(cur); cur = null; }
-      if (d <= NEAR_KM) { if (!curNear) curNear = { t0: t, t1: t, d, t: t }; curNear.t1 = t; if (d < curNear.d) { curNear.d = d; curNear.t = t; curNear.pa = pa; curNear.pb = pb; } }
+      if (d <= MEET_KM) { if (!cur) cur = { t0: t, t1: t, samples: [] }; cur.t1 = t; cur.samples.push({ t, pa, pb, d }); }
+      else if (cur) { windows.push(cur); cur = null; }
+      if (d <= NEAR_KM) { if (!curNear) curNear = { t0: t, t1: t, d, t }; curNear.t1 = t; if (d < curNear.d) { curNear.d = d; curNear.t = t; curNear.pa = pa; curNear.pb = pb; } }
       else if (curNear) { near.push(curNear); curNear = null; }
     }
     if (cur) windows.push(cur); if (curNear) near.push(curNear);
     for (const w of windows) {
       const mid = w.samples[Math.floor(w.samples.length / 2)];
-      const lat = (mid.pa.lat + mid.pb.lat) / 2, lon = (mid.pa.lon + mid.pb.lon) / 2;
-      w.lat = lat; w.lon = lon;
+      w.lat = (mid.pa.lat + mid.pb.lat) / 2; w.lon = (mid.pa.lon + mid.pb.lon) / 2;
       const stopA = mid.pa.stop, stopB = mid.pb.stop;
-      const city = nearestCity(lat, lon, 60);
-      w.placeName = stopA ? stopA.place : stopB ? stopB.place : city ? city.modern || city.name : 'en chemin';
-      w.placeName = w.placeName.replace(/\s*\(.*\)$/, '');
+      w.stopRef = stopA || stopB || null; w.city = w.stopRef ? null : nearestCity(w.lat, w.lon, 60);
       w.inTransit = !stopA || !stopB;
-      w.legend = (stopA && stopA.certainty === 'legende') || (stopB && stopB.certainty === 'legende') || (mid.pa.moving && (mid.pa.from.certainty === 'legende' || mid.pa.to.certainty === 'legende'));
+      w.legend = (stopA && stopA.certainty === 'legende') || (stopB && stopB.certainty === 'legende') || (mid.pa.moving && (mid.pa.from.certainty === 'legende' || mid.pa.to.certainty === 'legende')) || (mid.pb.moving && (mid.pb.from.certainty === 'legende' || mid.pb.to.certainty === 'legende'));
       w.probable = (stopA && stopA.certainty === 'probable') || (stopB && stopB.certainty === 'probable');
       w.t0 = Math.floor(w.t0); w.t1 = Math.floor(w.t1);
       w.ageA = Math.floor((w.t0 + w.t1) / 2) - A.born; w.ageB = Math.floor((w.t0 + w.t1) / 2) - B.born;
@@ -600,12 +674,8 @@
   function sharedStops(A, B) {
     const out = [];
     for (const a of A.stops) for (const b of B.stops) {
-      if (haversine(a, b) <= MEET_KM) {
-        const overlap = Math.min(a.to, b.to) - Math.max(a.from, b.from);
-        out.push({ a, b, gap: overlap >= 0 ? 0 : -overlap, place: a.place.replace(/\s*\(.*\)$/, '') });
-      }
+      if (haversine(a, b) <= MEET_KM) { const overlap = Math.min(a.to, b.to) - Math.max(a.from, b.from); out.push({ a, b, gap: overlap >= 0 ? 0 : -overlap }); }
     }
-    // une ligne par lieu, la plus proche dans le temps
     const best = new Map();
     for (const o of out) { const k = o.a.lat.toFixed(1) + o.a.lon.toFixed(1); if (!best.has(k) || best.get(k).gap > o.gap) best.set(k, o); }
     return [...best.values()].sort((x, y) => x.gap - y.gap);
@@ -619,67 +689,59 @@
 
   /* ---------- Verdict (texte) ---------- */
   const yr = t => `<span class="year">${t}</span>`;
-  const nm = (s, slot) => `<b class="${slot}">${esc(s.name)}</b>`;
+  const nm = (s, slot) => `<b class="${slot}">${esc(F(s, 'name'))}</b>`;
+  const range = st => st.from === st.to ? T().rangeIn(yr(st.from)) : T().rangeFromTo(yr(st.from), yr(st.to));
   function sealSVG(kind) {
     const c = { meet: '#c08f36', near: '#b4372b', apart: '#5b3f28', never: '#5b3f28', incomplete: '#9a8a70' }[kind];
     const glyph = { meet: '✶', near: '≈', apart: '∅', never: '⌛', incomplete: '?' }[kind];
     return `<svg class="seal" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="${c}" opacity=".18"/><circle cx="32" cy="32" r="29" fill="none" stroke="${c}" stroke-width="2"/><circle cx="32" cy="32" r="23" fill="none" stroke="${c}" stroke-width=".8" stroke-dasharray="2 2"/><text x="32" y="41" text-anchor="middle" font-size="26" font-family="serif" fill="${c}">${glyph}</text></svg>`;
   }
-  function langSection(v, hypothetical) {
-    const { A, B, common } = v;
-    if (!common.length) {
-      return `<h3>En quelle langue ?</h3><p>Aucune langue commune : il ${hypothetical ? 'aurait' : 'aurait'} fallu un interprète, ou beaucoup de gestes. ${nm(A, 'a')} parle ${A.languages.map(l => LANG[l.code] || l.code).join(', ')} ; ${nm(B, 'b')} parle ${B.languages.map(l => LANG[l.code] || l.code).join(', ')}.</p>`;
-    }
-    const best = common[0];
-    const how = l => l === 'natif' ? 'langue maternelle' : l === 'courant' ? 'couramment' : 'avec quelques notions';
-    const intro = hypothetical ? 'S\'ils avaient été contemporains, ils auraient pu se parler' : 'Ils auraient pu se parler';
-    let p = `${intro} en <b>${esc(LANG[best.code] || best.code)}</b>`;
-    if (best.la === best.lb) p += best.la === 'natif' ? ', leur langue maternelle à tous deux.' : best.la === 'courant' ? ', que tous deux pratiquent couramment.' : ', avec des notions de part et d\'autre : conversation laborieuse mais possible.';
-    else p += ` : ${how(best.la)} pour ${nm(A, 'a')}, ${how(best.lb)} pour ${nm(B, 'b')}.`;
-    const chips = common.map((l, i) => `<span class="lang ${i === 0 ? 'best' : ''}">${esc(LANG[l.code] || l.code)} <small>${esc(how(l.la))} / ${esc(how(l.lb))}</small></span>`).join('');
-    return `<h3>En quelle langue ?</h3><p>${p}</p><div class="v-lang-list">${chips}</div>`;
-  }
-  function funSection(A, B) {
-    return `<div class="v-fun"><p class="a">${nm(A, 'a')} : ${esc(A.fun || A.blurb)}</p><p class="b">${nm(B, 'b')} : ${esc(B.fun || B.blurb)}</p></div>`;
-  }
   function placeBtn(lon, lat, label) { return `<button type="button" class="place-btn" data-lon="${lon}" data-lat="${lat}">${esc(label)}</button>`; }
+  function langSection(v, hypothetical) {
+    const { A, B, common } = v, t = T();
+    if (!common.length) return `<h3>${t.langHead}</h3><p>${t.langNone(nm(A, 'a'), A.languages.map(l => langName(l.code)).join(', '), nm(B, 'b'), B.languages.map(l => langName(l.code)).join(', '))}</p>`;
+    const best = common[0];
+    let p = t.langIntro(hypothetical) + t.langIn(esc(langName(best.code)));
+    p += best.la === best.lb ? t.langSame[best.la] : t.langDiff(t.how[best.la], nm(A, 'a'), t.how[best.lb], nm(B, 'b'));
+    const chips = common.map((l, i) => `<span class="lang ${i === 0 ? 'best' : ''}">${esc(langName(l.code))} <small>${esc(t.how[l.la])} / ${esc(t.how[l.lb])}</small></span>`).join('');
+    return `<h3>${t.langHead}</h3><p>${p}</p><div class="v-lang-list">${chips}</div>`;
+  }
+  function sharedList(v, fn, emptyText) {
+    const { A, B } = v;
+    if (!v.sharedPlaces.length) return `<p>${emptyText}</p>`;
+    return '<ul>' + v.sharedPlaces.slice(0, 5).map(o => `<li>${fn(placeBtn(o.a.lon, o.a.lat, stopPlace(o.a)), nm(A, 'a'), range(o.a), nm(B, 'b'), range(o.b), o.gap)}</li>`).join('') + '</ul>';
+  }
   function renderVerdict(v) {
-    const box = $('#verdict');
-    if (v.kind === 'incomplete') {
-      box.innerHTML = v.A || v.B ? `<div class="verdict-head">${sealSVG('incomplete')}<h2>Il manque un second saint</h2><p class="lede">Choisissez-en un autre pour savoir s'ils auraient pu se croiser.</p></div>` : '';
-      drawMeet(v); return;
-    }
+    const box = $('#verdict'), t = T();
+    if (v.kind === 'incomplete') { box.innerHTML = v.A || v.B ? `<div class="verdict-head">${sealSVG('incomplete')}<h2>${t.missing}</h2><p class="lede">${t.missingLede}</p></div>` : ''; drawMeet(v); return; }
     const { A, B } = v;
     let head = '', left = '', right = '';
     if (v.kind === 'never') {
       const f = v.first, s = v.second, fs = f === A ? 'a' : 'b', ss = s === A ? 'a' : 'b';
-      const centuries = v.gap >= 100 ? `${Math.round(v.gap / 100)} siècle${v.gap >= 150 ? 's' : ''}` : `${v.gap} ans`;
-      head = `${sealSVG('never')}<h2>Impossible : ${centuries} les séparent</h2><p class="lede">Quand ${nm(f, fs)} meurt en ${yr(f.died)}, ${nm(s, ss)} ne naîtra que ${v.gap} ans plus tard, en ${yr(s.born)}.</p>`;
-      left = `<div><h3>Mêmes lieux, autres temps</h3>${v.sharedPlaces.length ? '<ul>' + v.sharedPlaces.slice(0, 5).map(o => `<li>${placeBtn(o.a.lon, o.a.lat, o.place)} : ${nm(A, 'a')} y est ${o.a.from === o.a.to ? 'en ' + yr(o.a.from) : 'de ' + yr(o.a.from) + ' à ' + yr(o.a.to)}, ${nm(B, 'b')} ${o.b.from === o.b.to ? 'en ' + yr(o.b.from) : 'de ' + yr(o.b.from) + ' à ' + yr(o.b.to)}. Ils ont peut-être foulé les mêmes dalles, à ${o.gap} ans d'écart.</li>`).join('') + '</ul>' : `<p>Leurs chemins ne passent même pas par les mêmes villes. Deux mondes.</p>`}</div>`;
+      head = `${sealSVG('never')}<h2>${t.neverHead(v.gap)}</h2><p class="lede">${t.neverLede(nm(f, fs), yr(f.died), nm(s, ss), v.gap, yr(s.born))}</p>`;
+      left = `<div><h3>${t.samePlacesOtherTimes}</h3>${sharedList(v, t.sharedNever, t.twoWorlds)}</div>`;
       right = `<div>${langSection(v, true)}</div>`;
     } else {
-      const years = v.end - v.start + 1;
-      const contemporaries = `Contemporains pendant ${years} an${years > 1 ? 's' : ''} (${yr(v.start)} à ${yr(v.end)}).`;
+      const years = v.end - v.start + 1, contemp = t.contemporaries(years, yr(v.start), yr(v.end));
       if (v.kind === 'meet') {
         const w = v.windows[0];
-        const when = w.t0 === w.t1 ? `en ${yr(w.t0)}` : `entre ${yr(w.t0)} et ${yr(w.t1)}`;
-        const badge = v.attested.length ? ` <span class="tag attested">rencontre attestée</span>` : w.legend ? ` <span class="tag">légende</span>` : w.probable ? ` <span class="tag">probable</span>` : '';
-        head = `${sealSVG('meet')}<h2>Rencontre possible à ${esc(w.placeName)}${badge}</h2><p class="lede">${when}${w.inTransit ? ', l\'un des deux étant de passage' : ''}. ${nm(A, 'a')} a alors ${w.ageA} ans, ${nm(B, 'b')} en a ${w.ageB}. ${contemporaries}</p>`;
-        left = `<div><h3>Les carrefours</h3><ul>${v.windows.slice(0, 6).map(x => `<li>${placeBtn(x.lon, x.lat, x.placeName)}, ${x.t0 === x.t1 ? 'en ' + yr(x.t0) : 'de ' + yr(x.t0) + ' à ' + yr(x.t1)}${x.inTransit ? ' (de passage)' : ''}${x.legend ? ' <span class="tag">légende</span>' : ''}</li>`).join('')}</ul>${v.attested.length ? `<h3>Ce que disent les sources</h3><ul>${v.attested.map(m => `<li>${esc(m.where || '')}${m.year ? ', ' + yr(m.year) : ''} : ${esc(m.note)}</li>`).join('')}</ul>` : ''}</div>`;
+        const when = w.t0 === w.t1 ? t.whenIn(yr(w.t0)) : t.whenBetween(yr(w.t0), yr(w.t1));
+        const badge = v.attested.length ? ` <span class="tag attested">${t.attested}</span>` : w.legend ? ` <span class="tag">${t.legend}</span>` : w.probable ? ` <span class="tag">${t.probable}</span>` : '';
+        head = `${sealSVG('meet')}<h2>${t.meetHead(esc(placeName(w)))}${badge}</h2><p class="lede">${t.meetLede(when, w.inTransit, nm(A, 'a'), w.ageA, nm(B, 'b'), w.ageB, contemp)}</p>`;
+        left = `<div><h3>${t.crossroads}</h3><ul>${v.windows.slice(0, 6).map(x => `<li>${placeBtn(x.lon, x.lat, placeName(x))}, ${x.t0 === x.t1 ? t.rangeIn(yr(x.t0)) : t.rangeFromTo(yr(x.t0), yr(x.t1))}${x.inTransit ? ' (' + t.inTransit + ')' : ''}${x.legend ? ' <span class="tag">' + t.legend + '</span>' : ''}</li>`).join('')}</ul>${v.attested.length ? `<h3>${t.sources}</h3><ul>${v.attested.map(m => `<li>${esc(F(m, 'where') || '')}${m.year ? ', ' + yr(m.year) : ''} : ${esc(F(m, 'note'))}</li>`).join('')}</ul>` : ''}</div>`;
       } else if (v.kind === 'near') {
         const n = v.near.slice().sort((x, y) => x.d - y.d)[0];
-        const cityA = n.pa.stop ? n.pa.stop.place : (nearestCity(n.pa.lat, n.pa.lon, 150) || {}).modern || 'en chemin';
-        const cityB = n.pb.stop ? n.pb.stop.place : (nearestCity(n.pb.lat, n.pb.lon, 150) || {}).modern || 'en chemin';
-        head = `${sealSVG('near')}<h2>Presque : ${Math.round(n.d / 10) * 10} km les séparent au plus près</h2><p class="lede">Vers ${yr(Math.floor(n.t))}, ${nm(A, 'a')} est à ${esc(cityA.replace(/\s*\(.*\)$/, ''))} et ${nm(B, 'b')} à ${esc(cityB.replace(/\s*\(.*\)$/, ''))} : quelques jours de marche, mais personne n'a fait le détour. ${contemporaries}</p>`;
-        left = `<div><h3>Les occasions manquées</h3>${v.sharedPlaces.length ? '<ul>' + v.sharedPlaces.slice(0, 5).map(o => `<li>${placeBtn(o.a.lon, o.a.lat, o.place)} : ${nm(A, 'a')} ${o.a.from === o.a.to ? 'en ' + yr(o.a.from) : 'de ' + yr(o.a.from) + ' à ' + yr(o.a.to)}, ${nm(B, 'b')} ${o.b.from === o.b.to ? 'en ' + yr(o.b.from) : 'de ' + yr(o.b.from) + ' à ' + yr(o.b.to)} : raté de ${o.gap} an${o.gap > 1 ? 's' : ''}.</li>`).join('') + '</ul>' : `<p>Aucune ville commune, seulement ce voisinage de ${Math.round(n.d)} km.</p>`}</div>`;
+        const where = p => p.stop ? stopPlace(p.stop) : ((nearestCity(p.lat, p.lon, 150) || {}).modern || t.onTheWay);
+        head = `${sealSVG('near')}<h2>${t.nearHead(Math.round(n.d / 10) * 10)}</h2><p class="lede">${t.nearLede(yr(Math.floor(n.t)), nm(A, 'a'), esc(where(n.pa)), nm(B, 'b'), esc(where(n.pb)), contemp)}</p>`;
+        left = `<div><h3>${t.missed}</h3>${sharedList(v, t.sharedMissed, t.onlyNear(Math.round(n.d)))}</div>`;
       } else {
-        const m = v.minAt;
-        head = `${sealSVG('apart')}<h2>Contemporains, mais jamais à portée de voix</h2><p class="lede">${contemporaries} Au plus près, ${Math.round(v.minD / 50) * 50} km les séparent vers ${yr(Math.floor(m.t))}.</p>`;
-        left = `<div><h3>Mêmes lieux, autres années</h3>${v.sharedPlaces.length ? '<ul>' + v.sharedPlaces.slice(0, 5).map(o => `<li>${placeBtn(o.a.lon, o.a.lat, o.place)} : ${nm(A, 'a')} ${o.a.from === o.a.to ? 'en ' + yr(o.a.from) : 'de ' + yr(o.a.from) + ' à ' + yr(o.a.to)}, ${nm(B, 'b')} ${o.b.from === o.b.to ? 'en ' + yr(o.b.from) : 'de ' + yr(o.b.from) + ' à ' + yr(o.b.to)} : raté de ${o.gap} an${o.gap > 1 ? 's' : ''}.</li>`).join('') + '</ul>' : `<p>Leurs itinéraires ne se recoupent nulle part. Il aurait fallu une lettre, ou un pèlerinage de plus.</p>`}</div>`;
+        head = `${sealSVG('apart')}<h2>${t.apartHead}</h2><p class="lede">${t.apartLede(contemp, Math.round(v.minD / 50) * 50, yr(Math.floor(v.minAt.t)))}</p>`;
+        left = `<div><h3>${t.samePlacesOtherYears}</h3>${sharedList(v, t.sharedMissed, t.noCross)}</div>`;
       }
       right = `<div>${langSection(v, false)}</div>`;
     }
-    box.innerHTML = `<div class="verdict-head">${head}</div>${left}${right}${funSection(A, B)}`;
+    const fun = `<div class="v-fun"><p class="a">${nm(A, 'a')} : ${esc(F(A, 'fun') || F(A, 'blurb'))}</p><p class="b">${nm(B, 'b')} : ${esc(F(B, 'fun') || F(B, 'blurb'))}</p></div>`;
+    box.innerHTML = `<div class="verdict-head">${head}</div>${left}${right}${fun}`;
     box.querySelectorAll('.place-btn').forEach(b => b.addEventListener('click', () => { const [x, y] = P(Number(b.dataset.lon), Number(b.dataset.lat)); fitTo([[x - 90, y - 60], [x + 90, y + 60]], 10); }));
     drawMeet(v);
   }
@@ -694,28 +756,30 @@
     const target = v.kind === 'meet' ? v.windows[0].t0 : v.kind === 'near' ? Math.floor(v.near.slice().sort((x, y) => x.d - y.d)[0].t) : v.kind === 'never' ? v.first.died : Math.floor(v.minAt.t);
     yearInput.value = target; setYear(target);
   }
-  function setYear(t) {
-    state.year = t; yearLabel.textContent = `an ${t} · ${roman(t)}`;
+  function setYear(tY) {
+    const t = T();
+    state.year = tY; yearLabel.textContent = `${t.year(tY)} · ${roman(tY)}`;
     layers.pawns.innerHTML = '';
     slots.forEach(k => {
       const s = byId[state[k]]; if (!s) return;
-      const p = posAt(s, t);
-      const dead = !p; const q = p || (t < s.born ? s.stops[0] : s.stops[s.stops.length - 1]);
+      const p = posAt(s, tY);
+      const dead = !p; const q = p || (tY < s.born ? s.stops[0] : s.stops[s.stops.length - 1]);
       const [x, y] = P(q.lon, q.lat);
       const g = svg('g', { class: 'pawn ' + k + (dead ? ' dead' : ''), transform: `translate(${x.toFixed(1)} ${y.toFixed(1)})` }, layers.pawns);
       svg('circle', { class: 'halo', cx: 0, cy: -13, r: 5.5 }, g);
       svg('circle', { cx: 0, cy: -12.5, r: 3.2, fill: '#f3d9b5', stroke: '#5b3f28', 'stroke-width': .5 }, g);
       svg('path', { class: 'body', d: 'M-5 2 L-3.5 -9 Q0 -11.5 3.5 -9 L5 2 Z', stroke: '#3b2a1b', 'stroke-width': .5 }, g);
       const label = svg('text', { x: 0, y: 9, style: 'fill:#3b2a1b;font-size:6px' }, g);
-      label.textContent = dead ? (t < s.born ? `${s.name} (pas encore né${s.sex === 'f' ? 'e' : ''})` : `${s.name} († ${s.died})`) : `${s.name}, ${t - s.born} ans`;
-      svg('title', null, g).textContent = p ? (p.moving ? `${s.name} voyage de ${p.from.place} vers ${p.to.place}` : `${s.name} est à ${p.stop.place}`) : s.name;
+      const n = F(s, 'name');
+      label.textContent = dead ? (tY < s.born ? t.pawnUnborn(n, s.sex === 'f') : t.pawnDead(n, s.died)) : t.pawnAge(n, tY - s.born);
+      svg('title', null, g).textContent = p ? (p.moving ? t.pawnMoving(n, stopPlace(p.from), stopPlace(p.to)) : t.pawnAt(n, stopPlace(p.stop))) : n;
     });
   }
   yearInput.addEventListener('input', () => setYear(Number(yearInput.value)));
-  function stopPlay() { if (playTimer) { clearInterval(playTimer); playTimer = null; } playBtn.textContent = '▶'; playBtn.setAttribute('aria-label', 'Faire défiler les années'); }
+  function stopPlay() { if (playTimer) { clearInterval(playTimer); playTimer = null; } playBtn.textContent = '▶'; playBtn.setAttribute('aria-label', T().play); }
   playBtn.addEventListener('click', () => {
     if (playTimer) return stopPlay();
-    playBtn.textContent = '❚❚'; playBtn.setAttribute('aria-label', 'Arrêter');
+    playBtn.textContent = '❚❚'; playBtn.setAttribute('aria-label', T().pause);
     if (Number(yearInput.value) >= Number(yearInput.max)) yearInput.value = yearInput.min;
     playTimer = setInterval(() => { const t = Number(yearInput.value) + 1; if (t > Number(yearInput.max)) return stopPlay(); yearInput.value = t; setYear(t); }, 90);
   });
@@ -723,39 +787,60 @@
   /* ---------- Actions ---------- */
   const toast = el('p', { class: 'chart-hint', id: 'toast', style: 'margin:0', 'aria-live': 'polite' });
   $('.actions').after(toast);
+  let contemporaryPairs = null;
   $('#btn-random').addEventListener('click', () => {
-    stopPlay();
     let a, b;
     if (Math.random() < 0.65) {
-      const pairs = [];
-      for (let i = 0; i < saints.length; i++) for (let j = i + 1; j < saints.length; j++) { const o = Math.min(saints[i].died, saints[j].died) - Math.max(saints[i].born, saints[j].born); if (o >= 15) pairs.push([saints[i], saints[j]]); }
-      [a, b] = pairs[Math.floor(Math.random() * pairs.length)];
+      if (!contemporaryPairs) { contemporaryPairs = []; for (let i = 0; i < saints.length; i++) for (let j = i + 1; j < saints.length; j++) { const o = Math.min(saints[i].died, saints[j].died) - Math.max(saints[i].born, saints[j].born); if (o >= 15) contemporaryPairs.push([saints[i], saints[j]]); } }
+      [a, b] = contemporaryPairs[Math.floor(Math.random() * contemporaryPairs.length)];
       if (Math.random() < 0.5) [a, b] = [b, a];
     } else { a = saints[Math.floor(Math.random() * saints.length)]; do { b = saints[Math.floor(Math.random() * saints.length)]; } while (b === a); }
     state.a = a.id; state.b = b.id; renderChosen('a'); renderChosen('b'); update(); toast.textContent = '';
   });
   $('#btn-today').addEventListener('click', () => {
-    stopPlay();
-    const now = new Date(), key = String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
-    const hits = saints.filter(s => s.feast === key);
+    const t = T(), now = new Date(), key = String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
+    const hits = saints.filter(s => s.feast === key), d = feastLabel(key);
     let pick;
-    if (hits.length >= 2) { pick = hits.slice(0, 2); toast.textContent = `Aujourd'hui ${feastLabel(key)} : ${hits.map(s => s.name).join(', ')}${hits.length > 2 ? ' (les deux premiers sont affichés)' : ''}.`; }
-    else { const near = nearestFeasts(key, 2 + hits.length).filter(s => !hits.includes(s)); pick = hits.concat(near).slice(0, 2); toast.textContent = hits.length ? `Aujourd'hui ${feastLabel(key)} : ${hits[0].name}. Pour lui tenir compagnie, le plus proche au calendrier : ${pick[1].name} (${feastLabel(pick[1].feast)}).` : `Personne du portulan n'est fêté ce ${feastLabel(key)}. Les plus proches au calendrier : ${pick.map(s => `${s.name} (${feastLabel(s.feast)})`).join(' et ')}.`; }
+    if (hits.length >= 2) { pick = hits.slice(0, 2); toast.textContent = t.todayTwo(d, hits.map(s => F(s, 'name')).join(', '), hits.length > 2); }
+    else {
+      const near = nearestFeasts(key, 2 + hits.length).filter(s => !hits.includes(s)); pick = hits.concat(near).slice(0, 2);
+      toast.textContent = hits.length ? t.todayOne(d, F(hits[0], 'name'), F(pick[1], 'name'), feastLabel(pick[1].feast)) : t.todayNone(d, pick.map(s => `${F(s, 'name')} (${feastLabel(s.feast)})`).join(t.and));
+    }
     state.a = pick[0].id; state.b = pick[1].id; renderChosen('a'); renderChosen('b'); update();
   });
   $('#btn-swap').addEventListener('click', () => { [state.a, state.b] = [state.b, state.a]; renderChosen('a'); renderChosen('b'); update({ keepView: true }); });
 
+  /* ---------- Langue de l'interface ---------- */
+  function applyLang(l, opts) {
+    lang = l; document.documentElement.lang = l;
+    try { localStorage.setItem('portulan-lang', l); } catch (e) { /* stockage indisponible : tant pis */ }
+    $('#lang-fr').setAttribute('aria-pressed', String(l === 'fr')); $('#lang-en').setAttribute('aria-pressed', String(l === 'en'));
+    document.querySelectorAll('[data-i18n]').forEach(n => { const k = n.getAttribute('data-i18n'); if (T()[k]) n.textContent = T()[k]; });
+    document.title = T().title; const ct = $('#cartouche-title'); if (ct) ct.textContent = T().title;
+    $('#zoom-in').setAttribute('aria-label', T().zoomIn); $('#zoom-out').setAttribute('aria-label', T().zoomOut); yearInput.setAttribute('aria-label', l === 'en' ? 'Year' : 'Année');
+    slots.forEach(k => { pickers[k].relabel(); renderChosen(k); });
+    toast.textContent = '';
+    $('#colophon-count').textContent = T().count(saints.length, saints[0].born, Math.max(...saints.map(s => s.died)), cities.length) + ' ' + (l === 'en' ? 'Built on ' : 'Construit le ') + DATA.built + '.';
+    if (!(opts && opts.initial)) update({ keepView: true });
+  }
+  $('#lang-fr').addEventListener('click', () => applyLang('fr'));
+  $('#lang-en').addEventListener('click', () => applyLang('en'));
+
   /* ---------- Démarrage ---------- */
   buildMap(); setupPointer();
-  const pickers = { a: buildPicker('a'), b: buildPicker('b') };
+  pickers.a = buildPicker('a'); pickers.b = buildPicker('b');
   function fromHash() {
     const parts = location.hash.slice(1).split('--').filter(Boolean);
-    if (parts.length === 2 && byId[parts[0]] && byId[parts[1]] && parts[0] !== parts[1]) return parts;
-    return null;
+    const wantEn = parts[parts.length - 1] === 'en'; if (wantEn) parts.pop();
+    if (parts.length === 2 && byId[parts[0]] && byId[parts[1]] && parts[0] !== parts[1]) return { ids: parts, en: wantEn };
+    return wantEn ? { ids: null, en: true } : null;
   }
+  const h0 = fromHash();
+  let stored = null; try { stored = localStorage.getItem('portulan-lang'); } catch (e) { stored = null; }
+  const initialLang = h0 && h0.en ? 'en' : stored === 'en' || stored === 'fr' ? stored : (navigator.language || 'fr').toLowerCase().startsWith('fr') ? 'fr' : 'en';
+  applyLang(initialLang, { initial: true });
   const defaults = ['francois-d-assise', 'dominique'].every(id => byId[id]) ? ['francois-d-assise', 'dominique'] : [saints[0].id, saints[1].id];
-  const init = fromHash() || defaults;
-  state.a = init[0]; state.b = init[1]; renderChosen('a'); renderChosen('b'); update({ noHash: !fromHash() });
-  window.addEventListener('hashchange', () => { const p = fromHash(); if (p && (p[0] !== state.a || p[1] !== state.b)) { state.a = p[0]; state.b = p[1]; renderChosen('a'); renderChosen('b'); update({ noHash: true }); } });
-  $('#colophon-count').textContent = `${saints.length} saints et saintes, de ${saints[0].born} à ${Math.max(...saints.map(s => s.died))}, ${cities.length} lieux nommés. Construit le ${DATA.built}.`;
+  const init = (h0 && h0.ids) || defaults;
+  state.a = init[0]; state.b = init[1]; renderChosen('a'); renderChosen('b'); update({ noHash: !(h0 && h0.ids) });
+  window.addEventListener('hashchange', () => { const p = fromHash(); if (p && p.ids && (p.ids[0] !== state.a || p.ids[1] !== state.b)) { state.a = p.ids[0]; state.b = p.ids[1]; renderChosen('a'); renderChosen('b'); update({ noHash: true }); } });
 })();
