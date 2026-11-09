@@ -176,8 +176,15 @@
   /* ---------- Carte ---------- */
   const chart = $('#chart');
   const frame = $('#chart-frame');
-  let view = { ...VIEW0 };
   const layers = {};
+  // le cadre peut être carré sur téléphone : le rapport hauteur/largeur de la vue suit celui du cadre
+  const ratio = () => { const r = frame.getBoundingClientRect(); return r.width > 0 && r.height > 0 ? r.height / r.width : VIEW0.h / VIEW0.w; };
+  function fullView() {
+    const k = ratio(); let w = VIEW0.w, h = w * k;
+    if (h < VIEW0.h) { h = VIEW0.h; w = h / k; }
+    return { x: VIEW0.x + (VIEW0.w - w) / 2, y: VIEW0.y + (VIEW0.h - h) / 2, w, h };
+  }
+  let view = fullView();
 
   function parchmentPath() {
     const x0 = -34, y0 = -42, x1 = MAP_W + 34, y1 = MAP_H + 42;
@@ -201,7 +208,7 @@
   }
 
   function buildMap() {
-    chart.setAttribute('viewBox', `${view.x} ${view.y} ${view.w} ${view.h}`);
+    applyView();
     const defs = svg('defs', null, chart);
     const clip = svg('clipPath', { id: 'skin' }, defs);
     svg('path', { d: parchmentPath() }, clip);
@@ -415,7 +422,7 @@
   }
   function clampView(v) {
     const maxW = VIEW0.w * 1.15, minW = VIEW0.w / 12;
-    v.w = Math.max(minW, Math.min(maxW, v.w)); v.h = v.w * VIEW0.h / VIEW0.w;
+    v.w = Math.max(minW, Math.min(maxW, v.w)); v.h = v.w * ratio();
     v.x = Math.max(VIEW0.x - v.w * .5, Math.min(VIEW0.x + VIEW0.w - v.w * .5, v.x));
     v.y = Math.max(VIEW0.y - v.h * .5, Math.min(VIEW0.y + VIEW0.h - v.h * .5, v.y));
     return v;
@@ -424,15 +431,16 @@
     const r = chart.getBoundingClientRect();
     const mx = view.x + (px - r.left) / r.width * view.w, my = view.y + (py - r.top) / r.height * view.h;
     const nw = view.w * factor;
-    animateTo(clampView({ x: mx - (mx - view.x) * factor, y: my - (my - view.y) * factor, w: nw, h: nw * VIEW0.h / VIEW0.w }), 160);
+    animateTo(clampView({ x: mx - (mx - view.x) * factor, y: my - (my - view.y) * factor, w: nw, h: nw * ratio() }), 160);
   }
   function fitTo(points, pad) {
-    if (!points.length) return animateTo({ ...VIEW0 }, 600);
+    if (!points.length) return animateTo(fullView(), 600);
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
     for (const [x, y] of points) { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); }
     const padding = pad || 80;
-    let w = Math.max(x1 - x0 + 2 * padding, 260), h = Math.max(y1 - y0 + 2 * padding, 260 * VIEW0.h / VIEW0.w);
-    if (w / h > VIEW0.w / VIEW0.h) h = w * VIEW0.h / VIEW0.w; else w = h * VIEW0.w / VIEW0.h;
+    const k = ratio();
+    let w = Math.max(x1 - x0 + 2 * padding, 260), h = Math.max(y1 - y0 + 2 * padding, 260 * k);
+    if (h / w < k) h = w * k; else w = h / k;
     const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
     animateTo(clampView({ x: cx - w / 2, y: cy - h / 2, w, h }), 700);
   }
@@ -448,7 +456,7 @@
         const cx = (a[0] + b[0]) / 2, cy = (a[1] + b[1]) / 2;
         const mx = view.x + (cx - r.left) / r.width * view.w, my = view.y + (cy - r.top) / r.height * view.h;
         const nw = pinch.w * pinch.d / d, f = nw / view.w;
-        view = clampView({ x: mx - (mx - view.x) * f, y: my - (my - view.y) * f, w: nw, h: nw * VIEW0.h / VIEW0.w }); applyView();
+        view = clampView({ x: mx - (mx - view.x) * f, y: my - (my - view.y) * f, w: nw, h: nw * ratio() }); applyView();
       } else if (last) {
         const dx = (e.clientX - last[0]) / r.width * view.w, dy = (e.clientY - last[1]) / r.height * view.h;
         last = [e.clientX, e.clientY];
@@ -460,7 +468,8 @@
     frame.addEventListener('wheel', e => { e.preventDefault(); zoomAt(e.deltaY > 0 ? 1.18 : 1 / 1.18, e.clientX, e.clientY); }, { passive: false });
     $('#zoom-in').addEventListener('click', () => { const r = chart.getBoundingClientRect(); zoomAt(1 / 1.5, r.left + r.width / 2, r.top + r.height / 2); });
     $('#zoom-out').addEventListener('click', () => { const r = chart.getBoundingClientRect(); zoomAt(1.5, r.left + r.width / 2, r.top + r.height / 2); });
-    $('#zoom-all').addEventListener('click', () => animateTo({ ...VIEW0 }, 600));
+    $('#zoom-all').addEventListener('click', () => animateTo(fullView(), 600));
+    let rt = null; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { view = clampView({ ...view }); applyView(); }, 120); });
     $('#zoom-fit').addEventListener('click', () => fitRoutes());
   }
 
@@ -592,6 +601,7 @@
   }
   function drawRoutes() {
     layers.routes.innerHTML = ''; layers.meet.innerHTML = '';
+    const labels = [];
     slots.forEach((k, si) => {
       const s = byId[state[k]]; if (!s) return;
       const g = svg('g', { class: 'route-group ' + k }, layers.routes);
@@ -609,18 +619,37 @@
         e.nums.push(i + 1); e.years.push(st.from === st.to ? String(st.from) : `${st.from}-${st.to}`); if (F(st, 'note')) e.notes.push(F(st, 'note'));
         if (st.certainty === 'legende') e.legend = true;
       });
-      let j = 0;
       for (const { st, nums, years, notes, legend } of seen.values()) {
         const [x, y] = P(st.lon, st.lat);
         const c = svg('circle', { class: 'stop ' + k + (legend ? ' legende' : ''), cx: x.toFixed(1), cy: y.toFixed(1), r: nums.length > 1 ? 5.2 : 4.4 }, g);
         svg('title', null, c).textContent = T().tipStop(stopPlace(st), years.join(', '), legend, notes.join(' '));
         svg('text', { class: 'stop-num', x: x.toFixed(1), y: (y + 2.1).toFixed(1) }, g).textContent = nums.length > 2 ? nums[0] + '…' : nums.join('·');
-        const side = si === 0 ? -1 : 1, lx = x + 6 * side, ly = y + (si === 0 ? -5 : 9) + (j % 2) * 4;
-        const t = svg('text', { class: 'stop-label', x: lx.toFixed(1), y: ly.toFixed(1), 'text-anchor': side < 0 ? 'end' : 'start' }, g);
-        t.textContent = `${stopPlace(st)} ${years.length > 1 ? years[0] + '…' : years[0]}`;
-        j++;
+        labels.push({ x, y, si, g, text: `${stopPlace(st)} ${years.length > 1 ? years[0] + '…' : years[0]}`, weight: (st.to - st.from) + (nums.length > 1 ? 50 : 0) });
       }
     });
+    placeLabels(labels);
+  }
+  function placeLabels(labels) {
+    // placement glouton : les longs séjours d'abord, quatre positions candidates, on renonce plutôt que de chevaucher
+    const placed = [];
+    const H = 8, cw = 3.5;
+    const cands = si => si === 0
+      ? [[-6, -4, 'end'], [6, -4, 'start'], [-6, 12, 'end'], [6, 12, 'start']]
+      : [[6, 12, 'start'], [-6, 12, 'end'], [6, -4, 'start'], [-6, -4, 'end']];
+    labels.forEach(l => { placed.push({ x0: l.x - 5, x1: l.x + 5, y0: l.y - 5, y1: l.y + 5 }); });   // les pastilles elles-mêmes
+    labels.sort((a, b) => b.weight - a.weight);
+    for (const l of labels) {
+      const w = l.text.length * cw;
+      let ok = null;
+      for (const [dx, dy, anchor] of cands(l.si)) {
+        const x = l.x + dx, y = l.y + dy;
+        const box = anchor === 'end' ? { x0: x - w, x1: x, y0: y - H, y1: y + 1 } : { x0: x, x1: x + w, y0: y - H, y1: y + 1 };
+        if (!placed.some(b => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0)) { ok = { x, y, anchor, box }; break; }
+      }
+      if (!ok) continue;
+      placed.push(ok.box);
+      svg('text', { class: 'stop-label', x: ok.x.toFixed(1), y: ok.y.toFixed(1), 'text-anchor': ok.anchor }, l.g).textContent = l.text;
+    }
   }
   function drawMeet(v) {
     layers.meet.innerHTML = '';

@@ -158,6 +158,7 @@ h1::after { content: ""; display: block; width: 7rem; height: 2px; margin: .6rem
   border-radius: 6px; box-shadow: var(--shadow); overflow: hidden; background: var(--bg-deep);
   aspect-ratio: 1520 / 980; max-width: 100%; touch-action: none; position: relative;
 }
+@media (max-width: 900px) { .chart-frame { aspect-ratio: 1 / 1.05; } }
 .chart-frame svg { display: block; width: 100%; height: 100%; cursor: grab; user-select: none; -webkit-user-select: none; }
 .chart-frame svg.dragging { cursor: grabbing; }
 .chart-hint { color: var(--muted); font-style: italic; font-size: .88rem; margin: .5rem 0 0; }
