@@ -1,0 +1,969 @@
+[
+  {
+    "id": "albert-le-grand",
+    "name": "Albert",
+    "full": "Saint Albert le Grand",
+    "feast": "11-15",
+    "feast_note": "",
+    "born": 1200,
+    "died": 1280,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Lauingen, Souabe",
+    "role": "dominicain, évêque, savant",
+    "sex": "m",
+    "languages": [
+      {"code": "gmh", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "ita", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Lauingen (Souabe)", "lat": 48.57, "lon": 10.43, "from": 1200, "to": 1220, "note": "Naissance vers 1200 (certains disent 1193) dans une famille de ministériaux.", "certainty": "probable"},
+      {"place": "Padoue", "lat": 45.41, "lon": 11.88, "from": 1220, "to": 1228, "note": "Études des arts et de la médecine ; il prend l'habit dominicain en 1223.", "certainty": "sur"},
+      {"place": "Cologne", "lat": 50.94, "lon": 6.96, "from": 1228, "to": 1237, "note": "Théologie, puis premier enseignement au couvent dominicain.", "certainty": "probable"},
+      {"place": "Ratisbonne", "lat": 49.02, "lon": 12.10, "from": 1237, "to": 1240, "note": "Lecteur au couvent Saint-Blaise, puis Hildesheim, Fribourg et Strasbourg.", "certainty": "sur"},
+      {"place": "Paris (couvent Saint-Jacques)", "lat": 48.86, "lon": 2.35, "from": 1241, "to": 1248, "note": "Maître régent de théologie dès 1245 ; le jeune Thomas d'Aquin est dans la salle.", "certainty": "sur"},
+      {"place": "Cologne", "lat": 50.94, "lon": 6.96, "from": 1248, "to": 1254, "note": "Fonde et dirige le studium generale ; Thomas le suit comme élève jusqu'en 1252.", "certainty": "sur"},
+      {"place": "Germanie (provincial, en tournée)", "lat": 50.11, "lon": 8.68, "from": 1254, "to": 1260, "note": "Provincial de Teutonie, il visite une cinquantaine de couvents à pied, puis séjourne à la curie (1256-1257).", "certainty": "sur"},
+      {"place": "Ratisbonne", "lat": 49.02, "lon": 12.10, "from": 1260, "to": 1263, "note": "Évêque de Ratisbonne, poste qu'il abandonne au bout de deux ans pour retrouver ses livres.", "certainty": "sur"},
+      {"place": "Wurtzbourg puis Strasbourg", "lat": 49.79, "lon": 9.95, "from": 1263, "to": 1270, "note": "Prédication de la croisade en pays germanophones, puis séjours à Wurtzbourg (1264) et Strasbourg (1267).", "certainty": "sur"},
+      {"place": "Cologne", "lat": 50.94, "lon": 6.96, "from": 1270, "to": 1274, "note": "Retour définitif à Cologne pour écrire.", "certainty": "sur"},
+      {"place": "Lyon (concile)", "lat": 45.76, "lon": 4.84, "from": 1274, "to": 1274, "note": "Deuxième concile de Lyon, où il apprend la mort de son élève Thomas.", "certainty": "sur"},
+      {"place": "Cologne", "lat": 50.94, "lon": 6.96, "from": 1274, "to": 1280, "note": "Dernières années ; un ultime voyage à Paris vers 1277 pour défendre Thomas. Mort le 15 novembre 1280.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "thomas-d-aquin", "where": "Paris puis Cologne", "year": 1245, "note": "Son élève le plus célèbre, de 1245 à 1252 ; il le défend encore après sa mort."},
+      {"with": "bonaventure", "where": "Lyon", "year": 1274, "note": "Tous deux au deuxième concile de Lyon, où Bonaventure meurt en juillet."}
+    ],
+    "blurb": "Le Docteur universel : il a écrit sur tout, des minéraux aux anges, et formé Thomas d'Aquin au passage. Un esprit encyclopédique qui a sillonné l'Allemagne à pied.",
+    "fun": "La place Maubert à Paris tiendrait son nom de « Maître Albert », qui aurait enseigné en plein air faute de salle assez grande : étymologie contestée, mais tenace. Le Grand Albert, grimoire de magie, lui est attribué à tort.",
+    "sources": ["https://fr.wikipedia.org/wiki/Albert_le_Grand"]
+  },
+  {
+    "id": "louis-ix",
+    "name": "Louis",
+    "full": "Saint Louis, Louis IX roi de France",
+    "feast": "08-25",
+    "feast_note": "",
+    "born": 1214,
+    "died": 1270,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Poissy, Île-de-France",
+    "role": "roi de France, croisé",
+    "sex": "m",
+    "languages": [
+      {"code": "fro", "level": "natif"},
+      {"code": "lat", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Poissy", "lat": 48.93, "lon": 2.04, "from": 1214, "to": 1226, "note": "Naissance le 25 avril 1214 ; il signera toute sa vie « Louis de Poissy », en souvenir de son baptême.", "certainty": "sur"},
+      {"place": "Paris et Île-de-France", "lat": 48.86, "lon": 2.35, "from": 1226, "to": 1248, "note": "Sacré à Reims en 1226, régence de Blanche de Castille, puis construction de la Sainte-Chapelle (1242-1248) pour la couronne d'épines.", "certainty": "sur"},
+      {"place": "Aigues-Mortes", "lat": 43.57, "lon": 4.19, "from": 1248, "to": 1248, "note": "Embarquement pour la septième croisade le 25 août 1248, depuis le port qu'il a fait construire.", "certainty": "sur"},
+      {"place": "Chypre (Limassol et Nicosie)", "lat": 34.68, "lon": 33.04, "from": 1248, "to": 1249, "note": "Hivernage de l'armée croisée de septembre 1248 à mai 1249.", "certainty": "sur"},
+      {"place": "Damiette", "lat": 31.42, "lon": 31.81, "from": 1249, "to": 1250, "note": "Prise de Damiette en juin 1249, désastre de Mansourah en février 1250, puis captivité et rançon.", "certainty": "sur"},
+      {"place": "Acre", "lat": 32.93, "lon": 35.08, "from": 1250, "to": 1254, "note": "Quatre ans en Terre sainte à refortifier Acre, Césarée, Jaffa et Sidon.", "certainty": "sur"},
+      {"place": "Paris et Vincennes", "lat": 48.84, "lon": 2.44, "from": 1254, "to": 1270, "note": "Retour en juillet 1254 ; justice sous le chêne de Vincennes, fondation des Quinze-Vingts, dîners avec les maîtres de l'université.", "certainty": "sur"},
+      {"place": "Tunis (Carthage)", "lat": 36.85, "lon": 10.33, "from": 1270, "to": 1270, "note": "Huitième croisade : il meurt de maladie devant Tunis le 25 août 1270.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "thomas-d-aquin", "where": "Paris", "year": 1269, "note": "Selon la tradition, Thomas, invité à la table du roi, frappe la table en s'écriant qu'il tient un argument contre les manichéens ; le roi fait noter l'idée."},
+      {"with": "bonaventure", "where": "Paris", "year": 1267, "note": "Bonaventure prêche à plusieurs reprises devant la cour ; le roi est un fervent soutien des franciscains."}
+    ],
+    "blurb": "Le roi qui rend la justice sous un chêne et achète la couronne d'épines plus cher que la chapelle construite pour l'abriter. Deux croisades, une captivité en Égypte et une mort devant Tunis.",
+    "fun": "Son cœur et ses entrailles reposent à Monreale en Sicile, ses os à Saint-Denis : saint Louis est le roi de France le plus dispersé géographiquement.",
+    "sources": ["https://fr.wikipedia.org/wiki/Louis_IX"]
+  },
+  {
+    "id": "thomas-d-aquin",
+    "name": "Thomas",
+    "full": "Saint Thomas d'Aquin",
+    "feast": "01-28",
+    "feast_note": "7 mars jusqu'en 1969",
+    "born": 1225,
+    "died": 1274,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Roccasecca, royaume de Sicile",
+    "role": "dominicain, théologien",
+    "sex": "m",
+    "languages": [
+      {"code": "ita", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "fro", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Roccasecca", "lat": 41.55, "lon": 13.67, "from": 1225, "to": 1230, "note": "Naissance au château familial en 1225 ou 1226.", "certainty": "sur"},
+      {"place": "Mont-Cassin", "lat": 41.49, "lon": 13.81, "from": 1230, "to": 1239, "note": "Oblat chez les bénédictins, où il apprend le latin.", "certainty": "sur"},
+      {"place": "Naples", "lat": 40.85, "lon": 14.27, "from": 1239, "to": 1244, "note": "Études au studium de Frédéric II ; il prend l'habit dominicain en avril 1244.", "certainty": "sur"},
+      {"place": "Roccasecca (assigné à résidence)", "lat": 41.55, "lon": 13.67, "from": 1244, "to": 1245, "note": "Enlevé par ses frères et retenu un an par sa famille, qui n'apprécie pas les ordres mendiants.", "certainty": "sur"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 1245, "to": 1248, "note": "Premières études sous Albert le Grand.", "certainty": "sur"},
+      {"place": "Cologne", "lat": 50.94, "lon": 6.96, "from": 1248, "to": 1252, "note": "Suit Albert au nouveau studium ; ses camarades le surnomment le bœuf muet.", "certainty": "sur"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 1252, "to": 1259, "note": "Bachelier puis maître régent en 1256, aux côtés de Bonaventure.", "certainty": "sur"},
+      {"place": "Orvieto", "lat": 42.72, "lon": 12.11, "from": 1261, "to": 1265, "note": "Lecteur au couvent, à la cour d'Urbain IV ; rédaction de la Catena aurea et de l'office du Corpus Christi.", "certainty": "sur"},
+      {"place": "Rome (Santa Sabina)", "lat": 41.90, "lon": 12.50, "from": 1265, "to": 1268, "note": "Il ouvre un studium et commence la Somme théologique.", "certainty": "sur"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 1269, "to": 1272, "note": "Deuxième régence, querelles avec les averroïstes et les séculiers.", "certainty": "sur"},
+      {"place": "Naples", "lat": 40.85, "lon": 14.27, "from": 1272, "to": 1274, "note": "Organise le studium dominicain ; le 6 décembre 1273 il cesse d'écrire après une expérience mystique.", "certainty": "sur"},
+      {"place": "Abbaye de Fossanova", "lat": 41.47, "lon": 13.19, "from": 1274, "to": 1274, "note": "Tombé malade en route vers le concile de Lyon, il meurt chez les cisterciens le 7 mars 1274.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "albert-le-grand", "where": "Paris puis Cologne", "year": 1245, "note": "Son maître pendant sept ans ; Albert annonce que le bœuf muet fera mugir le monde entier."},
+      {"with": "bonaventure", "where": "Paris", "year": 1256, "note": "Maîtres régents la même année, l'un dominicain, l'autre franciscain, unis contre les attaques des maîtres séculiers."},
+      {"with": "louis-ix", "where": "Paris", "year": 1269, "note": "Tradition du dîner royal où Thomas, absorbé, frappe la table : « voilà qui règle le compte des manichéens ! »"}
+    ],
+    "blurb": "Le bœuf muet de Sicile dont le mugissement, la Somme théologique, résonne encore. Entre Naples, Paris et Cologne, il aura passé sa vie sur les routes et dans les livres.",
+    "fun": "Sa famille l'a enlevé et séquestré un an pour l'empêcher d'être dominicain : légende dit qu'une femme fut envoyée pour le tenter et qu'il la chassa avec un tison. Il est mort dans une abbaye cistercienne, pas dominicaine.",
+    "sources": ["https://fr.wikipedia.org/wiki/Thomas_d%27Aquin"]
+  },
+  {
+    "id": "bonaventure",
+    "name": "Bonaventure",
+    "full": "Saint Bonaventure de Bagnoregio",
+    "feast": "07-15",
+    "feast_note": "",
+    "born": 1221,
+    "died": 1274,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Bagnoregio, Latium",
+    "role": "franciscain, cardinal, théologien",
+    "sex": "m",
+    "languages": [
+      {"code": "ita", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "fro", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Bagnoregio", "lat": 42.63, "lon": 12.09, "from": 1221, "to": 1236, "note": "Né Giovanni da Fidanza vers 1217-1221 ; selon la légende, guéri enfant par François d'Assise.", "certainty": "probable"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 1236, "to": 1257, "note": "Étudiant, puis franciscain en 1243, maître régent en 1256 : vingt ans sur la montagne Sainte-Geneviève.", "certainty": "sur"},
+      {"place": "Italie et France (ministre général en tournée)", "lat": 43.07, "lon": 12.62, "from": 1257, "to": 1273, "note": "Élu ministre général des franciscains en 1257, il visite les provinces, écrit la Vie de François à Assise, revient prêcher à Paris et siège à Rome en 1267.", "certainty": "sur"},
+      {"place": "Albano", "lat": 41.73, "lon": 12.66, "from": 1273, "to": 1274, "note": "Cardinal-évêque d'Albano en 1273.", "certainty": "sur"},
+      {"place": "Lyon", "lat": 45.76, "lon": 4.84, "from": 1274, "to": 1274, "note": "Cheville ouvrière du deuxième concile de Lyon ; il y meurt dans la nuit du 14 au 15 juillet 1274.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "thomas-d-aquin", "where": "Paris", "year": 1256, "note": "Collègues et alliés face aux maîtres séculiers ; tous deux appelés au concile de Lyon en 1274, où seul Bonaventure arrive."},
+      {"with": "louis-ix", "where": "Paris", "year": 1267, "note": "Il prêche devant le roi et la cour ; Louis IX protège les frères mineurs."},
+      {"with": "albert-le-grand", "where": "Lyon", "year": 1274, "note": "Albert siège au concile que Bonaventure anime jusqu'à sa mort."}
+    ],
+    "blurb": "Le Docteur séraphique, un franciscain devenu cardinal qui a dirigé son ordre pendant dix-sept ans et écrit la biographie officielle de François d'Assise. Il meurt en plein concile, à Lyon.",
+    "fun": "Selon la légende, quand les envoyés du pape lui apportent le chapeau de cardinal, il est en train de faire la vaisselle du couvent et leur demande de l'accrocher à une branche en attendant qu'il ait fini.",
+    "sources": ["https://fr.wikipedia.org/wiki/Bonaventure_de_Bagnoregio"]
+  },
+  {
+    "id": "alexandre-nevski",
+    "name": "Alexandre",
+    "full": "Saint Alexandre Nevski",
+    "feast": "11-23",
+    "feast_note": "6 décembre au calendrier grégorien ; 30 août (12 septembre) pour la translation des reliques",
+    "born": 1221,
+    "died": 1263,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Pereslavl-Zalesski, Rus de Vladimir",
+    "role": "prince de Novgorod et de Vladimir",
+    "sex": "m",
+    "languages": [
+      {"code": "orv", "level": "natif"},
+      {"code": "kip", "level": "notions"},
+      {"code": "mon", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Pereslavl-Zalesski", "lat": 56.74, "lon": 38.85, "from": 1221, "to": 1236, "note": "Naissance en 1220 ou 1221, fils du prince Iaroslav.", "certainty": "sur"},
+      {"place": "Novgorod", "lat": 58.52, "lon": 31.27, "from": 1236, "to": 1240, "note": "Prince de Novgorod ; victoire sur les Suédois à la Neva le 15 juillet 1240, qui lui vaudra son surnom.", "certainty": "sur"},
+      {"place": "Pereslavl-Zalesski (exil)", "lat": 56.74, "lon": 38.85, "from": 1240, "to": 1241, "note": "Chassé par les Novgorodiens, puis rappelé face aux chevaliers teutoniques.", "certainty": "sur"},
+      {"place": "Novgorod et lac Peïpous", "lat": 58.52, "lon": 31.27, "from": 1241, "to": 1247, "note": "Bataille sur la glace du lac Peïpous le 5 avril 1242.", "certainty": "sur"},
+      {"place": "Saraï (sur la Volga)", "lat": 47.17, "lon": 47.44, "from": 1247, "to": 1247, "note": "Convoqué chez Batu, khan de la Horde d'Or, avec son frère André.", "certainty": "sur"},
+      {"place": "Karakorum (Mongolie)", "lat": 47.20, "lon": 102.85, "from": 1248, "to": 1249, "note": "Envoyé jusqu'à la cour du grand khan, à plus de 5 000 km de Novgorod ; retour à l'automne 1249.", "certainty": "sur"},
+      {"place": "Novgorod", "lat": 58.52, "lon": 31.27, "from": 1249, "to": 1252, "note": "Prince de Kiev en titre, il reste à Novgorod.", "certainty": "sur"},
+      {"place": "Vladimir", "lat": 56.13, "lon": 40.41, "from": 1252, "to": 1262, "note": "Grand-prince de Vladimir avec l'appui mongol ; plusieurs allers-retours à Saraï pour négocier le tribut.", "certainty": "sur"},
+      {"place": "Saraï", "lat": 47.17, "lon": 47.44, "from": 1262, "to": 1263, "note": "Dernier voyage chez le khan Berké pour éviter des représailles après des révoltes antimongoles.", "certainty": "sur"},
+      {"place": "Gorodets (Volga)", "lat": 56.65, "lon": 43.47, "from": 1263, "to": 1263, "note": "Tombé malade sur le chemin du retour, il prend l'habit monastique et meurt le 14 novembre 1263.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Prince guerrier qui bat les Suédois sur la Neva et les Teutoniques sur la glace, puis fait le voyage de Mongolie pour ménager les Mongols. Un diplomate à cheval sur deux mondes.",
+    "fun": "Le surnom « Nevski » n'apparaît qu'au XVe siècle, et des historiens estiment que la bataille de la Neva a été gonflée pour la propagande. Ses reliques ont été volées dans une église de Saint-Pétersbourg en 2012.",
+    "sources": ["https://fr.wikipedia.org/wiki/Alexandre_Nevski", "https://en.wikipedia.org/wiki/Alexander_Nevsky"]
+  },
+  {
+    "id": "raymond-de-penafort",
+    "name": "Raymond",
+    "full": "Saint Raymond de Peñafort",
+    "feast": "01-07",
+    "feast_note": "",
+    "born": 1175,
+    "died": 1275,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Peñafort, comté de Barcelone",
+    "role": "dominicain, canoniste",
+    "sex": "m",
+    "languages": [
+      {"code": "cat", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "ita", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Château de Peñafort (Santa Margarida i els Monjos)", "lat": 41.32, "lon": 1.67, "from": 1175, "to": 1195, "note": "Naissance vers 1175, puis études à Barcelone.", "certainty": "probable"},
+      {"place": "Bologne", "lat": 44.49, "lon": 11.34, "from": 1210, "to": 1222, "note": "Docteur en droit canon et civil, il tient la chaire de droit canonique.", "certainty": "sur"},
+      {"place": "Barcelone", "lat": 41.39, "lon": 2.17, "from": 1222, "to": 1230, "note": "Entre chez les dominicains en 1222 ; en 1218 déjà, il avait appuyé Pierre Nolasque pour fonder les Mercédaires.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1230, "to": 1236, "note": "Chapelain et pénitencier de Grégoire IX, il compile les Décrétales (1234), code du droit de l'Église pendant sept siècles.", "certainty": "sur"},
+      {"place": "Barcelone", "lat": 41.39, "lon": 2.17, "from": 1236, "to": 1238, "note": "Retour en Catalogne pour raisons de santé ; il refuse l'archevêché de Tarragone.", "certainty": "sur"},
+      {"place": "Bologne puis Paris (maître général)", "lat": 44.49, "lon": 11.34, "from": 1238, "to": 1240, "note": "Élu maître général des dominicains à Bologne en 1238, il démissionne dès 1240.", "certainty": "sur"},
+      {"place": "Barcelone", "lat": 41.39, "lon": 2.17, "from": 1240, "to": 1275, "note": "Trente-cinq ans à encourager l'étude de l'arabe et de l'hébreu pour les missions ; mort presque centenaire le 6 janvier 1275.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "pierre-nolasque", "where": "Barcelone", "year": 1218, "note": "Raymond conseille Pierre Nolasque et obtient du roi Jacques Ier le soutien à l'ordre de la Merci."}
+    ],
+    "blurb": "Juriste catalan presque centenaire qui a mis de l'ordre dans le droit de l'Église et dans la tête des dominicains. Il a aussi poussé Thomas d'Aquin à écrire contre les Gentils, par courrier.",
+    "fun": "Légende : bloqué à Majorque par le roi, il étend sa cape sur la mer, hisse son bâton en guise de mât et rejoint Barcelone en six heures. Il est depuis le patron des véliplanchistes.",
+    "sources": ["https://fr.wikipedia.org/wiki/Raymond_de_Penyafort"]
+  },
+  {
+    "id": "pierre-nolasque",
+    "name": "Pierre",
+    "full": "Saint Pierre Nolasque",
+    "feast": "05-06",
+    "feast_note": "28 janvier chez les Mercédaires",
+    "born": 1181,
+    "died": 1245,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Mas-Saintes-Puelles, Lauragais",
+    "role": "fondateur des Mercédaires",
+    "sex": "m",
+    "languages": [
+      {"code": "oci", "level": "natif"},
+      {"code": "cat", "level": "courant"},
+      {"code": "lat", "level": "notions"},
+      {"code": "ara", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Mas-Saintes-Puelles (Lauragais)", "lat": 43.33, "lon": 1.88, "from": 1181, "to": 1200, "note": "Naissance entre 1180 et 1182 ; la famille part ensuite pour Barcelone, peut-être pour fuir la crise cathare.", "certainty": "probable"},
+      {"place": "Barcelone", "lat": 41.39, "lon": 2.17, "from": 1200, "to": 1218, "note": "Marchand formé par son père, il collecte dès 1203 des aumônes pour racheter les captifs chrétiens.", "certainty": "sur"},
+      {"place": "Barcelone (cathédrale)", "lat": 41.39, "lon": 2.17, "from": 1218, "to": 1230, "note": "Vision de la Vierge dans la nuit du 1er au 2 août 1218 ; fondation de l'ordre de la Merci le 10 août.", "certainty": "sur"},
+      {"place": "Valence et côtes andalouses (voyages de rachat)", "lat": 39.47, "lon": -0.38, "from": 1230, "to": 1240, "note": "Les Mercédaires négocient le rachat des captifs en terre musulmane ; la tradition envoie Pierre lui-même à Valence et à Grenade.", "certainty": "legende"},
+      {"place": "Barcelone", "lat": 41.39, "lon": 2.17, "from": 1240, "to": 1245, "note": "Mort à Barcelone le 6 mai 1245.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "raymond-de-penafort", "where": "Barcelone", "year": 1218, "note": "Raymond rédige les premières règles et convainc le roi Jacques Ier de soutenir la fondation."}
+    ],
+    "blurb": "Un marchand occitan réfugié à Barcelone qui investit sa fortune dans le rachat de prisonniers chrétiens. Ses frères font un quatrième vœu : se mettre à la place d'un captif si la rançon ne suffit pas.",
+    "fun": "Tout, ou presque, dans sa biographie est discuté : sa naissance en Lauragais vient de dom Guéranger au XIXe siècle et les historiens ne confirment pas. Sa fête a changé trois fois de date.",
+    "sources": ["https://fr.wikipedia.org/wiki/Pierre_Nolasque"]
+  },
+  {
+    "id": "yves-de-treguier",
+    "name": "Yves",
+    "full": "Saint Yves de Tréguier (Yves Hélory de Kermartin)",
+    "feast": "05-19",
+    "feast_note": "",
+    "born": 1253,
+    "died": 1303,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Minihy-Tréguier, Bretagne",
+    "role": "prêtre, juge ecclésiastique",
+    "sex": "m",
+    "languages": [
+      {"code": "bre", "level": "natif"},
+      {"code": "fro", "level": "courant"},
+      {"code": "lat", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Manoir de Kermartin (Minihy-Tréguier)", "lat": 48.78, "lon": -3.23, "from": 1253, "to": 1267, "note": "Naissance vers 1253 (dates proposées de 1247 à 1253).", "certainty": "probable"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 1267, "to": 1272, "note": "Six ans d'arts puis droit canon ; il y entend peut-être Thomas d'Aquin.", "certainty": "sur"},
+      {"place": "Orléans", "lat": 47.90, "lon": 1.91, "from": 1272, "to": 1274, "note": "Études de droit romain.", "certainty": "sur"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 1274, "to": 1277, "note": "Retour pour la théologie.", "certainty": "probable"},
+      {"place": "Rennes", "lat": 48.11, "lon": -1.68, "from": 1280, "to": 1284, "note": "Official de l'archidiacre de Rennes : juge ecclésiastique, déjà célèbre pour défendre les pauvres.", "certainty": "sur"},
+      {"place": "Tréguier", "lat": 48.78, "lon": -3.23, "from": 1284, "to": 1292, "note": "Official de l'évêque et prêtre, recteur de Trédrez.", "certainty": "sur"},
+      {"place": "Louannec", "lat": 48.79, "lon": -3.42, "from": 1292, "to": 1298, "note": "Recteur de Louannec, il plaide gratuitement pour les pauvres.", "certainty": "sur"},
+      {"place": "Kermartin (Minihy-Tréguier)", "lat": 48.78, "lon": -3.23, "from": 1298, "to": 1303, "note": "Il abandonne sa charge pour vivre en ascète dans son manoir et y meurt le 19 mai 1303, jour de l'Ascension.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Un juge breton qui plaidait gratis pour les pauvres, dormait par terre et vivait de pain et d'eau. Patron des avocats, ce qui fait sourire depuis sept siècles.",
+    "fun": "Légende : un aubergiste réclame paiement à un mendiant qui s'est nourri de l'odeur de sa cuisine ; Yves fait tinter une pièce et déclare l'aubergiste payé par le son. Rabelais a repris l'histoire.",
+    "sources": ["https://fr.wikipedia.org/wiki/Yves_H%C3%A9lory_de_Kermartin"]
+  },
+  {
+    "id": "pierre-de-moscou",
+    "name": "Pierre",
+    "full": "Saint Pierre de Moscou, métropolite de Kiev et de toute la Rus",
+    "feast": "12-21",
+    "feast_note": "3 janvier au calendrier grégorien ; aussi 24 août et 5 octobre",
+    "born": 1260,
+    "died": 1326,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Volhynie",
+    "role": "métropolite, peintre d'icônes",
+    "sex": "m",
+    "languages": [
+      {"code": "orv", "level": "natif"},
+      {"code": "chu", "level": "courant"},
+      {"code": "grc", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Volhynie (région de Rava-Rouska)", "lat": 50.23, "lon": 23.62, "from": 1260, "to": 1272, "note": "Naissance vers 1260 ; moine à douze ans.", "certainty": "probable"},
+      {"place": "Monastère de la Rata (Volhynie)", "lat": 50.25, "lon": 23.80, "from": 1272, "to": 1308, "note": "Hiéromoine, peintre d'icônes, puis ermite et fondateur d'un monastère sur la rivière Rata.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 1308, "to": 1308, "note": "Sacré métropolite de Kiev et de toute la Rus par le patriarche Athanase Ier.", "certainty": "sur"},
+      {"place": "Vladimir", "lat": 56.13, "lon": 40.41, "from": 1309, "to": 1313, "note": "Il réside à Vladimir, Kiev étant ruinée ; le prince de Tver conteste son élection.", "certainty": "sur"},
+      {"place": "Saraï", "lat": 47.17, "lon": 47.44, "from": 1313, "to": 1313, "note": "Voyage chez le khan Özbeg pour faire confirmer les privilèges de l'Église.", "certainty": "sur"},
+      {"place": "Vladimir", "lat": 56.13, "lon": 40.41, "from": 1313, "to": 1325, "note": "Siège métropolitain, avec de fréquents séjours à Moscou auprès d'Ivan Kalita.", "certainty": "sur"},
+      {"place": "Moscou (Kremlin)", "lat": 55.75, "lon": 37.62, "from": 1325, "to": 1326, "note": "Transfert du siège métropolitain à Moscou ; il lance la cathédrale de la Dormition et meurt le 21 décembre 1326.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Un moine peintre d'icônes qui déménage le siège de l'Église russe à Moscou, alors simple bourgade ambitieuse. Sans lui, pas de Moscou capitale.",
+    "fun": "Selon la légende, il aurait prédit à Ivan Kalita que Moscou deviendrait la première des villes russes si on y construisait une église de pierre : la cathédrale de la Dormition fut commencée l'année même.",
+    "sources": ["https://fr.wikipedia.org/wiki/Pierre_de_Moscou"]
+  },
+  {
+    "id": "roch",
+    "name": "Roch",
+    "full": "Saint Roch de Montpellier",
+    "feast": "08-16",
+    "feast_note": "",
+    "born": 1350,
+    "died": 1379,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Montpellier, Languedoc",
+    "role": "pèlerin, soignant des pestiférés",
+    "sex": "m",
+    "languages": [
+      {"code": "oci", "level": "natif"},
+      {"code": "ita", "level": "courant"},
+      {"code": "lat", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Montpellier", "lat": 43.61, "lon": 3.88, "from": 1350, "to": 1367, "note": "Naissance vers 1348-1350 ; orphelin, il distribue ses biens et part pour Rome.", "certainty": "probable"},
+      {"place": "Acquapendente", "lat": 42.74, "lon": 11.87, "from": 1367, "to": 1367, "note": "Trois mois à soigner les pestiférés de l'hôpital.", "certainty": "probable"},
+      {"place": "Cesena", "lat": 44.14, "lon": 12.24, "from": 1367, "to": 1368, "note": "Autre ville en proie à l'épidémie.", "certainty": "probable"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1368, "to": 1370, "note": "Il soigne les malades à Rome ; selon la légende, il guérit un cardinal d'un signe de croix.", "certainty": "probable"},
+      {"place": "Plaisance et Sarmato", "lat": 45.05, "lon": 9.69, "from": 1371, "to": 1374, "note": "Contaminé à Plaisance, il se retire dans un bois près de Sarmato où un chien lui apporte du pain chaque jour (légende).", "certainty": "legende"},
+      {"place": "Voghera (prison)", "lat": 44.99, "lon": 9.01, "from": 1374, "to": 1379, "note": "Arrêté comme espion près de Broni, il meurt en prison le 16 août 1379 sans avoir révélé son nom.", "certainty": "probable"}
+    ],
+    "met": [],
+    "blurb": "Un pèlerin de Montpellier qui soigne la peste de ville en ville, l'attrape, est sauvé par un chien et meurt en prison pour n'avoir pas voulu dire qui il était. Le saint le plus invoqué des épidémies.",
+    "fun": "Il naît avec une croix rouge sur la poitrine, dit la légende ; on le reconnaît grâce à elle après sa mort. Ses reliques, volées, sont à Venise depuis 1485. Son chien a droit à sa propre expression : « saint Roch et son chien ».",
+    "sources": ["https://fr.wikipedia.org/wiki/Roch_de_Montpellier"]
+  },
+  {
+    "id": "brigitte-de-suede",
+    "name": "Brigitte",
+    "full": "Sainte Brigitte de Suède",
+    "feast": "07-23",
+    "feast_note": "",
+    "born": 1303,
+    "died": 1373,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Finsta, Uppland",
+    "role": "mystique, fondatrice",
+    "sex": "f",
+    "languages": [
+      {"code": "non", "level": "natif", "note": "vieux suédois, langue scandinave médiévale couverte ici par le code du vieux norrois"},
+      {"code": "lat", "level": "notions"},
+      {"code": "ita", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Finsta (Uppland)", "lat": 59.78, "lon": 18.57, "from": 1303, "to": 1316, "note": "Fille d'un juge de l'Uppland, apparentée à la famille royale.", "certainty": "sur"},
+      {"place": "Ulvåsa (Östergötland)", "lat": 58.52, "lon": 15.22, "from": 1316, "to": 1335, "note": "Mariée à Ulf Gudmarsson, huit enfants, dont Catherine.", "certainty": "sur"},
+      {"place": "Stockholm (cour royale)", "lat": 59.33, "lon": 18.07, "from": 1335, "to": 1341, "note": "Dame d'honneur de la jeune reine Blanche de Namur, à qui elle fait la leçon.", "certainty": "sur"},
+      {"place": "Saint-Jacques-de-Compostelle", "lat": 42.88, "lon": -8.54, "from": 1341, "to": 1343, "note": "Pèlerinage avec son mari ; au retour, Ulf tombe malade à Arras.", "certainty": "sur"},
+      {"place": "Alvastra (abbaye cistercienne)", "lat": 58.30, "lon": 14.66, "from": 1344, "to": 1349, "note": "Veuve en 1344, elle vit près de l'abbaye ; début des Révélations et fondation de l'ordre du Saint-Sauveur à Vadstena.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1349, "to": 1371, "note": "Venue pour le jubilé de 1350, elle reste vingt-quatre ans, sermonnant papes et rois pour ramener la papauté d'Avignon.", "certainty": "sur"},
+      {"place": "Naples", "lat": 40.85, "lon": 14.27, "from": 1371, "to": 1372, "note": "Séjour à la cour de la reine Jeanne Ire avant d'embarquer pour la Terre sainte.", "certainty": "sur"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 1372, "to": 1372, "note": "Pèlerinage à Jérusalem et Bethléem, via Chypre (avril 1372) ; elle a près de soixante-dix ans.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1373, "to": 1373, "note": "Morte à Rome le 23 juillet 1373, peu après son retour.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "catherine-de-suede", "where": "Rome", "year": 1349, "note": "Sa fille Catherine la rejoint à Rome et ne la quitte plus pendant vingt-quatre ans."}
+    ],
+    "blurb": "Une mère de huit enfants qui, veuve, s'installe à Rome pour réprimander le pape par écrit et finit par aller à Jérusalem à presque soixante-dix ans. Co-patronne de l'Europe, et de ceux qui n'ont pas la langue dans leur poche.",
+    "fun": "Ses Révélations, dictées en suédois puis traduites en latin, décrivent la Nativité avec une telle précision que la peinture européenne l'a suivie pendant deux siècles : la Vierge agenouillée devant l'Enfant, c'est Brigitte.",
+    "sources": ["https://fr.wikipedia.org/wiki/Brigitte_de_Su%C3%A8de"]
+  },
+  {
+    "id": "catherine-de-suede",
+    "name": "Catherine",
+    "full": "Sainte Catherine de Suède (Catherine de Vadstena)",
+    "feast": "03-24",
+    "feast_note": "",
+    "born": 1332,
+    "died": 1381,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Ulvåsa, Östergötland",
+    "role": "abbesse",
+    "sex": "f",
+    "languages": [
+      {"code": "non", "level": "natif", "note": "vieux suédois, couvert ici par le code du vieux norrois"},
+      {"code": "ita", "level": "courant"},
+      {"code": "lat", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Ulvåsa (Östergötland)", "lat": 58.52, "lon": 15.22, "from": 1332, "to": 1350, "note": "Quatrième des huit enfants de Brigitte ; mariée très jeune au chevalier Eggard von Kürnen, mariage resté chaste.", "certainty": "probable"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1350, "to": 1371, "note": "Elle rejoint sa mère pour le jubilé de 1350 ; veuve peu après, elle reste à ses côtés.", "certainty": "sur"},
+      {"place": "Naples puis Jérusalem", "lat": 31.78, "lon": 35.23, "from": 1371, "to": 1372, "note": "Elle accompagne Brigitte en Terre sainte.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1373, "to": 1373, "note": "Mort de sa mère en juillet 1373.", "certainty": "sur"},
+      {"place": "Vadstena", "lat": 58.45, "lon": 14.89, "from": 1374, "to": 1375, "note": "Elle ramène la dépouille de Brigitte en Suède et prend la tête de l'abbaye.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1375, "to": 1380, "note": "Cinq ans de démarches pour faire approuver l'ordre et canoniser sa mère ; elle y croise Catherine de Sienne.", "certainty": "sur"},
+      {"place": "Vadstena", "lat": 58.45, "lon": 14.89, "from": 1380, "to": 1381, "note": "Abbesse, elle meurt le 24 mars 1381.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "brigitte-de-suede", "where": "Rome et Jérusalem", "year": 1350, "note": "Sa mère, dont elle partage l'exil romain et le pèlerinage en Terre sainte."},
+      {"with": "catherine-de-sienne", "where": "Rome", "year": 1379, "note": "La Siennoise voulait l'emmener à Naples convaincre la reine Jeanne de lâcher l'antipape ; la Suédoise refusa, et Raymond de Capoue le raconte."}
+    ],
+    "blurb": "La fille qui a passé plus de trente ans à Rome d'abord pour veiller sur sa mère, ensuite pour la faire canoniser. Une sainte par filiation et par persévérance administrative.",
+    "fun": "On la représente avec une biche : selon la légende, un cerf ou une biche surgissait pour la protéger des jeunes nobles romains qui la poursuivaient de leurs assiduités. Son procès de canonisation, ouvert en 1446, n'a jamais été clos.",
+    "sources": ["https://fr.wikipedia.org/wiki/Catherine_de_Su%C3%A8de"]
+  },
+  {
+    "id": "catherine-de-sienne",
+    "name": "Catherine",
+    "full": "Sainte Catherine de Sienne",
+    "feast": "04-29",
+    "feast_note": "",
+    "born": 1347,
+    "died": 1380,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Sienne, Toscane",
+    "role": "mystique, tertiaire dominicaine",
+    "sex": "f",
+    "languages": [
+      {"code": "ita", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Sienne", "lat": 43.32, "lon": 11.33, "from": 1347, "to": 1374, "note": "Vingt-troisième enfant d'un teinturier ; tertiaire dominicaine à seize ans, elle dicte ses lettres sans savoir bien écrire.", "certainty": "sur"},
+      {"place": "Florence", "lat": 43.77, "lon": 11.26, "from": 1374, "to": 1374, "note": "Chapitre général des dominicains, où elle rencontre Raymond de Capoue, son futur confesseur et biographe.", "certainty": "sur"},
+      {"place": "Pise", "lat": 43.72, "lon": 10.40, "from": 1375, "to": 1375, "note": "Elle y reçoit les stigmates, invisibles à sa demande, dit-elle.", "certainty": "probable"},
+      {"place": "Avignon", "lat": 43.95, "lon": 4.81, "from": 1376, "to": 1376, "note": "Arrivée le 18 juin 1376 pour supplier Grégoire XI de rentrer à Rome ; il part en septembre.", "certainty": "sur"},
+      {"place": "Gênes", "lat": 44.41, "lon": 8.93, "from": 1376, "to": 1377, "note": "Escale sur le chemin du retour, où elle revoit le pape hésitant.", "certainty": "sur"},
+      {"place": "Sienne", "lat": 43.32, "lon": 11.33, "from": 1377, "to": 1377, "note": "Retour en Toscane et dictée du Dialogue.", "certainty": "sur"},
+      {"place": "Florence", "lat": 43.77, "lon": 11.26, "from": 1377, "to": 1378, "note": "Négociatrice de la paix entre Florence et le pape ; elle échappe à une émeute.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1378, "to": 1380, "note": "Appelée par Urbain VI en pleine naissance du Grand Schisme, elle meurt le 29 avril 1380 à trente-trois ans.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "catherine-de-suede", "where": "Rome", "year": 1379, "note": "Elle tente de l'entraîner à Naples pour une mission auprès de la reine Jeanne ; la Suédoise décline."}
+    ],
+    "blurb": "Fille de teinturier qui ne sait pas bien écrire mais dicte des lettres aux papes et aux rois, et ramène la papauté d'Avignon à Rome. Elle meurt à trente-trois ans, docteur de l'Église par anticipation.",
+    "fun": "Son corps est à Rome, mais sa tête est à Sienne : les Siennois l'auraient rapportée en cachette dans un sac, et les gardes romains n'y auraient vu que des pétales de rose. Légende, bien sûr.",
+    "sources": ["https://fr.wikipedia.org/wiki/Catherine_de_Sienne"]
+  },
+  {
+    "id": "gregoire-palamas",
+    "name": "Grégoire",
+    "full": "Saint Grégoire Palamas",
+    "feast": "11-14",
+    "feast_note": "aussi le deuxième dimanche du Grand Carême",
+    "born": 1296,
+    "died": 1359,
+    "approx": false,
+    "tradition": "orthodoxe",
+    "origin": "Constantinople",
+    "role": "moine, théologien, archevêque",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 1296, "to": 1316, "note": "Fils d'un sénateur mort tôt ; l'empereur Andronic II prend en charge son éducation.", "certainty": "sur"},
+      {"place": "Mont Athos (Vatopédi puis Grande Laure)", "lat": 40.17, "lon": 24.38, "from": 1316, "to": 1325, "note": "Disciple de Nicodème, puis chantre à la Grande Laure ; initiation à l'hésychasme à Glossia.", "certainty": "sur"},
+      {"place": "Thessalonique", "lat": 40.64, "lon": 22.94, "from": 1325, "to": 1326, "note": "Fuyant les pirates turcs, il est ordonné prêtre et fréquente les disciples de Grégoire le Sinaïte.", "certainty": "sur"},
+      {"place": "Bérée (Véria)", "lat": 40.52, "lon": 22.20, "from": 1326, "to": 1331, "note": "Ermitage de montagne, cinq jours de silence par semaine.", "certainty": "sur"},
+      {"place": "Mont Athos (Saint-Sabas)", "lat": 40.17, "lon": 24.38, "from": 1331, "to": 1338, "note": "Retour à l'Athos ; début de la querelle avec Barlaam sur la lumière du Thabor.", "certainty": "sur"},
+      {"place": "Thessalonique", "lat": 40.64, "lon": 22.94, "from": 1338, "to": 1341, "note": "Rédaction des Triades pour la défense des saints hésychastes.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 1341, "to": 1347, "note": "Concile de 1341 qui condamne Barlaam ; puis guerre civile, prison (1342-1347) et excommunication (1344).", "certainty": "sur"},
+      {"place": "Thessalonique (archevêque)", "lat": 40.64, "lon": 22.94, "from": 1350, "to": 1354, "note": "Sacré en 1347, il ne peut entrer dans sa ville zélote qu'en 1350.", "certainty": "sur"},
+      {"place": "Asie Mineure (Lampsaque, Brousse, Nicée)", "lat": 40.18, "lon": 29.06, "from": 1354, "to": 1355, "note": "Son navire est capturé par les Turcs ; un an de captivité où il débat avec des docteurs musulmans.", "certainty": "sur"},
+      {"place": "Thessalonique", "lat": 40.64, "lon": 22.94, "from": 1355, "to": 1359, "note": "Racheté, il rentre par Constantinople et meurt à Thessalonique le 14 novembre 1359.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "gregoire-le-sinaite", "where": "Mont Athos", "year": 1325, "note": "Palamas le prend pour père spirituel à l'Athos ; la filiation est attestée, les détails de la rencontre restent flous."}
+    ],
+    "blurb": "Le théologien de la lumière incréée : il a défendu les moines qui prient en regardant leur nombril, gagné trois conciles et passé un an prisonnier des Turcs à discuter théologie. Fêté deux fois par an.",
+    "fun": "Captif en Asie Mineure en 1354, il a laissé le récit de ses débats avec des savants musulmans, l'un des rares témoignages byzantins de dialogue interreligieux à chaud.",
+    "sources": ["https://fr.wikipedia.org/wiki/Gr%C3%A9goire_Palamas"]
+  },
+  {
+    "id": "gregoire-le-sinaite",
+    "name": "Grégoire",
+    "full": "Saint Grégoire le Sinaïte",
+    "feast": "11-27",
+    "feast_note": "8 août chez les Slaves",
+    "born": 1265,
+    "died": 1346,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Koukoulos, près de Clazomènes (Ionie)",
+    "role": "moine hésychaste",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Koukoulos (Clazomènes, aujourd'hui Urla)", "lat": 38.32, "lon": 26.77, "from": 1265, "to": 1285, "note": "Naissance vers 1255-1265 sur la côte d'Ionie.", "certainty": "probable"},
+      {"place": "Laodicée (captivité)", "lat": 37.84, "lon": 29.11, "from": 1285, "to": 1286, "note": "Capturé par les Turcs avec sa famille, racheté par des chrétiens de Laodicée.", "certainty": "probable"},
+      {"place": "Chypre", "lat": 35.12, "lon": 33.94, "from": 1286, "to": 1290, "note": "Il devient moine auprès d'un ermite.", "certainty": "probable"},
+      {"place": "Mont Sinaï (Sainte-Catherine)", "lat": 28.56, "lon": 33.98, "from": 1290, "to": 1295, "note": "Plusieurs années au monastère, d'où son surnom.", "certainty": "probable"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 1295, "to": 1296, "note": "Pèlerinage aux Lieux saints.", "certainty": "probable"},
+      {"place": "Crète", "lat": 35.34, "lon": 25.13, "from": 1296, "to": 1300, "note": "L'ermite Arsène lui enseigne la prière du cœur.", "certainty": "probable"},
+      {"place": "Mont Athos (Magoula, près de Philothéou)", "lat": 40.22, "lon": 24.30, "from": 1300, "to": 1325, "note": "Un quart de siècle à l'Athos, où il forme Palamas, Calliste et Isidore à l'hésychasme.", "certainty": "sur"},
+      {"place": "Thessalonique, Chios, Constantinople (errances)", "lat": 40.64, "lon": 22.94, "from": 1325, "to": 1330, "note": "Chassé par les raids turcs, il erre de Thessalonique à Constantinople, puis Sozopol.", "certainty": "sur"},
+      {"place": "Paroria (monts de Strandja, Bulgarie)", "lat": 42.00, "lon": 27.52, "from": 1330, "to": 1346, "note": "Fonde un monastère protégé par le tsar Ivan Alexandre ; ses disciples bulgares répandront l'hésychasme dans tout le monde slave. Mort le 27 novembre 1346.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "gregoire-palamas", "where": "Mont Athos", "year": 1325, "note": "Le futur archevêque de Thessalonique est son disciple spirituel sur la Sainte Montagne."}
+    ],
+    "blurb": "Un Grec d'Asie Mineure capturé par les Turcs, moine au Sinaï, en Crète et à l'Athos, qui finit dans une forêt bulgare entouré de disciples. Il a relancé la prière du cœur dans tout l'Orient chrétien.",
+    "fun": "Il n'a jamais mis les pieds en Russie, mais ses élèves bulgares (Théodose, Euthyme, Cyprien) ont porté l'hésychasme jusqu'à Moscou en deux générations. Le Sinaïte est un saint à effet retard.",
+    "sources": ["https://fr.wikipedia.org/wiki/Gr%C3%A9goire_le_Sina%C3%AFte"]
+  },
+  {
+    "id": "serge-de-radonege",
+    "name": "Serge",
+    "full": "Saint Serge de Radonège",
+    "feast": "09-25",
+    "feast_note": "8 octobre au calendrier grégorien ; 5 juillet pour les reliques",
+    "born": 1314,
+    "died": 1392,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Varnitsa, près de Rostov",
+    "role": "higoumène, fondateur de monastères",
+    "sex": "m",
+    "languages": [
+      {"code": "orv", "level": "natif"},
+      {"code": "chu", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Varnitsa (Rostov)", "lat": 57.20, "lon": 39.42, "from": 1314, "to": 1328, "note": "Né Barthélemy dans une famille de boyards ruinés ; selon sa Vie, un moine mystérieux lui donne le don de lire.", "certainty": "sur"},
+      {"place": "Radonège", "lat": 56.22, "lon": 38.05, "from": 1328, "to": 1337, "note": "La famille émigre près de Moscou ; mort de ses parents vers 1334.", "certainty": "sur"},
+      {"place": "Colline de Makovets (future laure de la Trinité)", "lat": 56.31, "lon": 38.13, "from": 1337, "to": 1355, "note": "Ermite dans la forêt avec son frère Étienne, puis seul ; des disciples arrivent, il devient higoumène en 1354.", "certainty": "sur"},
+      {"place": "Kirjatch", "lat": 56.15, "lon": 38.87, "from": 1355, "to": 1358, "note": "Fuyant une fronde de ses moines, il fonde un autre monastère avant d'être rappelé par le métropolite Alexis.", "certainty": "probable"},
+      {"place": "Monastère de la Trinité", "lat": 56.31, "lon": 38.13, "from": 1358, "to": 1365, "note": "Retour à la Trinité ; Alexis le charge de missions pour Moscou.", "certainty": "sur"},
+      {"place": "Nijni Novgorod", "lat": 56.33, "lon": 44.00, "from": 1365, "to": 1365, "note": "Envoyé par Alexis fermer les églises de la ville pour soumettre le prince rebelle Boris.", "certainty": "sur"},
+      {"place": "Monastère de la Trinité", "lat": 56.31, "lon": 38.13, "from": 1366, "to": 1380, "note": "Fondations en chaîne ; en 1378 il refuse de succéder à Alexis.", "certainty": "sur"},
+      {"place": "Moscou", "lat": 55.75, "lon": 37.62, "from": 1380, "to": 1380, "note": "Il bénit Dimitri Donskoï avant Koulikovo et lui donne deux moines pour la bataille (tradition).", "certainty": "probable"},
+      {"place": "Monastère de la Trinité", "lat": 56.31, "lon": 38.13, "from": 1380, "to": 1385, "note": "Vie monastique et accueil des pèlerins.", "certainty": "sur"},
+      {"place": "Riazan", "lat": 54.63, "lon": 39.74, "from": 1385, "to": 1385, "note": "Mission de paix auprès du prince Oleg de Riazan, qu'il réconcilie avec Moscou.", "certainty": "sur"},
+      {"place": "Monastère de la Trinité (Serguiev Possad)", "lat": 56.31, "lon": 38.13, "from": 1385, "to": 1392, "note": "Mort le 25 septembre 1392 ; sa laure deviendra le cœur spirituel de la Russie.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "alexis-de-moscou", "where": "Moscou et Radonège", "year": 1354, "note": "Le métropolite est son protecteur et son employeur diplomatique ; il lui offre sa succession en 1378, Serge refuse."},
+      {"with": "etienne-de-perm", "where": "À dix kilomètres de distance", "year": 1390, "note": "Légende : Étienne, pressé, salue Serge de loin sur la route de Moscou ; Serge interrompt son repas pour lui répondre. Les moines ont marqué l'endroit d'une chapelle."},
+      {"with": "cyprien-de-kiev", "where": "Moscou", "year": 1390, "note": "Correspondance dès 1378 (Cyprien lui écrit trois lettres), puis rencontre quand Cyprien s'installe enfin à Moscou en 1390."}
+    ],
+    "blurb": "L'ermite des forêts qui partage son pain avec un ours, refuse la mitre et bénit l'armée qui bat les Mongols. Le saint patron de la Russie sans jamais avoir quitté la région de Moscou.",
+    "fun": "Sa Vie raconte qu'un ours venait chaque jour quémander un morceau de pain et que Serge lui donnait sa propre part quand il n'y en avait qu'une. La bénédiction à distance avec Étienne de Perm reste commémorée par une chapelle et une prière à table.",
+    "sources": ["https://fr.wikipedia.org/wiki/Serge_de_Radon%C3%A8ge"]
+  },
+  {
+    "id": "alexis-de-moscou",
+    "name": "Alexis",
+    "full": "Saint Alexis de Moscou, métropolite de Kiev et de toute la Rus",
+    "feast": "02-12",
+    "feast_note": "25 février au calendrier grégorien ; aussi 20 mai et 5 octobre",
+    "born": 1296,
+    "died": 1378,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Moscou",
+    "role": "métropolite, régent",
+    "sex": "m",
+    "languages": [
+      {"code": "orv", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "kip", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Moscou", "lat": 55.75, "lon": 37.62, "from": 1296, "to": 1313, "note": "Né Éleuthère, fils d'un boyard de Tchernigov ; son parrain est le futur Ivan Kalita.", "certainty": "probable"},
+      {"place": "Moscou (monastère de l'Épiphanie)", "lat": 55.76, "lon": 37.62, "from": 1313, "to": 1340, "note": "Moine sous le nom d'Alexis ; il apprend le grec et traduit les Évangiles.", "certainty": "sur"},
+      {"place": "Vladimir", "lat": 56.13, "lon": 40.41, "from": 1340, "to": 1353, "note": "Vicaire du métropolite Théognoste, puis évêque de Vladimir en 1352.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 1353, "to": 1354, "note": "Un an d'attente au Phanar avant d'être sacré métropolite de Kiev et de toute la Rus par le patriarche Philothée.", "certainty": "sur"},
+      {"place": "Moscou", "lat": 55.75, "lon": 37.62, "from": 1355, "to": 1357, "note": "Installation du siège à Moscou ; voyage de confirmation à Constantinople en 1356.", "certainty": "sur"},
+      {"place": "Saraï", "lat": 47.17, "lon": 47.44, "from": 1357, "to": 1357, "note": "Convoqué par le khan Djanibeg pour guérir sa mère Taïdoula, aveugle : il y parvient, et Moscou est épargnée.", "certainty": "sur"},
+      {"place": "Kiev (retenu par Olgerd)", "lat": 50.45, "lon": 30.52, "from": 1358, "to": 1360, "note": "Parti visiter la partie lituanienne de sa métropole, il est détenu deux ans par le grand-duc Olgerd avant de s'évader.", "certainty": "sur"},
+      {"place": "Moscou (Kremlin)", "lat": 55.75, "lon": 37.62, "from": 1360, "to": 1378, "note": "Régent du jeune Dimitri Donskoï, fondateur du monastère du Miracle (1365) ; mort le 12 février 1378.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "serge-de-radonege", "where": "Moscou et Radonège", "year": 1354, "note": "Il envoie Serge en mission à Nijni Novgorod et à Riazan et veut en faire son successeur."},
+      {"with": "cyprien-de-kiev", "where": "Tver puis Pereslavl-Zalesski", "year": 1374, "note": "Le 9 mars 1374, Cyprien assiste au sacre de l'évêque de Tver puis voyage avec Alexis jusqu'à Pereslavl."}
+    ],
+    "blurb": "Un métropolite qui gouverne Moscou à la place d'un prince de neuf ans, soigne la mère du khan à Saraï et s'évade d'une prison lituanienne. Diplomate, régent et thaumaturge en un seul homme.",
+    "fun": "Taïdoula, la mère du khan, lui aurait offert en remerciement un terrain dans le Kremlin où logeaient les Mongols : il y construit le monastère du Miracle, en souvenir de la guérison. Ses reliques, exhumées en 1431, sont trouvées intactes.",
+    "sources": ["https://fr.wikipedia.org/wiki/Alexis_de_Moscou", "https://en.wikipedia.org/wiki/Alexius,_Metropolitan_of_Moscow"]
+  },
+  {
+    "id": "etienne-de-perm",
+    "name": "Étienne",
+    "full": "Saint Étienne de Perm",
+    "feast": "04-26",
+    "feast_note": "9 mai au calendrier grégorien",
+    "born": 1340,
+    "died": 1396,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Veliki Oustioug, terre de Novgorod",
+    "role": "évêque missionnaire",
+    "sex": "m",
+    "languages": [
+      {"code": "orv", "level": "natif"},
+      {"code": "kom", "level": "courant"},
+      {"code": "grc", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Veliki Oustioug", "lat": 60.76, "lon": 46.30, "from": 1340, "to": 1365, "note": "Fils d'un clerc ; il grandit au contact des marchands komis de passage et apprend leur langue.", "certainty": "probable"},
+      {"place": "Rostov (monastère Saint-Grégoire)", "lat": 57.19, "lon": 39.42, "from": 1365, "to": 1379, "note": "Moine lettré, il apprend le grec pour lire les Pères et invente l'alphabet abour pour les Komis.", "certainty": "sur"},
+      {"place": "Moscou", "lat": 55.75, "lon": 37.62, "from": 1379, "to": 1379, "note": "Ordonné prêtre et muni de la bénédiction de Moscou pour sa mission.", "certainty": "sur"},
+      {"place": "Oust-Vym (pays komi)", "lat": 62.23, "lon": 50.40, "from": 1379, "to": 1383, "note": "Il abat le bouleau sacré, affronte le chaman Pam dans une ordalie par le feu (que Pam refuse), et traduit la liturgie en komi.", "certainty": "sur"},
+      {"place": "Moscou", "lat": 55.75, "lon": 37.62, "from": 1383, "to": 1383, "note": "Sacré premier évêque de Perm par le métropolite Pimen.", "certainty": "sur"},
+      {"place": "Oust-Vym", "lat": 62.23, "lon": 50.40, "from": 1383, "to": 1396, "note": "Évêque pendant treize ans : écoles, monastères, famine de 1387, raids des Vogouls ; passage éclair près de Radonège en 1390.", "certainty": "sur"},
+      {"place": "Moscou", "lat": 55.75, "lon": 37.62, "from": 1396, "to": 1396, "note": "Venu régler des affaires auprès du métropolite Cyprien, il meurt le 26 avril 1396 et est enterré au Kremlin.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "serge-de-radonege", "where": "À dix kilomètres de distance", "year": 1390, "note": "Légende de la bénédiction à distance : trop pressé pour faire le détour, Étienne salue Serge depuis la route et Serge lui répond en se levant de table."},
+      {"with": "cyprien-de-kiev", "where": "Moscou", "year": 1396, "note": "Il meurt à Moscou lors d'une visite au métropolite Cyprien, qui le fait inhumer au Kremlin."}
+    ],
+    "blurb": "Le Cyrille et Méthode des Komis : il invente un alphabet, traduit la liturgie, abat le bouleau sacré et défie un chaman à l'épreuve du feu. Il gagne par forfait.",
+    "fun": "Son alphabet abour, inspiré du grec, du cyrillique et des marques de propriété komies, a servi deux siècles avant d'être remplacé par le cyrillique. Quelques inscriptions en abour servaient ensuite de code secret aux scribes moscovites.",
+    "sources": ["https://fr.wikipedia.org/wiki/%C3%89tienne_de_Perm"]
+  },
+  {
+    "id": "cyprien-de-kiev",
+    "name": "Cyprien",
+    "full": "Saint Cyprien de Kiev, métropolite de Kiev et de toute la Rus",
+    "feast": "09-16",
+    "feast_note": "aussi 27 mai (translation des reliques)",
+    "born": 1336,
+    "died": 1406,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Tarnovo, Bulgarie",
+    "role": "métropolite, traducteur",
+    "sex": "m",
+    "languages": [
+      {"code": "bul", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "orv", "level": "courant"},
+      {"code": "chu", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Tarnovo", "lat": 43.08, "lon": 25.65, "from": 1336, "to": 1355, "note": "Né vers 1336 dans la famille Tsamblak, à la capitale du second empire bulgare.", "certainty": "probable"},
+      {"place": "Monastère de Kilifarevo", "lat": 42.99, "lon": 25.63, "from": 1355, "to": 1363, "note": "Formé à l'hésychasme auprès de Théodose de Tarnovo, avec Euthyme pour condisciple.", "certainty": "sur"},
+      {"place": "Constantinople (Stoudion)", "lat": 41.01, "lon": 28.98, "from": 1363, "to": 1364, "note": "Voyage avec Théodose et Euthyme ; quelques mois d'étude au Stoudion.", "certainty": "sur"},
+      {"place": "Mont Athos", "lat": 40.26, "lon": 24.23, "from": 1364, "to": 1371, "note": "Études et copie de manuscrits ; amitié avec le futur patriarche Philothée Kokkinos.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 1371, "to": 1373, "note": "Homme de confiance du patriarche Philothée.", "certainty": "sur"},
+      {"place": "Kiev, Tver et Pereslavl (mission)", "lat": 50.45, "lon": 30.52, "from": 1373, "to": 1375, "note": "Envoyé patriarcal en Lituanie et en Rus ; il voyage avec le métropolite Alexis en mars 1374.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 1375, "to": 1376, "note": "Sacré le 2 décembre 1375 métropolite de Kiev, de Rus et de Lituanie, du vivant d'Alexis.", "certainty": "sur"},
+      {"place": "Kiev", "lat": 50.45, "lon": 30.52, "from": 1376, "to": 1381, "note": "Résidence à Kiev ; Dimitri Donskoï refuse de le recevoir à Moscou et le fait même expulser sans ménagement en 1378.", "certainty": "sur"},
+      {"place": "Moscou", "lat": 55.75, "lon": 37.62, "from": 1381, "to": 1382, "note": "Accueilli après Koulikovo, puis chassé de nouveau après avoir fui l'incendie de Moscou par Tokhtamych.", "certainty": "sur"},
+      {"place": "Kiev et Constantinople", "lat": 50.45, "lon": 30.52, "from": 1382, "to": 1390, "note": "Années d'attente à Kiev et au Phanar ; le concile de février 1389 le reconnaît seul métropolite de toute la Rus.", "certainty": "sur"},
+      {"place": "Moscou", "lat": 55.75, "lon": 37.62, "from": 1390, "to": 1406, "note": "Seize ans de gouvernement, de traductions et de réforme liturgique ; mort dans son village de Golenichtchevo le 16 septembre 1406.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "euthyme-de-tarnovo", "where": "Kilifarevo, Constantinople puis Athos", "year": 1363, "note": "Condisciples chez Théodose, compagnons de voyage à Constantinople, puis correspondants : Euthyme lui envoie des traductions."},
+      {"with": "alexis-de-moscou", "where": "Tver puis Pereslavl-Zalesski", "year": 1374, "note": "Il voyage avec le vieux métropolite, dont il convoite poliment la succession."},
+      {"with": "serge-de-radonege", "where": "Moscou", "year": 1390, "note": "Trois lettres à Serge dès 1378 pour plaider sa cause, puis une rencontre tardive quand il s'installe enfin à Moscou."},
+      {"with": "etienne-de-perm", "where": "Moscou", "year": 1396, "note": "L'évêque de Perm vient le voir et meurt pendant son séjour ; Cyprien l'enterre au Kremlin."}
+    ],
+    "blurb": "Un Bulgare formé à l'Athos qui met quinze ans à se faire accepter à Moscou, d'où on l'expulse deux fois. Il finit par y régner seize ans et par y importer l'hésychasme et la réforme du slavon.",
+    "fun": "Dimitri Donskoï, furieux de le voir arriver en 1378, l'a fait dévaliser, enfermer une nuit et renvoyer sur un cheval sans selle : Cyprien a répondu par une lettre d'excommunication envoyée à Serge de Radonège, qui existe encore.",
+    "sources": ["https://en.wikipedia.org/wiki/Cyprian,_Metropolitan_of_Kiev_and_All_Rus%27"]
+  },
+  {
+    "id": "vincent-ferrier",
+    "name": "Vincent",
+    "full": "Saint Vincent Ferrier",
+    "feast": "04-05",
+    "feast_note": "5 mai chez les dominicains",
+    "born": 1350,
+    "died": 1419,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Valence, couronne d'Aragon",
+    "role": "dominicain, prédicateur itinérant",
+    "sex": "m",
+    "languages": [
+      {"code": "cat", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "spa", "level": "courant"},
+      {"code": "fro", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Valence", "lat": 39.47, "lon": -0.38, "from": 1350, "to": 1368, "note": "Né le 23 janvier 1350 ; dominicain à dix-sept ans.", "certainty": "sur"},
+      {"place": "Barcelone et Lérida", "lat": 41.62, "lon": 0.63, "from": 1368, "to": 1376, "note": "Études de logique et de philosophie, premier enseignement.", "certainty": "sur"},
+      {"place": "Toulouse", "lat": 43.60, "lon": 1.44, "from": 1376, "to": 1378, "note": "Études de théologie.", "certainty": "sur"},
+      {"place": "Valence", "lat": 39.47, "lon": -0.38, "from": 1378, "to": 1395, "note": "Prêtre en 1379, prieur du couvent, confesseur de la reine Yolande ; il soutient le pape d'Avignon.", "certainty": "sur"},
+      {"place": "Avignon", "lat": 43.95, "lon": 4.81, "from": 1395, "to": 1399, "note": "Confesseur et pénitencier de Benoît XIII, son ancien ami Pedro de Luna ; malade en 1398, il a une vision qui l'envoie prêcher.", "certainty": "sur"},
+      {"place": "Dauphiné, Savoie et Suisse romande", "lat": 46.52, "lon": 6.63, "from": 1399, "to": 1404, "note": "Prédication de pénitence avec une troupe de flagellants ; Genève, Lausanne, Fribourg.", "certainty": "sur"},
+      {"place": "Gênes, Lombardie et Piémont", "lat": 44.91, "lon": 8.61, "from": 1405, "to": 1408, "note": "Italie du Nord ; à Alexandrie, en 1408, il aurait désigné le jeune Bernardin de Sienne comme son successeur (tradition).", "certainty": "probable"},
+      {"place": "Castille et Aragon", "lat": 41.23, "lon": -0.04, "from": 1409, "to": 1412, "note": "Prédication en Castille, puis compromis de Caspe (1412) où il fait élire Ferdinand d'Antequera roi d'Aragon.", "certainty": "sur"},
+      {"place": "Majorque, Perpignan, Languedoc", "lat": 42.70, "lon": 2.90, "from": 1413, "to": 1416, "note": "Il finit par lâcher Benoît XIII à Perpignan en janvier 1416 et pousse l'Aragon à retirer son obédience.", "certainty": "sur"},
+      {"place": "Bourgogne (Besançon, Dijon)", "lat": 47.24, "lon": 6.02, "from": 1417, "to": 1417, "note": "Prédication en Bourgogne ; rencontre avec Colette de Corbie à Besançon.", "certainty": "sur"},
+      {"place": "Caen puis Bretagne", "lat": 49.18, "lon": -0.37, "from": 1418, "to": 1418, "note": "Entrevue avec Henri V d'Angleterre à Caen, puis arrivée en Bretagne à l'appel du duc Jean V.", "certainty": "sur"},
+      {"place": "Vannes", "lat": 47.66, "lon": -2.76, "from": 1418, "to": 1419, "note": "Il prêche en Bretagne et meurt à Vannes le 5 avril 1419, enterré dans la cathédrale.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "bernardin-de-sienne", "where": "Alexandrie (Piémont)", "year": 1408, "note": "Tradition : Vincent annonce en chaire qu'un jeune franciscain présent reprendra son flambeau en Italie ; Bernardin le raconta lui-même."},
+      {"with": "colette-de-corbie", "where": "Besançon", "year": 1417, "note": "Les deux réformateurs se rencontrent et s'accordent pour pousser à la fin du Grand Schisme."}
+    ],
+    "blurb": "Un dominicain valencien qui a prêché vingt ans à travers l'Europe en catalan devant des foules qui ne parlaient pas catalan, et qu'on comprenait quand même, dit la légende. Il fait et défait des papes et des rois.",
+    "fun": "On le représente avec des ailes, parce qu'il se présentait comme l'ange de l'Apocalypse. Vannes conserve son tombeau, mais en 2020 une partie de ses ossements a été volée dans une église de Garlan.",
+    "sources": ["https://fr.wikipedia.org/wiki/Vincent_Ferrier"]
+  },
+  {
+    "id": "jeanne-d-arc",
+    "name": "Jeanne",
+    "full": "Sainte Jeanne d'Arc",
+    "feast": "05-30",
+    "feast_note": "fête nationale le deuxième dimanche de mai",
+    "born": 1412,
+    "died": 1431,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Domrémy, marches de Lorraine",
+    "role": "chef de guerre, martyre",
+    "sex": "f",
+    "languages": [
+      {"code": "frm", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Domrémy", "lat": 48.44, "lon": 5.67, "from": 1412, "to": 1429, "note": "Fille de laboureurs ; elle dit entendre ses voix dès treize ans.", "certainty": "sur"},
+      {"place": "Vaucouleurs", "lat": 48.60, "lon": 5.67, "from": 1429, "to": 1429, "note": "Elle convainc le capitaine Robert de Baudricourt de l'escorter vers le dauphin (février 1429).", "certainty": "sur"},
+      {"place": "Chinon", "lat": 47.17, "lon": 0.24, "from": 1429, "to": 1429, "note": "Reconnaît le dauphin Charles au milieu de la cour, début mars 1429.", "certainty": "sur"},
+      {"place": "Poitiers", "lat": 46.58, "lon": 0.34, "from": 1429, "to": 1429, "note": "Examinée trois semaines par les théologiens, qui n'y trouvent que du bien.", "certainty": "sur"},
+      {"place": "Orléans", "lat": 47.90, "lon": 1.91, "from": 1429, "to": 1429, "note": "Levée du siège le 8 mai 1429, en neuf jours.", "certainty": "sur"},
+      {"place": "Reims", "lat": 49.26, "lon": 4.03, "from": 1429, "to": 1429, "note": "Sacre de Charles VII le 17 juillet 1429, Jeanne debout près de l'autel avec son étendard.", "certainty": "sur"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 1429, "to": 1429, "note": "Assaut manqué de la porte Saint-Honoré le 8 septembre 1429, où elle est blessée.", "certainty": "sur"},
+      {"place": "Compiègne", "lat": 49.42, "lon": 2.83, "from": 1430, "to": 1430, "note": "Capturée par les Bourguignons lors d'une sortie le 23 mai 1430.", "certainty": "sur"},
+      {"place": "Beaurevoir", "lat": 49.99, "lon": 3.31, "from": 1430, "to": 1430, "note": "Prisonnière de Jean de Luxembourg ; elle saute de la tour (vingt mètres) et survit.", "certainty": "sur"},
+      {"place": "Rouen", "lat": 49.44, "lon": 1.10, "from": 1430, "to": 1431, "note": "Vendue aux Anglais, procès mené par Cauchon, brûlée place du Vieux-Marché le 30 mai 1431.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Une bergère de dix-sept ans qui fait sacrer un roi, lève un siège et finit sur un bûcher à dix-neuf ans. Réhabilitée en 1456, canonisée en 1920 : la plus longue procédure de la liste.",
+    "fun": "Au procès, on lui demande dans quelle langue ses voix lui parlent : « en meilleur français que vous », répond-elle à un juge. Son nom se prononçait « Day » avec l'accent lorrain.",
+    "sources": ["https://fr.wikipedia.org/wiki/Jeanne_d%27Arc"]
+  },
+  {
+    "id": "bernardin-de-sienne",
+    "name": "Bernardin",
+    "full": "Saint Bernardin de Sienne",
+    "feast": "05-20",
+    "feast_note": "",
+    "born": 1380,
+    "died": 1444,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Massa Marittima, Toscane",
+    "role": "franciscain, prédicateur",
+    "sex": "m",
+    "languages": [
+      {"code": "ita", "level": "natif"},
+      {"code": "lat", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Massa Marittima", "lat": 43.05, "lon": 10.89, "from": 1380, "to": 1391, "note": "Né le 8 septembre 1380, orphelin à six ans.", "certainty": "sur"},
+      {"place": "Sienne", "lat": 43.32, "lon": 11.33, "from": 1391, "to": 1402, "note": "Élevé par ses tantes ; pendant la peste de 1400, il dirige l'hôpital Santa Maria della Scala.", "certainty": "sur"},
+      {"place": "Colombaio et Fiesole (franciscain)", "lat": 43.81, "lon": 11.29, "from": 1402, "to": 1405, "note": "Habit franciscain le 8 septembre 1402, dans l'Observance ; prêtre en 1404.", "certainty": "sur"},
+      {"place": "Alexandrie (Piémont)", "lat": 44.91, "lon": 8.61, "from": 1408, "to": 1408, "note": "Selon la tradition, c'est là que Vincent Ferrier le désigne comme son successeur en Italie.", "certainty": "legende"},
+      {"place": "Italie du Nord (Pavie, Padoue, Ferrare, Gênes, Milan)", "lat": 45.41, "lon": 11.88, "from": 1410, "to": 1424, "note": "Vingt ans de prédication de ville en ville, avec le monogramme IHS brandi en chaire.", "certainty": "sur"},
+      {"place": "Sienne (Piazza del Campo)", "lat": 43.32, "lon": 11.33, "from": 1425, "to": 1427, "note": "Sermons sur le Campo en mai 1425, bûchers des vanités.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 1427, "to": 1427, "note": "Procès en hérésie devant Martin V pour son culte du nom de Jésus ; défendu par Jean de Capistran, acquitté.", "certainty": "sur"},
+      {"place": "Italie centrale (prédication, vicaire général)", "lat": 43.11, "lon": 12.39, "from": 1427, "to": 1442, "note": "Il refuse trois évêchés, dirige les franciscains observants de 1438 à 1442.", "certainty": "sur"},
+      {"place": "L'Aquila", "lat": 42.35, "lon": 13.40, "from": 1444, "to": 1444, "note": "Mort en route vers Naples, le 20 mai 1444.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "vincent-ferrier", "where": "Alexandrie (Piémont)", "year": 1408, "note": "Tradition : le vieux dominicain, en chaire, annonce qu'un jeune frère de l'auditoire poursuivra son œuvre."},
+      {"with": "jean-de-capistran", "where": "Italie, puis Rome", "year": 1417, "note": "Son disciple et compagnon, qui assure sa défense au procès de 1427 et écrit sa Vie."}
+    ],
+    "blurb": "La trompette du ciel : un franciscain qui fait brûler miroirs et cartes à jouer sur les places et remplace les blasons des factions par le monogramme IHS. Jugé pour hérésie, acquitté, canonisé six ans après sa mort.",
+    "fun": "Il avait une voix faible et enrouée ; selon sa légende, la Vierge la lui a rendue claire pour prêcher. Il est le patron des publicitaires, pour ses talents de communicant et son logo IHS.",
+    "sources": ["https://fr.wikipedia.org/wiki/Bernardin_de_Sienne"]
+  },
+  {
+    "id": "jean-de-capistran",
+    "name": "Jean",
+    "full": "Saint Jean de Capistran",
+    "feast": "10-23",
+    "feast_note": "28 mars dans l'ancien calendrier",
+    "born": 1386,
+    "died": 1456,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Capestrano, Abruzzes",
+    "role": "franciscain, prédicateur, croisé",
+    "sex": "m",
+    "languages": [
+      {"code": "ita", "level": "natif"},
+      {"code": "lat", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Capestrano", "lat": 42.27, "lon": 13.77, "from": 1386, "to": 1400, "note": "Né le 24 juin 1386, fils d'un chevalier venu de France ou d'Allemagne avec Louis d'Anjou.", "certainty": "sur"},
+      {"place": "Pérouse", "lat": 43.11, "lon": 12.39, "from": 1400, "to": 1416, "note": "Études de droit, juriste, gouverneur de la ville ; marié brièvement ; prisonnier en 1415 lors d'une guerre locale.", "certainty": "sur"},
+      {"place": "Italie (prédication avec Bernardin)", "lat": 43.32, "lon": 11.33, "from": 1416, "to": 1450, "note": "Franciscain en 1416, prêtre en 1417, disciple de Bernardin ; inquisiteur, légat, prêcheur dans toute la péninsule.", "certainty": "sur"},
+      {"place": "Vienne", "lat": 48.21, "lon": 16.37, "from": 1451, "to": 1451, "note": "Invité par Frédéric III ; il prêche en latin, un interprète traduit, les foules affluent.", "certainty": "sur"},
+      {"place": "Moravie et Bohême (Brno, Olomouc)", "lat": 49.20, "lon": 16.61, "from": 1451, "to": 1452, "note": "Prédication contre les hussites ; il ne peut entrer à Prague.", "certainty": "sur"},
+      {"place": "Breslau (Wroclaw)", "lat": 51.11, "lon": 17.03, "from": 1453, "to": 1453, "note": "Prédication, bûchers des vanités et, sombre épisode, procès contre les juifs de la ville.", "certainty": "sur"},
+      {"place": "Cracovie", "lat": 50.06, "lon": 19.94, "from": 1453, "to": 1454, "note": "Invité par Casimir IV ; il fonde le couvent des bernardins.", "certainty": "sur"},
+      {"place": "Hongrie (Buda)", "lat": 47.50, "lon": 19.04, "from": 1455, "to": 1456, "note": "Prédication de la croisade contre les Ottomans : il lève des dizaines de milliers de paysans.", "certainty": "sur"},
+      {"place": "Belgrade", "lat": 44.82, "lon": 20.46, "from": 1456, "to": 1456, "note": "Siège de Belgrade, juillet 1456 : à soixante-dix ans, il mène les croisés au combat avec Jean Hunyadi.", "certainty": "sur"},
+      {"place": "Ilok", "lat": 45.22, "lon": 19.37, "from": 1456, "to": 1456, "note": "Emporté par la peste du camp le 23 octobre 1456.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "bernardin-de-sienne", "where": "Italie, puis Rome", "year": 1417, "note": "Son maître et ami ; il le défend au procès de 1427 et obtient sa canonisation en 1450."}
+    ],
+    "blurb": "Un juriste de Pérouse devenu franciscain à trente ans qui prêche en latin avec interprète de Vienne à Cracovie, puis mène des paysans à l'assaut des Ottomans devant Belgrade à soixante-dix ans. Mort de la peste trois mois plus tard.",
+    "fun": "La victoire de Belgrade est à l'origine de la sonnerie des cloches à midi : le pape Calixte III l'avait ordonnée pour prier pour les croisés, et on l'a gardée pour fêter la victoire. Capistran est aussi le patron des aumôniers militaires.",
+    "sources": ["https://fr.wikipedia.org/wiki/Jean_de_Capistran"]
+  },
+  {
+    "id": "nicolas-de-flue",
+    "name": "Nicolas",
+    "full": "Saint Nicolas de Flüe (frère Nicolas)",
+    "feast": "03-21",
+    "feast_note": "25 septembre en Suisse",
+    "born": 1417,
+    "died": 1487,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Flüeli, Obwald",
+    "role": "paysan, ermite, conseiller",
+    "sex": "m",
+    "languages": [
+      {"code": "gmh", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Flüeli (Sachseln)", "lat": 46.87, "lon": 8.25, "from": 1417, "to": 1440, "note": "Paysan aisé d'Obwald.", "certainty": "sur"},
+      {"place": "Campagnes contre Zurich", "lat": 47.37, "lon": 8.54, "from": 1440, "to": 1446, "note": "Soldat puis capitaine pendant l'ancienne guerre de Zurich ; la tradition le montre l'épée dans une main, le chapelet dans l'autre.", "certainty": "probable"},
+      {"place": "Flüeli (Sachseln)", "lat": 46.87, "lon": 8.25, "from": 1446, "to": 1467, "note": "Marié à Dorothée Wyss vers 1447, dix enfants, conseiller et juge du canton de 1459 à 1467.", "certainty": "sur"},
+      {"place": "Liestal (route de Bâle)", "lat": 47.48, "lon": 7.73, "from": 1467, "to": 1467, "note": "Parti vers l'Alsace avec l'accord de sa femme, il rebrousse chemin après une vision près de Liestal.", "certainty": "probable"},
+      {"place": "Gorge du Ranft (Sachseln)", "lat": 46.87, "lon": 8.26, "from": 1467, "to": 1487, "note": "Vingt ans d'ermitage à quelques centaines de mètres de sa famille ; en 1481, son message sauve la Diète de Stans et la Confédération.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Un père de dix enfants qui quitte sa famille, avec sa permission, pour vivre en ermite à cinq minutes de chez lui et sauver la Suisse par un simple message. Il n'aurait rien mangé pendant dix-neuf ans.",
+    "fun": "Il n'a jamais quitté la Suisse centrale et le Ranft est devenu lieu de pèlerinage de son vivant : évêques et ambassadeurs grimpaient dans sa gorge pour lui demander conseil, et il ne savait ni lire ni écrire.",
+    "sources": ["https://fr.wikipedia.org/wiki/Nicolas_de_Fl%C3%BCe"]
+  },
+  {
+    "id": "colette-de-corbie",
+    "name": "Colette",
+    "full": "Sainte Colette de Corbie",
+    "feast": "03-06",
+    "feast_note": "7 février chez les franciscains",
+    "born": 1381,
+    "died": 1447,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Corbie, Picardie",
+    "role": "recluse, réformatrice des clarisses",
+    "sex": "f",
+    "languages": [
+      {"code": "frm", "level": "natif"},
+      {"code": "lat", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Corbie", "lat": 49.91, "lon": 2.51, "from": 1381, "to": 1406, "note": "Fille du charpentier de l'abbaye ; orpheline, elle essaie béguines et bénédictines, puis se fait murer recluse en 1402 près de l'église.", "certainty": "sur"},
+      {"place": "Nice", "lat": 43.70, "lon": 7.27, "from": 1406, "to": 1406, "note": "Elle traverse la France pour obtenir de Benoît XIII, pape d'Avignon, l'autorisation de réformer les clarisses ; il la fait abbesse.", "certainty": "sur"},
+      {"place": "Besançon", "lat": 47.24, "lon": 6.02, "from": 1410, "to": 1417, "note": "Premier couvent réformé (1410) ; rencontre avec Vincent Ferrier en 1417.", "certainty": "sur"},
+      {"place": "Bourgogne et Savoie (Auxonne, Poligny, Vevey)", "lat": 46.84, "lon": 5.71, "from": 1417, "to": 1442, "note": "Dix-sept couvents fondés ou réformés, avec l'appui des ducs de Bourgogne et de Savoie.", "certainty": "sur"},
+      {"place": "Gand", "lat": 51.05, "lon": 3.72, "from": 1442, "to": 1447, "note": "Couvent fondé en Flandre ; elle y meurt le 6 mars 1447.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "vincent-ferrier", "where": "Besançon", "year": 1417, "note": "Le dominicain et la clarisse se rencontrent et s'encouragent à travailler à la fin du Grand Schisme."}
+    ],
+    "blurb": "Une recluse murée dans sa cellule à Corbie qui en sort pour traverser la France pieds nus et réformer dix-sept couvents de clarisses. Une réformatrice qui ne possédait rien, pas même des chaussures.",
+    "fun": "On dit qu'elle a rencontré Jeanne d'Arc à Moulins en 1429 ; rien ne le prouve, et les deux femmes ne figurent jamais ensemble dans les sources. Elle est en revanche la patronne des femmes enceintes et des enfants malades.",
+    "sources": ["https://fr.wikipedia.org/wiki/Colette_de_Corbie"]
+  },
+  {
+    "id": "rita-de-cascia",
+    "name": "Rita",
+    "full": "Sainte Rita de Cascia",
+    "feast": "05-22",
+    "feast_note": "",
+    "born": 1381,
+    "died": 1457,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Roccaporena, Ombrie",
+    "role": "épouse, veuve, religieuse",
+    "sex": "f",
+    "languages": [
+      {"code": "ita", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Roccaporena", "lat": 42.72, "lon": 13.00, "from": 1381, "to": 1413, "note": "Née Margherita Lotti ; mariée à Paolo Mancini, homme violent assassiné en 1412 ; ses deux fils meurent peu après.", "certainty": "probable"},
+      {"place": "Cascia (monastère Sainte-Marie-Madeleine)", "lat": 42.72, "lon": 13.01, "from": 1413, "to": 1457, "note": "Admise chez les augustines après avoir réconcilié les familles ennemies ; quarante ans de vie religieuse, une épine au front les quinze dernières années. Morte le 22 mai 1457.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Une veuve d'Ombrie qui pardonne aux assassins de son mari, entre au couvent à force d'insistance et porte quinze ans une plaie au front. La sainte des causes désespérées n'a jamais vécu à plus de cinq kilomètres de chez elle.",
+    "fun": "Légende : des abeilles blanches entraient et sortaient de sa bouche de bébé sans la piquer, et une rose fleurit en plein hiver dans son jardin quand elle la demande. Son corps, dit incorrompu, repose à Cascia.",
+    "sources": ["https://fr.wikipedia.org/wiki/Rita_de_Cascia"]
+  },
+  {
+    "id": "jadwiga",
+    "name": "Hedwige",
+    "full": "Sainte Hedwige (Jadwiga), reine de Pologne",
+    "feast": "07-17",
+    "feast_note": "8 juin en Pologne",
+    "born": 1374,
+    "died": 1399,
+    "approx": true,
+    "tradition": "catholique",
+    "origin": "Buda, royaume de Hongrie",
+    "role": "roi de Pologne",
+    "sex": "f",
+    "languages": [
+      {"code": "hun", "level": "natif"},
+      {"code": "pol", "level": "courant"},
+      {"code": "lat", "level": "courant"},
+      {"code": "gmh", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Buda", "lat": 47.50, "lon": 19.04, "from": 1374, "to": 1384, "note": "Fille de Louis le Grand, roi de Hongrie et de Pologne ; fiancée à quatre ans à Guillaume d'Autriche, dont elle apprend la langue.", "certainty": "sur"},
+      {"place": "Cracovie (Wawel)", "lat": 50.06, "lon": 19.94, "from": 1384, "to": 1387, "note": "Couronnée « roi » de Pologne le 16 octobre 1384 à dix ans ; mariée en 1386 au grand-duc Jogaila, qui se fait baptiser.", "certainty": "sur"},
+      {"place": "Ruthénie rouge (Lviv)", "lat": 49.84, "lon": 24.03, "from": 1387, "to": 1387, "note": "Elle mène elle-même l'expédition qui ramène la Ruthénie rouge à la couronne polonaise.", "certainty": "sur"},
+      {"place": "Cracovie (Wawel)", "lat": 50.06, "lon": 19.94, "from": 1387, "to": 1399, "note": "Fondation de la faculté de théologie, bourses pour Prague, diplomatie avec les Teutoniques ; elle meurt le 17 juillet 1399 après la naissance d'une fille, à vingt-cinq ans.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Couronnée roi (pas reine) de Pologne à dix ans, mariée à douze à un Lituanien païen deux fois plus âgé qu'elle fait baptiser, elle refonde l'université de Cracovie en léguant ses bijoux. Morte à vingt-cinq ans.",
+    "fun": "Dans l'église des Carmes de Cracovie, on montre une empreinte de pied dans une pierre : la reine aurait ôté sa chaussure ornée d'un bijou pour la donner à un maçon pauvre, et la pierre aurait gardé la trace. Elle parlait six langues.",
+    "sources": ["https://fr.wikipedia.org/wiki/Hedwige_Ire_de_Pologne"]
+  },
+  {
+    "id": "euthyme-de-tarnovo",
+    "name": "Euthyme",
+    "full": "Saint Euthyme de Tarnovo, patriarche de Bulgarie",
+    "feast": "01-20",
+    "feast_note": "",
+    "born": 1327,
+    "died": 1402,
+    "approx": true,
+    "tradition": "orthodoxe",
+    "origin": "Tarnovo, Bulgarie",
+    "role": "patriarche, réformateur de la langue",
+    "sex": "m",
+    "languages": [
+      {"code": "bul", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "chu", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Tarnovo", "lat": 43.08, "lon": 25.65, "from": 1327, "to": 1350, "note": "Né vers 1327 dans la noblesse de la capitale bulgare.", "certainty": "probable"},
+      {"place": "Monastère de Kilifarevo", "lat": 42.99, "lon": 25.63, "from": 1350, "to": 1363, "note": "Disciple de Théodose de Tarnovo, lui-même élève de Grégoire le Sinaïte ; Cyprien est son condisciple.", "certainty": "sur"},
+      {"place": "Constantinople (Stoudion)", "lat": 41.01, "lon": 28.98, "from": 1363, "to": 1365, "note": "Accompagne Théodose mourant à Constantinople, puis étudie au Stoudion.", "certainty": "sur"},
+      {"place": "Mont Athos (Grande Laure, Zographou)", "lat": 40.17, "lon": 24.38, "from": 1365, "to": 1370, "note": "Copiste et traducteur ; exilé un temps à Lemnos par Jean V Paléologue.", "certainty": "sur"},
+      {"place": "Monastère de la Trinité (Tarnovo)", "lat": 43.11, "lon": 25.64, "from": 1371, "to": 1375, "note": "Fonde le monastère et l'école de Tarnovo : il retraduit les livres liturgiques et fixe l'orthographe du slavon.", "certainty": "sur"},
+      {"place": "Tarnovo (patriarcat)", "lat": 43.08, "lon": 25.65, "from": 1375, "to": 1393, "note": "Patriarche de Bulgarie pendant dix-huit ans ; il dirige la défense de la ville pendant le siège ottoman de 1393.", "certainty": "sur"},
+      {"place": "Monastère de Batchkovo (Rhodopes)", "lat": 41.94, "lon": 24.85, "from": 1394, "to": 1402, "note": "Condamné à mort puis gracié, exilé par les Ottomans à Batchkovo où il meurt vers 1402.", "certainty": "probable"}
+    ],
+    "met": [
+      {"with": "cyprien-de-kiev", "where": "Kilifarevo, Constantinople puis Athos", "year": 1363, "note": "Condisciples et compagnons de voyage ; devenu patriarche, Euthyme envoie à Cyprien ses traductions corrigées pour la Rus."}
+    ],
+    "blurb": "Le dernier patriarche de la Bulgarie médiévale, un grammairien qui réforme l'orthographe du slavon avec une précision de moine athonite, puis défend sa capitale contre les Ottomans. L'école de Tarnovo a formé la moitié de l'Église slave.",
+    "fun": "Légende rapportée par son biographe Grégoire Camblak : au moment de son exécution, le bras du bourreau se paralyse et le commandant ottoman commue la peine en exil. Un piton rocheux de l'Antarctique porte aujourd'hui son nom.",
+    "sources": ["https://fr.wikipedia.org/wiki/Euthyme_de_Tarnovo"]
+  }
+]

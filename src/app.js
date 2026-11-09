@@ -40,7 +40,7 @@
   };
   const svg = (tag, attrs, parent) => {
     const n = document.createElementNS(SVGNS, tag);
-    if (attrs) for (const k in attrs) n.setAttribute(k, attrs[k]);
+    if (attrs) for (const k in attrs) if (attrs[k] !== null && attrs[k] !== undefined) n.setAttribute(k, attrs[k]);
     if (parent) parent.appendChild(n);
     return n;
   };
@@ -159,6 +159,7 @@
   function drawLand() {
     const outer = DATA.land.filter(r => !r.hole), holes = DATA.land.filter(r => r.hole);
     svg('path', { class: 'land', d: outer.map(r => ringPath(r.pts)).join(''), 'fill-rule': 'evenodd' }, layers.land);
+    svg('path', { class: 'coast-glow', d: outer.map(r => ringPath(r.pts)).join('') }, layers.coast);
     svg('path', { class: 'coast', d: outer.map(r => ringPath(r.pts)).join('') }, layers.coast);
     // les trous du continent sont des lacs : Caspienne, Aral, Baïkal… en bleu comme chez Maggiolo
     for (const h of holes) {
@@ -223,12 +224,12 @@
       const pts = f.points.map(p => P(p[0], p[1]));
       const g = svg('g', { class: 'range' }, layers.mountains);
       // chenille : bosses régulières le long de l'axe
-      let acc = 0, step = 9;
+      let acc = 0, step = 6;
       for (let i = 0; i < pts.length - 1; i++) {
         const [x0, y0] = pts[i], [x1, y1] = pts[i + 1];
         const len = Math.hypot(x1 - x0, y1 - y0), ux = (x1 - x0) / len, uy = (y1 - y0) / len;
         for (let d = acc; d < len; d += step) {
-          const bx = x0 + ux * d, by = y0 + uy * d, h = 7 + 3 * Math.sin(d * 1.7 + i), w = 7;
+          const bx = x0 + ux * d, by = y0 + uy * d, h = 4 + 1.8 * Math.sin(d * 1.7 + i), w = 4.6;
           svg('path', { class: 'mountain', d: `M${(bx - w).toFixed(1)} ${by.toFixed(1)} Q${bx.toFixed(1)} ${(by - 2 * h).toFixed(1)} ${(bx + w).toFixed(1)} ${by.toFixed(1)} Z` }, g);
           svg('path', { class: 'mountain-shade', d: `M${bx.toFixed(1)} ${(by - h).toFixed(1)} Q${(bx + w * .55).toFixed(1)} ${(by - h * .9).toFixed(1)} ${(bx + w).toFixed(1)} ${by.toFixed(1)} L${(bx + w * .15).toFixed(1)} ${by.toFixed(1)} Z` }, g);
         }
@@ -242,7 +243,7 @@
   }
   function labelTransform(c) {
     const [x, y] = P(c.lon, c.lat);
-    const off = c.tier === 1 ? 6 : 3.5;
+    const off = c.tier === 1 ? 5 : 3.2;
     // nom écrit vers l'intérieur des terres, perpendiculairement à la côte, comme sur les portulans
     switch (c.coastal ? c.side : null) {
       case 'N': return { x: x + 2, y: y + off, rot: 90, anchor: 'start' };
@@ -258,11 +259,10 @@
   function drawCities() {
     for (const c of cities) {
       const [x, y] = P(c.lon, c.lat);
-      if (c.tier === 1) svg('use', { href: '#town', x: x - 7, y: y - 11, width: 14, height: 12.6 }, layers.cities);
+      if (c.tier === 1) svg('use', { href: '#town', x: x - 5.5, y: y - 9, width: 11, height: 9.9 }, layers.cities);
       else svg('circle', { class: 'city-dot', cx: x.toFixed(1), cy: y.toFixed(1), r: c.tier === 2 ? 1.6 : 1.1 }, layers.cities);
       const t = labelTransform(c);
       const txt = svg('text', { class: 'city-label t' + c.tier, x: t.x.toFixed(1), y: t.y.toFixed(1), 'text-anchor': t.anchor, transform: t.rot ? `rotate(${t.rot} ${t.x.toFixed(1)} ${t.y.toFixed(1)})` : null }, layers.labels);
-      if (!t.rot) txt.removeAttribute('transform');
       txt.textContent = c.name;
       svg('title', null, txt).textContent = c.modern && c.modern !== c.name ? `${c.name} (${c.modern})` : c.name;
     }
@@ -270,7 +270,7 @@
   function drawLabels() {
     for (const r of DATA.places.regions || []) {
       const [x, y] = P(r.lon, r.lat);
-      svg('text', { class: 'region-label', x: x.toFixed(1), y: y.toFixed(1), 'font-size': r.size === 3 ? 30 : r.size === 2 ? 15 : 10 }, layers.labels).textContent = r.name;
+      svg('text', { class: 'region-label', x: x.toFixed(1), y: y.toFixed(1), 'font-size': r.size === 3 ? 22 : r.size === 2 ? 12 : 8.5 }, layers.labels).textContent = r.name;
     }
     for (const s of DATA.places.seas || []) {
       const [x, y] = P(s.lon, s.lat);

@@ -33,3 +33,11 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
   saints-b.json (25 saints, 15 rencontres documentées). Séverin et Brendan très incertains (marqués).
 - Logique de rencontre : position interpolée par pas de 0,25 an ; rencontre ≤ 60 km, voisinage ≤ 250 km ;
   occasions manquées = mêmes lieux à d'autres années ; langues = intersection pondérée natif/courant/notions.
+
+## 14:04 — nouvelle exigence : bilingue FR/EN (message de Clément)
+- Interface : dictionnaire I18N dans app.js, bascule FR/EN dans l'en-tête, préférence mémorisée (localStorage) + suffixe « --en » dans le hash.
+- Données : champs *_en sur chaque saint (name_en, full_en, origin_en, role_en, blurb_en, fun_en, feast_note_en,
+  stops[].note_en, met[].note_en / where_en). Traduction confiée à des sous-agents une fois tous les lots reçus.
+- Toponymes de la carte : graphie portulan commune aux deux langues (pas de traduction). Noms de langues : table EN à ajouter.
+- Lots reçus : B (25), E (28). Premier rendu : très proche de Maggiolo ; corrections : régions trop grandes, montagnes trop grosses,
+  attribut transform="null" (warning), lueur de côte ajoutée.

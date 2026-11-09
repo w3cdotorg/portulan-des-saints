@@ -1,0 +1,852 @@
+[
+  {
+    "id": "helene",
+    "name": "Hélène",
+    "full": "Sainte Hélène, mère de Constantin",
+    "feast": "08-18",
+    "feast_note": "21 mai chez les orthodoxes, avec Constantin",
+    "born": 248,
+    "died": 330,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Drepanum, Bithynie",
+    "role": "impératrice pèlerine",
+    "sex": "f",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "lat", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Drepanum (Hersek, Bithynie)", "lat": 40.72, "lon": 29.52, "from": 248, "to": 270, "note": "Fille d'aubergiste selon Ambroise, qui en fait une vertu.", "certainty": "probable"},
+      {"place": "Naissus (Niš)", "lat": 43.32, "lon": 21.9, "from": 270, "to": 289, "note": "Compagne de l'officier Constance Chlore, elle met au monde Constantin vers 272.", "certainty": "probable"},
+      {"place": "Nicomédie (Izmit)", "lat": 40.77, "lon": 29.92, "from": 289, "to": 306, "note": "Répudiée quand Constance épouse Théodora, elle vit en retrait près de la cour de Dioclétien.", "certainty": "probable"},
+      {"place": "Trèves", "lat": 49.75, "lon": 6.64, "from": 306, "to": 312, "note": "Tradition trévire : elle aurait suivi son fils dans sa capitale gauloise.", "certainty": "legende"},
+      {"place": "Rome (palais du Sessorium)", "lat": 41.89, "lon": 12.49, "from": 312, "to": 326, "note": "Constantin la rappelle à la cour ; elle est proclamée Augusta en 324.", "certainty": "sur"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 326, "to": 328, "note": "Pèlerinage en Palestine et dans les provinces d'Orient, fondation des basiliques de Bethléem et du mont des Oliviers.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 328, "to": 330, "note": "Elle meurt en présence de son fils (à Rome ou à Nicomédie selon les sources) et repose au mausolée de Tor Pignattara.", "certainty": "probable"}
+    ],
+    "met": [
+      {"with": "constantin", "where": "Rome", "year": 312, "note": "Son fils, qui la fait venir à sa cour et frappe monnaie à son effigie."}
+    ],
+    "blurb": "Une aubergiste de Bithynie devenue Augusta à près de 80 ans, qui s'offre un pèlerinage en Terre sainte quand d'autres prennent leur retraite.",
+    "fun": "La légende lui attribue la découverte de la Vraie Croix à Jérusalem : les historiens n'y croient guère, mais la basilique Sainte-Croix-de-Jérusalem à Rome est bâtie dans son propre palais.",
+    "sources": ["https://fr.wikipedia.org/wiki/Hélène_(mère_de_Constantin)", "https://en.wikipedia.org/wiki/Helena,_mother_of_Constantine_I"]
+  },
+  {
+    "id": "constantin",
+    "name": "Constantin",
+    "full": "Saint Constantin le Grand, empereur",
+    "feast": "05-21",
+    "feast_note": "Saint pour les orthodoxes seulement, fêté avec sa mère Hélène",
+    "born": 272,
+    "died": 337,
+    "approx": false,
+    "tradition": "orthodoxe",
+    "origin": "Naissus, Mésie",
+    "role": "empereur",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "grc", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Naissus (Niš)", "lat": 43.32, "lon": 21.9, "from": 272, "to": 293, "note": "Enfance dans les Balkans, fils d'un officier promu César en 293.", "certainty": "probable"},
+      {"place": "Nicomédie (Izmit)", "lat": 40.77, "lon": 29.92, "from": 293, "to": 305, "note": "Demi-otage à la cour de Dioclétien, il y apprend le grec et la philosophie.", "certainty": "sur"},
+      {"place": "York (Eboracum)", "lat": 53.96, "lon": -1.08, "from": 305, "to": 306, "note": "Il rejoint son père en Bretagne ; les troupes le proclament Auguste à la mort de Constance, le 25 juillet 306.", "certainty": "sur"},
+      {"place": "Trèves", "lat": 49.75, "lon": 6.64, "from": 306, "to": 312, "note": "Sa capitale gauloise, dont il bâtit la basilique et les thermes.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 312, "to": 313, "note": "Victoire du pont Milvius le 28 octobre 312, entrée triomphale dans Rome.", "certainty": "sur"},
+      {"place": "Milan", "lat": 45.46, "lon": 9.19, "from": 313, "to": 313, "note": "Rencontre avec Licinius et accord dit « édit de Milan » : liberté de culte.", "certainty": "sur"},
+      {"place": "Serdica (Sofia)", "lat": 42.7, "lon": 23.32, "from": 317, "to": 324, "note": "Résidence balkanique principale entre les guerres contre Licinius.", "certainty": "sur"},
+      {"place": "Nicée (Iznik)", "lat": 40.43, "lon": 29.72, "from": 325, "to": 325, "note": "Il ouvre le premier concile œcuménique le 20 mai 325 et siège parmi les évêques.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 330, "to": 337, "note": "Inauguration de la nouvelle Rome le 11 mai 330.", "certainty": "sur"},
+      {"place": "Nicomédie (Achyron)", "lat": 40.77, "lon": 29.92, "from": 337, "to": 337, "note": "Baptisé sur son lit de mort par Eusèbe de Nicomédie, il meurt le 22 mai 337.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "helene", "where": "Rome", "year": 312, "note": "Sa mère, rappelée à la cour et proclamée Augusta en 324."},
+      {"with": "athanase", "where": "Constantinople", "year": 335, "note": "Athanase, déposé au concile de Tyr, vient plaider sa cause devant l'empereur qui l'exile pourtant à Trèves."}
+    ],
+    "blurb": "L'empereur qui fait du christianisme une religion de cour et préside un concile sans être baptisé : il attendra son lit de mort pour franchir le pas.",
+    "fun": "La légende veut que saint Nicolas ait giflé Arius sous ses yeux à Nicée ; rien ne prouve que Nicolas y était, mais la scène est peinte dans des centaines d'églises.",
+    "sources": ["https://fr.wikipedia.org/wiki/Constantin_Ier_(empereur_romain)", "https://en.wikipedia.org/wiki/Constantine_the_Great"]
+  },
+  {
+    "id": "nicolas-de-myre",
+    "name": "Nicolas",
+    "full": "Saint Nicolas de Myre",
+    "feast": "12-06",
+    "feast_note": "9 mai : translation des reliques à Bari",
+    "born": 270,
+    "died": 343,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Patara, Lycie",
+    "role": "évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Patara (Lycie)", "lat": 36.26, "lon": 29.32, "from": 270, "to": 300, "note": "Naissance dans une famille grecque aisée ; la légende des trois bourses d'or lancées par la fenêtre se passe ici.", "certainty": "probable"},
+      {"place": "Myre (Demre)", "lat": 36.25, "lon": 29.98, "from": 300, "to": 325, "note": "Évêque de Myre vers 300, il traverse la persécution de Dioclétien.", "certainty": "probable"},
+      {"place": "Nicée (Iznik)", "lat": 40.43, "lon": 29.72, "from": 325, "to": 325, "note": "Sa présence au concile n'est pas attestée dans les listes anciennes ; la gifle à Arius est une légende tardive.", "certainty": "legende"},
+      {"place": "Myre (Demre)", "lat": 36.25, "lon": 29.98, "from": 325, "to": 343, "note": "Il meurt un 6 décembre et sa tombe devient vite un but de pèlerinage.", "certainty": "probable"}
+    ],
+    "met": [],
+    "blurb": "L'évêque grec de Lycie dont on ne sait presque rien et qui est devenu le saint le plus populaire du monde, Père Noël compris.",
+    "fun": "Les trois enfants ressuscités du saloir viennent d'une mauvaise lecture médiévale d'une image montrant trois officiers innocents sauvés de la décapitation ; en 1087, des marins de Bari ont volé ses reliques pour les ramener chez eux.",
+    "sources": ["https://fr.wikipedia.org/wiki/Nicolas_de_Myre"]
+  },
+  {
+    "id": "antoine-le-grand",
+    "name": "Antoine",
+    "full": "Saint Antoine le Grand, père des moines",
+    "feast": "01-17",
+    "feast_note": "30 janvier chez les orthodoxes",
+    "born": 251,
+    "died": 356,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Côme (Qeman el-Arous), Moyenne-Égypte",
+    "role": "ermite",
+    "sex": "m",
+    "languages": [
+      {"code": "cop", "level": "natif"},
+      {"code": "grc", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Côme (Qeman el-Arous)", "lat": 29.2, "lon": 31.1, "from": 251, "to": 271, "note": "Fils de paysans chrétiens aisés, il distribue tout à 20 ans après avoir entendu l'Évangile du jeune homme riche.", "certainty": "probable"},
+      {"place": "Tombeaux près de Côme", "lat": 29.22, "lon": 31.15, "from": 271, "to": 285, "note": "Ascèse près du village, puis dans un tombeau : c'est là que les démons lui rendent visite.", "certainty": "probable"},
+      {"place": "Pispir (Deir el-Maymoun)", "lat": 29.26, "lon": 31.17, "from": 285, "to": 311, "note": "Vingt ans enfermé dans un fortin romain abandonné ; des disciples s'installent alentour.", "certainty": "sur"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 311, "to": 311, "note": "Il descend soutenir les confesseurs pendant la persécution de Maximin Daïa, sans obtenir le martyre.", "certainty": "sur"},
+      {"place": "Mont Colzim (monastère Saint-Antoine)", "lat": 28.92, "lon": 32.35, "from": 312, "to": 338, "note": "Sa « montagne intérieure » près de la mer Rouge, où il cultive un petit jardin.", "certainty": "sur"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 338, "to": 338, "note": "Appelé par Athanase, il vient prêcher contre les ariens devant les foules.", "certainty": "sur"},
+      {"place": "Mont Colzim", "lat": 28.92, "lon": 32.35, "from": 338, "to": 356, "note": "Il meurt à 105 ans et se fait enterrer en secret pour éviter le culte des reliques, peine perdue.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "athanase", "where": "Alexandrie", "year": 338, "note": "Athanase le fait venir contre les ariens, puis écrit sa Vie, best-seller du IVe siècle."},
+      {"with": "hilarion", "where": "Pispir", "year": 307, "note": "Le jeune Hilarion passe deux mois auprès de lui avant de rentrer à Gaza fonder le monachisme palestinien."}
+    ],
+    "blurb": "Un paysan copte qui s'enferme vingt ans dans un fort désaffecté et en ressort en pleine forme : le monachisme chrétien est né.",
+    "fun": "Il n'a jamais appris le grec et parlait aux visiteurs par interprète ; le cochon qui l'accompagne sur les images vient des Antonins du Dauphiné, dont les porcs vagabondaient librement.",
+    "sources": ["https://fr.wikipedia.org/wiki/Antoine_le_Grand"]
+  },
+  {
+    "id": "athanase",
+    "name": "Athanase",
+    "full": "Saint Athanase d'Alexandrie",
+    "feast": "05-02",
+    "feast_note": "18 janvier chez les orthodoxes",
+    "born": 297,
+    "died": 373,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Alexandrie, Égypte",
+    "role": "patriarche",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "cop", "level": "notions"},
+      {"code": "lat", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 297, "to": 325, "note": "Formé dans la culture grecque, diacre et secrétaire de l'évêque Alexandre.", "certainty": "sur"},
+      {"place": "Nicée (Iznik)", "lat": 40.43, "lon": 29.72, "from": 325, "to": 325, "note": "Il accompagne son évêque au concile et s'y fait remarquer contre Arius.", "certainty": "sur"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 325, "to": 335, "note": "Élu évêque le 8 juin 328, à 30 ans à peine, contesté dès le premier jour.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 335, "to": 335, "note": "Déposé au concile de Tyr, il court plaider sa cause devant Constantin, qui l'exile.", "certainty": "sur"},
+      {"place": "Trèves", "lat": 49.75, "lon": 6.64, "from": 336, "to": 337, "note": "Premier exil, à la cour du jeune Constantin II qui le protège.", "certainty": "sur"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 337, "to": 339, "note": "Retour triomphal, puis nouvelle expulsion par un évêque arien.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 339, "to": 346, "note": "Deuxième exil, auprès du pape Jules ; il passe aussi par Milan, Aquilée et le concile de Sardique (343).", "certainty": "sur"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 346, "to": 356, "note": "Dix ans de paix relative, les plus longs de son épiscopat.", "certainty": "sur"},
+      {"place": "Désert de Thébaïde", "lat": 25.7, "lon": 32.64, "from": 356, "to": 362, "note": "Troisième exil, caché six ans chez les moines d'Égypte ; il y écrit la Vie d'Antoine.", "certainty": "probable"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 362, "to": 373, "note": "Encore deux exils brefs (362-364, 365-366), puis il meurt enfin dans son lit le 2 mai 373.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "antoine-le-grand", "where": "Alexandrie", "year": 338, "note": "Il fait descendre le vieil ermite en ville pour appuyer sa cause, et rédigera sa biographie."},
+      {"with": "constantin", "where": "Constantinople", "year": 335, "note": "Il arrête le cortège impérial pour se défendre ; Constantin l'envoie à Trèves."}
+    ],
+    "blurb": "Cinq exils, dix-sept ans loin de son siège et un surnom mérité : « Athanase contre le monde ». Le monde a fini par céder.",
+    "fun": "Accusé d'avoir fait couper la main de l'évêque Arsène, il le fit comparaître bien vivant avec ses deux mains ; sa Vie d'Antoine a converti des foules, dont Augustin.",
+    "sources": ["https://fr.wikipedia.org/wiki/Athanase_d'Alexandrie"]
+  },
+  {
+    "id": "hilaire-de-poitiers",
+    "name": "Hilaire",
+    "full": "Saint Hilaire de Poitiers",
+    "feast": "01-13",
+    "feast_note": "",
+    "born": 315,
+    "died": 367,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Poitiers, Aquitaine",
+    "role": "évêque, docteur de l'Église",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "xtg", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Poitiers", "lat": 46.58, "lon": 0.34, "from": 315, "to": 356, "note": "Notable gallo-romain marié et père d'une fille, converti adulte, élu évêque vers 350.", "certainty": "sur"},
+      {"place": "Phrygie (région d'Akroinon)", "lat": 38.76, "lon": 30.54, "from": 356, "to": 359, "note": "Exilé par Constance II après le concile de Béziers, il découvre la théologie grecque et écrit le De Trinitate.", "certainty": "probable"},
+      {"place": "Séleucie d'Isaurie (Silifke)", "lat": 36.38, "lon": 33.93, "from": 359, "to": 359, "note": "Il s'invite au concile des évêques orientaux pour défendre Nicée.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 360, "to": 360, "note": "Il demande un débat public à l'empereur ; on préfère le renvoyer en Gaule pour s'en débarrasser.", "certainty": "sur"},
+      {"place": "Poitiers", "lat": 46.58, "lon": 0.34, "from": 360, "to": 361, "note": "Retour triomphal ; Martin le rejoint et s'installe à Ligugé.", "certainty": "sur"},
+      {"place": "Paris", "lat": 48.86, "lon": 2.35, "from": 361, "to": 361, "note": "Concile de Paris : les évêques gaulois condamnent l'arianisme.", "certainty": "sur"},
+      {"place": "Poitiers", "lat": 46.58, "lon": 0.34, "from": 361, "to": 364, "note": "Il compose des hymnes latines, premier essai du genre en Occident.", "certainty": "sur"},
+      {"place": "Milan", "lat": 45.46, "lon": 9.19, "from": 364, "to": 364, "note": "Il tente, sans succès, de faire déposer l'évêque arien Auxence devant Valentinien.", "certainty": "sur"},
+      {"place": "Poitiers", "lat": 46.58, "lon": 0.34, "from": 365, "to": 367, "note": "Il meurt dans sa ville, probablement le 13 janvier 367.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "martin-de-tours", "where": "Poitiers puis Ligugé", "year": 356, "note": "Martin, tout juste démobilisé, devient son disciple ; Hilaire veut en faire un diacre, Martin accepte seulement d'être exorciste."}
+    ],
+    "blurb": "Le « marteau des ariens » : exilé en Phrygie pour avoir trop bien défendu la Trinité, il apprend le grec sur place et revient encore plus redoutable.",
+    "fun": "Il est le patron des alevins et des alevineurs en Bretagne, et sa fille Abra est fêtée comme sainte ; en 1851, Pie IX le proclame docteur de l'Église.",
+    "sources": ["https://fr.wikipedia.org/wiki/Hilaire_de_Poitiers"]
+  },
+  {
+    "id": "martin-de-tours",
+    "name": "Martin",
+    "full": "Saint Martin de Tours",
+    "feast": "11-11",
+    "feast_note": "12 octobre chez les orthodoxes",
+    "born": 316,
+    "died": 397,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Sabaria (Szombathely), Pannonie",
+    "role": "soldat, moine, évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "xtg", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Sabaria (Szombathely)", "lat": 47.23, "lon": 16.62, "from": 316, "to": 326, "note": "Fils d'un tribun militaire païen, en garnison en Pannonie.", "certainty": "sur"},
+      {"place": "Pavie", "lat": 45.19, "lon": 9.16, "from": 326, "to": 334, "note": "Enfance en Italie du Nord ; il se fait catéchumène à 10 ans contre l'avis de ses parents.", "certainty": "sur"},
+      {"place": "Amiens", "lat": 49.89, "lon": 2.3, "from": 334, "to": 356, "note": "Cavalier de la garde impériale ; c'est à la porte d'Amiens qu'il partage son manteau. Il quitte l'armée à Worms en 356.", "certainty": "sur"},
+      {"place": "Poitiers", "lat": 46.58, "lon": 0.34, "from": 356, "to": 357, "note": "Disciple d'Hilaire, il refuse le diaconat et accepte d'être exorciste.", "certainty": "sur"},
+      {"place": "Sabaria (Szombathely)", "lat": 47.23, "lon": 16.62, "from": 357, "to": 358, "note": "Il rentre convertir ses parents : sa mère cède, son père non, et les ariens le chassent à coups de verges.", "certainty": "sur"},
+      {"place": "Milan", "lat": 45.46, "lon": 9.19, "from": 358, "to": 359, "note": "Ermite aux portes de la ville, expulsé par l'évêque arien Auxence.", "certainty": "sur"},
+      {"place": "Île Gallinara", "lat": 44.03, "lon": 8.23, "from": 359, "to": 360, "note": "Retraite sur un îlot ligure avec un prêtre ; il s'y empoisonne à l'ellébore.", "certainty": "sur"},
+      {"place": "Ligugé", "lat": 46.52, "lon": 0.33, "from": 360, "to": 371, "note": "Hilaire revenu d'exil lui cède un terrain : premier monastère de Gaule.", "certainty": "sur"},
+      {"place": "Tours et Marmoutier", "lat": 47.4, "lon": 0.72, "from": 371, "to": 385, "note": "Évêque de Tours contre son gré le 4 juillet 371, il fonde Marmoutier de l'autre côté de la Loire et évangélise les campagnes.", "certainty": "sur"},
+      {"place": "Trèves", "lat": 49.75, "lon": 6.64, "from": 385, "to": 386, "note": "Deux voyages à la cour de Maxime pour sauver Priscillien de la peine de mort ; il échoue et s'en veut toute sa vie.", "certainty": "sur"},
+      {"place": "Marmoutier", "lat": 47.4, "lon": 0.72, "from": 386, "to": 397, "note": "Il ne quitte plus guère son diocèse, sauf pour arbitrer des querelles de clercs.", "certainty": "sur"},
+      {"place": "Candes", "lat": 47.21, "lon": 0.07, "from": 397, "to": 397, "note": "Il meurt le 8 novembre 397 ; les Tourangeaux volent son corps aux Poitevins par la fenêtre, la nuit.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "hilaire-de-poitiers", "where": "Poitiers puis Ligugé", "year": 356, "note": "Son maître et protecteur, qui lui offre le terrain de Ligugé."}
+    ],
+    "blurb": "Un cavalier hongrois qui coupe son manteau en deux à Amiens et finit évêque de Tours : le saint le plus populaire de France a tout du migrant.",
+    "fun": "Le mot « chapelle » vient de la cape de Martin conservée par les rois francs ; la légende dit que des oies ont trahi sa cachette quand il refusait d'être évêque, ce qui se paie encore au dîner de la Saint-Martin.",
+    "sources": ["https://fr.wikipedia.org/wiki/Martin_de_Tours"]
+  },
+  {
+    "id": "basile-de-cesaree",
+    "name": "Basile",
+    "full": "Saint Basile le Grand, évêque de Césarée",
+    "feast": "01-02",
+    "feast_note": "1er janvier chez les orthodoxes",
+    "born": 329,
+    "died": 379,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Césarée de Cappadoce",
+    "role": "évêque, docteur de l'Église",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Césarée de Cappadoce (Kayseri)", "lat": 38.72, "lon": 35.49, "from": 329, "to": 346, "note": "Famille de saints : sa grand-mère Macrine, sa sœur Macrine, son frère Grégoire de Nysse.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 346, "to": 349, "note": "Études de rhétorique, peut-être auprès de Libanios.", "certainty": "probable"},
+      {"place": "Athènes", "lat": 37.98, "lon": 23.73, "from": 349, "to": 355, "note": "Études supérieures ; il y lie avec Grégoire de Nazianze l'amitié la plus célèbre de l'Antiquité chrétienne.", "certainty": "sur"},
+      {"place": "Césarée de Cappadoce", "lat": 38.72, "lon": 35.49, "from": 355, "to": 357, "note": "Brillant rhéteur, il se convertit sous l'influence de sa sœur Macrine et se fait baptiser.", "certainty": "sur"},
+      {"place": "Égypte, Palestine et Syrie", "lat": 31.2, "lon": 29.92, "from": 357, "to": 358, "note": "Tournée des moines d'Orient pour apprendre le métier.", "certainty": "sur"},
+      {"place": "Annisa, sur l'Iris (Pont)", "lat": 40.77, "lon": 35.55, "from": 358, "to": 362, "note": "Retraite sur le domaine familial ; Grégoire l'y rejoint et ils compilent ensemble la Philocalie d'Origène.", "certainty": "sur"},
+      {"place": "Césarée de Cappadoce", "lat": 38.72, "lon": 35.49, "from": 362, "to": 379, "note": "Prêtre en 362, évêque en 370 ; il bâtit la Basiliade, cité hospitalière aux portes de la ville, et tient tête à l'empereur Valens.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "gregoire-de-nazianze", "where": "Athènes", "year": 350, "note": "Condisciples à Athènes, puis moines ensemble au Pont ; leur amitié survivra même à la brouille de Sasimes."}
+    ],
+    "blurb": "Le Cappadocien qui règle la vie des moines d'Orient, invente l'hôpital et dit au préfet impérial qu'il n'a jamais rencontré un évêque aussi têtu : « c'est que vous n'en aviez jamais rencontré un vrai ».",
+    "fun": "La visite d'Éphrem le Syrien à Césarée, où les deux hommes se seraient compris miraculeusement sans interprète, est une légende tardive ; en Grèce, c'est encore saint Basile qui apporte les cadeaux le 1er janvier.",
+    "sources": ["https://fr.wikipedia.org/wiki/Basile_de_Césarée"]
+  },
+  {
+    "id": "gregoire-de-nazianze",
+    "name": "Grégoire",
+    "full": "Saint Grégoire de Nazianze, le Théologien",
+    "feast": "01-02",
+    "feast_note": "25 janvier chez les orthodoxes",
+    "born": 329,
+    "died": 390,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Arianze, près de Nazianze (Cappadoce)",
+    "role": "évêque, poète",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Nazianze (Bekarlar)", "lat": 38.37, "lon": 34.42, "from": 329, "to": 341, "note": "Fils de l'évêque de Nazianze, lui aussi saint Grégoire, et de sainte Nonna.", "certainty": "sur"},
+      {"place": "Césarée de Cappadoce", "lat": 38.72, "lon": 35.49, "from": 341, "to": 345, "note": "Premières études ; il y croise Basile pour la première fois.", "certainty": "sur"},
+      {"place": "Césarée de Palestine", "lat": 32.5, "lon": 34.89, "from": 345, "to": 347, "note": "École de rhétorique dans la ville d'Origène et d'Eusèbe.", "certainty": "sur"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 347, "to": 348, "note": "Court séjour d'études avant de s'embarquer pour Athènes.", "certainty": "sur"},
+      {"place": "Athènes", "lat": 37.98, "lon": 23.73, "from": 348, "to": 358, "note": "Dix ans d'études ; il a pour condisciples Basile et le futur empereur Julien.", "certainty": "sur"},
+      {"place": "Nazianze", "lat": 38.37, "lon": 34.42, "from": 358, "to": 359, "note": "Retour au pays, baptême tardif.", "certainty": "sur"},
+      {"place": "Annisa (Pont)", "lat": 40.77, "lon": 35.55, "from": 359, "to": 360, "note": "Vie monastique auprès de Basile, qu'il quitte vite : trop de bêche, pas assez de livres.", "certainty": "sur"},
+      {"place": "Nazianze", "lat": 38.37, "lon": 34.42, "from": 361, "to": 375, "note": "Ordonné prêtre de force par son père à Noël 361 ; sacré évêque de Sasimes en 372, il n'y mettra jamais les pieds.", "certainty": "sur"},
+      {"place": "Séleucie d'Isaurie (Silifke)", "lat": 36.38, "lon": 33.93, "from": 375, "to": 379, "note": "Retraite au sanctuaire de sainte Thècle après la mort de ses parents.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 379, "to": 381, "note": "Il prêche les Discours théologiques dans la petite chapelle de l'Anastasie, devient évêque, préside le concile de 381 et démissionne.", "certainty": "sur"},
+      {"place": "Arianze (près de Nazianze)", "lat": 38.37, "lon": 34.42, "from": 381, "to": 390, "note": "Il administre Nazianze par intérim, puis écrit des milliers de vers autobiographiques sur son domaine.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "basile-de-cesaree", "where": "Athènes", "year": 350, "note": "« Une seule âme en deux corps », dira-t-il ; il lui en voudra pourtant toute sa vie pour Sasimes."},
+      {"with": "jerome", "where": "Constantinople", "year": 380, "note": "Jérôme suit ses leçons d'exégèse et l'appellera son « précepteur »."}
+    ],
+    "blurb": "Le poète cappadocien qui démissionne de tout, y compris du siège de Constantinople en plein concile, et qu'on appelle quand même « le Théologien ».",
+    "fun": "Lors de la traversée Alexandrie-Athènes, une tempête de vingt jours le pousse à promettre sa vie à Dieu ; il tint parole, mais à son rythme, et ne fut baptisé qu'à 30 ans.",
+    "sources": ["https://fr.wikipedia.org/wiki/Grégoire_de_Nazianze"]
+  },
+  {
+    "id": "jerome",
+    "name": "Jérôme",
+    "full": "Saint Jérôme de Stridon",
+    "feast": "09-30",
+    "feast_note": "15 juin chez les orthodoxes",
+    "born": 347,
+    "died": 420,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Stridon, confins de la Dalmatie et de la Pannonie",
+    "role": "traducteur, moine",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "heb", "level": "notions"},
+      {"code": "syc", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Stridon (site non identifié, Dalmatie)", "lat": 44.18, "lon": 16.37, "from": 347, "to": 359, "note": "La ville sera rasée par les Goths ; on la cherche encore entre Croatie, Slovénie et Bosnie.", "certainty": "probable"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 359, "to": 367, "note": "Élève du grammairien Donat, baptisé vers 366 ; il visite les catacombes le dimanche.", "certainty": "sur"},
+      {"place": "Trèves", "lat": 49.75, "lon": 6.64, "from": 367, "to": 370, "note": "À la cour impériale, il copie des traités d'Hilaire et découvre l'idéal monastique.", "certainty": "sur"},
+      {"place": "Aquilée", "lat": 45.77, "lon": 13.37, "from": 370, "to": 373, "note": "Cénacle d'amis ascètes avec Rufin, avant une brouille mystérieuse.", "certainty": "sur"},
+      {"place": "Antioche", "lat": 36.2, "lon": 36.16, "from": 373, "to": 375, "note": "Malade, il rêve qu'un juge céleste l'accuse d'être « cicéronien, non chrétien » et le fait fouetter.", "certainty": "sur"},
+      {"place": "Désert de Chalcis (Qinnasrin)", "lat": 35.98, "lon": 37.0, "from": 375, "to": 377, "note": "Ermite parmi des moines syriaques ; il s'y met à l'hébreu avec un juif converti pour dompter ses tentations.", "certainty": "sur"},
+      {"place": "Antioche", "lat": 36.2, "lon": 36.16, "from": 377, "to": 380, "note": "Ordonné prêtre par Paulin d'Antioche, à condition de ne jamais exercer.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 380, "to": 382, "note": "Élève de Grégoire de Nazianze, il traduit la Chronique d'Eusèbe et les homélies d'Origène.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 382, "to": 385, "note": "Secrétaire du pape Damase, directeur spirituel des grandes dames de l'Aventin, dont Paule ; il révise les Évangiles latins et se fait détester du clergé.", "certainty": "sur"},
+      {"place": "Antioche", "lat": 36.2, "lon": 36.16, "from": 385, "to": 385, "note": "Il y retrouve Paule et Eustochium pour partir ensemble en Terre sainte.", "certainty": "sur"},
+      {"place": "Jérusalem, puis Égypte", "lat": 31.78, "lon": 35.23, "from": 385, "to": 386, "note": "Tournée des lieux saints, puis hiver chez les moines de Nitrie et chez Didyme l'Aveugle à Alexandrie.", "certainty": "sur"},
+      {"place": "Bethléem", "lat": 31.7, "lon": 35.2, "from": 386, "to": 420, "note": "Trente-quatre ans dans sa grotte-bibliothèque à traduire la Bible sur l'hébreu : la future Vulgate.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "paule", "where": "Rome, puis Bethléem", "year": 382, "note": "Sa disciple, mécène et compagne d'exil ; elle finance les monastères de Bethléem."},
+      {"with": "gregoire-de-nazianze", "where": "Constantinople", "year": 380, "note": "Il suit ses leçons et le cite avec fierté comme son maître."}
+    ],
+    "blurb": "Un Dalmate colérique qui apprend l'hébreu pour résister au démon et finit par traduire toute la Bible dans une grotte de Bethléem.",
+    "fun": "Jérôme et Augustin ne se sont jamais vus : vingt ans de lettres acides, perdues en route ou lues par d'autres avant d'arriver. Le lion qui l'accompagne en peinture lui a été prêté par un autre saint, Gérasime du Jourdain.",
+    "sources": ["https://fr.wikipedia.org/wiki/Jérôme_de_Stridon"]
+  },
+  {
+    "id": "paule",
+    "name": "Paule",
+    "full": "Sainte Paule de Rome",
+    "feast": "01-26",
+    "feast_note": "",
+    "born": 347,
+    "died": 404,
+    "approx": false,
+    "tradition": "catholique",
+    "origin": "Rome",
+    "role": "patricienne, abbesse",
+    "sex": "f",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "heb", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Rome (Aventin)", "lat": 41.89, "lon": 12.49, "from": 347, "to": 385, "note": "Patricienne se disant descendante des Scipions et des Gracques, mère de cinq enfants, veuve à 32 ans ; elle transforme son palais en couvent.", "certainty": "sur"},
+      {"place": "Antioche", "lat": 36.2, "lon": 36.16, "from": 385, "to": 385, "note": "Après une escale à Chypre chez l'évêque Épiphane, elle retrouve Jérôme ; ils partent ensemble vers la Terre sainte.", "certainty": "sur"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 385, "to": 386, "note": "Elle embrasse le bois de la Croix et refuse le palais du gouverneur pour une cellule.", "certainty": "sur"},
+      {"place": "Nitrie (Wadi Natroun)", "lat": 30.65, "lon": 30.7, "from": 386, "to": 386, "note": "Visite aux moines du désert d'Égypte, qu'elle aurait volontiers rejoints.", "certainty": "sur"},
+      {"place": "Bethléem", "lat": 31.7, "lon": 35.2, "from": 386, "to": 404, "note": "Elle fonde et dirige trois monastères de femmes, un monastère d'hommes et une hôtellerie pour pèlerins.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "jerome", "where": "Rome, puis Bethléem", "year": 382, "note": "Présentée par Marcelle, elle devient son élève en hébreu et sa mécène pour la vie."}
+    ],
+    "blurb": "La plus riche veuve de Rome plaque tout, apprend l'hébreu et chante les psaumes dans le texte à Bethléem, en finançant au passage la Vulgate.",
+    "fun": "Jérôme raconte qu'elle quitta Rome sans un regard pour son petit garçon qui pleurait sur le quai d'Ostie ; elle repose dans la grotte de la Nativité, à côté de lui.",
+    "sources": ["https://fr.wikipedia.org/wiki/Paule_de_Rome"]
+  },
+  {
+    "id": "ambroise",
+    "name": "Ambroise",
+    "full": "Saint Ambroise de Milan",
+    "feast": "12-07",
+    "feast_note": "Jour de son ordination ; il est mort un 4 avril",
+    "born": 339,
+    "died": 397,
+    "approx": false,
+    "tradition": "commune",
+    "origin": "Trèves, Gaule Belgique",
+    "role": "gouverneur, évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "grc", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Trèves", "lat": 49.75, "lon": 6.64, "from": 339, "to": 353, "note": "Fils du préfet du prétoire des Gaules ; un essaim d'abeilles se pose sur sa bouche de bébé, présage d'éloquence.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 353, "to": 370, "note": "Études de droit et de rhétorique, avec un grec solide ; sa sœur Marcelline y prend le voile.", "certainty": "probable"},
+      {"place": "Sirmium (Sremska Mitrovica)", "lat": 44.97, "lon": 19.61, "from": 370, "to": 372, "note": "Assesseur du préfet du prétoire d'Illyricum.", "certainty": "probable"},
+      {"place": "Milan", "lat": 45.46, "lon": 9.19, "from": 372, "to": 397, "note": "Gouverneur, puis élu évêque par acclamation en 374 alors qu'il n'est pas même baptisé ; il convertit Augustin et fait plier Théodose.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "augustin-d-hippone", "where": "Milan", "year": 386, "note": "Augustin vient l'écouter pour sa rhétorique et repart converti ; Ambroise le baptise dans la nuit de Pâques 387."},
+      {"with": "monique", "where": "Milan", "year": 385, "note": "Il lui fait abandonner les offrandes aux tombes des martyrs, et elle l'adopte comme un ange."}
+    ],
+    "blurb": "Un haut fonctionnaire venu calmer une émeute électorale et qui en ressort évêque, baptisé et sacré en une semaine. Le reste suit : hymnes, Augustin, Théodose à genoux.",
+    "fun": "Augustin s'étonne de le voir lire sans remuer les lèvres : la lecture silencieuse était alors une curiosité. Sa « lettre » à Augustin sur la façon de jeûner, « à Rome fais comme les Romains », est devenue proverbe.",
+    "sources": ["https://fr.wikipedia.org/wiki/Ambroise_de_Milan"]
+  },
+  {
+    "id": "augustin-d-hippone",
+    "name": "Augustin",
+    "full": "Saint Augustin d'Hippone",
+    "feast": "08-28",
+    "feast_note": "15 juin chez les orthodoxes",
+    "born": 354,
+    "died": 430,
+    "approx": false,
+    "tradition": "commune",
+    "origin": "Thagaste (Souk Ahras), Numidie",
+    "role": "rhéteur, évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "grc", "level": "notions"},
+      {"code": "ber", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Thagaste (Souk Ahras)", "lat": 36.29, "lon": 7.95, "from": 354, "to": 366, "note": "Né le 13 novembre 354 d'un père païen et de Monique ; il déteste le grec dès l'école.", "certainty": "sur"},
+      {"place": "Madaure (M'daourouch)", "lat": 36.08, "lon": 7.83, "from": 366, "to": 370, "note": "Études de grammaire dans la ville d'Apulée, puis une année d'oisiveté à Thagaste : l'épisode des poires volées.", "certainty": "sur"},
+      {"place": "Carthage", "lat": 36.85, "lon": 10.33, "from": 370, "to": 375, "note": "Études de rhétorique, concubine, naissance d'Adéodat, adhésion au manichéisme.", "certainty": "sur"},
+      {"place": "Thagaste", "lat": 36.29, "lon": 7.95, "from": 375, "to": 376, "note": "Il ouvre une école de grammaire et perd un ami très cher.", "certainty": "sur"},
+      {"place": "Carthage", "lat": 36.85, "lon": 10.33, "from": 376, "to": 383, "note": "Professeur de rhétorique, déçu par le manichéen Fauste.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 383, "to": 384, "note": "Il fausse compagnie à sa mère sur le port de Carthage ; à Rome, ses élèves oublient de payer.", "certainty": "sur"},
+      {"place": "Milan", "lat": 45.46, "lon": 9.19, "from": 384, "to": 386, "note": "Rhéteur officiel de la cour ; il écoute Ambroise et entend « tolle, lege » dans un jardin, août 386.", "certainty": "sur"},
+      {"place": "Cassiciacum (Cassago Brianza)", "lat": 45.74, "lon": 9.29, "from": 386, "to": 387, "note": "Retraite philosophique avec Monique, Adéodat et ses amis ; retour à Milan pour le baptême la nuit de Pâques 387.", "certainty": "sur"},
+      {"place": "Ostie", "lat": 41.76, "lon": 12.29, "from": 387, "to": 387, "note": "En attendant le bateau, l'extase d'Ostie à la fenêtre avec sa mère, qui meurt quelques jours après.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 387, "to": 388, "note": "Il attend la fin du blocus maritime en écrivant contre les manichéens.", "certainty": "sur"},
+      {"place": "Thagaste", "lat": 36.29, "lon": 7.95, "from": 388, "to": 391, "note": "Communauté de laïcs lettrés dans la maison familiale ; mort d'Adéodat.", "certainty": "sur"},
+      {"place": "Hippone (Annaba)", "lat": 36.9, "lon": 7.77, "from": 391, "to": 430, "note": "Ordonné prêtre de force, évêque en 395 ; il meurt le 28 août 430 pendant le siège des Vandales.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "ambroise", "where": "Milan", "year": 386, "note": "Il venait pour le style, il est resté pour le fond ; Ambroise le baptise à Pâques 387."},
+      {"with": "monique", "where": "Thagaste", "year": 354, "note": "Sa mère, qui le suit jusqu'à Milan et meurt à Ostie au moment de rentrer."},
+      {"with": "melanie-la-jeune", "where": "Thagaste et Hippone", "year": 411, "note": "Mélanie et Pinien, réfugiés d'Afrique, lui rendent visite ; les fidèles d'Hippone tentent d'ordonner Pinien de force."}
+    ],
+    "blurb": "Un prof de rhétorique berbère qui a tout essayé, le manichéisme, l'astrologie, les poires volées, avant d'écrire la première autobiographie de l'histoire.",
+    "fun": "Il n'a jamais vraiment su le grec et s'en excuse dans ses livres ; avec Jérôme, il échangea des lettres cinglantes pendant vingt ans sans jamais le rencontrer.",
+    "sources": ["https://fr.wikipedia.org/wiki/Augustin_d'Hippone"]
+  },
+  {
+    "id": "monique",
+    "name": "Monique",
+    "full": "Sainte Monique, mère d'Augustin",
+    "feast": "08-27",
+    "feast_note": "4 mai avant 1969 et chez les orthodoxes",
+    "born": 332,
+    "died": 387,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Thagaste (Souk Ahras), Numidie",
+    "role": "mère de famille",
+    "sex": "f",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "ber", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Thagaste (Souk Ahras)", "lat": 36.29, "lon": 7.95, "from": 332, "to": 376, "note": "Mariée au bouillant Patricius, qu'elle convertit sur le tard ; mère de trois enfants.", "certainty": "sur"},
+      {"place": "Carthage", "lat": 36.85, "lon": 10.33, "from": 376, "to": 385, "note": "Veuve, elle rejoint Augustin à Carthage ; en 383 il lui échappe de nuit pour embarquer vers Rome.", "certainty": "probable"},
+      {"place": "Milan", "lat": 45.46, "lon": 9.19, "from": 385, "to": 386, "note": "Elle rattrape son fils, découvre Ambroise et renonce à ses offrandes de nourriture sur les tombes.", "certainty": "sur"},
+      {"place": "Cassiciacum (Cassago Brianza)", "lat": 45.74, "lon": 9.29, "from": 386, "to": 387, "note": "Elle tient la maison et intervient dans les dialogues philosophiques, au grand étonnement des jeunes gens.", "certainty": "sur"},
+      {"place": "Milan", "lat": 45.46, "lon": 9.19, "from": 387, "to": 387, "note": "Baptême d'Augustin, d'Adéodat et d'Alypius par Ambroise, nuit du 24 au 25 avril 387.", "certainty": "sur"},
+      {"place": "Ostie", "lat": 41.76, "lon": 12.29, "from": 387, "to": 387, "note": "Extase partagée avec Augustin à la fenêtre d'une auberge, puis fièvre et mort à 56 ans.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "augustin-d-hippone", "where": "Thagaste", "year": 354, "note": "Son fils, qu'elle poursuit de ses larmes et de ses prières de la Numidie à Milan."},
+      {"with": "ambroise", "where": "Milan", "year": 385, "note": "Elle l'aime « comme un ange de Dieu », dit Augustin, qui en est presque jaloux."}
+    ],
+    "blurb": "La mère qui traverse la Méditerranée pour rattraper un fils fugueur et manichéen, et qui gagne : le fils s'appelle Augustin.",
+    "fun": "Un évêque lassé de ses larmes lui lança : « le fils de tant de larmes ne peut périr ». Son épitaphe a été retrouvée en 1945 à Ostie par deux garçons qui creusaient pour planter un poteau de football.",
+    "sources": ["https://en.wikipedia.org/wiki/Saint_Monica", "https://fr.wikipedia.org/wiki/Augustin_d'Hippone"]
+  },
+  {
+    "id": "jean-chrysostome",
+    "name": "Jean Chrysostome",
+    "full": "Saint Jean Chrysostome, archevêque de Constantinople",
+    "feast": "09-13",
+    "feast_note": "13 novembre chez les orthodoxes",
+    "born": 349,
+    "died": 407,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Antioche, Syrie",
+    "role": "prédicateur, archevêque",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "syc", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Antioche (Antakya)", "lat": 36.2, "lon": 36.16, "from": 349, "to": 372, "note": "Fils d'un officier mort jeune, élevé par sa mère Anthousa ; formation de rhéteur, peut-être chez Libanios.", "certainty": "sur"},
+      {"place": "Montagnes près d'Antioche (mont Silpios)", "lat": 36.2, "lon": 36.18, "from": 372, "to": 378, "note": "Quatre ans chez les moines puis deux ans seul dans une grotte, à apprendre la Bible par cœur ; il y ruine sa santé.", "certainty": "sur"},
+      {"place": "Antioche", "lat": 36.2, "lon": 36.16, "from": 378, "to": 397, "note": "Diacre en 381, prêtre en 386 ; en 387, ses homélies « sur les statues » calment une ville qui a renversé les effigies impériales.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 398, "to": 404, "note": "Enlevé de nuit d'Antioche pour être fait archevêque ; il vend la vaisselle épiscopale pour les pauvres et se fâche avec l'impératrice Eudoxie.", "certainty": "sur"},
+      {"place": "Cucuse (Göksun)", "lat": 38.02, "lon": 36.5, "from": 404, "to": 407, "note": "Exil en Petite Arménie ; il écrit 17 lettres à la diaconesse Olympias.", "certainty": "sur"},
+      {"place": "Comana du Pont", "lat": 40.35, "lon": 36.62, "from": 407, "to": 407, "note": "Épuisé par une marche forcée vers un exil plus lointain, il meurt le 14 septembre 407 : « Gloire à Dieu pour tout ».", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "jean-cassien", "where": "Constantinople", "year": 400, "note": "Il ordonne diacre le moine venu d'Égypte, qui ira plaider sa cause à Rome après sa déposition."}
+    ],
+    "blurb": "Le meilleur orateur de l'Antiquité chrétienne, surnommé « Bouche d'or », qui perd son siège pour avoir traité l'impératrice de Jézabel en chaire.",
+    "fun": "Ses reliques ont fait un aller-retour Constantinople-Venise-Rome de huit siècles : volées en 1204 par les croisés, rendues au patriarche de Constantinople par Jean-Paul II en 2004.",
+    "sources": ["https://fr.wikipedia.org/wiki/Jean_Chrysostome"]
+  },
+  {
+    "id": "jean-cassien",
+    "name": "Jean Cassien",
+    "full": "Saint Jean Cassien, fondateur de Saint-Victor",
+    "feast": "07-23",
+    "feast_note": "29 février chez les orthodoxes (28 les années communes)",
+    "born": 360,
+    "died": 435,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Scythie Mineure (Dobroudja)",
+    "role": "moine, écrivain",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "cop", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Scythie Mineure (Histria, Dobroudja)", "lat": 44.18, "lon": 28.65, "from": 360, "to": 380, "note": "Famille aisée d'une province bilingue latin-grec ; certains le disent gaulois.", "certainty": "probable"},
+      {"place": "Bethléem", "lat": 31.7, "lon": 35.2, "from": 380, "to": 385, "note": "Moine dans un monastère près de la grotte de la Nativité avec son ami Germanus, juste avant l'arrivée de Jérôme.", "certainty": "sur"},
+      {"place": "Scété (Wadi Natroun)", "lat": 30.42, "lon": 30.33, "from": 385, "to": 399, "note": "Quinze ans à interroger les anciens du désert ; il en tirera les Conférences.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 400, "to": 404, "note": "Chassé d'Égypte avec les moines origénistes, il est ordonné diacre par Jean Chrysostome.", "certainty": "sur"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 404, "to": 415, "note": "Envoyé plaider pour Chrysostome auprès du pape Innocent ; les dix années suivantes sont obscures, peut-être prêtre à Antioche.", "certainty": "probable"},
+      {"place": "Marseille", "lat": 43.3, "lon": 5.37, "from": 415, "to": 435, "note": "Il fonde Saint-Victor et un monastère de femmes, et écrit les Institutions et les Conférences, lecture quotidienne des bénédictins.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "jean-chrysostome", "where": "Constantinople", "year": 400, "note": "Son évêque et maître, qu'il défendra à Rome après le concile du Chêne."}
+    ],
+    "blurb": "Le moine qui importe le désert d'Égypte à Marseille et dont saint Benoît recommande la lecture chaque soir : le monachisme occidental lui doit sa grammaire.",
+    "fun": "Vers 430, le futur pape Léon le Grand, alors archidiacre, lui commande un traité contre Nestorius ; sa fête orthodoxe tombe le 29 février, un jour sur quatre ans, ce qui a fait de lui le saint patron des procrastinateurs.",
+    "sources": ["https://fr.wikipedia.org/wiki/Jean_Cassien", "https://en.wikipedia.org/wiki/John_Cassian"]
+  },
+  {
+    "id": "melanie-la-jeune",
+    "name": "Mélanie",
+    "full": "Sainte Mélanie la Jeune",
+    "feast": "12-31",
+    "feast_note": "",
+    "born": 383,
+    "died": 439,
+    "approx": false,
+    "tradition": "commune",
+    "origin": "Rome",
+    "role": "patricienne, fondatrice",
+    "sex": "f",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "grc", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 383, "to": 407, "note": "Héritière de la plus grosse fortune de l'Empire, mariée à 14 ans à son cousin Pinien ; après deux deuils, le couple fait vœu de chasteté et commence à tout vendre.", "certainty": "sur"},
+      {"place": "Nole", "lat": 40.93, "lon": 14.53, "from": 407, "to": 408, "note": "Visite à Paulin de Nole, ami de sa grand-mère Mélanie l'Ancienne.", "certainty": "probable"},
+      {"place": "Messine (Sicile)", "lat": 38.19, "lon": 15.55, "from": 408, "to": 410, "note": "Fuite devant les Goths d'Alaric ; elle vend ses domaines siciliens.", "certainty": "sur"},
+      {"place": "Thagaste (Souk Ahras)", "lat": 36.29, "lon": 7.95, "from": 410, "to": 417, "note": "Sept ans sur ses terres d'Afrique, auprès d'Alypius et d'Augustin, à fonder deux monastères et affranchir ses esclaves par milliers.", "certainty": "sur"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 417, "to": 418, "note": "Arrivée en Terre sainte ; elle se fait inscrire sur la liste des pauvres de l'église de l'Anastasis.", "certainty": "sur"},
+      {"place": "Égypte (Alexandrie et Nitrie)", "lat": 31.2, "lon": 29.92, "from": 418, "to": 419, "note": "Tournée des moines du désert avec Pinien, pour distribuer ce qui reste.", "certainty": "sur"},
+      {"place": "Mont des Oliviers", "lat": 31.78, "lon": 35.24, "from": 419, "to": 436, "note": "Quatorze ans recluse dans une cellule, puis fondatrice d'un monastère de femmes et d'un monastère d'hommes.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 436, "to": 437, "note": "Elle convertit in extremis son oncle Volusien, ambassadeur païen, et fréquente l'impératrice Eudocie.", "certainty": "sur"},
+      {"place": "Mont des Oliviers", "lat": 31.78, "lon": 35.24, "from": 437, "to": 439, "note": "Elle meurt le 31 décembre 439, quelques jours après avoir fêté Noël à Bethléem.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "augustin-d-hippone", "where": "Thagaste et Hippone", "year": 411, "note": "Le vieil évêque lui conseille de placer sa fortune en monastères ; ses fidèles tentent d'ordonner Pinien de force."}
+    ],
+    "blurb": "La milliardaire de Rome qui met vingt ans à se débarrasser de sa fortune : des domaines dans huit provinces, 8 000 esclaves affranchis, et des monastères jusqu'au mont des Oliviers.",
+    "fun": "Lors de la vente de ses biens, le Sénat s'inquiète de l'effondrement du marché immobilier ; sa biographie, écrite par son disciple Gérontius, existe en grec et en latin, et les deux versions se contredisent sur les chiffres.",
+    "sources": ["https://fr.wikipedia.org/wiki/Mélanie_la_Jeune", "https://en.wikipedia.org/wiki/Melania_the_Younger"]
+  },
+  {
+    "id": "marie-l-egyptienne",
+    "name": "Marie l'Égyptienne",
+    "full": "Sainte Marie l'Égyptienne, pénitente",
+    "feast": "04-01",
+    "feast_note": "Aussi le cinquième dimanche du Grand Carême chez les orthodoxes",
+    "born": 344,
+    "died": 421,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Égypte",
+    "role": "pénitente, ermite",
+    "sex": "f",
+    "languages": [
+      {"code": "cop", "level": "natif"},
+      {"code": "grc", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Égypte (village inconnu)", "lat": 30.5, "lon": 31.0, "from": 344, "to": 356, "note": "Sa Vie, écrite au VIIe siècle par Sophrone de Jérusalem, ne nomme pas son village ; elle s'enfuit à 12 ans.", "certainty": "legende"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 356, "to": 373, "note": "Dix-sept ans de débauche assumée, par goût plutôt que par besoin, dit-elle à Zosime.", "certainty": "legende"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 373, "to": 373, "note": "Embarquée avec des pèlerins qu'elle séduit en chemin, elle ne peut franchir la porte de l'Anastasis ; conversion devant une icône de la Vierge.", "certainty": "legende"},
+      {"place": "Désert au-delà du Jourdain", "lat": 31.85, "lon": 35.55, "from": 373, "to": 421, "note": "Quarante-sept ans seule avec trois pains ; le moine Zosime la découvre, la communie, puis la retrouve morte un an plus tard.", "certainty": "legende"}
+    ],
+    "met": [],
+    "blurb": "La prostituée d'Alexandrie qui part à Jérusalem pour les mauvaises raisons et reste quarante-sept ans dans le désert pour les bonnes.",
+    "fun": "Selon la légende, un lion vint creuser sa tombe parce que Zosime n'avait pas de pelle ; Villon la cite dans sa Ballade pour prier Notre Dame et Goethe la place au dénouement de Faust.",
+    "sources": ["https://fr.wikipedia.org/wiki/Marie_l'Égyptienne"]
+  },
+  {
+    "id": "hilarion",
+    "name": "Hilarion",
+    "full": "Saint Hilarion de Gaza",
+    "feast": "10-21",
+    "feast_note": "",
+    "born": 291,
+    "died": 371,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Thabatha, près de Gaza",
+    "role": "ermite, fondateur",
+    "sex": "m",
+    "languages": [
+      {"code": "arc", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "cop", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Thabatha (Tell Umm el-Amr, Gaza)", "lat": 31.43, "lon": 34.37, "from": 291, "to": 305, "note": "Né de parents païens dans un village au sud de Gaza.", "certainty": "sur"},
+      {"place": "Alexandrie", "lat": 31.2, "lon": 29.92, "from": 305, "to": 306, "note": "Études chez un grammairien ; il se convertit et entend parler d'Antoine.", "certainty": "sur"},
+      {"place": "Pispir (Deir el-Maymoun)", "lat": 29.26, "lon": 31.17, "from": 306, "to": 307, "note": "Deux mois auprès d'Antoine ; trop de monde, il rentre.", "certainty": "sur"},
+      {"place": "Maïouma (Gaza)", "lat": 31.52, "lon": 34.43, "from": 307, "to": 356, "note": "Vingt-deux ans seul dans une hutte entre mer et marais, puis une laure immense se forme autour de lui : le monachisme palestinien est né.", "certainty": "sur"},
+      {"place": "Égypte (mont Colzim et Bruchium)", "lat": 28.92, "lon": 32.35, "from": 356, "to": 362, "note": "Fuyant sa célébrité, il va prier sur la tombe d'Antoine puis se cache dans une oasis.", "certainty": "probable"},
+      {"place": "Pachynum (Sicile)", "lat": 36.72, "lon": 15.09, "from": 362, "to": 364, "note": "Chassé par les partisans de Julien qui ont rasé son monastère, il vit de fagots en Sicile.", "certainty": "probable"},
+      {"place": "Épidaure de Dalmatie (Cavtat)", "lat": 42.58, "lon": 18.22, "from": 364, "to": 365, "note": "Il aurait arrêté le raz-de-marée du 21 juillet 365 en traçant trois croix sur le sable.", "certainty": "probable"},
+      {"place": "Chypre (près de Paphos)", "lat": 34.77, "lon": 32.42, "from": 365, "to": 371, "note": "Accueilli par son ancien disciple Épiphane, il meurt à 80 ans dans un lieu reculé ; Hésychius vole son corps pour le ramener à Maïouma.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "antoine-le-grand", "where": "Pispir", "year": 307, "note": "Deux mois d'apprentissage auprès du maître ; Jérôme raconte leur rencontre dans sa Vie d'Hilarion."}
+    ],
+    "blurb": "L'ermite qui fuit sa propre réputation de Gaza en Sicile et de Dalmatie à Chypre, et que les pèlerins retrouvent à chaque fois.",
+    "fun": "Son corps serait resté intact dix mois dans le sol chypriote avant qu'Hésychius ne l'exhume pour le ramener à Gaza ; son monastère a été retrouvé en 1997 à Tell Umm el-Amr, l'un des plus grands du Proche-Orient byzantin.",
+    "sources": ["https://fr.wikipedia.org/wiki/Hilarion_de_Gaza", "https://en.wikipedia.org/wiki/Hilarion"]
+  },
+  {
+    "id": "mesrop-machtots",
+    "name": "Mesrop",
+    "full": "Saint Mesrop Machtots, inventeur de l'alphabet arménien",
+    "feast": "02-17",
+    "feast_note": "Église arménienne : fête mobile des Saints Traducteurs (octobre) et fête avec Sahak en été",
+    "born": 362,
+    "died": 440,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Hatsekats, province de Taron (Arménie)",
+    "role": "moine, linguiste",
+    "sex": "m",
+    "languages": [
+      {"code": "hye", "level": "natif"},
+      {"code": "grc", "level": "courant"},
+      {"code": "syc", "level": "courant"},
+      {"code": "pal", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Hatsekats (Taron, près de Muş)", "lat": 38.74, "lon": 41.49, "from": 362, "to": 380, "note": "Fils d'un homme libre, il reçoit une éducation grecque.", "certainty": "probable"},
+      {"place": "Vagharchapat (Etchmiadzin)", "lat": 40.16, "lon": 44.29, "from": 380, "to": 395, "note": "Secrétaire à la chancellerie royale, où il manie le grec, le syriaque et le persan.", "certainty": "sur"},
+      {"place": "Goghtn (Ordubad, Nakhitchevan)", "lat": 38.91, "lon": 46.02, "from": 395, "to": 404, "note": "Moine puis missionnaire dans une province encore païenne : il constate que sans écriture, rien ne tient.", "certainty": "sur"},
+      {"place": "Édesse et Samosate", "lat": 37.16, "lon": 38.8, "from": 404, "to": 406, "note": "Il compare les alphabets, fait dessiner ses 36 lettres par le calligraphe grec Rufin à Samosate et traduit en premier le livre des Proverbes.", "certainty": "sur"},
+      {"place": "Vagharchapat", "lat": 40.16, "lon": 44.29, "from": 406, "to": 410, "note": "Fondation du séminaire et des premières écoles avec le catholicos Sahak.", "certainty": "sur"},
+      {"place": "Mtskheta (Ibérie)", "lat": 41.85, "lon": 44.72, "from": 410, "to": 412, "note": "Mission en Géorgie, où la tradition arménienne lui attribue un alphabet (les Géorgiens contestent).", "certainty": "probable"},
+      {"place": "Vagharchapat", "lat": 40.16, "lon": 44.29, "from": 412, "to": 421, "note": "Écoles dans toutes les provinces de l'Arménie perse.", "certainty": "sur"},
+      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 422, "to": 422, "note": "Reçu par Théodose II, il obtient d'ouvrir des écoles arméniennes en Arménie byzantine.", "certainty": "sur"},
+      {"place": "Albanie du Caucase (Partav)", "lat": 40.37, "lon": 47.13, "from": 423, "to": 425, "note": "Mission chez les Albaniens du Caucase, dont il aurait aussi fixé l'alphabet.", "certainty": "probable"},
+      {"place": "Vagharchapat", "lat": 40.16, "lon": 44.29, "from": 425, "to": 440, "note": "Traduction de la Bible achevée vers 435 ; il meurt le 17 février 440 et repose à Ochakan.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "Le fonctionnaire polyglotte qui invente de toutes pièces un alphabet de 36 lettres, puis une littérature, puis, dit-on, deux autres alphabets pour les voisins.",
+    "fun": "La première phrase écrite en arménien serait un proverbe de Salomon : « Connaître la sagesse et la discipline ». Son élève Korioun, premier biographe de la langue, écrit la vie de l'homme qui lui a appris à écrire.",
+    "sources": ["https://fr.wikipedia.org/wiki/Mesrop_Machtots"]
+  },
+  {
+    "id": "nino",
+    "name": "Nino",
+    "full": "Sainte Nino, illuminatrice de la Géorgie",
+    "feast": "01-14",
+    "feast_note": "15 décembre au martyrologe romain ; 1er juin en Géorgie (entrée en Ibérie)",
+    "born": 296,
+    "died": 338,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Kolastra, Cappadoce",
+    "role": "missionnaire",
+    "sex": "f",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "kat", "level": "courant"},
+      {"code": "hye", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Kolastra (Cappadoce)", "lat": 38.4, "lon": 35.2, "from": 296, "to": 308, "note": "Famille romaine de langue grecque ; la tradition en fait une parente de saint Georges.", "certainty": "probable"},
+      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 308, "to": 316, "note": "Élevée par une pieuse Arménienne, Sarah Miaphore, quand ses parents se retirent au désert.", "certainty": "legende"},
+      {"place": "Vagharchapat (Arménie)", "lat": 40.16, "lon": 44.29, "from": 317, "to": 318, "note": "Compagne des vierges Hripsimé et Gaïané, martyrisées par Tiridate ; seule Nino en réchappe et fuit vers le nord.", "certainty": "legende"},
+      {"place": "Urbnisi (Ibérie)", "lat": 42.04, "lon": 43.78, "from": 319, "to": 319, "note": "Un mois chez la communauté juive, le temps d'apprendre les usages du pays.", "certainty": "legende"},
+      {"place": "Mtskheta", "lat": 41.85, "lon": 44.72, "from": 320, "to": 335, "note": "Elle vit dans un buisson de ronces, guérit la reine Nana, puis le roi Mirian frappé de cécité à la chasse ; l'Ibérie devient chrétienne vers 326-334.", "certainty": "probable"},
+      {"place": "Bodbé (Kakhétie)", "lat": 41.62, "lon": 45.93, "from": 335, "to": 338, "note": "Dernières années de prédication à l'est ; sa tombe y est toujours vénérée.", "certainty": "probable"}
+    ],
+    "met": [],
+    "blurb": "Une Cappadocienne de langue grecque qui convertit tout un royaume du Caucase armée d'une croix en sarments de vigne liée avec ses propres cheveux.",
+    "fun": "Selon la légende, la colonne de la première église de Mtskheta, trop lourde pour les ouvriers, se dressa seule dans les airs après une nuit de prière : c'est la « colonne vivante », Svétitskhovéli, qui donne son nom à la cathédrale.",
+    "sources": ["https://fr.wikipedia.org/wiki/Nino_de_Géorgie", "https://en.wikipedia.org/wiki/Saint_Nino"]
+  },
+  {
+    "id": "gregoire-l-illuminateur",
+    "name": "Grégoire l'Illuminateur",
+    "full": "Saint Grégoire l'Illuminateur, premier catholicos d'Arménie",
+    "feast": "09-30",
+    "feast_note": "Église arménienne : trois fêtes mobiles (descente dans la fosse, sortie de la fosse, invention des reliques)",
+    "born": 257,
+    "died": 331,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Arménie, famille parthe",
+    "role": "évêque, catholicos",
+    "sex": "m",
+    "languages": [
+      {"code": "grc", "level": "natif"},
+      {"code": "hye", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Césarée de Cappadoce (Kayseri)", "lat": 38.72, "lon": 35.49, "from": 257, "to": 287, "note": "Exfiltré bébé après que son père Anak a assassiné le roi Khosrov, il est élevé chrétien et en grec ; il s'y marie et a deux fils.", "certainty": "probable"},
+      {"place": "Vagharchapat (Etchmiadzin)", "lat": 40.16, "lon": 44.29, "from": 287, "to": 288, "note": "Entré au service du roi Tiridate, fils de la victime de son père, il refuse de sacrifier à la déesse Anahit.", "certainty": "probable"},
+      {"place": "Khor Virap", "lat": 39.88, "lon": 44.58, "from": 288, "to": 301, "note": "Treize ans au fond d'une fosse à serpents, nourri en secret par une veuve.", "certainty": "legende"},
+      {"place": "Vagharchapat", "lat": 40.16, "lon": 44.29, "from": 301, "to": 302, "note": "Tiré de la fosse pour guérir le roi changé en sanglier, il convertit Tiridate et l'Arménie : 301 selon la tradition, vers 314 selon les historiens.", "certainty": "probable"},
+      {"place": "Césarée de Cappadoce", "lat": 38.72, "lon": 35.49, "from": 302, "to": 302, "note": "Sacré évêque d'Arménie par Léonce de Césarée ; il en rapporte des reliques de Jean-Baptiste.", "certainty": "sur"},
+      {"place": "Achtichat (Taron)", "lat": 38.95, "lon": 41.35, "from": 303, "to": 315, "note": "Il bâtit la première église sur un temple de Vahagn : siège de l'Église arménienne jusqu'en 387.", "certainty": "probable"},
+      {"place": "Vagharchapat (Etchmiadzin)", "lat": 40.16, "lon": 44.29, "from": 315, "to": 325, "note": "Vision du Fils unique descendant frapper le sol : Etchmiadzin ; il élève des martyria à Hripsimé et Gaïané.", "certainty": "probable"},
+      {"place": "Mont Sepuh (Daranali, Kemah)", "lat": 39.6, "lon": 39.03, "from": 325, "to": 331, "note": "Il cède le siège à son fils Aristakès, rentré du concile de Nicée, et meurt ermite dans la grotte de Mané ; ses restes sont à Thordan.", "certainty": "probable"}
+    ],
+    "met": [],
+    "blurb": "Fils d'un régicide, il passe treize ans dans une fosse chez le fils de la victime, en ressort pour le guérir et fait de l'Arménie le premier État chrétien du monde.",
+    "fun": "La tradition arménienne l'envoie à Rome avec le roi Tiridate signer un pacte avec Constantin et le pape Sylvestre : l'historien Robert Thomson tient la scène pour une pure fiction. Sa main droite, relique majeure, sert encore à consacrer le saint chrême d'Etchmiadzin.",
+    "sources": ["https://fr.wikipedia.org/wiki/Grégoire_Ier_l'Illuminateur", "https://en.wikipedia.org/wiki/Gregory_the_Illuminator"]
+  },
+  {
+    "id": "ephrem-le-syrien",
+    "name": "Éphrem",
+    "full": "Saint Éphrem le Syrien, diacre d'Édesse",
+    "feast": "06-09",
+    "feast_note": "28 janvier chez les orthodoxes",
+    "born": 306,
+    "died": 373,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Nisibe, Mésopotamie",
+    "role": "diacre, poète",
+    "sex": "m",
+    "languages": [
+      {"code": "syc", "level": "natif"}
+    ],
+    "stops": [
+      {"place": "Nisibe (Nusaybin)", "lat": 37.07, "lon": 41.21, "from": 306, "to": 363, "note": "Disciple de l'évêque Jacques de Nisibe, diacre et maître d'école ; il vit trois sièges perses (338, 346, 350) et chante la ville dans ses Carmina Nisibena.", "certainty": "sur"},
+      {"place": "Amida (Diyarbakır)", "lat": 37.91, "lon": 40.24, "from": 363, "to": 363, "note": "Quand Jovien cède Nisibe aux Perses, les chrétiens doivent partir ; étape à Amida.", "certainty": "sur"},
+      {"place": "Édesse (Şanlıurfa)", "lat": 37.16, "lon": 38.8, "from": 363, "to": 373, "note": "Dix ans à composer des hymnes contre les hérétiques et à organiser les secours pendant la famine ; il meurt de la peste en soignant les malades, le 9 juin 373.", "certainty": "sur"}
+    ],
+    "met": [],
+    "blurb": "La « harpe du Saint-Esprit » : un diacre syriaque qui réfute les hérésies en chansons et les fait chanter par des chœurs de femmes, ce qui ne se faisait pas.",
+    "fun": "Sa visite à Basile de Césarée, où les deux hommes se seraient compris par miracle sans partager une langue, est une légende ; sa rencontre avec Bishoï en Égypte aussi. En vrai, il n'a sans doute jamais quitté la Mésopotamie ni parlé grec.",
+    "sources": ["https://fr.wikipedia.org/wiki/Éphrem_le_Syrien"]
+  },
+  {
+    "id": "patrick",
+    "name": "Patrick",
+    "full": "Saint Patrick, apôtre de l'Irlande",
+    "feast": "03-17",
+    "feast_note": "",
+    "born": 386,
+    "died": 461,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Bannaventa Berniae, Bretagne romaine (lieu non identifié)",
+    "role": "esclave, évêque missionnaire",
+    "sex": "m",
+    "languages": [
+      {"code": "cym", "level": "natif"},
+      {"code": "lat", "level": "courant"},
+      {"code": "sga", "level": "courant"}
+    ],
+    "stops": [
+      {"place": "Bannaventa Berniae (Ravenglass ?)", "lat": 54.35, "lon": -3.4, "from": 386, "to": 402, "note": "Fils d'un diacre décurion et petit-fils d'un prêtre ; on cherche son village de Cumbria au pays de Galles. Il avoue avoir été un adolescent peu pieux.", "certainty": "probable"},
+      {"place": "Slemish (Antrim)", "lat": 54.88, "lon": -6.11, "from": 402, "to": 408, "note": "Enlevé par des pirates à 16 ans, six ans berger esclave ; il prie cent fois par jour et apprend l'irlandais.", "certainty": "probable"},
+      {"place": "Bretagne romaine", "lat": 54.35, "lon": -3.4, "from": 408, "to": 415, "note": "Évadé sur un bateau de marchands après trois jours de marche dans un désert, il retrouve ses parents.", "certainty": "probable"},
+      {"place": "Auxerre", "lat": 47.8, "lon": 3.57, "from": 415, "to": 432, "note": "Formation en Gaule auprès de Germain d'Auxerre, peut-être à Lérins : tradition tardive rapportée par Muirchú au VIIe siècle.", "certainty": "legende"},
+      {"place": "Saul (près de Downpatrick)", "lat": 54.33, "lon": -5.7, "from": 432, "to": 433, "note": "Débarquement en Irlande en 432 selon les Annales d'Ulster ; un chef local lui donne une grange qui devient sa première église.", "certainty": "probable"},
+      {"place": "Tara", "lat": 53.58, "lon": -6.61, "from": 433, "to": 433, "note": "Il allume le feu pascal sur la colline de Slane sous le nez du haut-roi : légende de la victoire sur les druides.", "certainty": "legende"},
+      {"place": "Armagh", "lat": 54.35, "lon": -6.65, "from": 433, "to": 460, "note": "Trente ans de mission dans le nord de l'île ; il fixe le siège primatial à Armagh vers 445 et écrit sa Confessio.", "certainty": "probable"},
+      {"place": "Saul (Downpatrick)", "lat": 54.33, "lon": -5.7, "from": 461, "to": 461, "note": "Mort le 17 mars 461 selon Muirchú ; sa tombe de granit à Downpatrick date de 1900.", "certainty": "probable"}
+    ],
+    "met": [
+      {"with": "germain-d-auxerre", "where": "Auxerre", "year": 420, "note": "Selon Muirchú (VIIe siècle), Germain forme Patrick et l'envoie en Irlande : tradition vénérable, historicité incertaine."}
+    ],
+    "blurb": "Un adolescent britto-romain enlevé par des pirates irlandais, qui s'évade et revient de son plein gré évangéliser ses ravisseurs : la plus belle revanche de l'histoire.",
+    "fun": "Les serpents chassés d'Irlande n'y ont jamais vécu, le trèfle n'apparaît qu'au XVIIe siècle ; en revanche sa Confessio est authentique, et il y confesse que son latin est mauvais, en latin.",
+    "sources": ["https://fr.wikipedia.org/wiki/Patrick_d'Irlande"]
+  },
+  {
+    "id": "germain-d-auxerre",
+    "name": "Germain",
+    "full": "Saint Germain d'Auxerre",
+    "feast": "07-31",
+    "feast_note": "",
+    "born": 378,
+    "died": 448,
+    "approx": true,
+    "tradition": "commune",
+    "origin": "Appoigny, près d'Auxerre",
+    "role": "gouverneur, évêque",
+    "sex": "m",
+    "languages": [
+      {"code": "lat", "level": "natif"},
+      {"code": "xtg", "level": "notions"}
+    ],
+    "stops": [
+      {"place": "Appoigny (Auxerre)", "lat": 47.87, "lon": 3.52, "from": 378, "to": 395, "note": "Fils de l'élite gallo-romaine ; passionné de chasse, il pend ses trophées à un poirier sacré, au grand dam de l'évêque Amâtre.", "certainty": "probable"},
+      {"place": "Rome", "lat": 41.89, "lon": 12.49, "from": 395, "to": 405, "note": "Études de droit, avocat au barreau de Rome, mariage avec Eustachie.", "certainty": "probable"},
+      {"place": "Auxerre", "lat": 47.8, "lon": 3.57, "from": 405, "to": 429, "note": "Dux de la Marche armoricaine vers 410, puis tonsuré de force par Amâtre et évêque en 418 ; il mène dès lors une vie d'ascète.", "certainty": "sur"},
+      {"place": "Verulamium (Saint Albans)", "lat": 51.75, "lon": -0.34, "from": 429, "to": 430, "note": "Mission contre les pélagiens bretons avec Loup de Troyes ; en chemin, à Nanterre, il remarque la petite Geneviève. « Victoire de l'Alléluia » sur les Saxons et les Pictes.", "certainty": "sur"},
+      {"place": "Auxerre", "lat": 47.8, "lon": 3.57, "from": 430, "to": 440, "note": "Il fonde le monastère Saint-Côme-et-Saint-Damien et parcourt son diocèse.", "certainty": "sur"},
+      {"place": "Bretagne (Verulamium)", "lat": 51.75, "lon": -0.34, "from": 440, "to": 441, "note": "Seconde mission avec Sévère de Trèves, datée entre 440 et 447 selon les auteurs.", "certainty": "probable"},
+      {"place": "Auxerre", "lat": 47.8, "lon": 3.57, "from": 441, "to": 445, "note": "Retour au diocèse.", "certainty": "sur"},
+      {"place": "Arles", "lat": 43.68, "lon": 4.63, "from": 445, "to": 445, "note": "Il va demander au préfet Auxiliaris un dégrèvement d'impôts pour les Auxerrois, et l'obtient.", "certainty": "sur"},
+      {"place": "Auxerre", "lat": 47.8, "lon": 3.57, "from": 445, "to": 447, "note": "Les Armoricains révoltés le supplient d'intercéder auprès d'Aetius.", "certainty": "sur"},
+      {"place": "Ravenne", "lat": 44.42, "lon": 12.2, "from": 448, "to": 448, "note": "Reçu par Galla Placidia et l'évêque Pierre Chrysologue, il meurt le 31 juillet 448 ; l'impératrice renvoie son corps à Auxerre en grande pompe.", "certainty": "sur"}
+    ],
+    "met": [
+      {"with": "genevieve", "where": "Nanterre", "year": 429, "note": "En route pour la Bretagne, il consacre à Dieu une fillette de sept ans : la future patronne de Paris."},
+      {"with": "patrick", "where": "Auxerre", "year": 420, "note": "Selon Muirchú (VIIe siècle), il forme Patrick avant sa mission irlandaise : tradition respectable mais non vérifiable."}
+    ],
+    "blurb": "Un gouverneur chasseur tonsuré de force par son évêque, qui finit par gagner une bataille en criant Alléluia et par mourir en ambassade à Ravenne.",
+    "fun": "Son biographe Constance de Lyon raconte qu'il mit en fuite Saxons et Pictes sans un coup d'épée, par un triple Alléluia répercuté par les montagnes ; en 447, à Travia, un bâton planté par lui serait devenu un arbre.",
+    "sources": ["https://fr.wikipedia.org/wiki/Germain_d'Auxerre"]
+  }
+]

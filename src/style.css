@@ -159,21 +159,22 @@ h1::after { content: ""; display: block; width: 7rem; height: 2px; margin: .6rem
 
 /* Calques SVG */
 .coast { fill: none; stroke: #6b4a2b; stroke-width: .9; stroke-linejoin: round; }
+.coast-glow { fill: none; stroke: #8a6a45; stroke-width: 3.2; stroke-linejoin: round; opacity: .14; }
 .land { fill: var(--vellum); }
 .river { fill: none; stroke: #4f7fa3; stroke-width: .9; stroke-linecap: round; stroke-linejoin: round; opacity: .85; }
 .rhumb-main { stroke: #5b3f28; stroke-width: .55; opacity: .55; }
 .rhumb-half { stroke: #3f7a3c; stroke-width: .45; opacity: .5; }
 .rhumb-quarter { stroke: #b23a2c; stroke-width: .45; opacity: .5; }
 .city-label { font-family: var(--font-body); font-style: italic; fill: #4a2f1a; }
-.city-label.t1 { fill: #a8321f; font-size: 9px; font-style: normal; }
+.city-label.t1 { fill: #a8321f; font-size: 8px; font-style: normal; }
 .city-label.t2 { font-size: 7px; }
 .city-label.t3 { font-size: 5.5px; opacity: 0; transition: opacity .3s; }
 svg.zoomed .city-label.t3 { opacity: .9; }
 .city-dot { fill: #a8321f; stroke: #4a2f1a; stroke-width: .4; }
-.region-label { font-family: var(--font-display); fill: #5b3f28; letter-spacing: .25em; opacity: .75; text-anchor: middle; }
+.region-label { font-family: var(--font-display); fill: #5b3f28; letter-spacing: .22em; opacity: .55; text-anchor: middle; }
 .sea-label { font-family: var(--font-body); font-style: italic; fill: #3f5f86; letter-spacing: .12em; opacity: .7; text-anchor: middle; }
-.mountain { fill: #6f9a52; stroke: #3d5f2c; stroke-width: .5; }
-.mountain-shade { fill: #4d7538; }
+.mountain { fill: #86ab65; stroke: #4a6a33; stroke-width: .45; }
+.mountain-shade { fill: #5d8244; }
 .route { fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 .route.a { stroke: #b4372b; } .route.b { stroke: #3f7a3c; }
 .route-travel { fill: none; stroke-width: 1.6; stroke-dasharray: 3 3; stroke-linecap: round; opacity: .9; }
