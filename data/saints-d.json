@@ -1,0 +1,3893 @@
+[
+ {
+  "id": "olaf",
+  "name": "Olaf",
+  "full": "Saint Olaf II Haraldsson, roi de Norvège",
+  "feast": "07-29",
+  "feast_note": "Olsok en Norvège, Ólavsøka aux Féroé",
+  "born": 995,
+  "died": 1030,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Ringerike, Norvège",
+  "role": "roi viking",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "non",
+    "level": "natif"
+   },
+   {
+    "code": "ang",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Ringerike",
+    "lat": 60.17,
+    "lon": 10.26,
+    "from": 995,
+    "to": 1007,
+    "note": "Enfance chez son beau-père Sigurd Syr, petit roi des Hautes-Terres.",
+    "certainty": "probable",
+    "place_en": "Ringerike",
+    "note_en": "Childhood with his stepfather Sigurd Syr, a petty king of the Uplands."
+   },
+   {
+    "place": "Saaremaa (Baltique)",
+    "lat": 58.25,
+    "lon": 22.48,
+    "from": 1008,
+    "to": 1008,
+    "note": "Premières expéditions vikings : Saaremaa, puis la côte finlandaise.",
+    "certainty": "probable",
+    "place_en": "Saaremaa (Baltic)",
+    "note_en": "First Viking expeditions: Saaremaa, then the Finnish coast."
+   },
+   {
+    "place": "Londres",
+    "lat": 51.51,
+    "lon": -0.13,
+    "from": 1009,
+    "to": 1013,
+    "note": "Au service de Thorkell le Grand puis du roi Æthelred ; les scaldes lui prêtent la chute du pont de Londres.",
+    "certainty": "probable",
+    "place_en": "London",
+    "note_en": "In the service of Thorkell the Tall, then of King Æthelred; the skalds credit him with pulling down London Bridge."
+   },
+   {
+    "place": "Rouen",
+    "lat": 49.44,
+    "lon": 1.1,
+    "from": 1013,
+    "to": 1014,
+    "note": "Hiver chez le duc Richard II ; baptême par l'archevêque Robert le Danois.",
+    "certainty": "probable",
+    "place_en": "Rouen",
+    "note_en": "Winter at the court of Duke Richard II; baptised by Archbishop Robert the Dane."
+   },
+   {
+    "place": "Sarpsborg",
+    "lat": 59.28,
+    "lon": 11.11,
+    "from": 1015,
+    "to": 1017,
+    "note": "Retour, victoire de Nesjar (1016) et fondation de Borg.",
+    "certainty": "sur",
+    "place_en": "Sarpsborg",
+    "note_en": "Return home, victory at Nesjar (1016) and founding of Borg."
+   },
+   {
+    "place": "Nidaros (Trondheim)",
+    "lat": 63.43,
+    "lon": 10.39,
+    "from": 1017,
+    "to": 1028,
+    "note": "Règne et christianisation musclée du pays.",
+    "certainty": "sur",
+    "place_en": "Nidaros (Trondheim)",
+    "note_en": "His reign, and a muscular Christianisation of the country."
+   },
+   {
+    "place": "Novgorod",
+    "lat": 58.52,
+    "lon": 31.27,
+    "from": 1028,
+    "to": 1029,
+    "note": "Exil chez Iaroslav le Sage et Ingegerd, son ancienne fiancée.",
+    "certainty": "sur",
+    "place_en": "Novgorod",
+    "note_en": "Exile with Yaroslav the Wise and Ingegerd, his former fiancée."
+   },
+   {
+    "place": "Stiklestad",
+    "lat": 63.8,
+    "lon": 11.57,
+    "from": 1030,
+    "to": 1030,
+    "note": "Tué le 29 juillet 1030 en tentant de reprendre son trône.",
+    "certainty": "sur",
+    "place_en": "Stiklestad",
+    "note_en": "Killed on 29 July 1030 while trying to win back his throne."
+   }
+  ],
+  "met": [],
+  "blurb": "Viking repenti devenu roi, il a baptisé la Norvège à la hache avant de mourir au combat : le pays en a fait son saint patron éternel.",
+  "fun": "La légende veut qu'il ait tué un serpent de mer et l'ait jeté contre une falaise, où l'on montre encore sa silhouette.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Olaf_II_de_Norvège",
+   "https://en.wikipedia.org/wiki/Olaf_II_of_Norway"
+  ],
+  "name_en": "Olaf",
+  "full_en": "Saint Olaf II Haraldsson, King of Norway",
+  "origin_en": "Ringerike, Norway",
+  "role_en": "Viking king",
+  "blurb_en": "A reformed Viking turned king, he baptised Norway at axe-point before dying in battle: the country made him its eternal patron saint.",
+  "fun_en": "Legend has it that he killed a sea serpent and hurled it against a cliff, where its outline is still pointed out today.",
+  "feast_note_en": "Olsok in Norway, Ólavsøka in the Faroe Islands"
+ },
+ {
+  "id": "henri-ii",
+  "name": "Henri",
+  "full": "Saint Henri II, empereur du Saint-Empire",
+  "feast": "07-13",
+  "feast_note": "",
+  "born": 973,
+  "died": 1024,
+  "approx": false,
+  "tradition": "catholique",
+  "origin": "Abbach, Bavière",
+  "role": "empereur",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "goh",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Bad Abbach",
+    "lat": 48.93,
+    "lon": 12.05,
+    "from": 973,
+    "to": 980,
+    "note": "Naissance en mai 973, fils du duc Henri le Querelleur.",
+    "certainty": "sur",
+    "place_en": "Bad Abbach",
+    "note_en": "Born in May 973, son of Duke Henry the Quarrelsome."
+   },
+   {
+    "place": "Hildesheim",
+    "lat": 52.15,
+    "lon": 9.95,
+    "from": 980,
+    "to": 990,
+    "note": "Élevé par l'Église, à Freising puis Hildesheim : on le destinait à la cléricature.",
+    "certainty": "probable",
+    "place_en": "Hildesheim",
+    "note_en": "Raised by the Church, at Freising and then Hildesheim: he was meant for the clergy."
+   },
+   {
+    "place": "Ratisbonne",
+    "lat": 49.02,
+    "lon": 12.1,
+    "from": 990,
+    "to": 1002,
+    "note": "Duc de Bavière à partir de 995.",
+    "certainty": "sur",
+    "place_en": "Regensburg",
+    "note_en": "Duke of Bavaria from 995."
+   },
+   {
+    "place": "Pavie",
+    "lat": 45.19,
+    "lon": 9.16,
+    "from": 1004,
+    "to": 1004,
+    "note": "Couronné roi d'Italie contre Arduin d'Ivrée.",
+    "certainty": "sur",
+    "place_en": "Pavia",
+    "note_en": "Crowned King of Italy against Arduin of Ivrea."
+   },
+   {
+    "place": "Bamberg",
+    "lat": 49.89,
+    "lon": 10.89,
+    "from": 1005,
+    "to": 1013,
+    "note": "Fonde l'évêché de Bamberg en 1007 ; cour itinérante, guerres contre Boleslas de Pologne.",
+    "certainty": "sur",
+    "place_en": "Bamberg",
+    "note_en": "Founds the bishopric of Bamberg in 1007; itinerant court, wars against Boleslaw of Poland."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1014,
+    "to": 1014,
+    "note": "Couronné empereur par Benoît VIII le 14 février 1014.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Crowned emperor by Benedict VIII on 14 February 1014."
+   },
+   {
+    "place": "Bamberg",
+    "lat": 49.89,
+    "lon": 10.89,
+    "from": 1015,
+    "to": 1021,
+    "note": "Paix de Bautzen (1018) avec la Pologne.",
+    "certainty": "sur",
+    "place_en": "Bamberg",
+    "note_en": "Peace of Bautzen (1018) with Poland."
+   },
+   {
+    "place": "Troia (Pouilles)",
+    "lat": 41.36,
+    "lon": 15.31,
+    "from": 1022,
+    "to": 1022,
+    "note": "Campagne d'Italie du Sud ; le siège de Troia échoue.",
+    "certainty": "sur",
+    "place_en": "Troia (Apulia)",
+    "note_en": "Campaign in southern Italy; the siege of Troia fails."
+   },
+   {
+    "place": "Grone (Göttingen)",
+    "lat": 51.53,
+    "lon": 9.9,
+    "from": 1023,
+    "to": 1024,
+    "note": "Meurt le 13 juillet 1024 dans son palais de Grone.",
+    "certainty": "sur",
+    "place_en": "Grone (Göttingen)",
+    "note_en": "Dies on 13 July 1024 in his palace at Grone."
+   }
+  ],
+  "met": [
+   {
+    "with": "etienne-de-hongrie",
+    "where": "Bavière",
+    "year": 996,
+    "note": "Étienne épouse Gisèle, sœur d'Henri : les deux beaux-frères deviennent alliés. La tradition place la noce à Scheyern.",
+    "where_en": "Bavaria",
+    "note_en": "Stephen marries Gisela, Henry's sister: the two brothers-in-law become allies. Tradition places the wedding at Scheyern."
+   }
+  ],
+  "blurb": "Seul empereur allemand canonisé, il a fondé Bamberg et vécu, dit-on, un mariage blanc avec Cunégonde, sainte elle aussi.",
+  "fun": "Surnommé le Boiteux, il est enterré à Bamberg dans un tombeau sculpté par Riemenschneider qui raconte ses miracles.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Henri_II_(empereur_du_Saint-Empire)"
+  ],
+  "name_en": "Henry II",
+  "full_en": "Saint Henry II, Holy Roman Emperor",
+  "origin_en": "Abbach, Bavaria",
+  "role_en": "emperor",
+  "blurb_en": "The only German emperor ever canonised, he founded Bamberg and, so the story goes, lived in a chaste marriage with Cunigunde, a saint herself.",
+  "fun_en": "Nicknamed the Lame, he is buried in Bamberg in a tomb carved by Riemenschneider that tells the story of his miracles."
+ },
+ {
+  "id": "pierre-damien",
+  "name": "Pierre Damien",
+  "full": "Saint Pierre Damien",
+  "feast": "02-21",
+  "feast_note": "",
+  "born": 1007,
+  "died": 1072,
+  "approx": false,
+  "tradition": "catholique",
+  "origin": "Ravenne, Romagne",
+  "role": "ermite et cardinal",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "ita",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Ravenne",
+    "lat": 44.42,
+    "lon": 12.2,
+    "from": 1007,
+    "to": 1025,
+    "note": "Orphelin pauvre, gardien de porcs, sauvé par son frère Damien dont il prend le nom.",
+    "certainty": "sur",
+    "place_en": "Ravenna",
+    "note_en": "A poor orphan and swineherd, rescued by his brother Damian, whose name he took."
+   },
+   {
+    "place": "Parme",
+    "lat": 44.8,
+    "lon": 10.33,
+    "from": 1025,
+    "to": 1032,
+    "note": "Études à Faenza puis Parme.",
+    "certainty": "probable",
+    "place_en": "Parma",
+    "note_en": "Studies at Faenza, then Parma."
+   },
+   {
+    "place": "Ravenne",
+    "lat": 44.42,
+    "lon": 12.2,
+    "from": 1032,
+    "to": 1035,
+    "note": "Enseigne la rhétorique avec succès.",
+    "certainty": "probable",
+    "place_en": "Ravenna",
+    "note_en": "Teaches rhetoric, with success."
+   },
+   {
+    "place": "Fonte Avellana",
+    "lat": 43.47,
+    "lon": 12.73,
+    "from": 1035,
+    "to": 1057,
+    "note": "Ermite camaldule, prieur en 1043 ; écrit le Liber Gomorrhianus.",
+    "certainty": "sur",
+    "place_en": "Fonte Avellana",
+    "note_en": "Camaldolese hermit, prior in 1043; writes the Liber Gomorrhianus."
+   },
+   {
+    "place": "Rome et Ostie",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1057,
+    "to": 1063,
+    "note": "Cardinal-évêque d'Ostie ; légat à Milan en 1059 contre la simonie.",
+    "certainty": "sur",
+    "place_en": "Rome and Ostia",
+    "note_en": "Cardinal-bishop of Ostia; legate to Milan in 1059 against simony."
+   },
+   {
+    "place": "Cluny",
+    "lat": 46.43,
+    "lon": 4.66,
+    "from": 1063,
+    "to": 1063,
+    "note": "Légat en France pour arbitrer le conflit entre Cluny et l'évêque de Mâcon.",
+    "certainty": "sur",
+    "place_en": "Cluny",
+    "note_en": "Legate to France to settle the dispute between Cluny and the bishop of Mâcon."
+   },
+   {
+    "place": "Fonte Avellana",
+    "lat": 43.47,
+    "lon": 12.73,
+    "from": 1064,
+    "to": 1069,
+    "note": "Retour à l'ermitage, avec des allers-retours à Rome.",
+    "certainty": "sur",
+    "place_en": "Fonte Avellana",
+    "note_en": "Back to the hermitage, with trips to and from Rome."
+   },
+   {
+    "place": "Francfort",
+    "lat": 50.11,
+    "lon": 8.68,
+    "from": 1069,
+    "to": 1069,
+    "note": "Dissuade Henri IV de répudier son épouse Berthe.",
+    "certainty": "sur",
+    "place_en": "Frankfurt",
+    "note_en": "Talks Henry IV out of repudiating his wife Bertha."
+   },
+   {
+    "place": "Fonte Avellana",
+    "lat": 43.47,
+    "lon": 12.73,
+    "from": 1070,
+    "to": 1071,
+    "note": "Assiste à la consécration du Mont-Cassin en 1071.",
+    "certainty": "sur",
+    "place_en": "Fonte Avellana",
+    "note_en": "Attends the consecration of Monte Cassino in 1071."
+   },
+   {
+    "place": "Faenza",
+    "lat": 44.29,
+    "lon": 11.88,
+    "from": 1072,
+    "to": 1072,
+    "note": "Tombe malade au retour d'une mission à Ravenne et meurt le 22 février.",
+    "certainty": "sur",
+    "place_en": "Faenza",
+    "note_en": "Falls ill on the way back from a mission to Ravenna and dies on 22 February."
+   }
+  ],
+  "met": [
+   {
+    "with": "gregoire-vii",
+    "where": "Rome",
+    "year": 1059,
+    "note": "Collègues à la curie réformatrice ; Pierre surnomme l'archidiacre Hildebrand « mon saint Satan ».",
+    "where_en": "Rome",
+    "note_en": "Colleagues in the reforming curia; Peter nicknames the archdeacon Hildebrand “my holy Satan”."
+   }
+  ],
+  "blurb": "Ermite flagellant et cardinal malgré lui, il a passé sa vie à démissionner de Rome pour retourner à sa grotte, et Rome à le rappeler.",
+  "fun": "Dante le place au septième ciel du Paradis, et l'Église l'invoque contre les migraines : il en souffrait lui-même.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Pierre_Damien"
+  ],
+  "name_en": "Peter Damian",
+  "full_en": "Saint Peter Damian",
+  "origin_en": "Ravenna, Romagna",
+  "role_en": "hermit and cardinal",
+  "blurb_en": "A self-flagellating hermit and a cardinal against his will, he spent his life resigning from Rome to go back to his cave, and Rome spent it calling him back.",
+  "fun_en": "Dante places him in the seventh heaven of Paradise, and the Church invokes him against migraines: he suffered from them himself."
+ },
+ {
+  "id": "gregoire-vii",
+  "name": "Grégoire VII",
+  "full": "Saint Grégoire VII (Hildebrand de Soana), pape",
+  "feast": "05-25",
+  "feast_note": "",
+  "born": 1020,
+  "died": 1085,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Sovana, Toscane",
+  "role": "pape réformateur",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "ita",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "goh",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Sovana",
+    "lat": 42.66,
+    "lon": 11.65,
+    "from": 1020,
+    "to": 1030,
+    "note": "Fils, dit-on, d'un charpentier toscan.",
+    "certainty": "probable",
+    "place_en": "Sovana",
+    "note_en": "Said to be the son of a Tuscan carpenter."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1030,
+    "to": 1046,
+    "note": "Élevé au monastère de Sainte-Marie-sur-l'Aventin, chapelain de Grégoire VI.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Raised at the monastery of Santa Maria on the Aventine, chaplain to Gregory VI."
+   },
+   {
+    "place": "Cologne",
+    "lat": 50.94,
+    "lon": 6.96,
+    "from": 1046,
+    "to": 1049,
+    "note": "Suit en exil le pape déposé Grégoire VI, jusqu'à sa mort.",
+    "certainty": "sur",
+    "place_en": "Cologne",
+    "note_en": "Follows the deposed pope Gregory VI into exile, until his death."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1049,
+    "to": 1076,
+    "note": "Bras droit de cinq papes, archidiacre, puis élu pape par acclamation en 1073.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Right-hand man to five popes, archdeacon, then elected pope by acclamation in 1073."
+   },
+   {
+    "place": "Canossa",
+    "lat": 44.58,
+    "lon": 10.46,
+    "from": 1077,
+    "to": 1077,
+    "note": "Henri IV attend trois jours dans la neige ; absolution le 28 janvier.",
+    "certainty": "sur",
+    "place_en": "Canossa",
+    "note_en": "Henry IV waits three days in the snow; absolution on 28 January."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1077,
+    "to": 1084,
+    "note": "Lutte des investitures ; assiégé au château Saint-Ange, libéré par Robert Guiscard.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Investiture Controversy; besieged in Castel Sant'Angelo, freed by Robert Guiscard."
+   },
+   {
+    "place": "Salerne",
+    "lat": 40.68,
+    "lon": 14.77,
+    "from": 1084,
+    "to": 1085,
+    "note": "Exil chez les Normands ; meurt le 25 mai 1085.",
+    "certainty": "sur",
+    "place_en": "Salerno",
+    "note_en": "Exile among the Normans; dies on 25 May 1085."
+   }
+  ],
+  "met": [
+   {
+    "with": "pierre-damien",
+    "where": "Rome",
+    "year": 1059,
+    "note": "Compagnons de réforme à la curie pendant quinze ans.",
+    "where_en": "Rome",
+    "note_en": "Companions in reform at the curia for fifteen years."
+   }
+  ],
+  "blurb": "Le pape qui a fait attendre un empereur pieds nus dans la neige à Canossa, puis a fini sa vie en exil, vaincu par le même homme.",
+  "fun": "Son épitaphe résume tout : « J'ai aimé la justice et haï l'iniquité, c'est pourquoi je meurs en exil. »",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Grégoire_VII"
+  ],
+  "name_en": "Gregory VII",
+  "full_en": "Saint Gregory VII (Hildebrand of Sovana), Pope",
+  "origin_en": "Sovana, Tuscany",
+  "role_en": "reforming pope",
+  "blurb_en": "The pope who kept an emperor waiting barefoot in the snow at Canossa, then ended his life in exile, defeated by the same man.",
+  "fun_en": "His epitaph says it all: “I have loved justice and hated iniquity, therefore I die in exile.”"
+ },
+ {
+  "id": "anselme",
+  "name": "Anselme",
+  "full": "Saint Anselme de Cantorbéry",
+  "feast": "04-21",
+  "feast_note": "",
+  "born": 1033,
+  "died": 1109,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Aoste, royaume de Bourgogne",
+  "role": "moine et archevêque",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "ita",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "fro",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Aoste",
+    "lat": 45.74,
+    "lon": 7.32,
+    "from": 1033,
+    "to": 1056,
+    "note": "Jeunesse alpine ; brouille avec son père après la mort de sa mère.",
+    "certainty": "sur",
+    "place_en": "Aosta",
+    "note_en": "Alpine youth; falls out with his father after his mother's death."
+   },
+   {
+    "place": "Avranches",
+    "lat": 48.68,
+    "lon": -1.36,
+    "from": 1057,
+    "to": 1059,
+    "note": "Trois ans d'errance studieuse en Bourgogne et en France, jusqu'en Normandie.",
+    "certainty": "probable",
+    "place_en": "Avranches",
+    "note_en": "Three years of studious wandering through Burgundy and France, as far as Normandy."
+   },
+   {
+    "place": "Abbaye du Bec",
+    "lat": 49.23,
+    "lon": 0.72,
+    "from": 1060,
+    "to": 1093,
+    "note": "Moine sous Lanfranc, prieur en 1063, abbé en 1079 ; écrit le Monologion et le Proslogion.",
+    "certainty": "sur",
+    "place_en": "Bec Abbey",
+    "note_en": "Monk under Lanfranc, prior in 1063, abbot in 1079; writes the Monologion and the Proslogion."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1093,
+    "to": 1097,
+    "note": "Archevêque malgré lui, en conflit avec Guillaume le Roux.",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Archbishop against his will, at odds with William Rufus."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1098,
+    "to": 1099,
+    "note": "Premier exil : achève Cur Deus homo, siège au concile de Bari (1098).",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "First exile: finishes Cur Deus homo, sits at the Council of Bari (1098)."
+   },
+   {
+    "place": "Lyon",
+    "lat": 45.76,
+    "lon": 4.84,
+    "from": 1099,
+    "to": 1100,
+    "note": "Hôte de l'archevêque Hugues de Lyon.",
+    "certainty": "sur",
+    "place_en": "Lyon",
+    "note_en": "Guest of Archbishop Hugh of Lyon."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1100,
+    "to": 1103,
+    "note": "Rappelé par Henri Ier ; concile de Westminster (1102).",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Recalled by Henry I; Council of Westminster (1102)."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1103,
+    "to": 1104,
+    "note": "Second exil, pour la querelle des investitures.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Second exile, over the investiture dispute."
+   },
+   {
+    "place": "Lyon",
+    "lat": 45.76,
+    "lon": 4.84,
+    "from": 1104,
+    "to": 1106,
+    "note": "Attend l'accord de Laigle (1105) puis la réconciliation au Bec (1106).",
+    "certainty": "sur",
+    "place_en": "Lyon",
+    "note_en": "Waits for the agreement of L'Aigle (1105), then the reconciliation at Bec (1106)."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1106,
+    "to": 1109,
+    "note": "Dernières années ; meurt le 21 avril 1109.",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Final years; dies on 21 April 1109."
+   }
+  ],
+  "met": [],
+  "blurb": "Un Valdôtain devenu abbé normand puis primat d'Angleterre, qui a passé la moitié de son épiscopat en exil et inventé entre-temps l'argument ontologique.",
+  "fun": "Il a tenté d'interdire les cheveux longs aux hommes de la cour anglaise, qu'il jugeait efféminés. Sans grand succès.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Anselme_de_Cantorbéry"
+  ],
+  "name_en": "Anselm",
+  "full_en": "Saint Anselm of Canterbury",
+  "origin_en": "Aosta, Kingdom of Burgundy",
+  "role_en": "monk and archbishop",
+  "blurb_en": "A native of Aosta who became a Norman abbot and then Primate of England, spent half his episcopate in exile and invented the ontological argument along the way.",
+  "fun_en": "He tried to ban long hair for the men of the English court, which he found effeminate. Without much success."
+ },
+ {
+  "id": "bruno-le-chartreux",
+  "name": "Bruno",
+  "full": "Saint Bruno le Chartreux",
+  "feast": "10-06",
+  "feast_note": "",
+  "born": 1030,
+  "died": 1101,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Cologne, Rhénanie",
+  "role": "écolâtre et ermite",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "goh",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "fro",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Cologne",
+    "lat": 50.94,
+    "lon": 6.96,
+    "from": 1030,
+    "to": 1048,
+    "note": "Naissance dans une famille aisée, premières études à Saint-Cunibert.",
+    "certainty": "probable",
+    "place_en": "Cologne",
+    "note_en": "Born into a well-off family, first studies at St Cunibert's."
+   },
+   {
+    "place": "Reims",
+    "lat": 49.26,
+    "lon": 4.03,
+    "from": 1048,
+    "to": 1056,
+    "note": "Études à l'école cathédrale.",
+    "certainty": "probable",
+    "place_en": "Reims",
+    "note_en": "Studies at the cathedral school."
+   },
+   {
+    "place": "Cologne",
+    "lat": 50.94,
+    "lon": 6.96,
+    "from": 1056,
+    "to": 1057,
+    "note": "Bref retour comme chanoine de Saint-Cunibert.",
+    "certainty": "probable",
+    "place_en": "Cologne",
+    "note_en": "Brief return as a canon of St Cunibert's."
+   },
+   {
+    "place": "Reims",
+    "lat": 49.26,
+    "lon": 4.03,
+    "from": 1057,
+    "to": 1081,
+    "note": "Écolâtre pendant vingt ans ; parmi ses élèves, le futur pape Urbain II. Conflit avec l'archevêque simoniaque Manassès.",
+    "certainty": "sur",
+    "place_en": "Reims",
+    "note_en": "Schoolmaster for twenty years; among his pupils, the future pope Urban II. Conflict with the simoniac archbishop Manasses."
+   },
+   {
+    "place": "Sèche-Fontaine (Molesme)",
+    "lat": 47.93,
+    "lon": 4.36,
+    "from": 1082,
+    "to": 1084,
+    "note": "Ermite près de Molesme, chez Robert.",
+    "certainty": "sur",
+    "place_en": "Sèche-Fontaine (Molesme)",
+    "note_en": "Hermit near Molesme, under Robert."
+   },
+   {
+    "place": "Grande Chartreuse",
+    "lat": 45.36,
+    "lon": 5.79,
+    "from": 1084,
+    "to": 1090,
+    "note": "Avec six compagnons, fonde le « désert » de Chartreuse, sur un terrain offert par l'évêque Hugues de Grenoble.",
+    "certainty": "sur",
+    "place_en": "Grande Chartreuse",
+    "note_en": "With six companions, founds the “desert” of Chartreuse on land given by Bishop Hugh of Grenoble."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1090,
+    "to": 1091,
+    "note": "Appelé comme conseiller par son ancien élève Urbain II.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Summoned as an adviser by his former pupil Urban II."
+   },
+   {
+    "place": "Serra San Bruno (La Torre)",
+    "lat": 38.57,
+    "lon": 16.33,
+    "from": 1091,
+    "to": 1101,
+    "note": "Fonde l'ermitage de Santa Maria della Torre en Calabre ; meurt le 6 octobre 1101.",
+    "certainty": "sur",
+    "place_en": "Serra San Bruno (La Torre)",
+    "note_en": "Founds the hermitage of Santa Maria della Torre in Calabria; dies on 6 October 1101."
+   }
+  ],
+  "met": [],
+  "blurb": "Le professeur de Reims qui a préféré le silence des Alpes à la mitre, puis s'est fait rattraper par un ancien élève devenu pape.",
+  "fun": "Il n'a jamais été canonisé officiellement : son culte a été approuvé oralement en 1514, et les chartreux ne s'en plaignent pas.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Bruno_le_Chartreux"
+  ],
+  "name_en": "Bruno",
+  "full_en": "Saint Bruno of Cologne, founder of the Carthusians",
+  "origin_en": "Cologne, Rhineland",
+  "role_en": "schoolmaster and hermit",
+  "blurb_en": "The Reims schoolmaster who preferred the silence of the Alps to a mitre, then got caught up with by a former pupil who had become pope.",
+  "fun_en": "He was never formally canonised: his cult was approved orally in 1514, and the Carthusians are not complaining."
+ },
+ {
+  "id": "marguerite-d-ecosse",
+  "name": "Marguerite",
+  "full": "Sainte Marguerite d'Écosse",
+  "feast": "11-16",
+  "feast_note": "10 juin au calendrier traditionnel",
+  "born": 1045,
+  "died": 1093,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Hongrie (exil de la famille royale anglo-saxonne)",
+  "role": "reine",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "ang",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "hun",
+    "level": "notions"
+   },
+   {
+    "code": "gla",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Mecseknádasd (Hongrie)",
+    "lat": 46.23,
+    "lon": 18.47,
+    "from": 1045,
+    "to": 1057,
+    "note": "Née à la cour hongroise, où son père Édouard l'Exilé vivait en refuge ; la tradition locale situe sa naissance au château de Réka.",
+    "certainty": "probable",
+    "place_en": "Mecseknádasd (Hungary)",
+    "note_en": "Born at the Hungarian court, where her father Edward the Exile had found refuge; local tradition places her birth at Réka castle."
+   },
+   {
+    "place": "Londres",
+    "lat": 51.51,
+    "lon": -0.13,
+    "from": 1057,
+    "to": 1066,
+    "note": "Son père meurt dès son retour ; elle grandit à la cour d'Édouard le Confesseur.",
+    "certainty": "sur",
+    "place_en": "London",
+    "note_en": "Her father dies as soon as he returns; she grows up at the court of Edward the Confessor."
+   },
+   {
+    "place": "Dunfermline",
+    "lat": 56.07,
+    "lon": -3.46,
+    "from": 1068,
+    "to": 1093,
+    "note": "Fuite après Hastings, naufrage en Écosse, mariage avec Malcolm III vers 1070 ; huit enfants et une réforme de l'Église écossaise.",
+    "certainty": "sur",
+    "place_en": "Dunfermline",
+    "note_en": "Flight after Hastings, shipwreck in Scotland, marriage to Malcolm III around 1070; eight children and a reform of the Scottish Church."
+   },
+   {
+    "place": "Édimbourg",
+    "lat": 55.95,
+    "lon": -3.2,
+    "from": 1093,
+    "to": 1093,
+    "note": "Meurt au château le 16 novembre 1093, trois jours après son mari tué à Alnwick.",
+    "certainty": "sur",
+    "place_en": "Edinburgh",
+    "note_en": "Dies at the castle on 16 November 1093, three days after her husband was killed at Alnwick."
+   }
+  ],
+  "met": [],
+  "blurb": "Princesse anglo-saxonne née en Hongrie, échouée par tempête en Écosse, elle a épousé le roi et a fini par civiliser toute la cour.",
+  "fun": "Elle a créé un bac gratuit pour les pèlerins sur le Firth of Forth : les villes de North et South Queensferry portent encore son nom.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Saint_Margaret_of_Scotland"
+  ],
+  "name_en": "Margaret",
+  "full_en": "Saint Margaret of Scotland",
+  "origin_en": "Hungary (exile of the Anglo-Saxon royal family)",
+  "role_en": "queen",
+  "blurb_en": "An Anglo-Saxon princess born in Hungary and shipwrecked by a storm in Scotland, she married the king and ended up civilising the whole court.",
+  "fun_en": "She set up a free ferry for pilgrims across the Firth of Forth: the towns of North and South Queensferry still bear her name.",
+  "feast_note_en": "10 June in the traditional calendar"
+ },
+ {
+  "id": "antoine-de-kiev",
+  "name": "Antoine",
+  "full": "Saint Antoine des Grottes de Kiev",
+  "feast": "07-10",
+  "feast_note": "10 juillet au calendrier byzantin (23 juillet grégorien) ; 7 mai au martyrologe romain",
+  "born": 983,
+  "died": 1073,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Lioubetch, principauté de Tchernigov",
+  "role": "ermite fondateur",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "orv",
+    "level": "natif"
+   },
+   {
+    "code": "chu",
+    "level": "courant"
+   },
+   {
+    "code": "grc",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Lioubetch",
+    "lat": 51.7,
+    "lon": 30.66,
+    "from": 983,
+    "to": 1000,
+    "note": "Né Antipas, sur le Dniepr.",
+    "certainty": "probable",
+    "place_en": "Lyubech",
+    "note_en": "Born Antipas, on the Dnieper."
+   },
+   {
+    "place": "Mont Athos (Esphigménou)",
+    "lat": 40.35,
+    "lon": 24.2,
+    "from": 1000,
+    "to": 1013,
+    "note": "Ermite près du monastère d'Esphigménou ; son higoumène le renvoie évangéliser la Rus'.",
+    "certainty": "probable",
+    "place_en": "Mount Athos (Esphigmenou)",
+    "note_en": "Hermit near the monastery of Esphigmenou; its abbot sends him back to evangelise the Rus'."
+   },
+   {
+    "place": "Kiev",
+    "lat": 50.45,
+    "lon": 30.52,
+    "from": 1013,
+    "to": 1015,
+    "note": "Première grotte à Berestove ; la guerre entre Iaroslav et Sviatopolk le chasse.",
+    "certainty": "probable",
+    "place_en": "Kiev",
+    "note_en": "First cave at Berestove; the war between Yaroslav and Sviatopolk drives him out."
+   },
+   {
+    "place": "Mont Athos (Esphigménou)",
+    "lat": 40.35,
+    "lon": 24.2,
+    "from": 1016,
+    "to": 1028,
+    "note": "Second séjour athonite.",
+    "certainty": "probable",
+    "place_en": "Mount Athos (Esphigmenou)",
+    "note_en": "Second stay on Athos."
+   },
+   {
+    "place": "Kiev (grottes)",
+    "lat": 50.45,
+    "lon": 30.52,
+    "from": 1028,
+    "to": 1069,
+    "note": "S'installe dans la grotte d'Hilarion ; disciples, dont Théodose ; naissance de la Laure des Grottes.",
+    "certainty": "sur",
+    "place_en": "Kiev (caves)",
+    "note_en": "Settles in Hilarion's cave; disciples, including Theodosius; birth of the Monastery of the Caves."
+   },
+   {
+    "place": "Tchernigov",
+    "lat": 51.49,
+    "lon": 31.29,
+    "from": 1069,
+    "to": 1072,
+    "note": "Exilé par Iziaslav, il creuse une nouvelle grotte sur les collines de Boldine.",
+    "certainty": "sur",
+    "place_en": "Chernigov",
+    "note_en": "Exiled by Iziaslav, he digs a new cave in the Boldin hills."
+   },
+   {
+    "place": "Kiev (grottes)",
+    "lat": 50.45,
+    "lon": 30.52,
+    "from": 1072,
+    "to": 1073,
+    "note": "Rappelé par Iziaslav ; bénit la première église de pierre et meurt vers quatre-vingt-dix ans.",
+    "certainty": "sur",
+    "place_en": "Kiev (caves)",
+    "note_en": "Recalled by Iziaslav; blesses the first stone church and dies at about ninety."
+   }
+  ],
+  "met": [],
+  "blurb": "Il a rapporté l'Athos dans un trou creusé au-dessus du Dniepr, et ce trou est devenu la Laure des Grottes, berceau du monachisme russe.",
+  "fun": "Il a demandé qu'on cache sa dépouille : neuf siècles plus tard, on ne l'a toujours pas retrouvée.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Anthony_of_Kiev"
+  ],
+  "name_en": "Anthony of Kiev",
+  "full_en": "Saint Anthony of the Kiev Caves",
+  "origin_en": "Lyubech, Principality of Chernigov",
+  "role_en": "hermit and founder",
+  "blurb_en": "He brought Mount Athos home in a hole dug above the Dnieper, and that hole became the Monastery of the Caves, cradle of Russian monasticism.",
+  "fun_en": "He asked for his remains to be hidden: nine centuries later, they still have not been found.",
+  "feast_note_en": "10 July in the Byzantine calendar (23 July Gregorian); 7 May in the Roman Martyrology"
+ },
+ {
+  "id": "godric",
+  "name": "Godric",
+  "full": "Saint Godric de Finchale",
+  "feast": "05-21",
+  "feast_note": "",
+  "born": 1065,
+  "died": 1170,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Walpole, Norfolk",
+  "role": "marchand puis ermite",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "ang",
+    "level": "natif"
+   },
+   {
+    "code": "xno",
+    "level": "notions"
+   },
+   {
+    "code": "lat",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Walpole (Norfolk)",
+    "lat": 52.72,
+    "lon": 0.21,
+    "from": 1065,
+    "to": 1081,
+    "note": "Fils de paysans pauvres, il ramasse ce que la mer rejette.",
+    "certainty": "sur",
+    "place_en": "Walpole (Norfolk)",
+    "note_en": "Son of poor peasants, he gathers what the sea washes up."
+   },
+   {
+    "place": "Lincoln",
+    "lat": 53.23,
+    "lon": -0.54,
+    "from": 1081,
+    "to": 1085,
+    "note": "Colporteur dans le Lincolnshire.",
+    "certainty": "probable",
+    "place_en": "Lincoln",
+    "note_en": "Pedlar in Lincolnshire."
+   },
+   {
+    "place": "King's Lynn (mer du Nord)",
+    "lat": 52.75,
+    "lon": 0.4,
+    "from": 1085,
+    "to": 1100,
+    "note": "Marchand et capitaine, copropriétaire de deux navires : Écosse, Danemark, Flandre.",
+    "certainty": "probable",
+    "place_en": "King's Lynn (North Sea)",
+    "note_en": "Merchant and skipper, part-owner of two ships: Scotland, Denmark, Flanders."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1100,
+    "to": 1100,
+    "note": "Premier pèlerinage romain.",
+    "certainty": "probable",
+    "place_en": "Rome",
+    "note_en": "First pilgrimage to Rome."
+   },
+   {
+    "place": "Jérusalem",
+    "lat": 31.78,
+    "lon": 35.23,
+    "from": 1101,
+    "to": 1102,
+    "note": "Son navire aurait ramené Baudouin Ier à Jaffa en 1102.",
+    "certainty": "probable",
+    "place_en": "Jerusalem",
+    "note_en": "His ship is said to have carried Baldwin I to Jaffa in 1102."
+   },
+   {
+    "place": "Saint-Jacques-de-Compostelle",
+    "lat": 42.88,
+    "lon": -8.54,
+    "from": 1102,
+    "to": 1102,
+    "note": "Pèlerinage au retour de Terre sainte.",
+    "certainty": "probable",
+    "place_en": "Santiago de Compostela",
+    "note_en": "Pilgrimage on the way back from the Holy Land."
+   },
+   {
+    "place": "Saint-Gilles",
+    "lat": 43.68,
+    "lon": 4.43,
+    "from": 1103,
+    "to": 1104,
+    "note": "Pèlerinage à Saint-Gilles puis second voyage à Rome, cette fois avec sa mère.",
+    "certainty": "probable",
+    "place_en": "Saint-Gilles",
+    "note_en": "Pilgrimage to Saint-Gilles, then a second journey to Rome, this time with his mother."
+   },
+   {
+    "place": "Lindisfarne",
+    "lat": 55.67,
+    "lon": -1.8,
+    "from": 1105,
+    "to": 1105,
+    "note": "Conversion définitive au large des Farne, sur les traces de Cuthbert.",
+    "certainty": "probable",
+    "place_en": "Lindisfarne",
+    "note_en": "Final conversion off the Farne Islands, in Cuthbert's footsteps."
+   },
+   {
+    "place": "Wolsingham",
+    "lat": 54.73,
+    "lon": -1.88,
+    "from": 1105,
+    "to": 1107,
+    "note": "Deux ans auprès du vieil ermite Aelric, après un passage à Carlisle.",
+    "certainty": "sur",
+    "place_en": "Wolsingham",
+    "note_en": "Two years with the old hermit Aelric, after a spell in Carlisle."
+   },
+   {
+    "place": "Jérusalem",
+    "lat": 31.78,
+    "lon": 35.23,
+    "from": 1108,
+    "to": 1108,
+    "note": "Dernier pèlerinage en Terre sainte ; il se baigne dans le Jourdain et jure de ne plus porter de chaussures.",
+    "certainty": "probable",
+    "place_en": "Jerusalem",
+    "note_en": "Last pilgrimage to the Holy Land; he bathes in the Jordan and vows never to wear shoes again."
+   },
+   {
+    "place": "Finchale",
+    "lat": 54.81,
+    "lon": -1.54,
+    "from": 1110,
+    "to": 1170,
+    "note": "Soixante ans d'ermitage au bord de la Wear, après avoir été portier de l'hôpital Saint-Gilles à Durham.",
+    "certainty": "sur",
+    "place_en": "Finchale",
+    "note_en": "Sixty years as a hermit on the banks of the Wear, after serving as doorkeeper of St Giles's hospital in Durham."
+   }
+  ],
+  "met": [],
+  "blurb": "Marchand, armateur, pèlerin à Rome, Jérusalem et Compostelle, puis ermite pendant soixante ans : il a vécu deux vies et tenu cent cinq ans.",
+  "fun": "Ses quatre hymnes, notés par Réginald de Durham, sont les plus anciennes chansons anglaises dont la musique nous soit parvenue.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Godric_of_Finchale"
+  ],
+  "name_en": "Godric",
+  "full_en": "Saint Godric of Finchale",
+  "origin_en": "Walpole, Norfolk",
+  "role_en": "merchant, then hermit",
+  "blurb_en": "Merchant, shipowner, pilgrim to Rome, Jerusalem and Compostela, then a hermit for sixty years: he lived two lives and lasted a hundred and five years.",
+  "fun_en": "His four hymns, written down by Reginald of Durham, are the oldest English songs whose music has come down to us."
+ },
+ {
+  "id": "norbert",
+  "name": "Norbert",
+  "full": "Saint Norbert de Xanten",
+  "feast": "06-06",
+  "feast_note": "",
+  "born": 1080,
+  "died": 1134,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Xanten, Bas-Rhin",
+  "role": "prédicateur et archevêque",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "odt",
+    "level": "natif"
+   },
+   {
+    "code": "gmh",
+    "level": "courant"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "fro",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Xanten",
+    "lat": 51.66,
+    "lon": 6.45,
+    "from": 1080,
+    "to": 1110,
+    "note": "Oblat à neuf ans, chanoine mondain, chapelain de l'empereur Henri V, son cousin.",
+    "certainty": "sur",
+    "place_en": "Xanten",
+    "note_en": "Oblate at nine, worldly canon, chaplain to his cousin the emperor Henry V."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1110,
+    "to": 1111,
+    "note": "Suit Henri V à Rome lors de l'expédition qui aboutit à la capture du pape Pascal II.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Follows Henry V to Rome on the expedition that ends with the capture of Pope Paschal II."
+   },
+   {
+    "place": "Xanten",
+    "lat": 51.66,
+    "lon": 6.45,
+    "from": 1111,
+    "to": 1118,
+    "note": "Foudroyé de cheval près de Vreden (1115) : conversion, ordination, prédication aux pieds nus.",
+    "certainty": "sur",
+    "place_en": "Xanten",
+    "note_en": "Struck by lightning and thrown from his horse near Vreden (1115): conversion, ordination, barefoot preaching."
+   },
+   {
+    "place": "Saint-Gilles",
+    "lat": 43.68,
+    "lon": 4.43,
+    "from": 1118,
+    "to": 1118,
+    "note": "Obtient de Gélase II la permission de prêcher partout.",
+    "certainty": "sur",
+    "place_en": "Saint-Gilles",
+    "note_en": "Obtains from Gelasius II permission to preach anywhere."
+   },
+   {
+    "place": "Valenciennes",
+    "lat": 50.36,
+    "lon": 3.52,
+    "from": 1119,
+    "to": 1119,
+    "note": "Prédication itinérante en Hainaut ; rencontre Hugues de Fosses, son bras droit.",
+    "certainty": "sur",
+    "place_en": "Valenciennes",
+    "note_en": "Itinerant preaching in Hainaut; meets Hugh of Fosses, his right-hand man."
+   },
+   {
+    "place": "Prémontré",
+    "lat": 49.55,
+    "lon": 3.44,
+    "from": 1120,
+    "to": 1124,
+    "note": "Fonde l'abbaye de Prémontré dans la forêt de Saint-Gobain : naissance des Norbertins.",
+    "certainty": "sur",
+    "place_en": "Prémontré",
+    "note_en": "Founds the abbey of Prémontré in the forest of Saint-Gobain: birth of the Norbertines."
+   },
+   {
+    "place": "Anvers",
+    "lat": 51.22,
+    "lon": 4.4,
+    "from": 1124,
+    "to": 1125,
+    "note": "Combat l'hérésie de Tanchelin et fonde Saint-Michel d'Anvers.",
+    "certainty": "sur",
+    "place_en": "Antwerp",
+    "note_en": "Fights the heresy of Tanchelm and founds St Michael's Abbey in Antwerp."
+   },
+   {
+    "place": "Magdebourg",
+    "lat": 52.13,
+    "lon": 11.63,
+    "from": 1126,
+    "to": 1132,
+    "note": "Archevêque de Magdebourg, réformateur mal aimé de son clergé.",
+    "certainty": "sur",
+    "place_en": "Magdeburg",
+    "note_en": "Archbishop of Magdeburg, a reformer unloved by his clergy."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1133,
+    "to": 1133,
+    "note": "Accompagne l'empereur Lothaire III pour installer Innocent II.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Accompanies the emperor Lothair III to install Innocent II."
+   },
+   {
+    "place": "Magdebourg",
+    "lat": 52.13,
+    "lon": 11.63,
+    "from": 1133,
+    "to": 1134,
+    "note": "Rentre malade de Rome ; meurt le 6 juin 1134.",
+    "certainty": "sur",
+    "place_en": "Magdeburg",
+    "note_en": "Returns from Rome a sick man; dies on 6 June 1134."
+   }
+  ],
+  "met": [
+   {
+    "with": "bernard-de-clairvaux",
+    "where": "Prémontré et Reims",
+    "year": 1124,
+    "note": "Les deux réformateurs se fréquentent dans les années 1120 et soutiennent ensemble Innocent II en 1131.",
+    "where_en": "Prémontré and Reims",
+    "note_en": "The two reformers see each other through the 1120s and back Innocent II together in 1131."
+   }
+  ],
+  "blurb": "Courtisan foudroyé de son cheval comme saint Paul, il a troqué la cour impériale contre la route, puis fondé les Prémontrés et fini archevêque à contrecœur.",
+  "fun": "On dit que la cour de Magdebourg détestait tant ses réformes que son portier, ne le reconnaissant pas en haillons, refusa de laisser entrer son nouvel archevêque.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Norbert_de_Xanten"
+  ],
+  "name_en": "Norbert",
+  "full_en": "Saint Norbert of Xanten",
+  "origin_en": "Xanten, Lower Rhine",
+  "role_en": "preacher and archbishop",
+  "blurb_en": "A courtier thrown from his horse by lightning like Saint Paul, he swapped the imperial court for the open road, then founded the Premonstratensians and ended up a reluctant archbishop.",
+  "fun_en": "The story goes that the court of Magdeburg hated his reforms so much that his own doorkeeper, failing to recognise him in rags, refused to let the new archbishop in."
+ },
+ {
+  "id": "otton-de-bamberg",
+  "name": "Otton",
+  "full": "Saint Otton de Bamberg, apôtre de la Poméranie",
+  "feast": "07-02",
+  "feast_note": "30 juin, jour de sa mort, et 30 septembre à Bamberg",
+  "born": 1060,
+  "died": 1139,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Jura souabe",
+  "role": "évêque missionnaire",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "goh",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "pol",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Hirsau (Souabe)",
+    "lat": 48.74,
+    "lon": 8.73,
+    "from": 1060,
+    "to": 1082,
+    "note": "Famille noble du Jura souabe ; études probables à Hirsau.",
+    "certainty": "probable",
+    "place_en": "Hirsau (Swabia)",
+    "note_en": "Noble family of the Swabian Jura; probably studied at Hirsau."
+   },
+   {
+    "place": "Płock (Pologne)",
+    "lat": 52.55,
+    "lon": 19.7,
+    "from": 1082,
+    "to": 1091,
+    "note": "Chapelain de Judith de Souabe à la cour du duc Władysław Herman ; il y apprend le polonais.",
+    "certainty": "sur",
+    "place_en": "Płock (Poland)",
+    "note_en": "Chaplain to Judith of Swabia at the court of Duke Władysław Herman; he learns Polish there."
+   },
+   {
+    "place": "Spire",
+    "lat": 49.32,
+    "lon": 8.44,
+    "from": 1091,
+    "to": 1102,
+    "note": "Au service d'Henri IV, chancelier en 1101 ; dirige le chantier de la cathédrale.",
+    "certainty": "sur",
+    "place_en": "Speyer",
+    "note_en": "In the service of Henry IV, chancellor in 1101; oversees the building of the cathedral."
+   },
+   {
+    "place": "Bamberg",
+    "lat": 49.89,
+    "lon": 10.89,
+    "from": 1102,
+    "to": 1124,
+    "note": "Évêque bâtisseur ; négocie le concordat de Worms (1122).",
+    "certainty": "sur",
+    "place_en": "Bamberg",
+    "note_en": "Builder bishop; negotiates the Concordat of Worms (1122)."
+   },
+   {
+    "place": "Pyrzyce",
+    "lat": 53.14,
+    "lon": 14.89,
+    "from": 1124,
+    "to": 1124,
+    "note": "Première mission : baptêmes de masse à Pyrzyce, puis Kamień.",
+    "certainty": "sur",
+    "place_en": "Pyrzyce",
+    "note_en": "First mission: mass baptisms at Pyrzyce, then Kamień."
+   },
+   {
+    "place": "Szczecin",
+    "lat": 53.43,
+    "lon": 14.55,
+    "from": 1124,
+    "to": 1125,
+    "note": "Convertit Szczecin et Wolin ; vingt-deux mille baptêmes revendiqués.",
+    "certainty": "sur",
+    "place_en": "Szczecin",
+    "note_en": "Converts Szczecin and Wolin; twenty-two thousand baptisms claimed."
+   },
+   {
+    "place": "Bamberg",
+    "lat": 49.89,
+    "lon": 10.89,
+    "from": 1125,
+    "to": 1128,
+    "note": "Retour en Franconie.",
+    "certainty": "sur",
+    "place_en": "Bamberg",
+    "note_en": "Back to Franconia."
+   },
+   {
+    "place": "Usedom",
+    "lat": 53.87,
+    "lon": 13.92,
+    "from": 1128,
+    "to": 1128,
+    "note": "Seconde mission, à l'appel du duc Wartislaw : Usedom, Wolgast, Szczecin à nouveau.",
+    "certainty": "sur",
+    "place_en": "Usedom",
+    "note_en": "Second mission, at the call of Duke Wartislaw: Usedom, Wolgast, Szczecin again."
+   },
+   {
+    "place": "Bamberg",
+    "lat": 49.89,
+    "lon": 10.89,
+    "from": 1128,
+    "to": 1139,
+    "note": "Meurt le 30 juin 1139 ; inhumé au Michaelsberg.",
+    "certainty": "sur",
+    "place_en": "Bamberg",
+    "note_en": "Dies on 30 June 1139; buried at Michaelsberg."
+   }
+  ],
+  "met": [
+   {
+    "with": "hildegarde",
+    "where": "Disibodenberg",
+    "year": 1112,
+    "note": "Otton reçoit les vœux de la jeune Hildegarde et de Jutta de Sponheim.",
+    "where_en": "Disibodenberg",
+    "note_en": "Otto receives the vows of the young Hildegard and of Jutta of Sponheim."
+   }
+  ],
+  "blurb": "Un évêque riche qui a converti la Poméranie en payant lui-même ses cadeaux : les païens de Szczecin ont trouvé ça plus convaincant que les moines pauvres.",
+  "fun": "On l'invoque contre la fièvre et la rage, et Berlin l'a pris pour copatron bien qu'il n'y ait jamais mis les pieds.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Otto_of_Bamberg"
+  ],
+  "name_en": "Otto",
+  "full_en": "Saint Otto of Bamberg, Apostle of Pomerania",
+  "origin_en": "Swabian Jura",
+  "role_en": "missionary bishop",
+  "blurb_en": "A wealthy bishop who converted Pomerania by paying for his own gifts: the pagans of Szczecin found that more convincing than poor monks.",
+  "fun_en": "He is invoked against fever and rabies, and Berlin took him as co-patron even though he never set foot there.",
+  "feast_note_en": "30 June, the day of his death, and 30 September in Bamberg"
+ },
+ {
+  "id": "bernard-de-clairvaux",
+  "name": "Bernard",
+  "full": "Saint Bernard de Clairvaux",
+  "feast": "08-20",
+  "feast_note": "",
+  "born": 1090,
+  "died": 1153,
+  "approx": false,
+  "tradition": "catholique",
+  "origin": "Fontaine-lès-Dijon, Bourgogne",
+  "role": "abbé cistercien",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "fro",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Fontaine-lès-Dijon",
+    "lat": 47.34,
+    "lon": 5.02,
+    "from": 1090,
+    "to": 1100,
+    "note": "Troisième fils d'un chevalier bourguignon.",
+    "certainty": "sur",
+    "place_en": "Fontaine-lès-Dijon",
+    "note_en": "Third son of a Burgundian knight."
+   },
+   {
+    "place": "Châtillon-sur-Seine",
+    "lat": 47.86,
+    "lon": 4.57,
+    "from": 1100,
+    "to": 1111,
+    "note": "Études chez les chanoines de Saint-Vorles.",
+    "certainty": "sur",
+    "place_en": "Châtillon-sur-Seine",
+    "note_en": "Studies with the canons of Saint-Vorles."
+   },
+   {
+    "place": "Cîteaux",
+    "lat": 47.13,
+    "lon": 5.09,
+    "from": 1112,
+    "to": 1115,
+    "note": "Entre à Cîteaux avec une trentaine de parents et amis.",
+    "certainty": "sur",
+    "place_en": "Cîteaux",
+    "note_en": "Enters Cîteaux with some thirty relatives and friends."
+   },
+   {
+    "place": "Clairvaux",
+    "lat": 48.15,
+    "lon": 4.79,
+    "from": 1115,
+    "to": 1130,
+    "note": "Fonde Clairvaux dans le val d'Absinthe ; concile de Troyes (1129) et règle du Temple.",
+    "certainty": "sur",
+    "place_en": "Clairvaux",
+    "note_en": "Founds Clairvaux in the Val d'Absinthe; Council of Troyes (1129) and the Rule of the Templars."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1133,
+    "to": 1133,
+    "note": "Schisme d'Anaclet : entre dans Rome avec Innocent II et Lothaire III.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Anacletan schism: enters Rome with Innocent II and Lothair III."
+   },
+   {
+    "place": "Pise",
+    "lat": 43.72,
+    "lon": 10.4,
+    "from": 1135,
+    "to": 1135,
+    "note": "Concile de Pise, puis ralliement de Milan.",
+    "certainty": "sur",
+    "place_en": "Pisa",
+    "note_en": "Council of Pisa, then wins Milan over."
+   },
+   {
+    "place": "Clairvaux",
+    "lat": 48.15,
+    "lon": 4.79,
+    "from": 1138,
+    "to": 1144,
+    "note": "Concile de Sens (1140) : condamnation d'Abélard.",
+    "certainty": "sur",
+    "place_en": "Clairvaux",
+    "note_en": "Council of Sens (1140): condemnation of Abelard."
+   },
+   {
+    "place": "Albi",
+    "lat": 43.93,
+    "lon": 2.15,
+    "from": 1145,
+    "to": 1145,
+    "note": "Prêche contre les cathares en Languedoc, de Toulouse à Albi et Verfeil.",
+    "certainty": "sur",
+    "place_en": "Albi",
+    "note_en": "Preaches against the Cathars in Languedoc, from Toulouse to Albi and Verfeil."
+   },
+   {
+    "place": "Vézelay",
+    "lat": 47.47,
+    "lon": 3.75,
+    "from": 1146,
+    "to": 1146,
+    "note": "Prêche la deuxième croisade le 31 mars 1146 ; la foule déchire ses vêtements en reliques.",
+    "certainty": "sur",
+    "place_en": "Vézelay",
+    "note_en": "Preaches the Second Crusade on 31 March 1146; the crowd tears his clothes into relics."
+   },
+   {
+    "place": "Spire",
+    "lat": 49.32,
+    "lon": 8.44,
+    "from": 1146,
+    "to": 1147,
+    "note": "Convainc Conrad III de prendre la croix ; tournée rhénane.",
+    "certainty": "sur",
+    "place_en": "Speyer",
+    "note_en": "Persuades Conrad III to take the cross; tour of the Rhineland."
+   },
+   {
+    "place": "Trèves",
+    "lat": 49.75,
+    "lon": 6.64,
+    "from": 1147,
+    "to": 1148,
+    "note": "Synode de Trèves avec Eugène III : les visions d'Hildegarde sont approuvées.",
+    "certainty": "sur",
+    "place_en": "Trier",
+    "note_en": "Synod of Trier with Eugene III: Hildegard's visions are approved."
+   },
+   {
+    "place": "Clairvaux",
+    "lat": 48.15,
+    "lon": 4.79,
+    "from": 1148,
+    "to": 1153,
+    "note": "Concile de Reims (1148), De consideratione ; meurt le 20 août 1153.",
+    "certainty": "sur",
+    "place_en": "Clairvaux",
+    "note_en": "Council of Reims (1148), De consideratione; dies on 20 August 1153."
+   }
+  ],
+  "met": [
+   {
+    "with": "norbert",
+    "where": "Prémontré et Reims",
+    "year": 1124,
+    "note": "Amitié de réformateurs ; ils soutiennent ensemble Innocent II.",
+    "where_en": "Prémontré and Reims",
+    "note_en": "A friendship between reformers; they back Innocent II together."
+   },
+   {
+    "with": "hildegarde",
+    "where": "Trèves (et Rupertsberg, selon la tradition)",
+    "year": 1147,
+    "note": "Échange de lettres en 1147 ; la tradition veut que Bernard l'ait visitée à Bingen avant le synode de Trèves.",
+    "where_en": "Trier (and Rupertsberg, according to tradition)",
+    "note_en": "Exchange of letters in 1147; tradition has it that Bernard visited her at Bingen before the Synod of Trier."
+   }
+  ],
+  "blurb": "Le moine le plus influent du XIIe siècle n'a presque jamais dormi à Clairvaux : il courait les conciles, faisait et défaisait les papes, et prêchait les croisades.",
+  "fun": "Une légende veut que la Vierge lui ait donné son lait en jet direct : les peintres ont adoré. Son crâne est à Troyes.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Bernard_de_Clairvaux"
+  ],
+  "name_en": "Bernard",
+  "full_en": "Saint Bernard of Clairvaux",
+  "origin_en": "Fontaine-lès-Dijon, Burgundy",
+  "role_en": "Cistercian abbot",
+  "blurb_en": "The most influential monk of the twelfth century hardly ever slept at Clairvaux: he raced from council to council, made and unmade popes, and preached crusades.",
+  "fun_en": "Legend has it that the Virgin squirted her milk straight into his mouth: painters loved it. His skull is in Troyes."
+ },
+ {
+  "id": "hildegarde",
+  "name": "Hildegarde",
+  "full": "Sainte Hildegarde de Bingen",
+  "feast": "09-17",
+  "feast_note": "",
+  "born": 1098,
+  "died": 1179,
+  "approx": false,
+  "tradition": "catholique",
+  "origin": "Bermersheim, Palatinat rhénan",
+  "role": "abbesse visionnaire",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "gmh",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Bermersheim",
+    "lat": 49.73,
+    "lon": 8.14,
+    "from": 1098,
+    "to": 1106,
+    "note": "Dixième enfant d'une famille noble, visionnaire dès l'enfance.",
+    "certainty": "sur",
+    "place_en": "Bermersheim",
+    "note_en": "Tenth child of a noble family, a visionary from childhood."
+   },
+   {
+    "place": "Disibodenberg",
+    "lat": 49.78,
+    "lon": 7.68,
+    "from": 1106,
+    "to": 1150,
+    "note": "Confiée à Jutta de Sponheim, voilée vers 1112, abbesse en 1136 ; commence le Scivias en 1141.",
+    "certainty": "sur",
+    "place_en": "Disibodenberg",
+    "note_en": "Entrusted to Jutta of Sponheim, takes the veil around 1112, abbess in 1136; begins the Scivias in 1141."
+   },
+   {
+    "place": "Rupertsberg (Bingen)",
+    "lat": 49.97,
+    "lon": 7.9,
+    "from": 1150,
+    "to": 1160,
+    "note": "Fonde son propre monastère face à Bingen ; compose, soigne, correspond avec toute l'Europe.",
+    "certainty": "sur",
+    "place_en": "Rupertsberg (Bingen)",
+    "note_en": "Founds her own monastery across from Bingen; composes, heals, corresponds with all of Europe."
+   },
+   {
+    "place": "Trèves",
+    "lat": 49.75,
+    "lon": 6.64,
+    "from": 1160,
+    "to": 1160,
+    "note": "Première tournée de prédication publique : Trèves, Metz.",
+    "certainty": "sur",
+    "place_en": "Trier",
+    "note_en": "First public preaching tour: Trier, Metz."
+   },
+   {
+    "place": "Rupertsberg (Bingen)",
+    "lat": 49.97,
+    "lon": 7.9,
+    "from": 1160,
+    "to": 1163,
+    "note": "Liber vitae meritorum.",
+    "certainty": "sur",
+    "place_en": "Rupertsberg (Bingen)",
+    "note_en": "Liber vitae meritorum."
+   },
+   {
+    "place": "Cologne",
+    "lat": 50.94,
+    "lon": 6.96,
+    "from": 1163,
+    "to": 1163,
+    "note": "Prêche contre les cathares devant le clergé de Cologne.",
+    "certainty": "sur",
+    "place_en": "Cologne",
+    "note_en": "Preaches against the Cathars before the clergy of Cologne."
+   },
+   {
+    "place": "Rupertsberg (Bingen)",
+    "lat": 49.97,
+    "lon": 7.9,
+    "from": 1163,
+    "to": 1179,
+    "note": "Fonde Eibingen (1165), tournées en Souabe et Franconie ; meurt le 17 septembre 1179.",
+    "certainty": "sur",
+    "place_en": "Rupertsberg (Bingen)",
+    "note_en": "Founds Eibingen (1165), tours Swabia and Franconia; dies on 17 September 1179."
+   }
+  ],
+  "met": [
+   {
+    "with": "otton-de-bamberg",
+    "where": "Disibodenberg",
+    "year": 1112,
+    "note": "L'évêque Otton reçoit ses vœux de moniale.",
+    "where_en": "Disibodenberg",
+    "note_en": "Bishop Otto receives her vows as a nun."
+   },
+   {
+    "with": "bernard-de-clairvaux",
+    "where": "Trèves (et Rupertsberg, selon la tradition)",
+    "year": 1147,
+    "note": "Correspondance en 1147 ; la tradition veut que Bernard soit passé à Bingen avant le synode de Trèves qui approuve ses visions.",
+    "where_en": "Trier (and Rupertsberg, according to tradition)",
+    "note_en": "Correspondence in 1147; tradition has it that Bernard stopped at Bingen before the Synod of Trier that approved her visions."
+   }
+  ],
+  "blurb": "Abbesse, compositrice, médecin, prophétesse : elle a engueulé des empereurs par lettre et prêché dans les cathédrales à une époque où les femmes se taisaient.",
+  "fun": "Elle a inventé une langue secrète, la Lingua ignota, avec son alphabet et un millier de mots, dont on ignore toujours l'usage exact.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Hildegarde_de_Bingen"
+  ],
+  "name_en": "Hildegard",
+  "full_en": "Saint Hildegard of Bingen",
+  "origin_en": "Bermersheim, Rhenish Palatinate",
+  "role_en": "visionary abbess",
+  "blurb_en": "Abbess, composer, physician, prophetess: she told off emperors by letter and preached in cathedrals at a time when women kept quiet.",
+  "fun_en": "She invented a secret language, the Lingua ignota, with its own alphabet and a thousand words, whose exact purpose is still a mystery."
+ },
+ {
+  "id": "thomas-becket",
+  "name": "Thomas Becket",
+  "full": "Saint Thomas Becket, archevêque de Cantorbéry",
+  "feast": "12-29",
+  "feast_note": "",
+  "born": 1120,
+  "died": 1170,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Cheapside, Londres",
+  "role": "chancelier et archevêque",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "xno",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "enm",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Londres",
+    "lat": 51.51,
+    "lon": -0.13,
+    "from": 1120,
+    "to": 1138,
+    "note": "Fils d'un marchand normand de Cheapside ; école au prieuré de Merton.",
+    "certainty": "sur",
+    "place_en": "London",
+    "note_en": "Son of a Norman merchant of Cheapside; schooled at Merton Priory."
+   },
+   {
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "from": 1138,
+    "to": 1141,
+    "note": "Études aux écoles parisiennes.",
+    "certainty": "sur",
+    "place_en": "Paris",
+    "note_en": "Studies at the Paris schools."
+   },
+   {
+    "place": "Londres",
+    "lat": 51.51,
+    "lon": -0.13,
+    "from": 1141,
+    "to": 1143,
+    "note": "Clerc d'un banquier, après la ruine de son père.",
+    "certainty": "sur",
+    "place_en": "London",
+    "note_en": "Clerk to a banker, after his father's ruin."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1143,
+    "to": 1145,
+    "note": "Entre au service de l'archevêque Thibaut du Bec.",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Enters the service of Archbishop Theobald of Bec."
+   },
+   {
+    "place": "Bologne",
+    "lat": 44.49,
+    "lon": 11.34,
+    "from": 1145,
+    "to": 1146,
+    "note": "Un an de droit à Bologne puis Auxerre, aux frais de Thibaut.",
+    "certainty": "sur",
+    "place_en": "Bologna",
+    "note_en": "A year of law at Bologna, then Auxerre, at Theobald's expense."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1146,
+    "to": 1155,
+    "note": "Archidiacre de Cantorbéry en 1154.",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Archdeacon of Canterbury in 1154."
+   },
+   {
+    "place": "Westminster (Londres)",
+    "lat": 51.5,
+    "lon": -0.13,
+    "from": 1155,
+    "to": 1162,
+    "note": "Chancelier d'Henri II, fastueux et guerrier : il mène des troupes à Toulouse en 1159.",
+    "certainty": "sur",
+    "place_en": "Westminster (London)",
+    "note_en": "Chancellor to Henry II, lavish and warlike: he leads troops to Toulouse in 1159."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1162,
+    "to": 1164,
+    "note": "Archevêque ; rupture avec le roi aux Constitutions de Clarendon.",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Archbishop; breaks with the king over the Constitutions of Clarendon."
+   },
+   {
+    "place": "Pontigny",
+    "lat": 47.91,
+    "lon": 3.71,
+    "from": 1164,
+    "to": 1166,
+    "note": "Exil chez les cisterciens de Pontigny, après une fuite par la Flandre.",
+    "certainty": "sur",
+    "place_en": "Pontigny",
+    "note_en": "Exile with the Cistercians of Pontigny, after fleeing through Flanders."
+   },
+   {
+    "place": "Sens",
+    "lat": 48.2,
+    "lon": 3.28,
+    "from": 1166,
+    "to": 1170,
+    "note": "Hôte de Louis VII à Sainte-Colombe de Sens ; paix de Fréteval en juillet 1170.",
+    "certainty": "sur",
+    "place_en": "Sens",
+    "note_en": "Guest of Louis VII at Sainte-Colombe in Sens; peace of Fréteval in July 1170."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1170,
+    "to": 1170,
+    "note": "Rentre le 1er décembre ; assassiné dans sa cathédrale le 29 décembre.",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Returns on 1 December; murdered in his cathedral on 29 December."
+   }
+  ],
+  "met": [],
+  "blurb": "Le chancelier fêtard devenu archevêque ascète : l'ami du roi est mort sous l'épée de quatre chevaliers qui avaient trop bien compris une colère royale.",
+  "fun": "Trois ans après sa mort, Henri II est venu se faire fouetter par les moines sur sa tombe. Chaucer y enverra ensuite ses pèlerins bavards.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Thomas_Becket"
+  ],
+  "name_en": "Thomas Becket",
+  "full_en": "Saint Thomas Becket, Archbishop of Canterbury",
+  "origin_en": "Cheapside, London",
+  "role_en": "chancellor and archbishop",
+  "blurb_en": "The party-loving chancellor turned ascetic archbishop: the king's friend died under the swords of four knights who had understood a royal outburst only too well.",
+  "fun_en": "Three years after his death, Henry II came to be whipped by the monks at his tomb. Chaucer would later send his chattering pilgrims there."
+ },
+ {
+  "id": "hugues-de-lincoln",
+  "name": "Hugues",
+  "full": "Saint Hugues d'Avalon, évêque de Lincoln",
+  "feast": "11-17",
+  "feast_note": "",
+  "born": 1140,
+  "died": 1200,
+  "approx": false,
+  "tradition": "catholique",
+  "origin": "Avalon, Dauphiné",
+  "role": "chartreux et évêque",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "fro",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "xno",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Château d'Avalon (Pontcharra)",
+    "lat": 45.43,
+    "lon": 6.01,
+    "from": 1140,
+    "to": 1148,
+    "note": "Fils d'un seigneur dauphinois ; sa mère meurt quand il a huit ans.",
+    "certainty": "sur",
+    "place_en": "Avalon Castle (Pontcharra)",
+    "note_en": "Son of a lord of the Dauphiné; his mother dies when he is eight."
+   },
+   {
+    "place": "Villard-Benoît",
+    "lat": 45.44,
+    "lon": 6.0,
+    "from": 1148,
+    "to": 1163,
+    "note": "Élevé chez les chanoines réguliers, diacre à dix-neuf ans.",
+    "certainty": "sur",
+    "place_en": "Villard-Benoît",
+    "note_en": "Raised by the canons regular, deacon at nineteen."
+   },
+   {
+    "place": "Grande Chartreuse",
+    "lat": 45.36,
+    "lon": 5.79,
+    "from": 1163,
+    "to": 1180,
+    "note": "Moine chartreux, puis procureur du monastère.",
+    "certainty": "sur",
+    "place_en": "Grande Chartreuse",
+    "note_en": "Carthusian monk, then procurator of the monastery."
+   },
+   {
+    "place": "Witham (Somerset)",
+    "lat": 51.17,
+    "lon": -2.4,
+    "from": 1180,
+    "to": 1186,
+    "note": "Prieur de la chartreuse fondée par Henri II en pénitence du meurtre de Becket.",
+    "certainty": "sur",
+    "place_en": "Witham (Somerset)",
+    "note_en": "Prior of the charterhouse founded by Henry II in penance for Becket's murder."
+   },
+   {
+    "place": "Lincoln",
+    "lat": 53.23,
+    "lon": -0.54,
+    "from": 1186,
+    "to": 1200,
+    "note": "Évêque de Lincoln : rebâtit la cathédrale, tient tête à trois rois et protège les juifs des émeutes.",
+    "certainty": "sur",
+    "place_en": "Lincoln",
+    "note_en": "Bishop of Lincoln: rebuilds the cathedral, stands up to three kings and shields the Jews from riots."
+   },
+   {
+    "place": "Grande Chartreuse",
+    "lat": 45.36,
+    "lon": 5.79,
+    "from": 1200,
+    "to": 1200,
+    "note": "Dernier voyage : ambassade auprès de Philippe Auguste, pèlerinage en Dauphiné.",
+    "certainty": "sur",
+    "place_en": "Grande Chartreuse",
+    "note_en": "Last journey: embassy to Philip Augustus, pilgrimage to the Dauphiné."
+   },
+   {
+    "place": "Londres",
+    "lat": 51.51,
+    "lon": -0.13,
+    "from": 1200,
+    "to": 1200,
+    "note": "Meurt à Old Temple le 16 novembre 1200 ; le roi Jean porte son cercueil à Lincoln.",
+    "certainty": "sur",
+    "place_en": "London",
+    "note_en": "Dies at the Old Temple on 16 November 1200; King John carries his coffin at Lincoln."
+   }
+  ],
+  "met": [],
+  "blurb": "Un chartreux dauphinois exporté en Angleterre par Henri II, devenu l'évêque qui disait non aux rois et que les rois aimaient quand même.",
+  "fun": "Un cygne sauvage l'a adopté à Stow, le suivait partout et attaquait quiconque s'approchait de lui : il figure sur toutes ses images.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Hugues_d'Avalon"
+  ],
+  "name_en": "Hugh",
+  "full_en": "Saint Hugh of Avalon, Bishop of Lincoln",
+  "origin_en": "Avalon, Dauphiné",
+  "role_en": "Carthusian and bishop",
+  "blurb_en": "A Carthusian from the Dauphiné exported to England by Henry II, who became the bishop who said no to kings, and whom kings loved anyway.",
+  "fun_en": "A wild swan adopted him at Stow, followed him everywhere and attacked anyone who came near him: it appears in all his images."
+ },
+ {
+  "id": "euphrosyne-de-polotsk",
+  "name": "Euphrosyne",
+  "full": "Sainte Euphrosyne de Polotsk",
+  "feast": "05-23",
+  "feast_note": "calendrier byzantin ; 5 juin au calendrier grégorien",
+  "born": 1104,
+  "died": 1167,
+  "approx": true,
+  "tradition": "orthodoxe",
+  "origin": "Polotsk, Rus' kiévienne",
+  "role": "higoumène et pèlerine",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "orv",
+    "level": "natif"
+   },
+   {
+    "code": "chu",
+    "level": "courant"
+   },
+   {
+    "code": "grc",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Polotsk",
+    "lat": 55.49,
+    "lon": 28.77,
+    "from": 1104,
+    "to": 1116,
+    "note": "Née Predslava, petite-fille du prince Vseslav le Sorcier.",
+    "certainty": "sur",
+    "place_en": "Polotsk",
+    "note_en": "Born Predslava, granddaughter of Prince Vseslav the Sorcerer."
+   },
+   {
+    "place": "Polotsk (Sainte-Sophie)",
+    "lat": 55.49,
+    "lon": 28.77,
+    "from": 1116,
+    "to": 1128,
+    "note": "Refuse tout mariage à douze ans, prend le voile et copie des livres dans une cellule de la cathédrale.",
+    "certainty": "sur",
+    "place_en": "Polotsk (St Sophia)",
+    "note_en": "Refuses all marriage at twelve, takes the veil and copies books in a cell of the cathedral."
+   },
+   {
+    "place": "Seltse (Polotsk)",
+    "lat": 55.5,
+    "lon": 28.8,
+    "from": 1128,
+    "to": 1166,
+    "note": "Fonde le monastère du Sauveur et un monastère d'hommes ; fait fabriquer la croix de Lazar Bohcha (1161).",
+    "certainty": "sur",
+    "place_en": "Seltse (Polotsk)",
+    "note_en": "Founds the monastery of the Saviour and a monastery for men; commissions the cross of Lazar Bohsha (1161)."
+   },
+   {
+    "place": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 1167,
+    "to": 1167,
+    "note": "Reçue par l'empereur Manuel et le patriarche Luc, qui lui offre une icône.",
+    "certainty": "probable",
+    "place_en": "Constantinople",
+    "note_en": "Received by the emperor Manuel and the patriarch Luke, who gives her an icon."
+   },
+   {
+    "place": "Jérusalem",
+    "lat": 31.78,
+    "lon": 35.23,
+    "from": 1167,
+    "to": 1167,
+    "note": "Accueillie par le roi Amaury, elle tombe malade et meurt au monastère russe de Saint-Théodose ; inhumée à Mar Saba.",
+    "certainty": "sur",
+    "place_en": "Jerusalem",
+    "note_en": "Welcomed by King Amalric, she falls ill and dies at the Russian monastery of St Theodosius; buried at Mar Saba."
+   }
+  ],
+  "met": [],
+  "blurb": "Princesse copiste devenue higoumène, elle a fini sa vie en pèlerine à Jérusalem : la première grande voyageuse des Slaves de l'Est.",
+  "fun": "Sa croix d'or aux six branches, chef-d'œuvre de 1161, a disparu en 1941 pendant l'évacuation d'un musée : on la cherche toujours.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Euphrosyne_of_Polotsk"
+  ],
+  "name_en": "Euphrosyne",
+  "full_en": "Saint Euphrosyne of Polotsk",
+  "origin_en": "Polotsk, Kievan Rus'",
+  "role_en": "abbess and pilgrim",
+  "blurb_en": "A princess and copyist turned abbess, she ended her life as a pilgrim in Jerusalem: the first great woman traveller of the Eastern Slavs.",
+  "fun_en": "Her six-armed golden cross, a masterpiece of 1161, vanished in 1941 during the evacuation of a museum: the search goes on.",
+  "feast_note_en": "Byzantine calendar; 5 June in the Gregorian calendar"
+ },
+ {
+  "id": "thorlak",
+  "name": "Thorlak",
+  "full": "Saint Thorlak Thorhallsson, évêque de Skálholt",
+  "feast": "12-23",
+  "feast_note": "Þorláksmessa ; 20 juillet pour la translation des reliques",
+  "born": 1133,
+  "died": 1193,
+  "approx": false,
+  "tradition": "catholique",
+  "origin": "Hlíðarendi, Islande",
+  "role": "chanoine et évêque",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "non",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "fro",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Hlíðarendi",
+    "lat": 63.73,
+    "lon": -20.1,
+    "from": 1133,
+    "to": 1145,
+    "note": "Famille de fermiers appauvris ; sa mère lui apprend la généalogie et les psaumes.",
+    "certainty": "sur",
+    "place_en": "Hlíðarendi",
+    "note_en": "A family of impoverished farmers; his mother teaches him genealogy and the psalms."
+   },
+   {
+    "place": "Oddi",
+    "lat": 63.78,
+    "lon": -20.38,
+    "from": 1145,
+    "to": 1153,
+    "note": "Formé à Oddi, diacre avant quinze ans, prêtre à dix-huit.",
+    "certainty": "sur",
+    "place_en": "Oddi",
+    "note_en": "Trained at Oddi, deacon before fifteen, priest at eighteen."
+   },
+   {
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "from": 1153,
+    "to": 1157,
+    "note": "Étudie chez les Victorins et découvre la règle de saint Augustin.",
+    "certainty": "sur",
+    "place_en": "Paris",
+    "note_en": "Studies with the Victorines and discovers the Rule of Saint Augustine."
+   },
+   {
+    "place": "Lincoln",
+    "lat": 53.23,
+    "lon": -0.54,
+    "from": 1157,
+    "to": 1159,
+    "note": "Droit canon aux écoles de Lincoln.",
+    "certainty": "sur",
+    "place_en": "Lincoln",
+    "note_en": "Canon law at the schools of Lincoln."
+   },
+   {
+    "place": "Kirkjubær",
+    "lat": 63.79,
+    "lon": -18.05,
+    "from": 1160,
+    "to": 1168,
+    "note": "Prêtre de ferme dans le Sud ; il refuse un mariage avantageux après un songe.",
+    "certainty": "probable",
+    "place_en": "Kirkjubær",
+    "note_en": "Farm priest in the south; he turns down an advantageous marriage after a dream."
+   },
+   {
+    "place": "Þykkvabær",
+    "lat": 63.5,
+    "lon": -18.47,
+    "from": 1168,
+    "to": 1178,
+    "note": "Fonde et dirige le premier monastère augustinien d'Islande.",
+    "certainty": "sur",
+    "place_en": "Þykkvabær",
+    "note_en": "Founds and heads Iceland's first Augustinian monastery."
+   },
+   {
+    "place": "Nidaros (Trondheim)",
+    "lat": 63.43,
+    "lon": 10.39,
+    "from": 1178,
+    "to": 1178,
+    "note": "Consacré évêque par l'archevêque Eysteinn.",
+    "certainty": "sur",
+    "place_en": "Nidaros (Trondheim)",
+    "note_en": "Consecrated bishop by Archbishop Eysteinn."
+   },
+   {
+    "place": "Skálholt",
+    "lat": 64.13,
+    "lon": -20.53,
+    "from": 1178,
+    "to": 1193,
+    "note": "Évêque réformateur, en lutte avec les chefs laïcs pour la liberté de l'Église ; meurt le 23 décembre 1193.",
+    "certainty": "sur",
+    "place_en": "Skálholt",
+    "note_en": "Reforming bishop, fighting the lay chieftains for the freedom of the Church; dies on 23 December 1193."
+   }
+  ],
+  "met": [],
+  "blurb": "Un fermier islandais parti étudier à Paris et Lincoln, rentré imposer le célibat des prêtres à une île qui n'en voulait pas.",
+  "fun": "Il n'a été canonisé qu'en 1984, mais les Islandais fêtent la Þorláksmessa depuis le XIIe siècle en mangeant de la raie fermentée le 23 décembre.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thorlak_Thorhallsson"
+  ],
+  "name_en": "Thorlak",
+  "full_en": "Saint Thorlak Thorhallsson, Bishop of Skálholt",
+  "origin_en": "Hlíðarendi, Iceland",
+  "role_en": "canon and bishop",
+  "blurb_en": "An Icelandic farmer's son who went off to study in Paris and Lincoln, and came home to impose clerical celibacy on an island that wanted none of it.",
+  "fun_en": "He was only canonised in 1984, but Icelanders have kept Þorláksmessa since the twelfth century by eating fermented skate on 23 December.",
+  "feast_note_en": "Þorláksmessa; 20 July for the translation of his relics"
+ },
+ {
+  "id": "dominique",
+  "name": "Dominique",
+  "full": "Saint Dominique de Guzmán",
+  "feast": "08-08",
+  "feast_note": "4 août avant 1969",
+  "born": 1170,
+  "died": 1221,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Caleruega, Castille",
+  "role": "prédicateur fondateur",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "spa",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "oci",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Caleruega",
+    "lat": 41.84,
+    "lon": -3.48,
+    "from": 1170,
+    "to": 1177,
+    "note": "Sa mère aurait rêvé d'un chien tenant une torche enflammée.",
+    "certainty": "sur",
+    "place_en": "Caleruega",
+    "note_en": "His mother is said to have dreamt of a dog holding a flaming torch."
+   },
+   {
+    "place": "Gumiel de Izán",
+    "lat": 41.77,
+    "lon": -3.69,
+    "from": 1177,
+    "to": 1184,
+    "note": "Apprend le latin chez son oncle archiprêtre.",
+    "certainty": "sur",
+    "place_en": "Gumiel de Izán",
+    "note_en": "Learns Latin with his uncle, an archpriest."
+   },
+   {
+    "place": "Palencia",
+    "lat": 42.01,
+    "lon": -4.53,
+    "from": 1184,
+    "to": 1196,
+    "note": "Études ; pendant une famine, il vend ses livres pour nourrir les pauvres.",
+    "certainty": "sur",
+    "place_en": "Palencia",
+    "note_en": "Studies; during a famine, he sells his books to feed the poor."
+   },
+   {
+    "place": "Osma",
+    "lat": 41.59,
+    "lon": -3.07,
+    "from": 1196,
+    "to": 1203,
+    "note": "Chanoine régulier puis sous-prieur du chapitre d'Osma.",
+    "certainty": "sur",
+    "place_en": "Osma",
+    "note_en": "Canon regular, then subprior of the chapter of Osma."
+   },
+   {
+    "place": "Lund (Danemark)",
+    "lat": 55.7,
+    "lon": 13.19,
+    "from": 1203,
+    "to": 1204,
+    "note": "Deux ambassades vers les « Marches » danoises avec l'évêque Diego ; en chemin, une nuit à convertir un aubergiste cathare à Toulouse.",
+    "certainty": "probable",
+    "place_en": "Lund (Denmark)",
+    "note_en": "Two embassies to the Danish “Marches” with Bishop Diego; on the way, a night spent converting a Cathar innkeeper in Toulouse."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1205,
+    "to": 1205,
+    "note": "Diego et Dominique demandent à Innocent III d'aller évangéliser les Coumans ; refus.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Diego and Dominic ask Innocent III to let them evangelise the Cumans; refused."
+   },
+   {
+    "place": "Fanjeaux et Prouilhe",
+    "lat": 43.19,
+    "lon": 2.03,
+    "from": 1206,
+    "to": 1215,
+    "note": "Dix ans de prédication pauvre en Languedoc ; fonde le monastère de Prouilhe (1206).",
+    "certainty": "sur",
+    "place_en": "Fanjeaux and Prouilhe",
+    "note_en": "Ten years of preaching in poverty in Languedoc; founds the monastery of Prouilhe (1206)."
+   },
+   {
+    "place": "Toulouse",
+    "lat": 43.6,
+    "lon": 1.44,
+    "from": 1215,
+    "to": 1215,
+    "note": "S'installe chez Pierre Seilhan : première maison des Prêcheurs.",
+    "certainty": "sur",
+    "place_en": "Toulouse",
+    "note_en": "Settles in the house of Peter Seilhan: the first house of the Preachers."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1215,
+    "to": 1217,
+    "note": "Concile du Latran, puis approbation de l'ordre par Honorius III (décembre 1216).",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Lateran Council, then approval of the order by Honorius III (December 1216)."
+   },
+   {
+    "place": "Ségovie",
+    "lat": 40.95,
+    "lon": -4.12,
+    "from": 1218,
+    "to": 1219,
+    "note": "Tournée de fondations en Espagne (Ségovie, Madrid) après la dispersion des frères de 1217.",
+    "certainty": "sur",
+    "place_en": "Segovia",
+    "note_en": "Round of foundations in Spain (Segovia, Madrid) after the dispersal of the friars in 1217."
+   },
+   {
+    "place": "Bologne",
+    "lat": 44.49,
+    "lon": 11.34,
+    "from": 1219,
+    "to": 1221,
+    "note": "Chapitres généraux de 1220 et 1221 ; meurt le 6 août 1221, « dans le lit d'un autre ».",
+    "certainty": "sur",
+    "place_en": "Bologna",
+    "note_en": "General chapters of 1220 and 1221; dies on 6 August 1221, “in another man's bed”."
+   }
+  ],
+  "met": [
+   {
+    "with": "francois-d-assise",
+    "where": "Rome",
+    "year": 1216,
+    "note": "La tradition dominicaine et franciscaine veut qu'ils se soient embrassés à Rome vers 1216 ; aucun document contemporain ne le prouve.",
+    "where_en": "Rome",
+    "note_en": "Dominican and Franciscan tradition has it that they embraced in Rome around 1216; no contemporary document proves it."
+   },
+   {
+    "with": "hyacinthe",
+    "where": "Rome (Santa Sabina)",
+    "year": 1220,
+    "note": "Dominique donne l'habit au jeune chanoine polonais Jacek Odrowąż.",
+    "where_en": "Rome (Santa Sabina)",
+    "note_en": "Dominic gives the habit to the young Polish canon Jacek Odrowąż."
+   }
+  ],
+  "blurb": "Un chanoine castillan qui a découvert l'hérésie cathare au détour d'un voyage au Danemark et a répondu par des frères mendiants et savants.",
+  "fun": "Surnommé « marteau des hérétiques », il est mort treize ans avant la création de l'Inquisition : la légende de Dominique inquisiteur est une invention postérieure.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Dominique_de_Guzmán"
+  ],
+  "name_en": "Dominic",
+  "full_en": "Saint Dominic de Guzmán",
+  "origin_en": "Caleruega, Castile",
+  "role_en": "preacher and founder",
+  "blurb_en": "A Castilian canon who stumbled on the Cathar heresy on a journey to Denmark and answered it with learned mendicant friars.",
+  "fun_en": "Nicknamed the “hammer of heretics”, he died thirteen years before the Inquisition was created: Dominic the inquisitor is a later invention.",
+  "feast_note_en": "4 August before 1969"
+ },
+ {
+  "id": "francois-d-assise",
+  "name": "François",
+  "full": "Saint François d'Assise",
+  "feast": "10-04",
+  "feast_note": "",
+  "born": 1181,
+  "died": 1226,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Assise, Ombrie",
+  "role": "fondateur mendiant",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "ita",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "notions"
+   },
+   {
+    "code": "fro",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Assise",
+    "lat": 43.07,
+    "lon": 12.62,
+    "from": 1181,
+    "to": 1202,
+    "note": "Fils d'un drapier, jeunesse dorée et chansons de troubadours apprises de sa mère provençale.",
+    "certainty": "sur",
+    "place_en": "Assisi",
+    "note_en": "Son of a cloth merchant; a gilded youth and troubadour songs learnt from his Provençal mother."
+   },
+   {
+    "place": "Pérouse",
+    "lat": 43.11,
+    "lon": 12.39,
+    "from": 1202,
+    "to": 1203,
+    "note": "Prisonnier de guerre un an après la défaite de Collestrada.",
+    "certainty": "sur",
+    "place_en": "Perugia",
+    "note_en": "Prisoner of war for a year after the defeat at Collestrada."
+   },
+   {
+    "place": "Assise",
+    "lat": 43.07,
+    "lon": 12.62,
+    "from": 1203,
+    "to": 1209,
+    "note": "Songe de Spolète (1205), crucifix de Saint-Damien, renonciation publique devant l'évêque Guido (1206).",
+    "certainty": "sur",
+    "place_en": "Assisi",
+    "note_en": "Dream at Spoleto (1205), the crucifix of San Damiano, public renunciation before Bishop Guido (1206)."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1209,
+    "to": 1209,
+    "note": "Innocent III approuve oralement la première règle (1209 ou 1210).",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Innocent III orally approves the first rule (1209 or 1210)."
+   },
+   {
+    "place": "Portioncule (Assise)",
+    "lat": 43.06,
+    "lon": 12.58,
+    "from": 1209,
+    "to": 1219,
+    "note": "Base des premiers frères ; accueil de Claire (1212) ; chapitres généraux.",
+    "certainty": "sur",
+    "place_en": "Portiuncula (Assisi)",
+    "note_en": "Base of the first friars; Clare is received (1212); general chapters."
+   },
+   {
+    "place": "Damiette",
+    "lat": 31.42,
+    "lon": 31.81,
+    "from": 1219,
+    "to": 1219,
+    "note": "Traverse les lignes des croisés pour prêcher au sultan al-Kâmil, qui l'écoute poliment.",
+    "certainty": "sur",
+    "place_en": "Damietta",
+    "note_en": "Crosses the crusader lines to preach to the sultan al-Kamil, who listens politely."
+   },
+   {
+    "place": "Saint-Jean-d'Acre",
+    "lat": 32.93,
+    "lon": 35.08,
+    "from": 1220,
+    "to": 1220,
+    "note": "Séjour en Terre sainte avec les frères d'Outremer ; rappelé en Italie par des troubles dans l'ordre.",
+    "certainty": "probable",
+    "place_en": "Acre",
+    "note_en": "Stay in the Holy Land with the friars of Outremer; recalled to Italy by troubles in the order."
+   },
+   {
+    "place": "Portioncule (Assise)",
+    "lat": 43.06,
+    "lon": 12.58,
+    "from": 1220,
+    "to": 1223,
+    "note": "Abdique la direction de l'ordre ; chapitre des Nattes (1221) ; rédige la règle.",
+    "certainty": "sur",
+    "place_en": "Portiuncula (Assisi)",
+    "note_en": "Steps down from leading the order; Chapter of Mats (1221); drafts the rule."
+   },
+   {
+    "place": "Greccio",
+    "lat": 42.45,
+    "lon": 12.75,
+    "from": 1223,
+    "to": 1223,
+    "note": "Règle approuvée à Rome en novembre ; à Noël, première crèche vivante avec un âne et un bœuf.",
+    "certainty": "sur",
+    "place_en": "Greccio",
+    "note_en": "Rule approved in Rome in November; at Christmas, the first living nativity scene, with an ox and an ass."
+   },
+   {
+    "place": "La Verna",
+    "lat": 43.71,
+    "lon": 11.93,
+    "from": 1224,
+    "to": 1224,
+    "note": "Reçoit les stigmates vers le 17 septembre 1224.",
+    "certainty": "sur",
+    "place_en": "La Verna",
+    "note_en": "Receives the stigmata around 17 September 1224."
+   },
+   {
+    "place": "Portioncule (Assise)",
+    "lat": 43.06,
+    "lon": 12.58,
+    "from": 1224,
+    "to": 1226,
+    "note": "Presque aveugle, compose le Cantique des créatures ; meurt le 3 octobre 1226.",
+    "certainty": "sur",
+    "place_en": "Portiuncula (Assisi)",
+    "note_en": "Nearly blind, composes the Canticle of the Creatures; dies on 3 October 1226."
+   }
+  ],
+  "met": [
+   {
+    "with": "claire-d-assise",
+    "where": "Portioncule",
+    "year": 1212,
+    "note": "Dans la nuit des Rameaux, il coupe les cheveux de Claire et la conduit chez les bénédictines.",
+    "where_en": "Portiuncula",
+    "note_en": "On the night of Palm Sunday, he cuts Clare's hair and takes her to the Benedictine nuns."
+   },
+   {
+    "with": "antoine-de-padoue",
+    "where": "Portioncule",
+    "year": 1221,
+    "note": "Chapitre des Nattes : le jeune frère portugais passe inaperçu ; François l'autorisera ensuite par lettre à enseigner la théologie.",
+    "where_en": "Portiuncula",
+    "note_en": "Chapter of Mats: the young Portuguese friar goes unnoticed; Francis will later authorise him by letter to teach theology."
+   },
+   {
+    "with": "dominique",
+    "where": "Rome",
+    "year": 1216,
+    "note": "Rencontre et accolade des deux fondateurs : tradition des deux ordres, sans preuve contemporaine.",
+    "where_en": "Rome",
+    "note_en": "Meeting and embrace of the two founders: a tradition of both orders, with no contemporary evidence."
+   },
+   {
+    "with": "jean-de-matha",
+    "where": "Rome",
+    "year": 1209,
+    "note": "La tradition trinitaire veut que Jean ait présenté François aux Frangipani ; non attesté.",
+    "where_en": "Rome",
+    "note_en": "Trinitarian tradition has it that John introduced Francis to the Frangipani; unattested."
+   }
+  ],
+  "blurb": "Le fils de drapier qui s'est déshabillé sur la place d'Assise pour épouser Dame Pauvreté, puis est allé discuter théologie avec le sultan en pleine croisade.",
+  "fun": "Il se disait illettré, mais le Cantique des créatures est l'un des premiers grands textes en italien. Il prêchait aussi aux oiseaux, qui écoutaient mieux.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/François_d'Assise"
+  ],
+  "name_en": "Francis",
+  "full_en": "Saint Francis of Assisi",
+  "origin_en": "Assisi, Umbria",
+  "role_en": "mendicant founder",
+  "blurb_en": "The cloth merchant's son who stripped naked in the square of Assisi to wed Lady Poverty, then went off to talk theology with the sultan in the middle of a crusade.",
+  "fun_en": "He called himself unlettered, yet the Canticle of the Creatures is one of the first great texts in Italian. He also preached to the birds, who listened better."
+ },
+ {
+  "id": "claire-d-assise",
+  "name": "Claire",
+  "full": "Sainte Claire d'Assise",
+  "feast": "08-11",
+  "feast_note": "",
+  "born": 1194,
+  "died": 1253,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Assise, Ombrie",
+  "role": "abbesse fondatrice",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "ita",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Assise",
+    "lat": 43.07,
+    "lon": 12.62,
+    "from": 1194,
+    "to": 1198,
+    "note": "Née Chiara Offreduccio dans une famille de chevaliers.",
+    "certainty": "probable",
+    "place_en": "Assisi",
+    "note_en": "Born Chiara Offreduccio into a family of knights."
+   },
+   {
+    "place": "Pérouse",
+    "lat": 43.11,
+    "lon": 12.39,
+    "from": 1198,
+    "to": 1205,
+    "note": "Exil de la noblesse d'Assise chassée par la commune.",
+    "certainty": "probable",
+    "place_en": "Perugia",
+    "note_en": "Exile of the Assisi nobility, driven out by the commune."
+   },
+   {
+    "place": "Assise",
+    "lat": 43.07,
+    "lon": 12.62,
+    "from": 1205,
+    "to": 1212,
+    "note": "Écoute prêcher François vers 1210 et refuse deux mariages.",
+    "certainty": "sur",
+    "place_en": "Assisi",
+    "note_en": "Hears Francis preach around 1210 and turns down two marriages."
+   },
+   {
+    "place": "Portioncule (Assise)",
+    "lat": 43.06,
+    "lon": 12.58,
+    "from": 1212,
+    "to": 1212,
+    "note": "Nuit des Rameaux, 18 mars 1212 : prise d'habit devant François ; refuge chez les bénédictines de San Paolo puis à Sant'Angelo in Panzo.",
+    "certainty": "sur",
+    "place_en": "Portiuncula (Assisi)",
+    "note_en": "Night of Palm Sunday, 18 March 1212: receives the habit before Francis; refuge with the Benedictine nuns of San Paolo, then at Sant'Angelo in Panzo."
+   },
+   {
+    "place": "Saint-Damien (Assise)",
+    "lat": 43.06,
+    "lon": 12.62,
+    "from": 1212,
+    "to": 1253,
+    "note": "Quarante et un ans de clôture ; abbesse en 1215, règle approuvée deux jours avant sa mort, le 11 août 1253.",
+    "certainty": "sur",
+    "place_en": "San Damiano (Assisi)",
+    "note_en": "Forty-one years of enclosure; abbess in 1215, rule approved two days before her death on 11 August 1253."
+   }
+  ],
+  "met": [
+   {
+    "with": "francois-d-assise",
+    "where": "Portioncule",
+    "year": 1212,
+    "note": "Il l'accueille dans la nuit des Rameaux et l'installe à Saint-Damien.",
+    "where_en": "Portiuncula",
+    "note_en": "He receives her on the night of Palm Sunday and settles her at San Damiano."
+   }
+  ],
+  "blurb": "Fugueuse de dix-huit ans, elle n'a plus quitté Saint-Damien pendant quarante et un ans, mais a tenu tête à quatre papes pour garder le droit de ne rien posséder.",
+  "fun": "Pie XII l'a nommée patronne de la télévision en 1957 : malade, elle aurait vu la messe de Noël projetée sur le mur de sa cellule.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Claire_d'Assise"
+  ],
+  "name_en": "Clare",
+  "full_en": "Saint Clare of Assisi",
+  "origin_en": "Assisi, Umbria",
+  "role_en": "abbess and founder",
+  "blurb_en": "A runaway at eighteen, she never left San Damiano again in forty-one years, yet stood up to four popes to keep the right to own nothing.",
+  "fun_en": "Pius XII named her patron saint of television in 1957: bedridden, she is said to have seen Christmas Mass projected on the wall of her cell."
+ },
+ {
+  "id": "antoine-de-padoue",
+  "name": "Antoine",
+  "full": "Saint Antoine de Padoue",
+  "feast": "06-13",
+  "feast_note": "",
+  "born": 1195,
+  "died": 1231,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Lisbonne, Portugal",
+  "role": "prédicateur franciscain",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "por",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "ita",
+    "level": "courant"
+   },
+   {
+    "code": "oci",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Lisbonne",
+    "lat": 38.72,
+    "lon": -9.14,
+    "from": 1195,
+    "to": 1212,
+    "note": "Né Fernando Martins de Bulhões ; chanoine régulier à São Vicente de Fora dès 1210.",
+    "certainty": "sur",
+    "place_en": "Lisbon",
+    "note_en": "Born Fernando Martins de Bulhões; canon regular at São Vicente de Fora from 1210."
+   },
+   {
+    "place": "Coïmbra",
+    "lat": 40.21,
+    "lon": -8.43,
+    "from": 1212,
+    "to": 1220,
+    "note": "Études à Santa Cruz ; bouleversé par les reliques des cinq franciscains martyrs du Maroc, il prend l'habit et le nom d'Antoine.",
+    "certainty": "sur",
+    "place_en": "Coimbra",
+    "note_en": "Studies at Santa Cruz; shaken by the relics of the five Franciscan martyrs of Morocco, he takes the habit and the name Anthony."
+   },
+   {
+    "place": "Maroc (Marrakech)",
+    "lat": 31.63,
+    "lon": -8.01,
+    "from": 1220,
+    "to": 1221,
+    "note": "Part pour le martyre, tombe malade tout l'hiver et doit rembarquer.",
+    "certainty": "probable",
+    "place_en": "Morocco (Marrakesh)",
+    "note_en": "Sets off for martyrdom, falls ill all winter and has to sail home."
+   },
+   {
+    "place": "Messine",
+    "lat": 38.19,
+    "lon": 15.55,
+    "from": 1221,
+    "to": 1221,
+    "note": "Une tempête jette son navire en Sicile ; convalescence chez les frères de Messine.",
+    "certainty": "sur",
+    "place_en": "Messina",
+    "note_en": "A storm throws his ship onto Sicily; convalescence with the friars of Messina."
+   },
+   {
+    "place": "Portioncule (Assise)",
+    "lat": 43.06,
+    "lon": 12.58,
+    "from": 1221,
+    "to": 1221,
+    "note": "Chapitre des Nattes, 30 mai 1221 : frère anonyme parmi trois mille.",
+    "certainty": "sur",
+    "place_en": "Portiuncula (Assisi)",
+    "note_en": "Chapter of Mats, 30 May 1221: an anonymous friar among three thousand."
+   },
+   {
+    "place": "Montepaolo (Forlì)",
+    "lat": 44.17,
+    "lon": 11.95,
+    "from": 1221,
+    "to": 1222,
+    "note": "Ermitage et vaisselle ; un sermon improvisé à Forlì révèle son talent.",
+    "certainty": "sur",
+    "place_en": "Montepaolo (Forlì)",
+    "note_en": "Hermitage and dishwashing; an improvised sermon at Forlì reveals his gift."
+   },
+   {
+    "place": "Bologne",
+    "lat": 44.49,
+    "lon": 11.34,
+    "from": 1222,
+    "to": 1224,
+    "note": "Prêche en Romagne (poissons de Rimini) et enseigne la théologie aux frères avec l'accord écrit de François.",
+    "certainty": "sur",
+    "place_en": "Bologna",
+    "note_en": "Preaches in Romagna (the fish of Rimini) and teaches theology to the friars with Francis's written consent."
+   },
+   {
+    "place": "Montpellier",
+    "lat": 43.61,
+    "lon": 3.88,
+    "from": 1224,
+    "to": 1225,
+    "note": "Enseigne et prêche contre les cathares, puis Toulouse.",
+    "certainty": "sur",
+    "place_en": "Montpellier",
+    "note_en": "Teaches and preaches against the Cathars, then Toulouse."
+   },
+   {
+    "place": "Limoges",
+    "lat": 45.83,
+    "lon": 1.26,
+    "from": 1226,
+    "to": 1227,
+    "note": "Custode du Limousin, fonde le couvent de Brive.",
+    "certainty": "sur",
+    "place_en": "Limoges",
+    "note_en": "Custos of the Limousin, founds the friary of Brive."
+   },
+   {
+    "place": "Padoue",
+    "lat": 45.41,
+    "lon": 11.88,
+    "from": 1227,
+    "to": 1230,
+    "note": "Provincial d'Italie du Nord ; carêmes qui vident les boutiques et remplissent les places.",
+    "certainty": "sur",
+    "place_en": "Padua",
+    "note_en": "Provincial of northern Italy; Lenten sermons that empty the shops and fill the squares."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1230,
+    "to": 1230,
+    "note": "Conseiller de Grégoire IX, qui l'appelle « arche du Testament ».",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Adviser to Gregory IX, who calls him the “Ark of the Testament”."
+   },
+   {
+    "place": "Padoue",
+    "lat": 45.41,
+    "lon": 11.88,
+    "from": 1230,
+    "to": 1231,
+    "note": "Retraite dans un noyer à Camposampiero ; meurt à l'Arcella le 13 juin 1231, à trente-six ans.",
+    "certainty": "sur",
+    "place_en": "Padua",
+    "note_en": "Retreat in a walnut tree at Camposampiero; dies at the Arcella on 13 June 1231, aged thirty-six."
+   }
+  ],
+  "met": [
+   {
+    "with": "francois-d-assise",
+    "where": "Portioncule",
+    "year": 1221,
+    "note": "Chapitre des Nattes ; François lui écrira ensuite pour l'autoriser à enseigner.",
+    "where_en": "Portiuncula",
+    "note_en": "Chapter of Mats; Francis will later write to authorise him to teach."
+   }
+  ],
+  "blurb": "Un Lisboète parti chercher le martyre au Maroc, dérouté par une tempête vers l'Italie, où il est devenu le prédicateur le plus couru du siècle.",
+  "fun": "On l'invoque pour retrouver les objets perdus parce qu'un novice lui aurait volé son psautier et l'aurait rapporté, terrorisé par une apparition.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Antoine_de_Padoue"
+  ],
+  "name_en": "Anthony of Padua",
+  "full_en": "Saint Anthony of Padua",
+  "origin_en": "Lisbon, Portugal",
+  "role_en": "Franciscan preacher",
+  "blurb_en": "A Lisbon native who set out to find martyrdom in Morocco, was blown off course to Italy by a storm, and there became the most sought-after preacher of the century.",
+  "fun_en": "He is invoked to find lost objects because a novice is said to have stolen his psalter and brought it back, terrified by an apparition."
+ },
+ {
+  "id": "elisabeth-de-hongrie",
+  "name": "Élisabeth",
+  "full": "Sainte Élisabeth de Hongrie, landgravine de Thuringe",
+  "feast": "11-17",
+  "feast_note": "19 novembre en Hongrie et en Allemagne",
+  "born": 1207,
+  "died": 1231,
+  "approx": false,
+  "tradition": "catholique",
+  "origin": "Presbourg (Bratislava), royaume de Hongrie",
+  "role": "princesse hospitalière",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "hun",
+    "level": "natif"
+   },
+   {
+    "code": "gmh",
+    "level": "courant"
+   },
+   {
+    "code": "lat",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Presbourg (Bratislava)",
+    "lat": 48.15,
+    "lon": 17.11,
+    "from": 1207,
+    "to": 1211,
+    "note": "Fille d'André II de Hongrie et de Gertrude d'Andechs ; Sárospatak revendique aussi sa naissance.",
+    "certainty": "probable",
+    "place_en": "Pressburg (Bratislava)",
+    "note_en": "Daughter of Andrew II of Hungary and Gertrude of Andechs; Sárospatak also claims her birth."
+   },
+   {
+    "place": "Wartburg (Eisenach)",
+    "lat": 50.97,
+    "lon": 10.31,
+    "from": 1211,
+    "to": 1228,
+    "note": "Fiancée à quatre ans, mariée à quatorze à Louis IV de Thuringe ; trois enfants ; veuve en 1227, chassée du château.",
+    "certainty": "sur",
+    "place_en": "Wartburg (Eisenach)",
+    "note_en": "Betrothed at four, married at fourteen to Louis IV of Thuringia; three children; widowed in 1227 and driven from the castle."
+   },
+   {
+    "place": "Marbourg",
+    "lat": 50.81,
+    "lon": 8.77,
+    "from": 1228,
+    "to": 1231,
+    "note": "Tertiaire franciscaine, fonde un hôpital et soigne elle-même les malades sous la férule de Conrad de Marbourg ; meurt le 17 novembre 1231, à vingt-quatre ans.",
+    "certainty": "sur",
+    "place_en": "Marburg",
+    "note_en": "Franciscan tertiary, founds a hospital and nurses the sick herself under the iron rule of Conrad of Marburg; dies on 17 November 1231, aged twenty-four."
+   }
+  ],
+  "met": [],
+  "blurb": "Princesse hongroise mariée à quatorze ans, veuve à vingt, elle a troqué la Wartburg contre un hôpital de Marbourg et est morte à vingt-quatre ans, déjà sainte aux yeux de tous.",
+  "fun": "La légende des roses : surprise par son mari avec un tablier plein de pain pour les pauvres, elle l'ouvre et il n'en tombe que des roses. Sa tante Hedwige de Silésie est sainte aussi.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Élisabeth_de_Hongrie"
+  ],
+  "name_en": "Elizabeth",
+  "full_en": "Saint Elizabeth of Hungary, Landgravine of Thuringia",
+  "origin_en": "Pressburg (Bratislava), Kingdom of Hungary",
+  "role_en": "princess and hospitaller",
+  "blurb_en": "A Hungarian princess married at fourteen and widowed at twenty, she swapped the Wartburg for a hospital in Marburg and died at twenty-four, already a saint in everyone's eyes.",
+  "fun_en": "The legend of the roses: caught by her husband with an apron full of bread for the poor, she opens it and only roses fall out. Her aunt Hedwig of Silesia is a saint too.",
+  "feast_note_en": "19 November in Hungary and Germany"
+ },
+ {
+  "id": "hedwige",
+  "name": "Hedwige",
+  "full": "Sainte Hedwige de Silésie (Hedwige d'Andechs)",
+  "feast": "10-16",
+  "feast_note": "",
+  "born": 1174,
+  "died": 1243,
+  "approx": false,
+  "tradition": "catholique",
+  "origin": "Andechs, Bavière",
+  "role": "duchesse",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "gmh",
+    "level": "natif"
+   },
+   {
+    "code": "pol",
+    "level": "courant"
+   },
+   {
+    "code": "lat",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Andechs",
+    "lat": 47.97,
+    "lon": 11.18,
+    "from": 1174,
+    "to": 1180,
+    "note": "Fille du comte Berthold IV d'Andechs ; ses sœurs deviennent reine de Hongrie et reine de France.",
+    "certainty": "sur",
+    "place_en": "Andechs",
+    "note_en": "Daughter of Count Berthold IV of Andechs; her sisters become Queen of Hungary and Queen of France."
+   },
+   {
+    "place": "Kitzingen",
+    "lat": 49.74,
+    "lon": 10.16,
+    "from": 1180,
+    "to": 1186,
+    "note": "Élevée par les bénédictines de Kitzingen.",
+    "certainty": "sur",
+    "place_en": "Kitzingen",
+    "note_en": "Raised by the Benedictine nuns of Kitzingen."
+   },
+   {
+    "place": "Wrocław",
+    "lat": 51.11,
+    "lon": 17.03,
+    "from": 1186,
+    "to": 1202,
+    "note": "Mariée à douze ans au duc Henri le Barbu ; sept enfants ; cour de Wrocław et de Legnica.",
+    "certainty": "sur",
+    "place_en": "Wrocław",
+    "note_en": "Married at twelve to Duke Henry the Bearded; seven children; court at Wrocław and Legnica."
+   },
+   {
+    "place": "Trzebnica",
+    "lat": 51.31,
+    "lon": 17.06,
+    "from": 1202,
+    "to": 1243,
+    "note": "Fonde l'abbaye cistercienne de Trzebnica, où elle vit de plus en plus, et définitivement après 1238 ; meurt le 15 octobre 1243.",
+    "certainty": "sur",
+    "place_en": "Trzebnica",
+    "note_en": "Founds the Cistercian abbey of Trzebnica, where she lives more and more, and permanently after 1238; dies on 15 October 1243."
+   }
+  ],
+  "met": [],
+  "blurb": "Bavaroise devenue duchesse de Silésie, elle marchait pieds nus dans la neige polonaise en portant ses chaussures sous le bras pour obéir à son confesseur.",
+  "fun": "Son fils Henri le Pieux est tombé face aux Mongols à Legnica en 1241 ; elle a identifié son corps grâce à ses six orteils au pied gauche.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Hedwige_de_Silésie"
+  ],
+  "name_en": "Hedwig",
+  "full_en": "Saint Hedwig of Silesia (Hedwig of Andechs)",
+  "origin_en": "Andechs, Bavaria",
+  "role_en": "duchess",
+  "blurb_en": "A Bavarian turned Duchess of Silesia, she walked barefoot through the Polish snow carrying her shoes under her arm, to obey her confessor.",
+  "fun_en": "Her son Henry the Pious fell to the Mongols at Legnica in 1241; she identified his body by the six toes on his left foot."
+ },
+ {
+  "id": "sava",
+  "name": "Sava",
+  "full": "Saint Sava de Serbie (Rastko Nemanjić)",
+  "feast": "01-14",
+  "feast_note": "calendrier byzantin ; Savindan le 27 janvier grégorien, fête des écoles serbes",
+  "born": 1174,
+  "died": 1236,
+  "approx": true,
+  "tradition": "orthodoxe",
+  "origin": "Ras, Serbie",
+  "role": "moine et archevêque",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "srp",
+    "level": "natif"
+   },
+   {
+    "code": "chu",
+    "level": "courant"
+   },
+   {
+    "code": "grc",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Deževa (Ras)",
+    "lat": 43.14,
+    "lon": 20.51,
+    "from": 1174,
+    "to": 1190,
+    "note": "Benjamin du grand joupan Stefan Nemanja ; vers 1190, son père lui confie le gouvernement de Hum, qu'il quitte vite.",
+    "certainty": "probable",
+    "place_en": "Deževa (Ras)",
+    "note_en": "Youngest son of Grand Prince Stefan Nemanja; around 1190, his father entrusts him with the government of Hum, which he soon leaves."
+   },
+   {
+    "place": "Mont Athos (Vatopédi)",
+    "lat": 40.31,
+    "lon": 24.21,
+    "from": 1192,
+    "to": 1198,
+    "note": "Fugue monastique à dix-sept ans : Saint-Pantéléimon puis Vatopédi, où il devient Sava.",
+    "certainty": "sur",
+    "place_en": "Mount Athos (Vatopedi)",
+    "note_en": "Runs away to the monastic life at seventeen: St Panteleimon, then Vatopedi, where he becomes Sava."
+   },
+   {
+    "place": "Hilandar (Athos)",
+    "lat": 40.33,
+    "lon": 24.12,
+    "from": 1198,
+    "to": 1206,
+    "note": "Restaure Hilandar avec son père devenu moine Syméon, mort en 1199 ; rédige le typikon de Karyès.",
+    "certainty": "sur",
+    "place_en": "Hilandar (Athos)",
+    "note_en": "Restores Hilandar with his father, now the monk Simeon, who dies in 1199; writes the typikon of Karyes."
+   },
+   {
+    "place": "Studenica",
+    "lat": 43.49,
+    "lon": 20.53,
+    "from": 1207,
+    "to": 1217,
+    "note": "Ramène les reliques de son père et réconcilie ses frères ; higoumène de Studenica ; repart à l'Athos en 1217.",
+    "certainty": "sur",
+    "place_en": "Studenica",
+    "note_en": "Brings back his father's relics and reconciles his brothers; abbot of Studenica; returns to Athos in 1217."
+   },
+   {
+    "place": "Nicée",
+    "lat": 40.43,
+    "lon": 29.72,
+    "from": 1219,
+    "to": 1219,
+    "note": "Obtient de l'empereur et du patriarche en exil l'autocéphalie serbe ; sacré archevêque le 15 août 1219.",
+    "certainty": "sur",
+    "place_en": "Nicaea",
+    "note_en": "Obtains Serbian autocephaly from the emperor and patriarch in exile; consecrated archbishop on 15 August 1219."
+   },
+   {
+    "place": "Žiča",
+    "lat": 43.7,
+    "lon": 20.65,
+    "from": 1219,
+    "to": 1229,
+    "note": "Siège archiépiscopal ; Nomocanon (Zakonopravilo) et couronnement de son frère Stefan.",
+    "certainty": "sur",
+    "place_en": "Žiča",
+    "note_en": "Archiepiscopal see; the Nomocanon (Zakonopravilo) and the coronation of his brother Stefan."
+   },
+   {
+    "place": "Jérusalem",
+    "lat": 31.78,
+    "lon": 35.23,
+    "from": 1229,
+    "to": 1229,
+    "note": "Premier pèlerinage : Acre, Jérusalem, Mar Saba ; retour par Nicée et l'Athos.",
+    "certainty": "sur",
+    "place_en": "Jerusalem",
+    "note_en": "First pilgrimage: Acre, Jerusalem, Mar Saba; return via Nicaea and Athos."
+   },
+   {
+    "place": "Žiča",
+    "lat": 43.7,
+    "lon": 20.65,
+    "from": 1230,
+    "to": 1233,
+    "note": "Tournée de quatre ans dans les terres serbes ; abdique en 1233 en faveur d'Arsène.",
+    "certainty": "sur",
+    "place_en": "Žiča",
+    "note_en": "Four-year tour of the Serbian lands; abdicates in 1233 in favour of Arsenije."
+   },
+   {
+    "place": "Jérusalem",
+    "lat": 31.78,
+    "lon": 35.23,
+    "from": 1234,
+    "to": 1234,
+    "note": "Second pèlerinage, parti de Budva par Brindisi et Acre ; attaque de pirates en mer.",
+    "certainty": "sur",
+    "place_en": "Jerusalem",
+    "note_en": "Second pilgrimage, setting out from Budva via Brindisi and Acre; pirate attack at sea."
+   },
+   {
+    "place": "Sinaï (Sainte-Catherine)",
+    "lat": 28.56,
+    "lon": 33.98,
+    "from": 1235,
+    "to": 1235,
+    "note": "Alexandrie, le Caire et les ermites d'Égypte, puis le carême au Sinaï.",
+    "certainty": "sur",
+    "place_en": "Sinai (St Catherine's)",
+    "note_en": "Alexandria, Cairo and the hermits of Egypt, then Lent on Sinai."
+   },
+   {
+    "place": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 1235,
+    "to": 1235,
+    "note": "Retour par Antioche et Constantinople, chargé de reliques.",
+    "certainty": "sur",
+    "place_en": "Constantinople",
+    "note_en": "Return via Antioch and Constantinople, laden with relics."
+   },
+   {
+    "place": "Trnovo (Veliko Tarnovo)",
+    "lat": 43.08,
+    "lon": 25.63,
+    "from": 1235,
+    "to": 1236,
+    "note": "Hôte du tsar bulgare Ivan Asen II ; meurt le 14 janvier 1236 (ou 1235) après l'Épiphanie.",
+    "certainty": "sur",
+    "place_en": "Tarnovo (Veliko Tarnovo)",
+    "note_en": "Guest of the Bulgarian tsar Ivan Asen II; dies on 14 January 1236 (or 1235), after Epiphany."
+   }
+  ],
+  "met": [],
+  "blurb": "Prince fugueur devenu moine de l'Athos, puis premier archevêque de Serbie : il a fondé une Église, écrit son code de lois et parcouru tout l'Orient chrétien.",
+  "fun": "Les Ottomans ont brûlé ses reliques à Belgrade en 1594 pour mater les Serbes ; l'immense église Saint-Sava s'élève aujourd'hui exactement à cet endroit.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Sava_de_Serbie",
+   "https://en.wikipedia.org/wiki/Saint_Sava"
+  ],
+  "name_en": "Sava",
+  "full_en": "Saint Sava of Serbia (Rastko Nemanjić)",
+  "origin_en": "Ras, Serbia",
+  "role_en": "monk and archbishop",
+  "blurb_en": "A runaway prince turned monk of Athos, then first Archbishop of Serbia: he founded a Church, wrote its law code and travelled the whole Christian East.",
+  "fun_en": "The Ottomans burnt his relics in Belgrade in 1594 to cow the Serbs; the huge Church of Saint Sava stands today on that very spot.",
+  "feast_note_en": "Byzantine calendar; Savindan on 27 January Gregorian, the feast of Serbian schools"
+ },
+ {
+  "id": "hyacinthe",
+  "name": "Hyacinthe",
+  "full": "Saint Hyacinthe de Pologne (Jacek Odrowąż)",
+  "feast": "08-17",
+  "feast_note": "",
+  "born": 1185,
+  "died": 1257,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Kamień Śląski, Silésie",
+  "role": "dominicain missionnaire",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "pol",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "ita",
+    "level": "notions"
+   },
+   {
+    "code": "orv",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Kamień Śląski",
+    "lat": 50.53,
+    "lon": 18.09,
+    "from": 1185,
+    "to": 1200,
+    "note": "Né au château de Łąka dans la famille Odrowąż, proche parent du bienheureux Czesław.",
+    "certainty": "probable",
+    "place_en": "Kamień Śląski",
+    "note_en": "Born at Łąka castle into the Odrowąż family, a close relative of Blessed Czesław."
+   },
+   {
+    "place": "Cracovie",
+    "lat": 50.06,
+    "lon": 19.94,
+    "from": 1200,
+    "to": 1207,
+    "note": "École cathédrale, sous l'aile de son oncle Iwo Odrowąż.",
+    "certainty": "probable",
+    "place_en": "Kraków",
+    "note_en": "Cathedral school, under the wing of his uncle Iwo Odrowąż."
+   },
+   {
+    "place": "Bologne",
+    "lat": 44.49,
+    "lon": 11.34,
+    "from": 1207,
+    "to": 1215,
+    "note": "Études à Prague, Paris ou Bologne selon les sources ; docteur en droit et théologie.",
+    "certainty": "probable",
+    "place_en": "Bologna",
+    "note_en": "Studies at Prague, Paris or Bologna depending on the source; doctor of law and theology."
+   },
+   {
+    "place": "Cracovie",
+    "lat": 50.06,
+    "lon": 19.94,
+    "from": 1215,
+    "to": 1219,
+    "note": "Chanoine de Cracovie et prébendé de Sandomierz.",
+    "certainty": "probable",
+    "place_en": "Kraków",
+    "note_en": "Canon of Kraków and prebendary of Sandomierz."
+   },
+   {
+    "place": "Rome (Santa Sabina)",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1219,
+    "to": 1220,
+    "note": "Accompagne l'évêque Iwo à Rome, voit Dominique à l'œuvre et reçoit de lui l'habit avec Czesław.",
+    "certainty": "sur",
+    "place_en": "Rome (Santa Sabina)",
+    "note_en": "Accompanies Bishop Iwo to Rome, sees Dominic at work and receives the habit from him, together with Czesław."
+   },
+   {
+    "place": "Friesach (Carinthie)",
+    "lat": 46.95,
+    "lon": 14.41,
+    "from": 1221,
+    "to": 1221,
+    "note": "Fonde en route le premier couvent dominicain de Carinthie.",
+    "certainty": "sur",
+    "place_en": "Friesach (Carinthia)",
+    "note_en": "Founds the first Dominican friary in Carinthia on the way home."
+   },
+   {
+    "place": "Cracovie",
+    "lat": 50.06,
+    "lon": 19.94,
+    "from": 1222,
+    "to": 1228,
+    "note": "Fonde le couvent de la Trinité, berceau des dominicains polonais.",
+    "certainty": "sur",
+    "place_en": "Kraków",
+    "note_en": "Founds the friary of the Holy Trinity, cradle of the Polish Dominicans."
+   },
+   {
+    "place": "Kiev",
+    "lat": 50.45,
+    "lon": 30.52,
+    "from": 1228,
+    "to": 1233,
+    "note": "Couvent dominicain à Kiev, expulsé par le prince Vladimir Riourikovitch.",
+    "certainty": "probable",
+    "place_en": "Kiev",
+    "note_en": "Dominican friary in Kiev, expelled by Prince Vladimir Rurikovich."
+   },
+   {
+    "place": "Gdańsk",
+    "lat": 54.35,
+    "lon": 18.65,
+    "from": 1236,
+    "to": 1238,
+    "note": "Fondations en Poméranie et prédication vers la Prusse ; les missions en Scandinavie et jusqu'à la mer Noire relèvent de la légende.",
+    "certainty": "probable",
+    "place_en": "Gdańsk",
+    "note_en": "Foundations in Pomerania and preaching towards Prussia; the missions to Scandinavia and as far as the Black Sea belong to legend."
+   },
+   {
+    "place": "Cracovie",
+    "lat": 50.06,
+    "lon": 19.94,
+    "from": 1238,
+    "to": 1257,
+    "note": "Invasion mongole de 1241 ; meurt le 15 août 1257, fête de l'Assomption.",
+    "certainty": "sur",
+    "place_en": "Kraków",
+    "note_en": "Mongol invasion of 1241; dies on 15 August 1257, feast of the Assumption."
+   }
+  ],
+  "met": [
+   {
+    "with": "dominique",
+    "where": "Rome (Santa Sabina)",
+    "year": 1220,
+    "note": "Reçoit l'habit des mains de Dominique.",
+    "where_en": "Rome (Santa Sabina)",
+    "note_en": "Receives the habit from Dominic's hands."
+   }
+  ],
+  "blurb": "Le chanoine polonais qui a croisé Dominique à Rome et a passé le reste de sa vie à planter des couvents de Cracovie à Kiev.",
+  "fun": "La légende veut qu'il ait traversé le Dniepr à pied sec en fuyant les Mongols, portant le ciboire et une lourde statue de la Vierge. Les Polonais l'invoquent aussi pour les pierogi.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hyacinth_of_Poland"
+  ],
+  "name_en": "Hyacinth",
+  "full_en": "Saint Hyacinth of Poland (Jacek Odrowąż)",
+  "origin_en": "Kamień Śląski, Silesia",
+  "role_en": "Dominican missionary",
+  "blurb_en": "The Polish canon who crossed paths with Dominic in Rome and spent the rest of his life planting friaries from Kraków to Kiev.",
+  "fun_en": "Legend has it that he crossed the Dnieper dry-shod while fleeing the Mongols, carrying the ciborium and a heavy statue of the Virgin. Poles also invoke him for pierogi."
+ },
+ {
+  "id": "edmond-d-abingdon",
+  "name": "Edmond",
+  "full": "Saint Edmond d'Abingdon (Edmond Rich), archevêque de Cantorbéry",
+  "feast": "11-16",
+  "feast_note": "",
+  "born": 1174,
+  "died": 1240,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Abingdon, Berkshire",
+  "role": "maître et archevêque",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "enm",
+    "level": "natif"
+   },
+   {
+    "code": "xno",
+    "level": "courant"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Abingdon",
+    "lat": 51.67,
+    "lon": -1.28,
+    "from": 1174,
+    "to": 1186,
+    "note": "Fils d'un marchand pieux qui finira moine ; sa mère lui impose jeûne et cilice.",
+    "certainty": "sur",
+    "place_en": "Abingdon",
+    "note_en": "Son of a pious merchant who will end his days a monk; his mother makes him fast and wear a hair shirt."
+   },
+   {
+    "place": "Oxford",
+    "lat": 51.75,
+    "lon": -1.26,
+    "from": 1186,
+    "to": 1195,
+    "note": "Premières études ; vœu de chasteté à douze ans devant la Vierge de St Mary's.",
+    "certainty": "probable",
+    "place_en": "Oxford",
+    "note_en": "First studies; vow of chastity at twelve before the Virgin of St Mary's."
+   },
+   {
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "from": 1195,
+    "to": 1201,
+    "note": "Arts libéraux avec son frère Richard.",
+    "certainty": "sur",
+    "place_en": "Paris",
+    "note_en": "Liberal arts with his brother Richard."
+   },
+   {
+    "place": "Oxford",
+    "lat": 51.75,
+    "lon": -1.26,
+    "from": 1201,
+    "to": 1205,
+    "note": "Enseigne les mathématiques et la dialectique : l'un des premiers à commenter Aristote.",
+    "certainty": "sur",
+    "place_en": "Oxford",
+    "note_en": "Teaches mathematics and dialectic: one of the first to lecture on Aristotle."
+   },
+   {
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "from": 1205,
+    "to": 1214,
+    "note": "Théologie, ordination, doctorat.",
+    "certainty": "probable",
+    "place_en": "Paris",
+    "note_en": "Theology, ordination, doctorate."
+   },
+   {
+    "place": "Oxford",
+    "lat": 51.75,
+    "lon": -1.26,
+    "from": 1214,
+    "to": 1222,
+    "note": "Maître en théologie ; il s'endort parfois en cours après des nuits de prière.",
+    "certainty": "sur",
+    "place_en": "Oxford",
+    "note_en": "Master of theology; he sometimes nods off in class after nights of prayer."
+   },
+   {
+    "place": "Salisbury",
+    "lat": 51.07,
+    "lon": -1.79,
+    "from": 1222,
+    "to": 1233,
+    "note": "Trésorier de la cathédrale ; prêche la croisade en 1227.",
+    "certainty": "sur",
+    "place_en": "Salisbury",
+    "note_en": "Treasurer of the cathedral; preaches the crusade in 1227."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1234,
+    "to": 1237,
+    "note": "Archevêque sacré le 2 avril 1234 ; conflits avec Henri III et ses propres moines.",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Consecrated archbishop on 2 April 1234; conflicts with Henry III and with his own monks."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1237,
+    "to": 1238,
+    "note": "Va plaider sa cause auprès de Grégoire IX, sans grand résultat.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Goes to plead his case before Gregory IX, to little effect."
+   },
+   {
+    "place": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 1238,
+    "to": 1240,
+    "note": "Miné par le légat Othon et la cour, il repart pour Rome.",
+    "certainty": "sur",
+    "place_en": "Canterbury",
+    "note_en": "Worn down by the legate Otto and the court, he sets off for Rome again."
+   },
+   {
+    "place": "Pontigny",
+    "lat": 47.91,
+    "lon": 3.71,
+    "from": 1240,
+    "to": 1240,
+    "note": "Comme Becket avant lui, se réfugie chez les cisterciens de Pontigny ; tombe malade.",
+    "certainty": "sur",
+    "place_en": "Pontigny",
+    "note_en": "Like Becket before him, takes refuge with the Cistercians of Pontigny; falls ill."
+   },
+   {
+    "place": "Soisy-Bouy",
+    "lat": 48.48,
+    "lon": 3.32,
+    "from": 1240,
+    "to": 1240,
+    "note": "Meurt le 16 novembre 1240 chez les chanoines de Soisy ; inhumé à Pontigny, où son corps repose toujours.",
+    "certainty": "sur",
+    "place_en": "Soisy-Bouy",
+    "note_en": "Dies on 16 November 1240 with the canons of Soisy; buried at Pontigny, where his body still rests."
+   }
+  ],
+  "met": [
+   {
+    "with": "louis-ix",
+    "where": "Senlis",
+    "year": 1240,
+    "note": "Selon Matthieu Paris, Louis IX et Blanche de Castille reçoivent l'archevêque exilé avec honneur.",
+    "where_en": "Senlis",
+    "note_en": "According to Matthew Paris, Louis IX and Blanche of Castile receive the exiled archbishop with honour."
+   }
+  ],
+  "blurb": "Le professeur d'Oxford qui a introduit Aristote en Angleterre, puis a fini archevêque de Cantorbéry et, comme Becket, exilé à Pontigny.",
+  "fun": "Son corps, resté intact selon les témoins, est encore exposé dans une châsse à Pontigny : il est l'un des rares archevêques de Cantorbéry enterrés en Bourgogne.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Edmund_of_Abingdon"
+  ],
+  "name_en": "Edmund",
+  "full_en": "Saint Edmund of Abingdon (Edmund Rich), Archbishop of Canterbury",
+  "origin_en": "Abingdon, Berkshire",
+  "role_en": "master and archbishop",
+  "blurb_en": "The Oxford professor who brought Aristotle to England, then ended up Archbishop of Canterbury and, like Becket, an exile at Pontigny.",
+  "fun_en": "His body, found intact according to witnesses, is still displayed in a shrine at Pontigny: he is one of the few Archbishops of Canterbury buried in Burgundy."
+ },
+ {
+  "id": "jean-de-matha",
+  "name": "Jean de Matha",
+  "full": "Saint Jean de Matha",
+  "feast": "12-17",
+  "feast_note": "8 février au calendrier traditionnel",
+  "born": 1160,
+  "died": 1213,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Faucon-de-Barcelonnette, Provence",
+  "role": "fondateur rédempteur de captifs",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "oci",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "fro",
+    "level": "courant"
+   },
+   {
+    "code": "ara",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Faucon-de-Barcelonnette",
+    "lat": 44.4,
+    "lon": 6.66,
+    "from": 1160,
+    "to": 1172,
+    "note": "Né le 23 juin 1160 dans une famille d'origine catalane ; Faucon-du-Caire revendique aussi sa naissance.",
+    "certainty": "probable",
+    "place_en": "Faucon-de-Barcelonnette",
+    "note_en": "Born on 23 June 1160 into a family of Catalan origin; Faucon-du-Caire also claims his birth."
+   },
+   {
+    "place": "Aix-en-Provence",
+    "lat": 43.53,
+    "lon": 5.45,
+    "from": 1172,
+    "to": 1180,
+    "note": "Grammaire, escrime, équitation, et service des malades à l'hôpital.",
+    "certainty": "sur",
+    "place_en": "Aix-en-Provence",
+    "note_en": "Grammar, fencing, riding, and tending the sick at the hospital."
+   },
+   {
+    "place": "Paris",
+    "lat": 48.86,
+    "lon": 2.35,
+    "from": 1180,
+    "to": 1193,
+    "note": "Docteur en théologie ; ordonné prêtre en décembre 1192 ; vision du Christ entre deux captifs à sa première messe.",
+    "certainty": "sur",
+    "place_en": "Paris",
+    "note_en": "Doctor of theology; ordained priest in December 1192; vision of Christ between two captives at his first Mass."
+   },
+   {
+    "place": "Cerfroid",
+    "lat": 49.1,
+    "lon": 3.13,
+    "from": 1194,
+    "to": 1197,
+    "note": "Rejoint l'ermite Félix de Valois dans la forêt de Cerfroid ; un cerf à la croix rouge et bleue leur apparaît, dit la légende.",
+    "certainty": "sur",
+    "place_en": "Cerfroid",
+    "note_en": "Joins the hermit Felix of Valois in the forest of Cerfroid; a stag bearing a red and blue cross appears to them, says the legend."
+   },
+   {
+    "place": "Rome",
+    "lat": 41.9,
+    "lon": 12.48,
+    "from": 1197,
+    "to": 1198,
+    "note": "Innocent III approuve l'ordre de la Sainte-Trinité le 17 décembre 1198.",
+    "certainty": "sur",
+    "place_en": "Rome",
+    "note_en": "Innocent III approves the Order of the Holy Trinity on 17 December 1198."
+   },
+   {
+    "place": "Cerfroid",
+    "lat": 49.1,
+    "lon": 3.13,
+    "from": 1199,
+    "to": 1201,
+    "note": "Organisation de l'ordre ; premiers rachats en 1201.",
+    "certainty": "sur",
+    "place_en": "Cerfroid",
+    "note_en": "Organisation of the order; first ransoms in 1201."
+   },
+   {
+    "place": "Tunis",
+    "lat": 36.81,
+    "lon": 10.17,
+    "from": 1202,
+    "to": 1202,
+    "note": "Premier voyage de rachat : il ramène des dizaines de captifs chrétiens.",
+    "certainty": "sur",
+    "place_en": "Tunis",
+    "note_en": "First ransoming voyage: he brings back dozens of Christian captives."
+   },
+   {
+    "place": "Marseille",
+    "lat": 43.3,
+    "lon": 5.37,
+    "from": 1203,
+    "to": 1209,
+    "note": "Fondations en Provence et en Espagne, collectes pour les rançons.",
+    "certainty": "probable",
+    "place_en": "Marseille",
+    "note_en": "Foundations in Provence and Spain, collections for the ransoms."
+   },
+   {
+    "place": "Rome (San Tommaso in Formis)",
+    "lat": 41.89,
+    "lon": 12.49,
+    "from": 1209,
+    "to": 1210,
+    "note": "S'installe au Cælius, dans la maison confiée par Innocent III.",
+    "certainty": "sur",
+    "place_en": "Rome (San Tommaso in Formis)",
+    "note_en": "Settles on the Caelian Hill, in the house entrusted to him by Innocent III."
+   },
+   {
+    "place": "Tunis",
+    "lat": 36.81,
+    "lon": 10.17,
+    "from": 1210,
+    "to": 1210,
+    "note": "Second rachat ; la légende dit que les Maures sabotèrent son navire et qu'il rentra sans voiles ni gouvernail, en priant.",
+    "certainty": "legende",
+    "place_en": "Tunis",
+    "note_en": "Second ransom; legend says the Moors sabotaged his ship and that he sailed home without sails or rudder, praying."
+   },
+   {
+    "place": "Rome (San Tommaso in Formis)",
+    "lat": 41.89,
+    "lon": 12.49,
+    "from": 1210,
+    "to": 1213,
+    "note": "Meurt à Rome le 17 décembre 1213 ; son corps sera enlevé pour Madrid en 1655.",
+    "certainty": "sur",
+    "place_en": "Rome (San Tommaso in Formis)",
+    "note_en": "Dies in Rome on 17 December 1213; his body will be carried off to Madrid in 1655."
+   }
+  ],
+  "met": [
+   {
+    "with": "francois-d-assise",
+    "where": "Rome",
+    "year": 1209,
+    "note": "La tradition trinitaire veut qu'il ait présenté François aux Frangipani ; non attesté.",
+    "where_en": "Rome",
+    "note_en": "Trinitarian tradition has it that he introduced Francis to the Frangipani; unattested."
+   }
+  ],
+  "blurb": "Un Provençal docteur de Paris qui a fondé un ordre pour racheter les esclaves chrétiens de Tunis, et y est allé lui-même deux fois négocier.",
+  "fun": "Ses reliques ont été dérobées à Rome par des Espagnols en 1655 et emportées à Madrid, où elles sont toujours : le voleur de voleurs volé.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Jean_de_Matha",
+   "https://en.wikipedia.org/wiki/John_of_Matha"
+  ],
+  "name_en": "John of Matha",
+  "full_en": "Saint John of Matha",
+  "origin_en": "Faucon-de-Barcelonnette, Provence",
+  "role_en": "founder and ransomer of captives",
+  "blurb_en": "A Provençal doctor of Paris who founded an order to ransom Christian slaves in Tunis, and went there twice himself to negotiate.",
+  "fun_en": "His relics were stolen from Rome by Spaniards in 1655 and carried off to Madrid, where they remain: the ransomer of captives, taken captive.",
+  "feast_note_en": "8 February in the traditional calendar"
+ }
+]

@@ -1,951 +1,2984 @@
 [
-  {
-    "id": "genevieve",
-    "name": "Geneviève",
-    "full": "Sainte Geneviève de Paris",
-    "feast": "01-03",
-    "feast_note": "",
-    "born": 420, "died": 502,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Nanterre, Gaule",
-    "role": "vierge consacrée",
-    "sex": "f",
-    "languages": [
-      {"code": "lat", "level": "natif"},
-      {"code": "frk", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Nanterre", "lat": 48.89, "lon": 2.21, "from": 420, "to": 440,
-       "note": "Enfance ; Germain d'Auxerre, de passage en 429, l'aurait remarquée et vouée à Dieu.", "certainty": "probable"},
-      {"place": "Paris (île de la Cité)", "lat": 48.85, "lon": 2.35, "from": 440, "to": 502,
-       "note": "Installée chez sa marraine après la mort de ses parents ; elle y tient tête à Attila en 451, ravitaille la ville assiégée par Childéric vers 465 et conseille Clovis.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "germain-d-auxerre", "where": "Nanterre", "year": 429, "note": "Selon sa Vita, Germain et Loup de Troyes s'arrêtent à Nanterre en route vers la Bretagne et distinguent la fillette dans la foule."},
-      {"with": "clotilde", "where": "Paris", "year": 508, "note": "Rencontre probable mais non décrite par les sources : Clotilde s'installe à Paris avec Clovis et fait bâtir la basilique des Saints-Apôtres où Geneviève sera enterrée."}
-    ],
-    "blurb": "Quand Attila approche, les Parisiens veulent fuir et Geneviève leur dit de rester : Attila passe au large, et Paris se trouve une patronne pour quinze siècles.",
-    "fun": "Siméon le Stylite, perché sur sa colonne en Syrie, aurait demandé de ses nouvelles à des marchands parisiens et lui aurait envoyé ses salutations : une tradition, mais quelle correspondance.",
-    "sources": ["https://fr.wikipedia.org/wiki/Geneviève_de_Paris"]
-  },
-  {
-    "id": "simeon-le-stylite",
-    "name": "Siméon",
-    "full": "Saint Siméon le Stylite l'Ancien",
-    "feast": "07-27",
-    "feast_note": "1er septembre chez les orthodoxes",
-    "born": 389, "died": 459,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Sisan, Syrie du Nord",
-    "role": "ermite stylite",
-    "sex": "m",
-    "languages": [
-      {"code": "syc", "level": "natif"},
-      {"code": "grc", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Sisan (Samandağ)", "lat": 36.08, "lon": 35.98, "from": 389, "to": 403,
-       "note": "Enfance de berger ; à treize ans, la lecture des Béatitudes le bouleverse.", "certainty": "probable"},
-      {"place": "Monastère de Téléda", "lat": 36.25, "lon": 36.85, "from": 403, "to": 413,
-       "note": "Dix ans de vie monastique, avec des mortifications si excessives qu'on finit par le renvoyer.", "certainty": "sur"},
-      {"place": "Télanissos (Deir Semaan)", "lat": 36.33, "lon": 36.84, "from": 413, "to": 459,
-       "note": "D'abord enfermé dans une cabane puis sur un promontoire, il grimpe vers 423 sur une colonne de trois mètres qui finira à dix-huit. Il n'en descend plus jamais.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "daniel-le-stylite", "where": "Télanissos", "year": 445, "note": "Daniel grimpe à l'échelle pour recevoir sa bénédiction, puis passe deux semaines à sa mandra en 447 ; Siméon lui transmettra sa cuculle."}
-    ],
-    "blurb": "Trente-sept ans debout sur une colonne, sans jamais descendre, pour avoir la paix : les pèlerins sont venus par milliers quand même.",
-    "fun": "Un visiteur a compté plus de 1 200 prosternations d'affilée avant d'abandonner le décompte ; Buñuel en a tiré un film, Simon du désert.",
-    "sources": ["https://fr.wikipedia.org/wiki/Siméon_le_Stylite"]
-  },
-  {
-    "id": "daniel-le-stylite",
-    "name": "Daniel",
-    "full": "Saint Daniel le Stylite",
-    "feast": "12-11",
-    "feast_note": "",
-    "born": 409, "died": 493,
-    "approx": false,
-    "tradition": "commune",
-    "origin": "Mératha, près de Samosate",
-    "role": "ermite stylite",
-    "sex": "m",
-    "languages": [
-      {"code": "syc", "level": "natif"},
-      {"code": "grc", "level": "courant"}
-    ],
-    "stops": [
-      {"place": "Mératha (Samosate)", "lat": 37.58, "lon": 38.48, "from": 409, "to": 445,
-       "note": "Entré au monastère à cinq ans, il y passe presque quarante ans et devient l'élève préféré du supérieur.", "certainty": "sur"},
-      {"place": "Télanissos (Deir Semaan)", "lat": 36.33, "lon": 36.84, "from": 445, "to": 447,
-       "note": "Visite à Siméon sur sa colonne, puis deux semaines à sa mandra avant de partir pour la Palestine.", "certainty": "sur"},
-      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 447, "to": 451,
-       "note": "Détourné de Jérusalem par deux visions de Siméon, il passe cinq ans dans la capitale.", "certainty": "sur"},
-      {"place": "Anaplous (Bosphore)", "lat": 41.08, "lon": 29.06, "from": 451, "to": 493,
-       "note": "Reclus dans un temple hanté, puis stylite à partir de 460 ; l'empereur Léon Ier lui fait bâtir une colonne double. Il y meurt à 84 ans.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "simeon-le-stylite", "where": "Télanissos", "year": 445, "note": "Il monte à l'échelle de la colonne pour recevoir la bénédiction du maître, dont il reprendra le mode de vie après sa mort."}
-    ],
-    "blurb": "Il voulait aller à Jérusalem, Siméon le Stylite lui apparaît en rêve et le renvoie à Constantinople : il y passe trente-trois ans sur une colonne au bord du Bosphore.",
-    "fun": "En 475, il descend de sa colonne pour mener une procession qui fait plier l'usurpateur Basiliscus : un ermite qui fait et défait les empereurs.",
-    "sources": ["https://fr.wikipedia.org/wiki/Daniel_le_Stylite"]
-  },
-  {
-    "id": "leon-le-grand",
-    "name": "Léon",
-    "full": "Saint Léon le Grand, pape",
-    "feast": "11-10",
-    "feast_note": "18 février chez les orthodoxes",
-    "born": 391, "died": 461,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Rome (ou Toscane)",
-    "role": "pape",
-    "sex": "m",
-    "languages": [
-      {"code": "lat", "level": "natif"}
-    ],
-    "stops": [
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 391, "to": 440,
-       "note": "Diacre influent sous Célestin et Sixte III, déjà consulté par Jean Cassien et Cyrille d'Alexandrie.", "certainty": "sur"},
-      {"place": "Gaule (Arles ?)", "lat": 43.68, "lon": 4.63, "from": 440, "to": 440,
-       "note": "Envoyé arbitrer un conflit entre Aetius et le préfet Albinus ; il apprend sur place qu'on l'a élu pape.", "certainty": "probable"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 440, "to": 452,
-       "note": "Pape dès le 29 septembre 440 ; en 449 il rédige le Tome à Flavien qui triomphera à Chalcédoine.", "certainty": "sur"},
-      {"place": "Rives du Mincio (Mantoue)", "lat": 45.05, "lon": 10.92, "from": 452, "to": 452,
-       "note": "Face à face avec Attila, qui renonce à marcher sur Rome. L'épidémie et les troupes de Marcien ont sans doute aidé.", "certainty": "sur"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 452, "to": 461,
-       "note": "En 455 il négocie avec Genséric : Rome est pillée mais ni brûlée ni massacrée. Enterré sous le portique de Saint-Pierre.", "certainty": "sur"}
-    ],
-    "met": [],
-    "blurb": "Le pape qui est allé au-devant d'Attila pour lui demander poliment de faire demi-tour. Attila a fait demi-tour.",
-    "fun": "À Chalcédoine, à la lecture de son Tome, les évêques se seraient écriés : Pierre a parlé par la bouche de Léon. Il n'a pourtant jamais su le grec, dit-on.",
-    "sources": ["https://fr.wikipedia.org/wiki/Léon_Ier_(pape)"]
-  },
-  {
-    "id": "severin-de-norique",
-    "name": "Séverin",
-    "full": "Saint Séverin de Norique",
-    "feast": "01-08",
-    "feast_note": "",
-    "born": 410, "died": 482,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "inconnue, peut-être Italie du Sud ou Orient",
-    "role": "moine protecteur",
-    "sex": "m",
-    "languages": [
-      {"code": "lat", "level": "natif"},
-      {"code": "got", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Italie du Sud (Naples ?)", "lat": 40.85, "lon": 14.27, "from": 410, "to": 453,
-       "note": "Origines presque inconnues : un Romain cultivé qui aurait séjourné en Orient avant d'apparaître sur le Danube.", "certainty": "legende"},
-      {"place": "Carnuntum (Pannonie)", "lat": 48.11, "lon": 16.86, "from": 453, "to": 454,
-       "note": "Il surgit sur le limes juste après la mort d'Attila, quand l'Empire s'effondre sur le Danube.", "certainty": "probable"},
-      {"place": "Favianis (Mautern)", "lat": 48.40, "lon": 15.57, "from": 454, "to": 469,
-       "note": "Il y fonde son monastère et organise le ravitaillement des villes romaines abandonnées, sous la protection des Ruges.", "certainty": "sur"},
-      {"place": "Passau (Batavis)", "lat": 48.57, "lon": 13.46, "from": 469, "to": 470,
-       "note": "Il obtient du roi alaman Gibuld la libération de prisonniers romains.", "certainty": "sur"},
-      {"place": "Favianis (Mautern)", "lat": 48.40, "lon": 15.57, "from": 470, "to": 482,
-       "note": "Il meurt dans son monastère le 8 janvier 482 ; six ans plus tard, les derniers Romains emportent son corps vers Naples.", "certainty": "sur"}
-    ],
-    "met": [],
-    "blurb": "L'homme qui tenait la frontière du Danube pendant que l'Empire romain d'Occident s'évaporait : pas une légion, juste un moine et des convois de vivres.",
-    "fun": "Selon son biographe Eugippius, il aurait prédit sa fortune au jeune Odoacre, celui-là même qui déposera le dernier empereur d'Occident en 476.",
-    "sources": ["https://fr.wikipedia.org/wiki/Séverin_de_Norique"]
-  },
-  {
-    "id": "benoit-de-nursie",
-    "name": "Benoît",
-    "full": "Saint Benoît de Nursie",
-    "feast": "07-11",
-    "feast_note": "21 mars, jour de sa mort, chez les orthodoxes et dans l'ancien calendrier",
-    "born": 480, "died": 547,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Nursie, Ombrie",
-    "role": "abbé législateur",
-    "sex": "m",
-    "languages": [
-      {"code": "lat", "level": "natif"}
-    ],
-    "stops": [
-      {"place": "Nursie (Norcia)", "lat": 42.79, "lon": 13.09, "from": 480, "to": 495,
-       "note": "Enfance dans une famille de notables ; sa sœur jumelle Scholastique, selon la tradition.", "certainty": "sur"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 495, "to": 500,
-       "note": "Études avec sa nourrice ; dégoûté par la ville, il s'enfuit.", "certainty": "sur"},
-      {"place": "Enfide (Affile)", "lat": 41.88, "lon": 13.10, "from": 500, "to": 500,
-       "note": "Première étape et premier miracle : un tamis cassé réparé par la prière.", "certainty": "sur"},
-      {"place": "Subiaco", "lat": 41.93, "lon": 13.10, "from": 500, "to": 529,
-       "note": "Trois ans d'ermitage dans une grotte, un bref passage calamiteux comme abbé à Vicovaro, puis douze petits monastères au bord du lac.", "certainty": "sur"},
-      {"place": "Mont-Cassin", "lat": 41.49, "lon": 13.81, "from": 529, "to": 547,
-       "note": "Il rase le temple d'Apollon, fonde l'abbaye et y écrit sa Règle. Il meurt debout, soutenu par ses moines.", "certainty": "sur"}
-    ],
-    "met": [],
-    "blurb": "Il voulait juste qu'on lui fiche la paix dans sa grotte ; il a fini par écrire la Règle qui organise la vie de milliers de monastères depuis quinze siècles.",
-    "fun": "Ses moines de Vicovaro ont tenté de l'empoisonner : il bénit la coupe, elle éclate. Il rentre dans sa grotte en expliquant qu'il les avait prévenus.",
-    "sources": ["https://fr.wikipedia.org/wiki/Benoît_de_Nursie"]
-  },
-  {
-    "id": "clotilde",
-    "name": "Clotilde",
-    "full": "Sainte Clotilde, reine des Francs",
-    "feast": "06-04",
-    "feast_note": "3 juin chez les orthodoxes",
-    "born": 475, "died": 545,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "royaume burgonde (Lyon ou Genève)",
-    "role": "reine",
-    "sex": "f",
-    "languages": [
-      {"code": "got", "level": "natif"},
-      {"code": "lat", "level": "courant"},
-      {"code": "frk", "level": "courant"}
-    ],
-    "stops": [
-      {"place": "Lyon", "lat": 45.76, "lon": 4.84, "from": 475, "to": 490,
-       "note": "Fille du roi burgonde Chilpéric II ; le lieu exact de naissance est débattu (Lyon, Vienne ou Genève).", "certainty": "probable"},
-      {"place": "Genève", "lat": 46.20, "lon": 6.15, "from": 490, "to": 493,
-       "note": "Élevée à la cour de son oncle Gondebaud après le meurtre de ses parents, selon Grégoire de Tours.", "certainty": "probable"},
-      {"place": "Soissons", "lat": 49.38, "lon": 3.32, "from": 493, "to": 496,
-       "note": "Mariage avec Clovis ; elle fait baptiser ses fils malgré lui.", "certainty": "sur"},
-      {"place": "Reims", "lat": 49.25, "lon": 4.03, "from": 496, "to": 496,
-       "note": "Baptême de Clovis par Remi, une nuit de Noël, après la promesse de Tolbiac.", "certainty": "sur"},
-      {"place": "Paris", "lat": 48.85, "lon": 2.35, "from": 508, "to": 524,
-       "note": "Capitale de Clovis ; elle fait bâtir la basilique des Saints-Apôtres sur la montagne qui portera le nom de Geneviève.", "certainty": "sur"},
-      {"place": "Tours", "lat": 47.39, "lon": 0.69, "from": 524, "to": 545,
-       "note": "Retirée près du tombeau de saint Martin après la mort de son fils Clodomir ; elle sauve son petit-fils Clodoald, le futur saint Cloud.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "genevieve", "where": "Paris", "year": 508, "note": "Rencontre probable : les deux femmes vivent à Paris sous Clovis, et Clotilde fait bâtir la basilique où Geneviève est inhumée à côté du roi."}
-    ],
-    "blurb": "Princesse burgonde mariée à un roi païen, elle le travaille au corps pendant trois ans : Clovis finit par se faire baptiser, et la France avec lui.",
-    "fun": "Elle a fini sa vie à Tours en pleurant ses fils meurtriers et ses petits-fils assassinés : la grand-mère de la monarchie française n'a pas eu la famille la plus reposante.",
-    "sources": ["https://fr.wikipedia.org/wiki/Clotilde_(femme_de_Clovis)"]
-  },
-  {
-    "id": "brendan",
-    "name": "Brendan",
-    "full": "Saint Brendan de Clonfert, le Navigateur",
-    "feast": "05-16",
-    "feast_note": "",
-    "born": 484, "died": 577,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Kerry, Irlande",
-    "role": "abbé navigateur",
-    "sex": "m",
-    "languages": [
-      {"code": "sga", "level": "natif"},
-      {"code": "lat", "level": "courant"},
-      {"code": "cym", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Fenit (Kerry)", "lat": 52.27, "lon": -9.86, "from": 484, "to": 485,
-       "note": "Né sur la côte du Kerry, face à l'Atlantique : la suite était écrite.", "certainty": "probable"},
-      {"place": "Killeedy", "lat": 52.42, "lon": -8.98, "from": 485, "to": 490,
-       "note": "Cinq ans élevé par sainte Ita, puis formé par l'évêque Erc qui l'ordonne.", "certainty": "probable"},
-      {"place": "Ardfert", "lat": 52.33, "lon": -9.78, "from": 490, "to": 530,
-       "note": "Sa première fondation, et le port d'où partent ses voyages.", "certainty": "probable"},
-      {"place": "Hébrides", "lat": 57.20, "lon": -7.30, "from": 530, "to": 531,
-       "note": "Première escale plausible de la Navigatio : les îles des moutons et des oiseaux ressemblent fort aux Hébrides.", "certainty": "legende"},
-      {"place": "Îles Féroé", "lat": 62.01, "lon": -6.77, "from": 531, "to": 532,
-       "note": "Les commentateurs voient dans l'île des brebis géantes les Féroé, dont le nom signifie justement îles aux moutons.", "certainty": "legende"},
-      {"place": "Islande", "lat": 64.13, "lon": -21.90, "from": 532, "to": 533,
-       "note": "L'île des forgerons qui jettent des scories en feu : un volcan islandais, disent les lecteurs modernes. On s'arrête là, prudemment.", "certainty": "legende"},
-      {"place": "Ardfert", "lat": 52.33, "lon": -9.78, "from": 537, "to": 557,
-       "note": "Retour au pays ; les pèlerins affluent pour écouter le récit.", "certainty": "probable"},
-      {"place": "Clonfert", "lat": 53.24, "lon": -8.06, "from": 557, "to": 565,
-       "note": "Fondation de son grand monastère, vers 557 ou 561.", "certainty": "sur"},
-      {"place": "Iona (Hinba)", "lat": 56.33, "lon": -6.42, "from": 565, "to": 565,
-       "note": "Visite à Colomba avec Comgall et Kenneth, selon Adomnán, sur l'île voisine de Hinba.", "certainty": "probable"},
-      {"place": "Aleth (Saint-Malo)", "lat": 48.65, "lon": -2.03, "from": 566, "to": 570,
-       "note": "Fondation d'un couvent à l'estuaire de la Rance avec son disciple Malo, selon la tradition bretonne.", "certainty": "legende"},
-      {"place": "Clonfert", "lat": 53.24, "lon": -8.06, "from": 570, "to": 576,
-       "note": "Vieillesse à la tête de sa communauté.", "certainty": "probable"},
-      {"place": "Annaghdown", "lat": 53.39, "lon": -9.07, "from": 576, "to": 577,
-       "note": "Il meurt chez sa sœur Briga, qui dirige le couvent ; son corps est ramené à Clonfert.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "colomba-d-iona", "where": "Hinba, près d'Iona", "year": 565, "note": "Adomnán raconte que Brendan, Comgall, Kenneth et Cormac rendent visite à Colomba, qui célèbre la messe devant eux : tradition hagiographique."}
-    ],
-    "blurb": "Il aurait traversé l'Atlantique en bateau de cuir pour trouver le paradis terrestre, et serait rentré raconter ça. Les Irlandais y croient encore un peu, et pas seulement eux.",
-    "fun": "Dans la Navigatio, il célèbre la messe de Pâques sur une île qui se met à bouger : c'était le dos d'une baleine. En 1976, Tim Severin a refait le voyage en currach jusqu'à Terre-Neuve pour prouver que c'était possible.",
-    "sources": ["https://fr.wikipedia.org/wiki/Brendan_de_Clonfert"]
-  },
-  {
-    "id": "samson-de-dol",
-    "name": "Samson",
-    "full": "Saint Samson de Dol",
-    "feast": "07-28",
-    "feast_note": "",
-    "born": 495, "died": 565,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Dyfed, pays de Galles",
-    "role": "évêque fondateur",
-    "sex": "m",
-    "languages": [
-      {"code": "cym", "level": "natif"},
-      {"code": "lat", "level": "courant"},
-      {"code": "sga", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Dyfed (pays de Galles)", "lat": 51.80, "lon": -4.70, "from": 495, "to": 500,
-       "note": "Fils d'Amon de Dyfed et d'Anna de Gwent, promis à Dieu dès avant sa naissance.", "certainty": "probable"},
-      {"place": "Llantwit Major", "lat": 51.41, "lon": -3.49, "from": 500, "to": 521,
-       "note": "Élève d'Illtud dans la plus fameuse école du pays de Galles, aux côtés de Paul Aurélien et peut-être de Gildas et David.", "certainty": "sur"},
-      {"place": "Île de Caldey", "lat": 51.64, "lon": -4.69, "from": 521, "to": 525,
-       "note": "Abbé après la mort de Piron, tombé dans un puits en état d'ivresse.", "certainty": "sur"},
-      {"place": "Dún Etair (Howth)", "lat": 53.39, "lon": -6.07, "from": 525, "to": 527,
-       "note": "Séjour dans un monastère irlandais, d'où il rapporte un chariot.", "certainty": "probable"},
-      {"place": "St Kew (Cornouailles)", "lat": 50.54, "lon": -4.78, "from": 527, "to": 535,
-       "note": "Ermite et évangélisateur de la Cornouailles, où il convertit un roi local.", "certainty": "probable"},
-      {"place": "Guernesey", "lat": 49.45, "lon": -2.58, "from": 535, "to": 536,
-       "note": "Escale avant l'Armorique ; l'île en a gardé une paroisse à son nom.", "certainty": "probable"},
-      {"place": "Dol-de-Bretagne", "lat": 48.55, "lon": -1.75, "from": 536, "to": 557,
-       "note": "Fondation du monastère de Dol, futur siège épiscopal de Bretagne.", "certainty": "sur"},
-      {"place": "Paris", "lat": 48.85, "lon": 2.35, "from": 557, "to": 557,
-       "note": "Il signe les actes du concile de Paris et obtient de Childebert Ier le domaine de Pental.", "certainty": "sur"},
-      {"place": "Dol-de-Bretagne", "lat": 48.55, "lon": -1.75, "from": 558, "to": 565,
-       "note": "Il aide Judual à reprendre la Domnonée à l'usurpateur Conomor et échappe à un empoisonnement.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "david-de-galles", "where": "Llantwit Major", "year": 510, "note": "Tradition galloise : camarades d'études sous Illtud, selon les Vies tardives de David et de Samson."}
-    ],
-    "blurb": "Un Gallois qui traverse la Manche avec son chariot pour fonder un évêché breton, puis file à Paris demander un domaine au roi des Francs : le premier des sept saints fondateurs de Bretagne, et le mieux documenté.",
-    "fun": "Sa Vie, écrite vers 700, est la plus ancienne hagiographie bretonne. Elle le fait combattre des dragons, commander aux oiseaux et guérir une possédée, entre deux voyages très réels.",
-    "sources": ["https://fr.wikipedia.org/wiki/Samson_de_Dol"]
-  },
-  {
-    "id": "radegonde",
-    "name": "Radegonde",
-    "full": "Sainte Radegonde de Poitiers",
-    "feast": "08-13",
-    "feast_note": "",
-    "born": 520, "died": 587,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Thuringe",
-    "role": "reine moniale",
-    "sex": "f",
-    "languages": [
-      {"code": "goh", "level": "natif"},
-      {"code": "frk", "level": "courant"},
-      {"code": "lat", "level": "courant"}
-    ],
-    "stops": [
-      {"place": "Erfurt (Thuringe)", "lat": 50.98, "lon": 11.03, "from": 520, "to": 531,
-       "note": "Princesse thuringienne élevée à la cour de son oncle Hermanfred, après le meurtre de son père.", "certainty": "probable"},
-      {"place": "Athies (Vermandois)", "lat": 49.85, "lon": 3.00, "from": 531, "to": 539,
-       "note": "Butin de guerre de Clotaire Ier, elle reçoit une éducation latine et chrétienne dans la villa royale.", "certainty": "sur"},
-      {"place": "Soissons", "lat": 49.38, "lon": 3.32, "from": 539, "to": 550,
-       "note": "Mariage forcé avec Clotaire, en présence de l'évêque Médard ; dix ans de vie de cour qu'elle fuit dans la prière.", "certainty": "sur"},
-      {"place": "Noyon", "lat": 49.58, "lon": 3.00, "from": 550, "to": 551,
-       "note": "Après le meurtre de son frère, elle se réfugie auprès de Médard qui la consacre diaconesse.", "certainty": "sur"},
-      {"place": "Saix", "lat": 47.12, "lon": 0.17, "from": 551, "to": 552,
-       "note": "Sur une terre donnée par Clotaire, elle fonde un hospice où elle soigne elle-même les malades.", "certainty": "sur"},
-      {"place": "Poitiers (Sainte-Croix)", "lat": 46.58, "lon": 0.34, "from": 552, "to": 570,
-       "note": "Fondation du monastère Notre-Dame ; en 569 elle reçoit de Justin II un fragment de la Vraie Croix, et Venance Fortunat compose le Vexilla regis.", "certainty": "sur"},
-      {"place": "Arles", "lat": 43.68, "lon": 4.63, "from": 570, "to": 570,
-       "note": "Voyage avec l'abbesse Agnès pour adopter la règle de Césaire d'Arles.", "certainty": "probable"},
-      {"place": "Poitiers (Sainte-Croix)", "lat": 46.58, "lon": 0.34, "from": 570, "to": 587,
-       "note": "Elle meurt dans son monastère le 13 août 587 ; Grégoire de Tours préside ses funérailles.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "venance-fortunat", "where": "Poitiers", "year": 567, "note": "Le poète italien devient son ami, son aumônier et son biographe ; il lui envoie des vers, elle lui envoie des plats."}
-    ],
-    "blurb": "Enlevée à douze ans, mariée de force à un roi franc, elle le plaque pour fonder un monastère et finit par recevoir un morceau de la Vraie Croix envoyé par l'empereur de Constantinople.",
-    "fun": "En 1412, le duc de Berry fait ouvrir son tombeau pour prendre sa tête : il renonce, intimidé, et ne garde que son anneau nuptial.",
-    "sources": ["https://fr.wikipedia.org/wiki/Radegonde"]
-  },
-  {
-    "id": "venance-fortunat",
-    "name": "Venance",
-    "full": "Saint Venance Fortunat",
-    "feast": "12-14",
-    "feast_note": "",
-    "born": 530, "died": 609,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Valdobbiadene, Vénétie",
-    "role": "poète évêque",
-    "sex": "m",
-    "languages": [
-      {"code": "lat", "level": "natif"},
-      {"code": "frk", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Valdobbiadene", "lat": 45.90, "lon": 11.99, "from": 530, "to": 550,
-       "note": "Enfance près de Trévise, dans une Italie byzantine et gothique.", "certainty": "probable"},
-      {"place": "Ravenne", "lat": 44.42, "lon": 12.20, "from": 550, "to": 565,
-       "note": "Études de grammaire, de rhétorique et de droit ; guéri d'un mal aux yeux par l'huile d'une lampe de saint Martin, il part pour Tours.", "certainty": "sur"},
-      {"place": "Mayence", "lat": 50.00, "lon": 8.27, "from": 565, "to": 566,
-       "note": "Traversée des Alpes et descente du Rhin, en déclamant des vers aux évêques rencontrés.", "certainty": "probable"},
-      {"place": "Metz", "lat": 49.12, "lon": 6.18, "from": 566, "to": 566,
-       "note": "Épithalame pour les noces de Sigebert et Brunehaut : le poète de cour est lancé.", "certainty": "sur"},
-      {"place": "Paris", "lat": 48.85, "lon": 2.35, "from": 566, "to": 567,
-       "note": "Étape à la cour de Caribert et auprès de l'évêque Germain de Paris.", "certainty": "sur"},
-      {"place": "Tours", "lat": 47.39, "lon": 0.69, "from": 567, "to": 567,
-       "note": "Pèlerinage au tombeau de saint Martin, but officiel du voyage.", "certainty": "sur"},
-      {"place": "Poitiers", "lat": 46.58, "lon": 0.34, "from": 567, "to": 609,
-       "note": "Il ne repart plus : prêtre en 576, biographe de Radegonde, puis évêque de Poitiers vers 600.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "radegonde", "where": "Poitiers", "year": 567, "note": "Il devient le poète, l'ami et l'aumônier de la reine moniale, et écrit sa Vie après sa mort."}
-    ],
-    "blurb": "Le dernier poète de l'Antiquité romaine, parti en pèlerinage à Tours, s'arrête à Poitiers pour quarante ans parce qu'une reine devenue moniale l'y nourrit bien.",
-    "fun": "Deux de ses hymnes, Vexilla regis et Pange lingua, se chantent encore chaque Semaine sainte ; il a aussi écrit un poème pour remercier Radegonde d'un plat de prunes.",
-    "sources": ["https://fr.wikipedia.org/wiki/Venance_Fortunat"]
-  },
-  {
-    "id": "leandre-de-seville",
-    "name": "Léandre",
-    "full": "Saint Léandre de Séville",
-    "feast": "03-13",
-    "feast_note": "",
-    "born": 534, "died": 600,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Carthagène, Hispanie",
-    "role": "évêque",
-    "sex": "m",
-    "languages": [
-      {"code": "lat", "level": "natif"},
-      {"code": "got", "level": "notions"},
-      {"code": "grc", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Carthagène", "lat": 37.60, "lon": -0.99, "from": 534, "to": 554,
-       "note": "Aîné d'une fratrie de quatre saints (Isidore, Fulgence, Florentine) chassée de Carthagène par les troubles byzantins.", "certainty": "probable"},
-      {"place": "Séville", "lat": 37.39, "lon": -5.99, "from": 554, "to": 579,
-       "note": "Moine puis conseiller du prince Herménégilde, qu'il convertit au catholicisme contre son père arien Léovigild.", "certainty": "sur"},
-      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 579, "to": 582,
-       "note": "En mission pour Herménégilde, il se lie d'amitié avec l'apocrisiaire Grégoire, futur pape, qui lui dédiera ses Moralia.", "certainty": "sur"},
-      {"place": "Séville", "lat": 37.39, "lon": -5.99, "from": 582, "to": 589,
-       "note": "Évêque de Séville vers 584, un temps exilé par Léovigild après la défaite d'Herménégilde.", "certainty": "sur"},
-      {"place": "Tolède", "lat": 39.86, "lon": -4.03, "from": 589, "to": 589,
-       "note": "Il préside le IIIe concile de Tolède : le roi Récarède et les Wisigoths abjurent l'arianisme.", "certainty": "sur"},
-      {"place": "Séville", "lat": 37.39, "lon": -5.99, "from": 589, "to": 600,
-       "note": "Il meurt le 13 mars 600 ou 601 ; son frère Isidore lui succède.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "gregoire-le-grand", "where": "Constantinople", "year": 580, "note": "Les deux hommes se rencontrent à la cour impériale ; Grégoire lui dédie ses Moralia in Job et lui écrit encore vingt ans plus tard."}
-    ],
-    "blurb": "Il convertit le fils du roi wisigoth, provoque une guerre civile, part en exil, et finit par faire basculer toute l'Espagne au catholicisme à Tolède en 589. Bilan positif.",
-    "fun": "C'est à Constantinople, loin de chez eux, qu'il se lie avec Grégoire le Grand : le pape lui dédie ses Moralia et lui enverra un pallium, avec des nouvelles de sa goutte.",
-    "sources": ["https://fr.wikipedia.org/wiki/Léandre_de_Séville"]
-  },
-  {
-    "id": "gregoire-le-grand",
-    "name": "Grégoire",
-    "full": "Saint Grégoire le Grand, pape",
-    "feast": "09-03",
-    "feast_note": "12 mars chez les orthodoxes",
-    "born": 540, "died": 604,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Rome",
-    "role": "pape",
-    "sex": "m",
-    "languages": [
-      {"code": "lat", "level": "natif"}
-    ],
-    "stops": [
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 540, "to": 579,
-       "note": "Fils de sénateur, préfet de la Ville en 572, il transforme la maison familiale du Cælius en monastère Saint-André vers 575.", "certainty": "sur"},
-      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 579, "to": 585,
-       "note": "Apocrisiaire du pape auprès de l'empereur ; il y rencontre Léandre de Séville et n'apprend jamais le grec.", "certainty": "sur"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 585, "to": 604,
-       "note": "Retour au monastère, puis pape le 3 septembre 590 ; il envoie Augustin convertir les Angles en 596 et meurt en 604.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "leandre-de-seville", "where": "Constantinople", "year": 580, "note": "Amitié nouée à la cour impériale, entretenue ensuite par lettres."},
-      {"with": "augustin-de-cantorbery", "where": "Rome", "year": 596, "note": "Prieur de son propre monastère, Augustin est envoyé par lui vers le Kent avec quarante moines ; il revient même le voir quand la troupe prend peur en Provence."}
-    ],
-    "blurb": "Préfet de Rome devenu moine, moine devenu pape malgré lui : il a réorganisé la liturgie, nourri Rome, écrit des tonnes de lettres et envoyé une mission convertir l'Angleterre.",
-    "fun": "Six ans à Constantinople sans apprendre un mot de grec : il se plaint même de ne pas trouver d'interprètes convenables. Le chant grégorien, lui, ne porte son nom que par légende.",
-    "sources": ["https://fr.wikipedia.org/wiki/Grégoire_Ier"]
-  },
-  {
-    "id": "colomba-d-iona",
-    "name": "Colomba",
-    "full": "Saint Colomba d'Iona (Colum Cille)",
-    "feast": "06-09",
-    "feast_note": "",
-    "born": 521, "died": 597,
-    "approx": false,
-    "tradition": "commune",
-    "origin": "Gartan, Donegal, Irlande",
-    "role": "abbé missionnaire",
-    "sex": "m",
-    "languages": [
-      {"code": "sga", "level": "natif"},
-      {"code": "lat", "level": "courant"}
-    ],
-    "stops": [
-      {"place": "Gartan (Donegal)", "lat": 55.02, "lon": -7.88, "from": 521, "to": 540,
-       "note": "Né dans la famille royale des Uí Néill, il aurait pu prétendre à la royauté d'Irlande.", "certainty": "sur"},
-      {"place": "Movilla", "lat": 54.59, "lon": -5.69, "from": 540, "to": 543,
-       "note": "Formation auprès de Finnian de Movilla.", "certainty": "probable"},
-      {"place": "Clonard", "lat": 53.45, "lon": -6.99, "from": 543, "to": 546,
-       "note": "Élève de Finnian de Clonard, l'un des douze apôtres de l'Irlande.", "certainty": "sur"},
-      {"place": "Derry", "lat": 54.99, "lon": -7.32, "from": 546, "to": 561,
-       "note": "Fondation de Derry, puis de Durrow et peut-être de Kells : quinze ans de fondations irlandaises.", "certainty": "sur"},
-      {"place": "Cúl Dreimne (Drumcliff)", "lat": 54.33, "lon": -8.49, "from": 561, "to": 561,
-       "note": "Bataille sanglante que la tradition relie à une querelle de psautier copié sans permission ; un synode menace de l'excommunier.", "certainty": "sur"},
-      {"place": "Iona", "lat": 56.33, "lon": -6.42, "from": 563, "to": 565,
-       "note": "Exil pénitentiel avec douze compagnons ; il fonde le monastère qui va évangéliser l'Écosse et le nord de l'Angleterre.", "certainty": "sur"},
-      {"place": "Inverness (forteresse de Brude)", "lat": 57.48, "lon": -4.22, "from": 565, "to": 565,
-       "note": "Ambassade chez le roi des Pictes ; en chemin, il aurait repoussé un monstre dans la rivière Ness.", "certainty": "sur"},
-      {"place": "Iona", "lat": 56.33, "lon": -6.42, "from": 565, "to": 575,
-       "note": "Il reçoit Brendan, Comgall et Kenneth sur l'île voisine de Hinba et sacre Áedán roi de Dal Riada en 574.", "certainty": "sur"},
-      {"place": "Druim Cett (Limavady)", "lat": 55.05, "lon": -6.94, "from": 575, "to": 575,
-       "note": "Convention qui règle l'indépendance du Dal Riada et sauve les poètes irlandais de l'exil.", "certainty": "sur"},
-      {"place": "Iona", "lat": 56.33, "lon": -6.42, "from": 575, "to": 597,
-       "note": "Il meurt devant l'autel le 9 juin 597, après avoir béni l'île et son vieux cheval blanc.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "brendan", "where": "Hinba, près d'Iona", "year": 565, "note": "Selon Adomnán, Brendan voit une colonne de feu au-dessus de la tête de Colomba pendant la messe : tradition hagiographique."}
-    ],
-    "blurb": "Un prince irlandais qui copie un psautier sans permission, déclenche une bataille, et part s'exiler sur un caillou écossais : Iona deviendra le phare du christianisme celtique.",
-    "fun": "Adomnán raconte qu'en 565, sur les bords du Ness, il a fait fuir une bête aquatique d'un signe de croix : la première apparition connue du monstre du Loch Ness.",
-    "sources": ["https://fr.wikipedia.org/wiki/Colomba_d'Iona", "https://en.wikipedia.org/wiki/Columba"]
-  },
-  {
-    "id": "colomban",
-    "name": "Colomban",
-    "full": "Saint Colomban de Luxeuil",
-    "feast": "11-23",
-    "feast_note": "",
-    "born": 543, "died": 615,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Leinster, Irlande",
-    "role": "moine missionnaire",
-    "sex": "m",
-    "languages": [
-      {"code": "sga", "level": "natif"},
-      {"code": "lat", "level": "courant"},
-      {"code": "frk", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Myshall (Leinster)", "lat": 52.68, "lon": -6.77, "from": 543, "to": 563,
-       "note": "Jeune homme trop beau pour son propre bien, selon son biographe ; une recluse lui conseille de fuir les femmes.", "certainty": "probable"},
-      {"place": "Bangor", "lat": 54.66, "lon": -5.67, "from": 563, "to": 590,
-       "note": "Près de trente ans sous l'abbé Comgall, dans le monastère le plus austère d'Irlande.", "certainty": "sur"},
-      {"place": "Saint-Coulomb (Bretagne)", "lat": 48.68, "lon": -1.91, "from": 590, "to": 591,
-       "note": "Débarquement traditionnel avec douze compagnons, dont Gall, après une escale en Cornouailles.", "certainty": "probable"},
-      {"place": "Annegray", "lat": 47.90, "lon": 6.60, "from": 591, "to": 595,
-       "note": "Première fondation dans les Vosges, avec l'accord du roi Childebert II ; un ours lui aurait cédé sa grotte.", "certainty": "sur"},
-      {"place": "Luxeuil", "lat": 47.82, "lon": 6.38, "from": 595, "to": 610,
-       "note": "Le grand monastère, sa Règle, et des querelles sur la date de Pâques et sur les bâtards de Brunehaut.", "certainty": "sur"},
-      {"place": "Nantes", "lat": 47.22, "lon": -1.55, "from": 610, "to": 610,
-       "note": "Expulsé par Brunehaut, escorté jusqu'au port : le bateau pour l'Irlande est rejeté sur la côte par une tempête.", "certainty": "sur"},
-      {"place": "Soissons", "lat": 49.38, "lon": 3.32, "from": 611, "to": 611,
-       "note": "Accueilli par Clotaire II, l'ennemi de Brunehaut, qui l'envoie vers l'Austrasie.", "certainty": "sur"},
-      {"place": "Metz", "lat": 49.12, "lon": 6.18, "from": 611, "to": 612,
-       "note": "Chez Thibert II, qui lui ouvre la route du Rhin.", "certainty": "sur"},
-      {"place": "Bregenz", "lat": 47.50, "lon": 9.75, "from": 612, "to": 613,
-       "note": "Mission chez les Alamans du lac de Constance ; Gall, malade ou récalcitrant, reste en arrière.", "certainty": "sur"},
-      {"place": "Bobbio", "lat": 44.77, "lon": 9.39, "from": 614, "to": 615,
-       "note": "Après les Alpes et Milan, dernière fondation sous la protection du roi lombard Agilulf ; il meurt le 23 novembre 615.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "gall", "where": "Luxeuil puis Bregenz", "year": 591, "note": "Gall est son compagnon pendant plus de vingt ans ; leur séparation à Bregenz en 612 est racontée comme une brouille, suivie d'une réconciliation posthume."}
-    ],
-    "blurb": "Un Irlandais qui traverse l'Europe en semant des monastères et en engueulant des rois, des évêques et même le pape sur la date de Pâques.",
-    "fun": "Depuis la fin du XXe siècle, les motards italiens l'ont adopté comme patron : un saint qui a parcouru des milliers de kilomètres sans jamais s'arrêter longtemps, ça se respecte.",
-    "sources": ["https://fr.wikipedia.org/wiki/Colomban_de_Luxeuil"]
-  },
-  {
-    "id": "gall",
-    "name": "Gall",
-    "full": "Saint Gall",
-    "feast": "10-16",
-    "feast_note": "",
-    "born": 550, "died": 640,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Irlande (ou Vosges, selon les historiens)",
-    "role": "ermite missionnaire",
-    "sex": "m",
-    "languages": [
-      {"code": "sga", "level": "natif"},
-      {"code": "lat", "level": "courant"},
-      {"code": "goh", "level": "courant"}
-    ],
-    "stops": [
-      {"place": "Leinster (Irlande)", "lat": 52.70, "lon": -6.80, "from": 550, "to": 570,
-       "note": "Origine irlandaise selon la tradition ; des historiens récents le voient plutôt né en Alsace ou dans les Vosges.", "certainty": "legende"},
-      {"place": "Bangor", "lat": 54.66, "lon": -5.67, "from": 570, "to": 590,
-       "note": "Moine sous Comgall, où il rencontre Colomban.", "certainty": "probable"},
-      {"place": "Luxeuil", "lat": 47.82, "lon": 6.38, "from": 591, "to": 610,
-       "note": "L'un des douze compagnons de Colomban, vingt ans dans les Vosges.", "certainty": "sur"},
-      {"place": "Tuggen (lac de Zurich)", "lat": 47.20, "lon": 8.94, "from": 610, "to": 611,
-       "note": "Il brûle les temples et jette les idoles dans le lac ; la population les chasse.", "certainty": "sur"},
-      {"place": "Bregenz", "lat": 47.50, "lon": 9.75, "from": 611, "to": 612,
-       "note": "Nouvelle mission ; quand Colomban repart pour l'Italie, Gall reste, officiellement malade.", "certainty": "sur"},
-      {"place": "Vallée de la Steinach (Saint-Gall)", "lat": 47.42, "lon": 9.37, "from": 612, "to": 640,
-       "note": "Ermitage dans la forêt, avec un ours pour aide-cuisinier selon la légende ; l'abbaye de Saint-Gall en sortira un siècle plus tard. Il meurt à Arbon vers 640.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "colomban", "where": "Luxeuil puis Bregenz", "year": 591, "note": "Disciple et compagnon de route pendant vingt ans ; leur séparation à Bregenz en 612 est racontée comme une brouille."}
-    ],
-    "blurb": "Le compagnon de Colomban qui a dit stop au bord du lac de Constance : pendant que le maître filait en Italie, lui restait prêcher aux Alamans dans leur langue.",
-    "fun": "Un ours lui aurait apporté du bois pour son feu en échange d'un pain : il est sur les armoiries de la ville de Saint-Gall, et un fromage à son nom a gagné une médaille d'or en 2008.",
-    "sources": ["https://fr.wikipedia.org/wiki/Gall_(saint)", "https://en.wikipedia.org/wiki/Saint_Gall"]
-  },
-  {
-    "id": "augustin-de-cantorbery",
-    "name": "Augustin",
-    "full": "Saint Augustin de Cantorbéry",
-    "feast": "05-27",
-    "feast_note": "26 mai en Angleterre et chez les orthodoxes",
-    "born": 534, "died": 604,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Rome",
-    "role": "archevêque missionnaire",
-    "sex": "m",
-    "languages": [
-      {"code": "lat", "level": "natif"},
-      {"code": "ang", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Rome (Saint-André du Cælius)", "lat": 41.90, "lon": 12.50, "from": 534, "to": 596,
-       "note": "Prieur du monastère fondé par Grégoire, qui le choisit en 595 pour mener la mission vers les Angles.", "certainty": "sur"},
-      {"place": "Provence (Lérins)", "lat": 43.51, "lon": 7.05, "from": 596, "to": 596,
-       "note": "La troupe prend peur en route ; Augustin repart consulter le pape, qui refuse tout retour en arrière.", "certainty": "probable"},
-      {"place": "Arles", "lat": 43.68, "lon": 4.63, "from": 596, "to": 597,
-       "note": "Étape chez l'évêque Virgile, qui l'aurait sacré évêque selon Bède ; les rois francs fournissent des interprètes.", "certainty": "probable"},
-      {"place": "Île de Thanet (Kent)", "lat": 51.33, "lon": 1.38, "from": 597, "to": 597,
-       "note": "Débarquement et première entrevue en plein air avec le roi Æthelberht, méfiant envers la magie des étrangers.", "certainty": "sur"},
-      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 597, "to": 604,
-       "note": "Baptême du roi, pallium en 601, fondation de Londres et Rochester en 604 ; la rencontre avec les évêques bretons tourne au fiasco en 603.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "gregoire-le-grand", "where": "Rome", "year": 596, "note": "Son abbé devenu pape l'envoie en Angleterre et le soutient ensuite par une série de lettres et de réponses pastorales."}
-    ],
-    "blurb": "Il n'avait aucune envie d'aller chez les Angles, il a fait demi-tour une fois en Provence, et il a quand même fondé l'Église d'Angleterre.",
-    "fun": "Bède raconte qu'il est resté assis à l'arrivée des évêques bretons : vexés, ils ont refusé de le reconnaître. Un détail de protocole qui a coûté l'unité de l'Église en Grande-Bretagne.",
-    "sources": ["https://fr.wikipedia.org/wiki/Augustin_de_Cantorbéry"]
-  },
-  {
-    "id": "david-de-galles",
-    "name": "David",
-    "full": "Saint David de Ménevie (Dewi Sant)",
-    "feast": "03-01",
-    "feast_note": "",
-    "born": 500, "died": 589,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Ceredigion, pays de Galles",
-    "role": "évêque ascète",
-    "sex": "m",
-    "languages": [
-      {"code": "cym", "level": "natif"},
-      {"code": "lat", "level": "courant"}
-    ],
-    "stops": [
-      {"place": "Henfynyw (Ceredigion)", "lat": 52.21, "lon": -4.25, "from": 500, "to": 510,
-       "note": "Né, selon la légende, d'une princesse violée par un roi, au bord d'une falaise en pleine tempête.", "certainty": "legende"},
-      {"place": "Whitland (Hendy-gwyn)", "lat": 51.82, "lon": -4.62, "from": 510, "to": 530,
-       "note": "Études auprès de Paulinus (ou d'Illtud, selon les versions), avec les futurs saints bretons.", "certainty": "probable"},
-      {"place": "Glyn Rhosyn (St Davids)", "lat": 51.88, "lon": -5.27, "from": 530, "to": 550,
-       "note": "Fondation de son monastère dans un vallon reculé ; règle très dure : labour sans bœufs, eau, pain et légumes.", "certainty": "sur"},
-      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 550, "to": 551,
-       "note": "Pèlerinage où le patriarche l'aurait sacré évêque : pure légende hagiographique.", "certainty": "legende"},
-      {"place": "Llanddewi Brefi", "lat": 52.16, "lon": -3.96, "from": 560, "to": 560,
-       "note": "Synode contre le pélagianisme : le sol se soulève sous lui pour que tous l'entendent, et une colombe se pose sur son épaule.", "certainty": "legende"},
-      {"place": "Glyn Rhosyn (St Davids)", "lat": 51.88, "lon": -5.27, "from": 560, "to": 589,
-       "note": "Il meurt un mardi 1er mars, centenaire selon la tradition, en recommandant de faire les petites choses.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "samson-de-dol", "where": "Llantwit Major", "year": 510, "note": "Tradition galloise : condisciples d'Illtud avec Gildas et Paul Aurélien, selon les Vies tardives."}
-    ],
-    "blurb": "Le patron du pays de Galles buvait de l'eau, mangeait des poireaux et faisait tirer la charrue par ses moines : les Gallois lui ont pardonné et fêtent le 1er mars en portant un poireau.",
-    "fun": "Ses dernières paroles, selon Rhygyfarch : faites les petites choses. La phrase est devenue proverbe gallois, Gwnewch y pethau bychain.",
-    "sources": ["https://fr.wikipedia.org/wiki/David_de_Ménevie"]
-  },
-  {
-    "id": "isaac-le-syrien",
-    "name": "Isaac",
-    "full": "Saint Isaac le Syrien (Isaac de Ninive)",
-    "feast": "01-28",
-    "feast_note": "inscrit au Martyrologe romain en 2024",
-    "born": 640, "died": 700,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Beth Qatraye (Qatar)",
-    "role": "évêque ermite",
-    "sex": "m",
-    "languages": [
-      {"code": "syc", "level": "natif"},
-      {"code": "ara", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Beth Qatraye (Qatar)", "lat": 25.29, "lon": 51.53, "from": 640, "to": 676,
-       "note": "Moine très jeune avec son frère, dans la florissante Église syriaque du golfe Persique.", "certainty": "probable"},
-      {"place": "Ninive (Mossoul)", "lat": 36.34, "lon": 43.13, "from": 676, "to": 677,
-       "note": "Sacré évêque par le catholicos Giwargis Ier, il démissionne au bout de cinq mois.", "certainty": "sur"},
-      {"place": "Monastère de Rabban Shabur (Khuzistan)", "lat": 32.05, "lon": 48.85, "from": 677, "to": 700,
-       "note": "Ermite dans les montagnes du Khuzistan, puis au monastère où, presque aveugle, il dicte ses Discours ascétiques.", "certainty": "sur"}
-    ],
-    "met": [],
-    "blurb": "Évêque pendant cinq mois, ermite pendant trente ans : il a démissionné parce que deux plaideurs refusaient de s'entendre, et a écrit les plus belles pages syriaques sur la miséricorde.",
-    "fun": "Il priait pour les reptiles et même pour les démons, dit-on ; moine de l'Église de l'Orient, il est lu par les orthodoxes depuis le IXe siècle et a été inscrit au Martyrologe romain en 2024.",
-    "sources": ["https://fr.wikipedia.org/wiki/Isaac_de_Ninive"]
-  },
-  {
-    "id": "sophrone-de-jerusalem",
-    "name": "Sophrone",
-    "full": "Saint Sophrone de Jérusalem",
-    "feast": "03-11",
-    "feast_note": "",
-    "born": 560, "died": 638,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Damas",
-    "role": "patriarche",
-    "sex": "m",
-    "languages": [
-      {"code": "grc", "level": "natif"},
-      {"code": "syc", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Damas", "lat": 33.51, "lon": 36.29, "from": 560, "to": 578,
-       "note": "Jeune professeur de rhétorique, d'où son surnom de Sophiste.", "certainty": "sur"},
-      {"place": "Monastère de Saint-Théodose (Judée)", "lat": 31.70, "lon": 35.25, "from": 578, "to": 579,
-       "note": "Il y rencontre Jean Moschos, qui devient son père spirituel et compagnon pour quarante ans.", "certainty": "sur"},
-      {"place": "Alexandrie", "lat": 31.20, "lon": 29.92, "from": 579, "to": 584,
-       "note": "Disciple d'Étienne d'Alexandrie, puis tournée des monastères d'Égypte avec Moschos, matière du Pré spirituel.", "certainty": "sur"},
-      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 584, "to": 614,
-       "note": "Vie monastique entrecoupée de voyages en Asie Mineure pour ramener des monophysites ; nouveau séjour en Égypte vers 610.", "certainty": "probable"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 615, "to": 619,
-       "note": "Fuite devant les Perses ; Jean Moschos y meurt en 619 et Sophrone ramène son corps en Palestine.", "certainty": "sur"},
-      {"place": "Carthage", "lat": 36.85, "lon": 10.32, "from": 628, "to": 633,
-       "note": "Au monastère d'Eucratas, il devient le maître spirituel de Maxime le Confesseur, réfugié d'Orient.", "certainty": "sur"},
-      {"place": "Alexandrie", "lat": 31.20, "lon": 29.92, "from": 633, "to": 633,
-       "note": "Il supplie en vain le patriarche Cyrus de renoncer au monoénergisme, puis va plaider à Constantinople.", "certainty": "sur"},
-      {"place": "Jérusalem", "lat": 31.78, "lon": 35.23, "from": 634, "to": 638,
-       "note": "Patriarche ; il négocie la reddition de la ville au calife Omar en 637 et meurt quelques mois plus tard.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "maxime-le-confesseur", "where": "Carthage", "year": 630, "note": "Maxime le reconnaît comme son maître spirituel dans ses lettres ; ils partagent la lutte contre le monothélisme."}
-    ],
-    "blurb": "Professeur de rhétorique, moine voyageur, patriarche in extremis : c'est lui qui remet les clés de Jérusalem au calife Omar, après avoir négocié que le calife entre en pèlerin.",
-    "fun": "Il a passé des années à parcourir les monastères d'Égypte avec son ami Jean Moschos pour collecter des histoires de moines : le Pré spirituel, best-seller byzantin.",
-    "sources": ["https://fr.wikipedia.org/wiki/Sophrone_de_Jérusalem", "https://en.wikipedia.org/wiki/Sophronius_of_Jerusalem"]
-  },
-  {
-    "id": "maxime-le-confesseur",
-    "name": "Maxime",
-    "full": "Saint Maxime le Confesseur",
-    "feast": "08-13",
-    "feast_note": "21 janvier chez les orthodoxes",
-    "born": 580, "died": 662,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Constantinople (ou Palestine)",
-    "role": "moine théologien",
-    "sex": "m",
-    "languages": [
-      {"code": "grc", "level": "natif"},
-      {"code": "lat", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 580, "to": 614,
-       "note": "Haut fonctionnaire de l'empereur Héraclius selon la vie grecque ; une vie syriaque hostile le fait naître en Palestine.", "certainty": "probable"},
-      {"place": "Chrysopolis (Üsküdar)", "lat": 41.02, "lon": 29.02, "from": 614, "to": 624,
-       "note": "Moine en face de Constantinople, de l'autre côté du Bosphore.", "certainty": "sur"},
-      {"place": "Cyzique (Erdek)", "lat": 40.40, "lon": 27.80, "from": 624, "to": 626,
-       "note": "Monastère Saint-Georges, quitté devant l'avance des Perses et des Avars.", "certainty": "sur"},
-      {"place": "Carthage", "lat": 36.85, "lon": 10.32, "from": 628, "to": 645,
-       "note": "Monastère d'Eucratas sous Sophrone ; en 645, débat public où il ramène l'ex-patriarche Pyrrhus à l'orthodoxie.", "certainty": "sur"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 646, "to": 653,
-       "note": "Il inspire le concile du Latran de 649 qui condamne le monothélisme, puis est arrêté avec le pape Martin.", "certainty": "sur"},
-      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 655, "to": 655,
-       "note": "Procès pour trahison : on lui reproche d'avoir dit que l'empereur n'est pas prêtre.", "certainty": "sur"},
-      {"place": "Bizye (Vize, Thrace)", "lat": 41.57, "lon": 27.77, "from": 655, "to": 662,
-       "note": "Exil en Thrace, entrecoupé de nouvelles tentatives pour le faire plier.", "certainty": "sur"},
-      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 662, "to": 662,
-       "note": "Dernier procès : on lui arrache la langue et on lui coupe la main droite pour qu'il se taise.", "certainty": "sur"},
-      {"place": "Lazique (Tsageri, Géorgie)", "lat": 42.65, "lon": 42.77, "from": 662, "to": 662,
-       "note": "Déporté au bout du monde byzantin, il meurt le 13 août 662 ; sa tombe est dans les montagnes géorgiennes.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "sophrone-de-jerusalem", "where": "Carthage", "year": 630, "note": "Sophrone est son maître spirituel au monastère d'Eucratas ; Maxime le dit dans ses lettres."}
-    ],
-    "blurb": "Le théologien qui a tenu tête à un empereur sur la question de savoir si le Christ avait deux volontés : réponse oui, au prix de sa langue et de sa main droite.",
-    "fun": "Mutilé pour l'empêcher de parler et d'écrire, il meurt en exil en Géorgie ; dix-huit ans plus tard, le VIe concile œcuménique lui donne entièrement raison.",
-    "sources": ["https://fr.wikipedia.org/wiki/Maxime_le_Confesseur"]
-  },
-  {
-    "id": "jean-damascene",
-    "name": "Jean",
-    "full": "Saint Jean Damascène",
-    "feast": "12-04",
-    "feast_note": "",
-    "born": 675, "died": 749,
-    "approx": true,
-    "tradition": "commune",
-    "origin": "Damas",
-    "role": "moine théologien",
-    "sex": "m",
-    "languages": [
-      {"code": "ara", "level": "natif"},
-      {"code": "grc", "level": "courant"},
-      {"code": "syc", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Damas", "lat": 33.51, "lon": 36.29, "from": 675, "to": 705,
-       "note": "Fils d'un haut fonctionnaire chrétien du calife omeyyade, Mansour ibn Sarjoun, il aurait servi lui-même dans l'administration fiscale.", "certainty": "probable"},
-      {"place": "Mar Saba (désert de Judée)", "lat": 31.70, "lon": 35.33, "from": 705, "to": 749,
-       "note": "Moine puis prêtre en 735 ; il y écrit en grec, sous domination arabe, ses traités contre les iconoclastes de Byzance.", "certainty": "sur"}
-    ],
-    "met": [],
-    "blurb": "Un Arabe chrétien, fonctionnaire du calife, qui devient moine en Palestine et défend les icônes contre l'empereur de Constantinople : il écrivait depuis un territoire où l'empereur ne pouvait pas l'attraper.",
-    "fun": "Une légende raconte que le calife lui fit couper la main et que la Vierge la lui recolla : l'icône de la Mère de Dieu aux trois mains en garde le souvenir. Les historiens n'y croient pas, les iconographes s'en moquent.",
-    "sources": ["https://fr.wikipedia.org/wiki/Jean_Damascène"]
-  },
-  {
-    "id": "theodore-de-tarse",
-    "name": "Théodore",
-    "full": "Saint Théodore de Tarse, archevêque de Cantorbéry",
-    "feast": "09-19",
-    "feast_note": "",
-    "born": 602, "died": 690,
-    "approx": false,
-    "tradition": "commune",
-    "origin": "Tarse, Cilicie",
-    "role": "archevêque érudit",
-    "sex": "m",
-    "languages": [
-      {"code": "grc", "level": "natif"},
-      {"code": "syc", "level": "courant"},
-      {"code": "lat", "level": "courant"},
-      {"code": "ang", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Tarse", "lat": 36.92, "lon": 34.89, "from": 602, "to": 620,
-       "note": "Né dans la ville de saint Paul, en pleine guerre perso-byzantine.", "certainty": "sur"},
-      {"place": "Antioche", "lat": 36.20, "lon": 36.16, "from": 620, "to": 637,
-       "note": "Études dans la tradition exégétique antiochienne, peut-être aussi à Édesse ; il connaît le christianisme syriaque de l'intérieur.", "certainty": "probable"},
-      {"place": "Constantinople", "lat": 41.01, "lon": 28.98, "from": 637, "to": 649,
-       "note": "Fuite devant la conquête arabe ; études d'astronomie, de médecine et de droit dans la capitale.", "certainty": "probable"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 649, "to": 668,
-       "note": "Moine oriental à Rome, probablement au monastère ad Aquas Salvias ; le pape Vitalien le sacre archevêque le 26 mars 668.", "certainty": "sur"},
-      {"place": "Arles", "lat": 43.68, "lon": 4.63, "from": 668, "to": 668,
-       "note": "Parti de Rome le 27 mai 668 avec Adrien et Benoît Biscop, il remonte par Marseille et Arles.", "certainty": "sur"},
-      {"place": "Paris", "lat": 48.85, "lon": 2.35, "from": 668, "to": 669,
-       "note": "Hiver chez l'évêque Agilbert, ancien évêque des Saxons de l'Ouest, qui lui apprend ce qui l'attend.", "certainty": "sur"},
-      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 669, "to": 672,
-       "note": "Arrivée le 27 mai 669, à 66 ans ; il parcourt toute l'Angleterre et rétablit Wilfrid à York.", "certainty": "sur"},
-      {"place": "Hertford", "lat": 51.80, "lon": -0.08, "from": 672, "to": 672,
-       "note": "Premier concile de toute l'Église anglaise, qu'il préside.", "certainty": "sur"},
-      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 672, "to": 685,
-       "note": "Il fonde avec Adrien l'école de Cantorbéry où l'on apprend le grec, divise les diocèses et dépose Wilfrid en 678.", "certainty": "sur"},
-      {"place": "York", "lat": 53.96, "lon": -1.08, "from": 685, "to": 685,
-       "note": "Il sacre Cuthbert évêque de Lindisfarne le jour de Pâques, devant le roi Ecgfrith.", "certainty": "sur"},
-      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 685, "to": 690,
-       "note": "Réconcilié avec Wilfrid vers 686, il meurt le 19 septembre 690, à 88 ans.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "adrien-de-cantorbery", "where": "Rome puis Cantorbéry", "year": 668, "note": "Adrien refuse le siège, propose Théodore et l'accompagne ; ils dirigent ensemble l'école de Cantorbéry pendant vingt ans."},
-      {"with": "benoit-biscop", "where": "Rome puis Cantorbéry", "year": 668, "note": "Le pape Vitalien charge Biscop de guider Théodore jusqu'en Angleterre ; Biscop dirige l'abbaye Saint-Pierre de Cantorbéry en attendant Adrien."},
-      {"with": "wilfrid", "where": "York puis Londres", "year": 669, "note": "Il rétablit Wilfrid à York, le dépose en 678 en divisant son diocèse, puis se réconcilie avec lui vers 686."},
-      {"with": "cuthbert", "where": "York", "year": 685, "note": "Il sacre Cuthbert évêque de Lindisfarne le jour de Pâques 685, selon Bède."}
-    ],
-    "blurb": "Un moine grec de 66 ans, né en Turquie, envoyé par Rome diriger l'Église d'Angleterre : il y passe vingt et un ans, la réorganise de fond en comble et y enseigne le grec.",
-    "fun": "Il a dû attendre quatre mois à Rome que ses cheveux repoussent : tonsuré à l'orientale, il lui fallait la tonsure romaine avant d'être sacré.",
-    "sources": ["https://fr.wikipedia.org/wiki/Théodore_de_Tarse"]
-  },
-  {
-    "id": "adrien-de-cantorbery",
-    "name": "Adrien",
-    "full": "Saint Adrien de Cantorbéry",
-    "feast": "01-09",
-    "feast_note": "",
-    "born": 635, "died": 710,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Cyrénaïque, Afrique du Nord",
-    "role": "abbé enseignant",
-    "sex": "m",
-    "languages": [
-      {"code": "grc", "level": "natif"},
-      {"code": "lat", "level": "courant"},
-      {"code": "ang", "level": "notions"}
-    ],
-    "stops": [
-      {"place": "Cyrène (Cyrénaïque)", "lat": 32.82, "lon": 21.86, "from": 635, "to": 645,
-       "note": "Né en Afrique byzantine, d'une famille peut-être berbère ; sa famille fuit la conquête arabe.", "certainty": "probable"},
-      {"place": "Nisida (Naples)", "lat": 40.80, "lon": 14.16, "from": 645, "to": 668,
-       "note": "Très jeune abbé du monastère de Niridano, dans la baie de Naples ; il y croise l'empereur Constant II lors de son séjour italien de 663.", "certainty": "sur"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 668, "to": 668,
-       "note": "Le pape Vitalien veut en faire l'archevêque de Cantorbéry ; il refuse deux fois et suggère Théodore.", "certainty": "sur"},
-      {"place": "Meaux (Neustrie)", "lat": 48.96, "lon": 2.88, "from": 668, "to": 670,
-       "note": "Retenu par le maire du palais Ébroïn, qui le soupçonne d'être un agent de l'empereur ; il attend chez les évêques de Sens et de Meaux.", "certainty": "sur"},
-      {"place": "Cantorbéry", "lat": 51.28, "lon": 1.08, "from": 670, "to": 710,
-       "note": "Abbé de Saint-Pierre pendant quarante ans ; son école forme Aldhelm et fait de Cantorbéry un centre du grec et du latin.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "theodore-de-tarse", "where": "Rome puis Cantorbéry", "year": 668, "note": "Il refuse le siège, désigne Théodore et devient son bras droit à Cantorbéry pendant vingt ans."},
-      {"with": "benoit-biscop", "where": "Cantorbéry", "year": 670, "note": "Biscop lui remet l'abbaye Saint-Pierre qu'il gardait depuis 669, avant de repartir fonder Wearmouth."}
-    ],
-    "blurb": "Un Africain qui refuse deux fois de devenir archevêque de Cantorbéry, propose un Grec à sa place, puis l'accompagne quand même pour ouvrir l'école la plus brillante du nord de l'Europe.",
-    "fun": "Il a été retenu deux ans en Gaule par le maire du palais Ébroïn, persuadé que ce moine africain était un espion de l'empereur byzantin.",
-    "sources": ["https://fr.wikipedia.org/wiki/Adrien_de_Cantorbéry"]
-  },
-  {
-    "id": "amand",
-    "name": "Amand",
-    "full": "Saint Amand de Maastricht",
-    "feast": "02-06",
-    "feast_note": "",
-    "born": 584, "died": 679,
-    "approx": true,
-    "tradition": "catholique",
-    "origin": "Bas-Poitou",
-    "role": "évêque missionnaire",
-    "sex": "m",
-    "languages": [
-      {"code": "lat", "level": "natif"},
-      {"code": "frk", "level": "courant"}
-    ],
-    "stops": [
-      {"place": "Saint-Amand-sur-Sèvre (Bas-Poitou)", "lat": 46.87, "lon": -0.76, "from": 584, "to": 604,
-       "note": "Fils d'un noble du pays d'Herbauges qui menace de le déshériter s'il se fait moine.", "certainty": "probable"},
-      {"place": "Île d'Yeu", "lat": 46.72, "lon": -2.35, "from": 604, "to": 608,
-       "note": "Premier monastère ; il y aurait chassé un serpent dans un trou, d'où son attribut.", "certainty": "probable"},
-      {"place": "Tours", "lat": 47.39, "lon": 0.69, "from": 608, "to": 609,
-       "note": "Tonsuré au tombeau de saint Martin, modèle de tous les missionnaires gaulois.", "certainty": "probable"},
-      {"place": "Bourges", "lat": 47.08, "lon": 2.40, "from": 609, "to": 624,
-       "note": "Quinze ans reclus dans une cellule contre la cathédrale, au pain et à l'eau, sous l'évêque Austregisile.", "certainty": "sur"},
-      {"place": "Rome", "lat": 41.90, "lon": 12.50, "from": 625, "to": 626,
-       "note": "Pèlerinage ; saint Pierre lui serait apparu pour l'envoyer évangéliser la Gaule du Nord.", "certainty": "probable"},
-      {"place": "Gand", "lat": 51.05, "lon": 3.72, "from": 630, "to": 638,
-       "note": "Mission chez les païens de l'Escaut à la demande de Clotaire II et Dagobert ; il ressuscite un pendu et fonde Saint-Pierre et Saint-Bavon en 633.", "certainty": "sur"},
-      {"place": "Vallée du Danube (Slaves)", "lat": 48.15, "lon": 17.11, "from": 638, "to": 639,
-       "note": "Mission infructueuse chez les Slaves, quelque part en Pannonie ou en Carinthie : il rentre sans martyre et sans converti.", "certainty": "probable"},
-      {"place": "Pays basque (Gascogne)", "lat": 43.71, "lon": -1.05, "from": 640, "to": 641,
-       "note": "Prédication aux Basques, sans grand succès : un bouffon qui se moquait de lui serait mort possédé.", "certainty": "probable"},
-      {"place": "Maastricht", "lat": 50.85, "lon": 5.69, "from": 647, "to": 650,
-       "note": "Évêque trois ans, mal accueilli par le clergé local ; il démissionne malgré le pape Martin Ier, au profit de Remacle.", "certainty": "sur"},
-      {"place": "Elnone (Saint-Amand-les-Eaux)", "lat": 50.45, "lon": 3.43, "from": 650, "to": 679,
-       "note": "Son abbaye de prédilection, sur des terres de Dagobert ; il rédige son testament en 675 et meurt vers 679, nonagénaire.", "certainty": "sur"}
-    ],
-    "met": [
-      {"with": "eloi", "where": "cour de Dagobert Ier", "year": 630, "note": "Tous deux conseillers et amis du roi ; Amand baptise le petit Sigebert III en 630 ou 631 et Éloi, alors trésorier royal, appartient au même cercle. Rencontre très probable, non datée précisément."}
-    ],
-    "blurb": "Il a réprimandé le roi Dagobert sur ses mœurs, s'est fait exiler, puis rappeler pour baptiser le prince héritier : le missionnaire des Flamands avait du caractère.",
-    "fun": "Patron des brasseurs, des cabaretiers et des marchands de vin, à cause de sa réputation d'hospitalité : l'évangélisateur de la Belgique veille sur ses bières.",
-    "sources": ["https://fr.wikipedia.org/wiki/Amand_de_Maastricht", "https://en.wikipedia.org/wiki/Amandus"]
-  }
+ {
+  "id": "genevieve",
+  "name": "Geneviève",
+  "name_en": "Genevieve",
+  "full": "Sainte Geneviève de Paris",
+  "full_en": "Saint Genevieve of Paris",
+  "feast": "01-03",
+  "feast_note": "",
+  "born": 420,
+  "died": 512,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Nanterre, Gaule",
+  "origin_en": "Nanterre, Gaul",
+  "role": "vierge consacrée",
+  "role_en": "consecrated virgin",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   },
+   {
+    "code": "frk",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Nanterre",
+    "place_en": "Nanterre",
+    "lat": 48.89,
+    "lon": 2.21,
+    "from": 420,
+    "to": 440,
+    "note": "Enfance ; Germain d'Auxerre, de passage en 429, l'aurait remarquée et vouée à Dieu.",
+    "note_en": "Childhood; Germanus of Auxerre, passing through in 429, is said to have singled her out and dedicated her to God.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Paris (île de la Cité)",
+    "place_en": "Paris (Île de la Cité)",
+    "lat": 48.85,
+    "lon": 2.35,
+    "from": 440,
+    "to": 512,
+    "note": "Installée chez sa marraine après la mort de ses parents ; elle y tient tête à Attila en 451, ravitaille la ville assiégée par Childéric vers 465 et conseille Clovis.",
+    "note_en": "She moved in with her godmother after her parents died; from here she stood up to Attila in 451, ran supplies into the city besieged by Childeric around 465 and advised Clovis.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "germain-d-auxerre",
+    "where": "Nanterre",
+    "where_en": "Nanterre",
+    "year": 429,
+    "note": "Selon sa Vita, Germain et Loup de Troyes s'arrêtent à Nanterre en route vers la Bretagne et distinguent la fillette dans la foule.",
+    "note_en": "According to her Vita, Germanus and Lupus of Troyes stopped at Nanterre on their way to Britain and picked the little girl out of the crowd."
+   },
+   {
+    "with": "clotilde",
+    "where": "Paris",
+    "where_en": "Paris",
+    "year": 508,
+    "note": "Rencontre probable mais non décrite par les sources : Clotilde s'installe à Paris avec Clovis et fait bâtir la basilique des Saints-Apôtres où Geneviève sera enterrée.",
+    "note_en": "A likely meeting, though no source describes it: Clotilde settled in Paris with Clovis and built the basilica of the Holy Apostles where Genevieve would be buried."
+   }
+  ],
+  "blurb": "Quand Attila approche, les Parisiens veulent fuir et Geneviève leur dit de rester : Attila passe au large, et Paris se trouve une patronne pour quinze siècles.",
+  "blurb_en": "When Attila drew near, the Parisians wanted to flee and Genevieve told them to stay put: Attila gave the city a wide berth, and Paris found itself a patron saint for the next fifteen centuries.",
+  "fun": "Siméon le Stylite, perché sur sa colonne en Syrie, aurait demandé de ses nouvelles à des marchands parisiens et lui aurait envoyé ses salutations : une tradition, mais quelle correspondance.",
+  "fun_en": "Simeon Stylites, perched on his pillar in Syria, is said to have asked Parisian merchants for news of her and sent her his greetings: a tradition only, but what a correspondence.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Geneviève_de_Paris"
+  ]
+ },
+ {
+  "id": "simeon-le-stylite",
+  "name": "Siméon",
+  "name_en": "Simeon",
+  "full": "Saint Siméon le Stylite l'Ancien",
+  "full_en": "Saint Simeon Stylites the Elder",
+  "feast": "07-27",
+  "feast_note": "1er septembre chez les orthodoxes",
+  "feast_note_en": "1 September in the Orthodox calendar",
+  "born": 389,
+  "died": 459,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Sisan, Syrie du Nord",
+  "origin_en": "Sisan, northern Syria",
+  "role": "ermite stylite",
+  "role_en": "stylite hermit",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "syc",
+    "level": "natif"
+   },
+   {
+    "code": "grc",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Sisan (Samandağ)",
+    "place_en": "Sisan (Samandağ)",
+    "lat": 36.08,
+    "lon": 35.98,
+    "from": 389,
+    "to": 403,
+    "note": "Enfance de berger ; à treize ans, la lecture des Béatitudes le bouleverse.",
+    "note_en": "A shepherd's childhood; at thirteen, hearing the Beatitudes read turned his world upside down.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Monastère de Téléda",
+    "place_en": "Monastery of Teleda",
+    "lat": 36.25,
+    "lon": 36.85,
+    "from": 403,
+    "to": 413,
+    "note": "Dix ans de vie monastique, avec des mortifications si excessives qu'on finit par le renvoyer.",
+    "note_en": "Ten years of monastic life, with mortifications so extreme that he was eventually sent away.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Télanissos (Deir Semaan)",
+    "place_en": "Telanissos (Deir Semaan)",
+    "lat": 36.33,
+    "lon": 36.84,
+    "from": 413,
+    "to": 459,
+    "note": "D'abord enfermé dans une cabane puis sur un promontoire, il grimpe vers 423 sur une colonne de trois mètres qui finira à dix-huit. Il n'en descend plus jamais.",
+    "note_en": "First shut up in a hut, then on a rocky ledge, around 423 he climbed onto a pillar three metres high that would end up at eighteen. He never came down again.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "daniel-le-stylite",
+    "where": "Télanissos",
+    "where_en": "Telanissos",
+    "year": 445,
+    "note": "Daniel grimpe à l'échelle pour recevoir sa bénédiction, puis passe deux semaines à sa mandra en 447 ; Siméon lui transmettra sa cuculle.",
+    "note_en": "Daniel climbs the ladder to receive his blessing, then spends two weeks at his mandra in 447; Simeon would leave him his cowl."
+   }
+  ],
+  "blurb": "Trente-sept ans debout sur une colonne, sans jamais descendre, pour avoir la paix : les pèlerins sont venus par milliers quand même.",
+  "blurb_en": "Thirty-seven years standing on a pillar, never once coming down, just to be left in peace: the pilgrims came in their thousands anyway.",
+  "fun": "Un visiteur a compté plus de 1 200 prosternations d'affilée avant d'abandonner le décompte ; Buñuel en a tiré un film, Simon du désert.",
+  "fun_en": "One visitor counted more than 1,200 prostrations in a row before giving up the tally; Buñuel turned him into a film, Simon of the Desert.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Siméon_le_Stylite"
+  ]
+ },
+ {
+  "id": "daniel-le-stylite",
+  "name": "Daniel",
+  "name_en": "Daniel",
+  "full": "Saint Daniel le Stylite",
+  "full_en": "Saint Daniel the Stylite",
+  "feast": "12-11",
+  "feast_note": "",
+  "born": 409,
+  "died": 493,
+  "approx": false,
+  "tradition": "commune",
+  "origin": "Mératha, près de Samosate",
+  "origin_en": "Maratha, near Samosata",
+  "role": "ermite stylite",
+  "role_en": "stylite hermit",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "syc",
+    "level": "natif"
+   },
+   {
+    "code": "grc",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Mératha (Samosate)",
+    "place_en": "Maratha (Samosata)",
+    "lat": 37.58,
+    "lon": 38.48,
+    "from": 409,
+    "to": 445,
+    "note": "Entré au monastère à cinq ans, il y passe presque quarante ans et devient l'élève préféré du supérieur.",
+    "note_en": "He entered the monastery at five, spent nearly forty years there and became the abbot's favourite pupil.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Télanissos (Deir Semaan)",
+    "place_en": "Telanissos (Deir Semaan)",
+    "lat": 36.33,
+    "lon": 36.84,
+    "from": 445,
+    "to": 447,
+    "note": "Visite à Siméon sur sa colonne, puis deux semaines à sa mandra avant de partir pour la Palestine.",
+    "note_en": "A visit to Simeon on his pillar, then two weeks at his mandra before setting out for Palestine.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Constantinople",
+    "place_en": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 447,
+    "to": 451,
+    "note": "Détourné de Jérusalem par deux visions de Siméon, il passe cinq ans dans la capitale.",
+    "note_en": "Turned away from Jerusalem by two visions of Simeon, he spent five years in the capital.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Anaplous (Bosphore)",
+    "place_en": "Anaplous (Bosphorus)",
+    "lat": 41.08,
+    "lon": 29.06,
+    "from": 451,
+    "to": 493,
+    "note": "Reclus dans un temple hanté, puis stylite à partir de 460 ; l'empereur Léon Ier lui fait bâtir une colonne double. Il y meurt à 84 ans.",
+    "note_en": "A recluse in a haunted temple, then a stylite from 460; Emperor Leo I had a double pillar built for him. He died on it at 84.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "simeon-le-stylite",
+    "where": "Télanissos",
+    "where_en": "Telanissos",
+    "year": 445,
+    "note": "Il monte à l'échelle de la colonne pour recevoir la bénédiction du maître, dont il reprendra le mode de vie après sa mort.",
+    "note_en": "He climbs the ladder to the pillar to receive the master's blessing, and would take up his way of life after his death."
+   }
+  ],
+  "blurb": "Il voulait aller à Jérusalem, Siméon le Stylite lui apparaît en rêve et le renvoie à Constantinople : il y passe trente-trois ans sur une colonne au bord du Bosphore.",
+  "blurb_en": "He wanted to go to Jerusalem; Simeon Stylites appeared to him in a dream and sent him back to Constantinople, where he spent thirty-three years on a pillar beside the Bosphorus.",
+  "fun": "En 475, il descend de sa colonne pour mener une procession qui fait plier l'usurpateur Basiliscus : un ermite qui fait et défait les empereurs.",
+  "fun_en": "In 475 he came down from his pillar to lead a procession that brought the usurper Basiliscus to heel: a hermit who made and unmade emperors.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Daniel_le_Stylite"
+  ]
+ },
+ {
+  "id": "leon-le-grand",
+  "name": "Léon",
+  "name_en": "Leo",
+  "full": "Saint Léon le Grand, pape",
+  "full_en": "Saint Leo the Great, Pope",
+  "feast": "11-10",
+  "feast_note": "18 février chez les orthodoxes",
+  "feast_note_en": "18 February in the Orthodox calendar",
+  "born": 391,
+  "died": 461,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Rome (ou Toscane)",
+  "origin_en": "Rome (or Tuscany)",
+  "role": "pape",
+  "role_en": "pope",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 391,
+    "to": 440,
+    "note": "Diacre influent sous Célestin et Sixte III, déjà consulté par Jean Cassien et Cyrille d'Alexandrie.",
+    "note_en": "An influential deacon under Celestine and Sixtus III, already consulted by John Cassian and Cyril of Alexandria.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Gaule (Arles ?)",
+    "place_en": "Gaul (Arles?)",
+    "lat": 43.68,
+    "lon": 4.63,
+    "from": 440,
+    "to": 440,
+    "note": "Envoyé arbitrer un conflit entre Aetius et le préfet Albinus ; il apprend sur place qu'on l'a élu pape.",
+    "note_en": "Sent to settle a dispute between Aetius and the prefect Albinus; while there, he learned he had been elected pope.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 440,
+    "to": 452,
+    "note": "Pape dès le 29 septembre 440 ; en 449 il rédige le Tome à Flavien qui triomphera à Chalcédoine.",
+    "note_en": "Pope from 29 September 440; in 449 he wrote the Tome to Flavian that would carry the day at Chalcedon.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Rives du Mincio (Mantoue)",
+    "place_en": "Banks of the Mincio (Mantua)",
+    "lat": 45.05,
+    "lon": 10.92,
+    "from": 452,
+    "to": 452,
+    "note": "Face à face avec Attila, qui renonce à marcher sur Rome. L'épidémie et les troupes de Marcien ont sans doute aidé.",
+    "note_en": "Face to face with Attila, who gave up his march on Rome. Plague and Marcian's troops no doubt helped.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 452,
+    "to": 461,
+    "note": "En 455 il négocie avec Genséric : Rome est pillée mais ni brûlée ni massacrée. Enterré sous le portique de Saint-Pierre.",
+    "note_en": "In 455 he negotiated with Gaiseric: Rome was plundered but neither burned nor put to the sword. Buried under the portico of St Peter's.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [],
+  "blurb": "Le pape qui est allé au-devant d'Attila pour lui demander poliment de faire demi-tour. Attila a fait demi-tour.",
+  "blurb_en": "The pope who went out to meet Attila and politely asked him to turn round. Attila turned round.",
+  "fun": "À Chalcédoine, à la lecture de son Tome, les évêques se seraient écriés : Pierre a parlé par la bouche de Léon. Il n'a pourtant jamais su le grec, dit-on.",
+  "fun_en": "At Chalcedon, when his Tome was read out, the bishops are said to have cried: Peter has spoken through Leo. Yet he never knew Greek, they say.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Léon_Ier_(pape)"
+  ]
+ },
+ {
+  "id": "severin-de-norique",
+  "name": "Séverin",
+  "name_en": "Severinus",
+  "full": "Saint Séverin de Norique",
+  "full_en": "Saint Severinus of Noricum",
+  "feast": "01-08",
+  "feast_note": "",
+  "born": 410,
+  "died": 482,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "inconnue, peut-être Italie du Sud ou Orient",
+  "origin_en": "unknown, perhaps southern Italy or the East",
+  "role": "moine protecteur",
+  "role_en": "monk and protector",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   },
+   {
+    "code": "got",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Italie du Sud (Naples ?)",
+    "place_en": "Southern Italy (Naples?)",
+    "lat": 40.85,
+    "lon": 14.27,
+    "from": 410,
+    "to": 453,
+    "note": "Origines presque inconnues : un Romain cultivé qui aurait séjourné en Orient avant d'apparaître sur le Danube.",
+    "note_en": "Origins almost unknown: a cultivated Roman said to have spent time in the East before appearing on the Danube.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Carnuntum (Pannonie)",
+    "place_en": "Carnuntum (Pannonia)",
+    "lat": 48.11,
+    "lon": 16.86,
+    "from": 453,
+    "to": 454,
+    "note": "Il surgit sur le limes juste après la mort d'Attila, quand l'Empire s'effondre sur le Danube.",
+    "note_en": "He turned up on the frontier just after Attila's death, as the Empire was collapsing along the Danube.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Favianis (Mautern)",
+    "place_en": "Favianis (Mautern)",
+    "lat": 48.4,
+    "lon": 15.57,
+    "from": 454,
+    "to": 469,
+    "note": "Il y fonde son monastère et organise le ravitaillement des villes romaines abandonnées, sous la protection des Ruges.",
+    "note_en": "He founded his monastery here and organised food supplies for the abandoned Roman towns, under the protection of the Rugii.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Passau (Batavis)",
+    "place_en": "Passau (Batavis)",
+    "lat": 48.57,
+    "lon": 13.46,
+    "from": 469,
+    "to": 470,
+    "note": "Il obtient du roi alaman Gibuld la libération de prisonniers romains.",
+    "note_en": "He obtained the release of Roman prisoners from the Alemannic king Gibuld.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Favianis (Mautern)",
+    "place_en": "Favianis (Mautern)",
+    "lat": 48.4,
+    "lon": 15.57,
+    "from": 470,
+    "to": 482,
+    "note": "Il meurt dans son monastère le 8 janvier 482 ; six ans plus tard, les derniers Romains emportent son corps vers Naples.",
+    "note_en": "He died in his monastery on 8 January 482; six years later the last Romans carried his body away to Naples.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [],
+  "blurb": "L'homme qui tenait la frontière du Danube pendant que l'Empire romain d'Occident s'évaporait : pas une légion, juste un moine et des convois de vivres.",
+  "blurb_en": "The man who held the Danube frontier while the Western Roman Empire evaporated: not a legion, just a monk and convoys of food.",
+  "fun": "Selon son biographe Eugippius, il aurait prédit sa fortune au jeune Odoacre, celui-là même qui déposera le dernier empereur d'Occident en 476.",
+  "fun_en": "According to his biographer Eugippius, he foretold a great future for the young Odoacer, the very man who would depose the last Western emperor in 476.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Séverin_de_Norique"
+  ]
+ },
+ {
+  "id": "benoit-de-nursie",
+  "name": "Benoît",
+  "name_en": "Benedict",
+  "full": "Saint Benoît de Nursie",
+  "full_en": "Saint Benedict of Nursia",
+  "feast": "07-11",
+  "feast_note": "21 mars, jour de sa mort, chez les orthodoxes et dans l'ancien calendrier",
+  "feast_note_en": "21 March, the day of his death, in the Orthodox calendar and in the old Roman calendar",
+  "born": 480,
+  "died": 547,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Nursie, Ombrie",
+  "origin_en": "Nursia, Umbria",
+  "role": "abbé législateur",
+  "role_en": "abbot and lawgiver",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Nursie (Norcia)",
+    "place_en": "Nursia (Norcia)",
+    "lat": 42.79,
+    "lon": 13.09,
+    "from": 480,
+    "to": 495,
+    "note": "Enfance dans une famille de notables ; sa sœur jumelle Scholastique, selon la tradition.",
+    "note_en": "Childhood in a family of local notables; his twin sister Scholastica, according to tradition.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 495,
+    "to": 500,
+    "note": "Études avec sa nourrice ; dégoûté par la ville, il s'enfuit.",
+    "note_en": "Studies, with his nurse in tow; disgusted by the city, he ran away.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Enfide (Affile)",
+    "place_en": "Enfide (Affile)",
+    "lat": 41.88,
+    "lon": 13.1,
+    "from": 500,
+    "to": 500,
+    "note": "Première étape et premier miracle : un tamis cassé réparé par la prière.",
+    "note_en": "First stop and first miracle: a broken sieve mended by prayer.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Subiaco",
+    "place_en": "Subiaco",
+    "lat": 41.93,
+    "lon": 13.1,
+    "from": 500,
+    "to": 529,
+    "note": "Trois ans d'ermitage dans une grotte, un bref passage calamiteux comme abbé à Vicovaro, puis douze petits monastères au bord du lac.",
+    "note_en": "Three years as a hermit in a cave, a brief and disastrous spell as abbot at Vicovaro, then twelve small monasteries beside the lake.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Mont-Cassin",
+    "place_en": "Monte Cassino",
+    "lat": 41.49,
+    "lon": 13.81,
+    "from": 529,
+    "to": 547,
+    "note": "Il rase le temple d'Apollon, fonde l'abbaye et y écrit sa Règle. Il meurt debout, soutenu par ses moines.",
+    "note_en": "He razed the temple of Apollo, founded the abbey and wrote his Rule there. He died standing, held up by his monks.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [],
+  "blurb": "Il voulait juste qu'on lui fiche la paix dans sa grotte ; il a fini par écrire la Règle qui organise la vie de milliers de monastères depuis quinze siècles.",
+  "blurb_en": "All he wanted was to be left alone in his cave; he ended up writing the Rule that has organised life in thousands of monasteries for fifteen centuries.",
+  "fun": "Ses moines de Vicovaro ont tenté de l'empoisonner : il bénit la coupe, elle éclate. Il rentre dans sa grotte en expliquant qu'il les avait prévenus.",
+  "fun_en": "His monks at Vicovaro tried to poison him: he blessed the cup and it shattered. He went back to his cave, pointing out that he had warned them.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Benoît_de_Nursie"
+  ]
+ },
+ {
+  "id": "clotilde",
+  "name": "Clotilde",
+  "name_en": "Clotilde",
+  "full": "Sainte Clotilde, reine des Francs",
+  "full_en": "Saint Clotilde, Queen of the Franks",
+  "feast": "06-04",
+  "feast_note": "3 juin chez les orthodoxes",
+  "feast_note_en": "3 June in the Orthodox calendar",
+  "born": 475,
+  "died": 545,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "royaume burgonde (Lyon ou Genève)",
+  "origin_en": "Burgundian kingdom (Lyon or Geneva)",
+  "role": "reine",
+  "role_en": "queen",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "got",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "frk",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Lyon",
+    "place_en": "Lyon",
+    "lat": 45.76,
+    "lon": 4.84,
+    "from": 475,
+    "to": 490,
+    "note": "Fille du roi burgonde Chilpéric II ; le lieu exact de naissance est débattu (Lyon, Vienne ou Genève).",
+    "note_en": "Daughter of the Burgundian king Chilperic II; her exact birthplace is disputed (Lyon, Vienne or Geneva).",
+    "certainty": "probable"
+   },
+   {
+    "place": "Genève",
+    "place_en": "Geneva",
+    "lat": 46.2,
+    "lon": 6.15,
+    "from": 490,
+    "to": 493,
+    "note": "Élevée à la cour de son oncle Gondebaud après le meurtre de ses parents, selon Grégoire de Tours.",
+    "note_en": "Raised at the court of her uncle Gundobad after her parents were murdered, according to Gregory of Tours.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Soissons",
+    "place_en": "Soissons",
+    "lat": 49.38,
+    "lon": 3.32,
+    "from": 493,
+    "to": 496,
+    "note": "Mariage avec Clovis ; elle fait baptiser ses fils malgré lui.",
+    "note_en": "Marriage to Clovis; she had her sons baptised in spite of him.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Reims",
+    "place_en": "Reims",
+    "lat": 49.25,
+    "lon": 4.03,
+    "from": 496,
+    "to": 496,
+    "note": "Baptême de Clovis par Remi, une nuit de Noël, après la promesse de Tolbiac.",
+    "note_en": "Baptism of Clovis by Remigius, one Christmas night, after the vow made at Tolbiac.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Paris",
+    "place_en": "Paris",
+    "lat": 48.85,
+    "lon": 2.35,
+    "from": 508,
+    "to": 524,
+    "note": "Capitale de Clovis ; elle fait bâtir la basilique des Saints-Apôtres sur la montagne qui portera le nom de Geneviève.",
+    "note_en": "Clovis's capital; she built the basilica of the Holy Apostles on the hill that would take Genevieve's name.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Tours",
+    "place_en": "Tours",
+    "lat": 47.39,
+    "lon": 0.69,
+    "from": 524,
+    "to": 545,
+    "note": "Retirée près du tombeau de saint Martin après la mort de son fils Clodomir ; elle sauve son petit-fils Clodoald, le futur saint Cloud.",
+    "note_en": "Withdrew to the tomb of Saint Martin after the death of her son Chlodomer; she saved her grandson Clodoald, the future Saint Cloud.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "genevieve",
+    "where": "Paris",
+    "where_en": "Paris",
+    "year": 508,
+    "note": "Rencontre probable : les deux femmes vivent à Paris sous Clovis, et Clotilde fait bâtir la basilique où Geneviève est inhumée à côté du roi.",
+    "note_en": "A likely meeting: both women lived in Paris under Clovis, and Clotilde built the basilica where Genevieve was buried beside the king."
+   }
+  ],
+  "blurb": "Princesse burgonde mariée à un roi païen, elle le travaille au corps pendant trois ans : Clovis finit par se faire baptiser, et la France avec lui.",
+  "blurb_en": "A Burgundian princess married to a pagan king, she worked on him for three years: Clovis finally agreed to be baptised, and France along with him.",
+  "fun": "Elle a fini sa vie à Tours en pleurant ses fils meurtriers et ses petits-fils assassinés : la grand-mère de la monarchie française n'a pas eu la famille la plus reposante.",
+  "fun_en": "She ended her days in Tours mourning her murderous sons and her murdered grandsons: the grandmother of the French monarchy did not have the most restful of families.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Clotilde_(femme_de_Clovis)"
+  ]
+ },
+ {
+  "id": "brendan",
+  "name": "Brendan",
+  "name_en": "Brendan",
+  "full": "Saint Brendan de Clonfert, le Navigateur",
+  "full_en": "Saint Brendan of Clonfert, the Navigator",
+  "feast": "05-16",
+  "feast_note": "",
+  "born": 484,
+  "died": 577,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Kerry, Irlande",
+  "origin_en": "Kerry, Ireland",
+  "role": "abbé navigateur",
+  "role_en": "seafaring abbot",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "sga",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "cym",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Fenit (Kerry)",
+    "place_en": "Fenit (Kerry)",
+    "lat": 52.27,
+    "lon": -9.86,
+    "from": 484,
+    "to": 485,
+    "note": "Né sur la côte du Kerry, face à l'Atlantique : la suite était écrite.",
+    "note_en": "Born on the Kerry coast, facing the Atlantic: the rest was written in advance.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Killeedy",
+    "place_en": "Killeedy",
+    "lat": 52.42,
+    "lon": -8.98,
+    "from": 485,
+    "to": 490,
+    "note": "Cinq ans élevé par sainte Ita, puis formé par l'évêque Erc qui l'ordonne.",
+    "note_en": "Five years raised by Saint Ita, then trained by Bishop Erc, who ordained him.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Ardfert",
+    "place_en": "Ardfert",
+    "lat": 52.33,
+    "lon": -9.78,
+    "from": 490,
+    "to": 530,
+    "note": "Sa première fondation, et le port d'où partent ses voyages.",
+    "note_en": "His first foundation, and the harbour his voyages set out from.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Hébrides",
+    "place_en": "Hebrides",
+    "lat": 57.2,
+    "lon": -7.3,
+    "from": 530,
+    "to": 531,
+    "note": "Première escale plausible de la Navigatio : les îles des moutons et des oiseaux ressemblent fort aux Hébrides.",
+    "note_en": "A plausible first port of call in the Navigatio: the islands of sheep and of birds look very much like the Hebrides.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Îles Féroé",
+    "place_en": "Faroe Islands",
+    "lat": 62.01,
+    "lon": -6.77,
+    "from": 531,
+    "to": 532,
+    "note": "Les commentateurs voient dans l'île des brebis géantes les Féroé, dont le nom signifie justement îles aux moutons.",
+    "note_en": "Commentators see the Faroes in the island of giant sheep; the name does, after all, mean sheep islands.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Islande",
+    "place_en": "Iceland",
+    "lat": 64.13,
+    "lon": -21.9,
+    "from": 532,
+    "to": 533,
+    "note": "L'île des forgerons qui jettent des scories en feu : un volcan islandais, disent les lecteurs modernes. On s'arrête là, prudemment.",
+    "note_en": "The island of smiths hurling burning slag: an Icelandic volcano, say modern readers. We stop there, prudently.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Ardfert",
+    "place_en": "Ardfert",
+    "lat": 52.33,
+    "lon": -9.78,
+    "from": 537,
+    "to": 557,
+    "note": "Retour au pays ; les pèlerins affluent pour écouter le récit.",
+    "note_en": "Home again; pilgrims flocked to hear the tale.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Clonfert",
+    "place_en": "Clonfert",
+    "lat": 53.24,
+    "lon": -8.06,
+    "from": 557,
+    "to": 565,
+    "note": "Fondation de son grand monastère, vers 557 ou 561.",
+    "note_en": "Foundation of his great monastery, around 557 or 561.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Iona (Hinba)",
+    "place_en": "Iona (Hinba)",
+    "lat": 56.33,
+    "lon": -6.42,
+    "from": 565,
+    "to": 565,
+    "note": "Visite à Colomba avec Comgall et Kenneth, selon Adomnán, sur l'île voisine de Hinba.",
+    "note_en": "A visit to Columba with Comgall and Kenneth, according to Adomnán, on the neighbouring island of Hinba.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Aleth (Saint-Malo)",
+    "place_en": "Aleth (Saint-Malo)",
+    "lat": 48.65,
+    "lon": -2.03,
+    "from": 566,
+    "to": 570,
+    "note": "Fondation d'un couvent à l'estuaire de la Rance avec son disciple Malo, selon la tradition bretonne.",
+    "note_en": "Foundation of a monastery at the mouth of the Rance with his disciple Malo, according to Breton tradition.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Clonfert",
+    "place_en": "Clonfert",
+    "lat": 53.24,
+    "lon": -8.06,
+    "from": 570,
+    "to": 576,
+    "note": "Vieillesse à la tête de sa communauté.",
+    "note_en": "Old age at the head of his community.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Annaghdown",
+    "place_en": "Annaghdown",
+    "lat": 53.39,
+    "lon": -9.07,
+    "from": 576,
+    "to": 577,
+    "note": "Il meurt chez sa sœur Briga, qui dirige le couvent ; son corps est ramené à Clonfert.",
+    "note_en": "He died at the house of his sister Briga, who ran the convent there; his body was brought back to Clonfert.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "colomba-d-iona",
+    "where": "Hinba, près d'Iona",
+    "where_en": "Hinba, near Iona",
+    "year": 565,
+    "note": "Adomnán raconte que Brendan, Comgall, Kenneth et Cormac rendent visite à Colomba, qui célèbre la messe devant eux : tradition hagiographique.",
+    "note_en": "Adomnán tells how Brendan, Comgall, Kenneth and Cormac visit Columba, who celebrates Mass before them: hagiographical tradition."
+   }
+  ],
+  "blurb": "Il aurait traversé l'Atlantique en bateau de cuir pour trouver le paradis terrestre, et serait rentré raconter ça. Les Irlandais y croient encore un peu, et pas seulement eux.",
+  "blurb_en": "He is said to have crossed the Atlantic in a leather boat in search of the earthly paradise, and to have come home to tell the tale. The Irish still half believe it, and they are not the only ones.",
+  "fun": "Dans la Navigatio, il célèbre la messe de Pâques sur une île qui se met à bouger : c'était le dos d'une baleine. En 1976, Tim Severin a refait le voyage en currach jusqu'à Terre-Neuve pour prouver que c'était possible.",
+  "fun_en": "In the Navigatio he celebrates Easter Mass on an island that starts to move: it was the back of a whale. In 1976 Tim Severin repeated the voyage in a currach as far as Newfoundland to prove it could be done.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Brendan_de_Clonfert"
+  ]
+ },
+ {
+  "id": "samson-de-dol",
+  "name": "Samson",
+  "name_en": "Samson",
+  "full": "Saint Samson de Dol",
+  "full_en": "Saint Samson of Dol",
+  "feast": "07-28",
+  "feast_note": "",
+  "born": 495,
+  "died": 565,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Dyfed, pays de Galles",
+  "origin_en": "Dyfed, Wales",
+  "role": "évêque fondateur",
+  "role_en": "founding bishop",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "cym",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "sga",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Dyfed (pays de Galles)",
+    "place_en": "Dyfed (Wales)",
+    "lat": 51.8,
+    "lon": -4.7,
+    "from": 495,
+    "to": 500,
+    "note": "Fils d'Amon de Dyfed et d'Anna de Gwent, promis à Dieu dès avant sa naissance.",
+    "note_en": "Son of Amon of Dyfed and Anna of Gwent, promised to God before he was even born.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Llantwit Major",
+    "place_en": "Llantwit Major",
+    "lat": 51.41,
+    "lon": -3.49,
+    "from": 500,
+    "to": 521,
+    "note": "Élève d'Illtud dans la plus fameuse école du pays de Galles, aux côtés de Paul Aurélien et peut-être de Gildas et David.",
+    "note_en": "A pupil of Illtud at the most famous school in Wales, alongside Paul Aurelian and perhaps Gildas and David.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Île de Caldey",
+    "place_en": "Caldey Island",
+    "lat": 51.64,
+    "lon": -4.69,
+    "from": 521,
+    "to": 525,
+    "note": "Abbé après la mort de Piron, tombé dans un puits en état d'ivresse.",
+    "note_en": "Abbot after the death of Piro, who fell down a well while drunk.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Dún Etair (Howth)",
+    "place_en": "Dún Etair (Howth)",
+    "lat": 53.39,
+    "lon": -6.07,
+    "from": 525,
+    "to": 527,
+    "note": "Séjour dans un monastère irlandais, d'où il rapporte un chariot.",
+    "note_en": "A stay at an Irish monastery, from which he brought back a cart.",
+    "certainty": "probable"
+   },
+   {
+    "place": "St Kew (Cornouailles)",
+    "place_en": "St Kew (Cornwall)",
+    "lat": 50.54,
+    "lon": -4.78,
+    "from": 527,
+    "to": 535,
+    "note": "Ermite et évangélisateur de la Cornouailles, où il convertit un roi local.",
+    "note_en": "Hermit and evangelist of Cornwall, where he converted a local king.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Guernesey",
+    "place_en": "Guernsey",
+    "lat": 49.45,
+    "lon": -2.58,
+    "from": 535,
+    "to": 536,
+    "note": "Escale avant l'Armorique ; l'île en a gardé une paroisse à son nom.",
+    "note_en": "A stopover before Armorica; the island still has a parish bearing his name.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Dol-de-Bretagne",
+    "place_en": "Dol-de-Bretagne",
+    "lat": 48.55,
+    "lon": -1.75,
+    "from": 536,
+    "to": 557,
+    "note": "Fondation du monastère de Dol, futur siège épiscopal de Bretagne.",
+    "note_en": "Foundation of the monastery of Dol, the future episcopal see of Brittany.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Paris",
+    "place_en": "Paris",
+    "lat": 48.85,
+    "lon": 2.35,
+    "from": 557,
+    "to": 557,
+    "note": "Il signe les actes du concile de Paris et obtient de Childebert Ier le domaine de Pental.",
+    "note_en": "He signed the acts of the Council of Paris and obtained the estate of Pental from Childebert I.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Dol-de-Bretagne",
+    "place_en": "Dol-de-Bretagne",
+    "lat": 48.55,
+    "lon": -1.75,
+    "from": 558,
+    "to": 565,
+    "note": "Il aide Judual à reprendre la Domnonée à l'usurpateur Conomor et échappe à un empoisonnement.",
+    "note_en": "He helped Judual win back Domnonée from the usurper Conomor, and survived a poisoning attempt.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "david-de-galles",
+    "where": "Llantwit Major",
+    "where_en": "Llantwit Major",
+    "year": 510,
+    "note": "Tradition galloise : camarades d'études sous Illtud, selon les Vies tardives de David et de Samson.",
+    "note_en": "Welsh tradition: fellow students under Illtud, according to the late Lives of David and Samson."
+   }
+  ],
+  "blurb": "Un Gallois qui traverse la Manche avec son chariot pour fonder un évêché breton, puis file à Paris demander un domaine au roi des Francs : le premier des sept saints fondateurs de Bretagne, et le mieux documenté.",
+  "blurb_en": "A Welshman who crosses the Channel with his cart to found a Breton bishopric, then heads off to Paris to ask the king of the Franks for an estate: the first of the seven founding saints of Brittany, and the best documented.",
+  "fun": "Sa Vie, écrite vers 700, est la plus ancienne hagiographie bretonne. Elle le fait combattre des dragons, commander aux oiseaux et guérir une possédée, entre deux voyages très réels.",
+  "fun_en": "His Life, written around 700, is the oldest Breton hagiography. It has him fighting dragons, commanding birds and healing a possessed woman, in between some very real journeys.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Samson_de_Dol"
+  ]
+ },
+ {
+  "id": "radegonde",
+  "name": "Radegonde",
+  "name_en": "Radegund",
+  "full": "Sainte Radegonde de Poitiers",
+  "full_en": "Saint Radegund of Poitiers",
+  "feast": "08-13",
+  "feast_note": "",
+  "born": 520,
+  "died": 587,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Thuringe",
+  "origin_en": "Thuringia",
+  "role": "reine moniale",
+  "role_en": "queen turned nun",
+  "sex": "f",
+  "languages": [
+   {
+    "code": "goh",
+    "level": "natif"
+   },
+   {
+    "code": "frk",
+    "level": "courant"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Erfurt (Thuringe)",
+    "place_en": "Erfurt (Thuringia)",
+    "lat": 50.98,
+    "lon": 11.03,
+    "from": 520,
+    "to": 531,
+    "note": "Princesse thuringienne élevée à la cour de son oncle Hermanfred, après le meurtre de son père.",
+    "note_en": "A Thuringian princess raised at the court of her uncle Hermanfrid after her father's murder.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Athies (Vermandois)",
+    "place_en": "Athies (Vermandois)",
+    "lat": 49.85,
+    "lon": 3.0,
+    "from": 531,
+    "to": 539,
+    "note": "Butin de guerre de Clotaire Ier, elle reçoit une éducation latine et chrétienne dans la villa royale.",
+    "note_en": "Spoils of war for Chlothar I, she received a Latin and Christian education at the royal villa.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Soissons",
+    "place_en": "Soissons",
+    "lat": 49.38,
+    "lon": 3.32,
+    "from": 539,
+    "to": 550,
+    "note": "Mariage forcé avec Clotaire, en présence de l'évêque Médard ; dix ans de vie de cour qu'elle fuit dans la prière.",
+    "note_en": "A forced marriage to Chlothar, in the presence of Bishop Medard; ten years of court life that she escaped through prayer.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Noyon",
+    "place_en": "Noyon",
+    "lat": 49.58,
+    "lon": 3.0,
+    "from": 550,
+    "to": 551,
+    "note": "Après le meurtre de son frère, elle se réfugie auprès de Médard qui la consacre diaconesse.",
+    "note_en": "After her brother's murder she took refuge with Medard, who consecrated her a deaconess.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Saix",
+    "place_en": "Saix",
+    "lat": 47.12,
+    "lon": 0.17,
+    "from": 551,
+    "to": 552,
+    "note": "Sur une terre donnée par Clotaire, elle fonde un hospice où elle soigne elle-même les malades.",
+    "note_en": "On land given by Chlothar, she founded a hospice where she nursed the sick herself.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Poitiers (Sainte-Croix)",
+    "place_en": "Poitiers (Holy Cross)",
+    "lat": 46.58,
+    "lon": 0.34,
+    "from": 552,
+    "to": 570,
+    "note": "Fondation du monastère Notre-Dame ; en 569 elle reçoit de Justin II un fragment de la Vraie Croix, et Venance Fortunat compose le Vexilla regis.",
+    "note_en": "Foundation of the monastery of Our Lady; in 569 she received a fragment of the True Cross from Justin II, and Venantius Fortunatus composed the Vexilla regis.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Arles",
+    "place_en": "Arles",
+    "lat": 43.68,
+    "lon": 4.63,
+    "from": 570,
+    "to": 570,
+    "note": "Voyage avec l'abbesse Agnès pour adopter la règle de Césaire d'Arles.",
+    "note_en": "A journey with the abbess Agnes to adopt the rule of Caesarius of Arles.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Poitiers (Sainte-Croix)",
+    "place_en": "Poitiers (Holy Cross)",
+    "lat": 46.58,
+    "lon": 0.34,
+    "from": 570,
+    "to": 587,
+    "note": "Elle meurt dans son monastère le 13 août 587 ; Grégoire de Tours préside ses funérailles.",
+    "note_en": "She died in her monastery on 13 August 587; Gregory of Tours presided over her funeral.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "venance-fortunat",
+    "where": "Poitiers",
+    "where_en": "Poitiers",
+    "year": 567,
+    "note": "Le poète italien devient son ami, son aumônier et son biographe ; il lui envoie des vers, elle lui envoie des plats.",
+    "note_en": "The Italian poet became her friend, her chaplain and her biographer; he sent her verses, she sent him dishes of food."
+   }
+  ],
+  "blurb": "Enlevée à douze ans, mariée de force à un roi franc, elle le plaque pour fonder un monastère et finit par recevoir un morceau de la Vraie Croix envoyé par l'empereur de Constantinople.",
+  "blurb_en": "Carried off at twelve, forced to marry a Frankish king, she walked out on him to found a monastery and ended up receiving a piece of the True Cross sent by the emperor in Constantinople.",
+  "fun": "En 1412, le duc de Berry fait ouvrir son tombeau pour prendre sa tête : il renonce, intimidé, et ne garde que son anneau nuptial.",
+  "fun_en": "In 1412 the Duke of Berry had her tomb opened to take her head: he lost his nerve and kept only her wedding ring.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Radegonde"
+  ]
+ },
+ {
+  "id": "venance-fortunat",
+  "name": "Venance",
+  "name_en": "Venantius",
+  "full": "Saint Venance Fortunat",
+  "full_en": "Saint Venantius Fortunatus",
+  "feast": "12-14",
+  "feast_note": "",
+  "born": 530,
+  "died": 609,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Valdobbiadene, Vénétie",
+  "origin_en": "Valdobbiadene, Veneto",
+  "role": "poète évêque",
+  "role_en": "poet and bishop",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   },
+   {
+    "code": "frk",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Valdobbiadene",
+    "place_en": "Valdobbiadene",
+    "lat": 45.9,
+    "lon": 11.99,
+    "from": 530,
+    "to": 550,
+    "note": "Enfance près de Trévise, dans une Italie byzantine et gothique.",
+    "note_en": "Childhood near Treviso, in a Byzantine and Gothic Italy.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Ravenne",
+    "place_en": "Ravenna",
+    "lat": 44.42,
+    "lon": 12.2,
+    "from": 550,
+    "to": 565,
+    "note": "Études de grammaire, de rhétorique et de droit ; guéri d'un mal aux yeux par l'huile d'une lampe de saint Martin, il part pour Tours.",
+    "note_en": "Studies in grammar, rhetoric and law; cured of an eye complaint by oil from a lamp of Saint Martin, he set off for Tours.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Mayence",
+    "place_en": "Mainz",
+    "lat": 50.0,
+    "lon": 8.27,
+    "from": 565,
+    "to": 566,
+    "note": "Traversée des Alpes et descente du Rhin, en déclamant des vers aux évêques rencontrés.",
+    "note_en": "Over the Alps and down the Rhine, reciting verses to the bishops he met along the way.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Metz",
+    "place_en": "Metz",
+    "lat": 49.12,
+    "lon": 6.18,
+    "from": 566,
+    "to": 566,
+    "note": "Épithalame pour les noces de Sigebert et Brunehaut : le poète de cour est lancé.",
+    "note_en": "An epithalamium for the wedding of Sigebert and Brunhilda: the court poet's career was launched.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Paris",
+    "place_en": "Paris",
+    "lat": 48.85,
+    "lon": 2.35,
+    "from": 566,
+    "to": 567,
+    "note": "Étape à la cour de Caribert et auprès de l'évêque Germain de Paris.",
+    "note_en": "A stop at the court of Charibert and with Bishop Germanus of Paris.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Tours",
+    "place_en": "Tours",
+    "lat": 47.39,
+    "lon": 0.69,
+    "from": 567,
+    "to": 567,
+    "note": "Pèlerinage au tombeau de saint Martin, but officiel du voyage.",
+    "note_en": "Pilgrimage to the tomb of Saint Martin, the official purpose of the journey.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Poitiers",
+    "place_en": "Poitiers",
+    "lat": 46.58,
+    "lon": 0.34,
+    "from": 567,
+    "to": 609,
+    "note": "Il ne repart plus : prêtre en 576, biographe de Radegonde, puis évêque de Poitiers vers 600.",
+    "note_en": "He never left: priest in 576, Radegund's biographer, then bishop of Poitiers around 600.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "radegonde",
+    "where": "Poitiers",
+    "where_en": "Poitiers",
+    "year": 567,
+    "note": "Il devient le poète, l'ami et l'aumônier de la reine moniale, et écrit sa Vie après sa mort.",
+    "note_en": "He became the poet, friend and chaplain of the queen turned nun, and wrote her Life after her death."
+   }
+  ],
+  "blurb": "Le dernier poète de l'Antiquité romaine, parti en pèlerinage à Tours, s'arrête à Poitiers pour quarante ans parce qu'une reine devenue moniale l'y nourrit bien.",
+  "blurb_en": "The last poet of Roman antiquity, off on a pilgrimage to Tours, stopped at Poitiers for forty years because a queen turned nun kept him well fed.",
+  "fun": "Deux de ses hymnes, Vexilla regis et Pange lingua, se chantent encore chaque Semaine sainte ; il a aussi écrit un poème pour remercier Radegonde d'un plat de prunes.",
+  "fun_en": "Two of his hymns, Vexilla regis and Pange lingua, are still sung every Holy Week; he also wrote a poem to thank Radegund for a dish of plums.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Venance_Fortunat"
+  ]
+ },
+ {
+  "id": "leandre-de-seville",
+  "name": "Léandre",
+  "name_en": "Leander",
+  "full": "Saint Léandre de Séville",
+  "full_en": "Saint Leander of Seville",
+  "feast": "03-13",
+  "feast_note": "",
+  "born": 534,
+  "died": 600,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Carthagène, Hispanie",
+  "origin_en": "Cartagena, Hispania",
+  "role": "évêque",
+  "role_en": "bishop",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   },
+   {
+    "code": "got",
+    "level": "notions"
+   },
+   {
+    "code": "grc",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Carthagène",
+    "place_en": "Cartagena",
+    "lat": 37.6,
+    "lon": -0.99,
+    "from": 534,
+    "to": 554,
+    "note": "Aîné d'une fratrie de quatre saints (Isidore, Fulgence, Florentine) chassée de Carthagène par les troubles byzantins.",
+    "note_en": "Eldest of four sibling saints (Isidore, Fulgentius, Florentina), driven out of Cartagena by the Byzantine troubles.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Séville",
+    "place_en": "Seville",
+    "lat": 37.39,
+    "lon": -5.99,
+    "from": 554,
+    "to": 579,
+    "note": "Moine puis conseiller du prince Herménégilde, qu'il convertit au catholicisme contre son père arien Léovigild.",
+    "note_en": "Monk, then adviser to Prince Hermenegild, whom he converted to Catholicism against his Arian father Leovigild.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Constantinople",
+    "place_en": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 579,
+    "to": 582,
+    "note": "En mission pour Herménégilde, il se lie d'amitié avec l'apocrisiaire Grégoire, futur pape, qui lui dédiera ses Moralia.",
+    "note_en": "On a mission for Hermenegild, he struck up a friendship with the apocrisiarius Gregory, the future pope, who would dedicate his Moralia to him.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Séville",
+    "place_en": "Seville",
+    "lat": 37.39,
+    "lon": -5.99,
+    "from": 582,
+    "to": 589,
+    "note": "Évêque de Séville vers 584, un temps exilé par Léovigild après la défaite d'Herménégilde.",
+    "note_en": "Bishop of Seville around 584, exiled for a time by Leovigild after Hermenegild's defeat.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Tolède",
+    "place_en": "Toledo",
+    "lat": 39.86,
+    "lon": -4.03,
+    "from": 589,
+    "to": 589,
+    "note": "Il préside le IIIe concile de Tolède : le roi Récarède et les Wisigoths abjurent l'arianisme.",
+    "note_en": "He presided over the Third Council of Toledo: King Reccared and the Visigoths renounced Arianism.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Séville",
+    "place_en": "Seville",
+    "lat": 37.39,
+    "lon": -5.99,
+    "from": 589,
+    "to": 600,
+    "note": "Il meurt le 13 mars 600 ou 601 ; son frère Isidore lui succède.",
+    "note_en": "He died on 13 March 600 or 601; his brother Isidore succeeded him.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "gregoire-le-grand",
+    "where": "Constantinople",
+    "where_en": "Constantinople",
+    "year": 580,
+    "note": "Les deux hommes se rencontrent à la cour impériale ; Grégoire lui dédie ses Moralia in Job et lui écrit encore vingt ans plus tard.",
+    "note_en": "The two men met at the imperial court; Gregory dedicated his Moralia in Job to him and was still writing to him twenty years later."
+   }
+  ],
+  "blurb": "Il convertit le fils du roi wisigoth, provoque une guerre civile, part en exil, et finit par faire basculer toute l'Espagne au catholicisme à Tolède en 589. Bilan positif.",
+  "blurb_en": "He converted the Visigothic king's son, set off a civil war, went into exile, and ended up tipping the whole of Spain over to Catholicism at Toledo in 589. A net positive.",
+  "fun": "C'est à Constantinople, loin de chez eux, qu'il se lie avec Grégoire le Grand : le pape lui dédie ses Moralia et lui enverra un pallium, avec des nouvelles de sa goutte.",
+  "fun_en": "It was in Constantinople, far from home, that he befriended Gregory the Great: the pope dedicated his Moralia to him and would send him a pallium, along with news of his gout.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Léandre_de_Séville"
+  ]
+ },
+ {
+  "id": "gregoire-le-grand",
+  "name": "Grégoire",
+  "name_en": "Gregory",
+  "full": "Saint Grégoire le Grand, pape",
+  "full_en": "Saint Gregory the Great, Pope",
+  "feast": "09-03",
+  "feast_note": "12 mars chez les orthodoxes",
+  "feast_note_en": "12 March in the Orthodox calendar",
+  "born": 540,
+  "died": 604,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Rome",
+  "origin_en": "Rome",
+  "role": "pape",
+  "role_en": "pope",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 540,
+    "to": 579,
+    "note": "Fils de sénateur, préfet de la Ville en 572, il transforme la maison familiale du Cælius en monastère Saint-André vers 575.",
+    "note_en": "A senator's son, prefect of the City in 572, he turned the family house on the Caelian Hill into the monastery of St Andrew around 575.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Constantinople",
+    "place_en": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 579,
+    "to": 585,
+    "note": "Apocrisiaire du pape auprès de l'empereur ; il y rencontre Léandre de Séville et n'apprend jamais le grec.",
+    "note_en": "The pope's apocrisiarius at the emperor's court; he met Leander of Seville there and never learned Greek.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 585,
+    "to": 604,
+    "note": "Retour au monastère, puis pape le 3 septembre 590 ; il envoie Augustin convertir les Angles en 596 et meurt en 604.",
+    "note_en": "Back to the monastery, then pope on 3 September 590; he sent Augustine to convert the Angles in 596 and died in 604.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "leandre-de-seville",
+    "where": "Constantinople",
+    "where_en": "Constantinople",
+    "year": 580,
+    "note": "Amitié nouée à la cour impériale, entretenue ensuite par lettres.",
+    "note_en": "A friendship struck up at the imperial court, kept alive afterwards by letter."
+   },
+   {
+    "with": "augustin-de-cantorbery",
+    "where": "Rome",
+    "where_en": "Rome",
+    "year": 596,
+    "note": "Prieur de son propre monastère, Augustin est envoyé par lui vers le Kent avec quarante moines ; il revient même le voir quand la troupe prend peur en Provence.",
+    "note_en": "Prior of Gregory's own monastery, Augustine was sent by him to Kent with forty monks; he even came back to see him when the party lost its nerve in Provence."
+   }
+  ],
+  "blurb": "Préfet de Rome devenu moine, moine devenu pape malgré lui : il a réorganisé la liturgie, nourri Rome, écrit des tonnes de lettres et envoyé une mission convertir l'Angleterre.",
+  "blurb_en": "Prefect of Rome turned monk, monk turned reluctant pope: he reorganised the liturgy, fed Rome, wrote letters by the ton and sent a mission to convert England.",
+  "fun": "Six ans à Constantinople sans apprendre un mot de grec : il se plaint même de ne pas trouver d'interprètes convenables. Le chant grégorien, lui, ne porte son nom que par légende.",
+  "fun_en": "Six years in Constantinople without learning a word of Greek: he even complained that he could not find decent interpreters. Gregorian chant, for its part, bears his name only by legend.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Grégoire_Ier"
+  ]
+ },
+ {
+  "id": "colomba-d-iona",
+  "name": "Colomba",
+  "name_en": "Columba",
+  "full": "Saint Colomba d'Iona (Colum Cille)",
+  "full_en": "Saint Columba of Iona (Colum Cille)",
+  "feast": "06-09",
+  "feast_note": "",
+  "born": 521,
+  "died": 597,
+  "approx": false,
+  "tradition": "commune",
+  "origin": "Gartan, Donegal, Irlande",
+  "origin_en": "Gartan, Donegal, Ireland",
+  "role": "abbé missionnaire",
+  "role_en": "missionary abbot",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "sga",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Gartan (Donegal)",
+    "place_en": "Gartan (Donegal)",
+    "lat": 55.02,
+    "lon": -7.88,
+    "from": 521,
+    "to": 540,
+    "note": "Né dans la famille royale des Uí Néill, il aurait pu prétendre à la royauté d'Irlande.",
+    "note_en": "Born into the royal family of the Uí Néill, he could have laid claim to the kingship of Ireland.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Movilla",
+    "place_en": "Movilla",
+    "lat": 54.59,
+    "lon": -5.69,
+    "from": 540,
+    "to": 543,
+    "note": "Formation auprès de Finnian de Movilla.",
+    "note_en": "Trained under Finnian of Movilla.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Clonard",
+    "place_en": "Clonard",
+    "lat": 53.45,
+    "lon": -6.99,
+    "from": 543,
+    "to": 546,
+    "note": "Élève de Finnian de Clonard, l'un des douze apôtres de l'Irlande.",
+    "note_en": "A pupil of Finnian of Clonard, one of the twelve apostles of Ireland.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Derry",
+    "place_en": "Derry",
+    "lat": 54.99,
+    "lon": -7.32,
+    "from": 546,
+    "to": 561,
+    "note": "Fondation de Derry, puis de Durrow et peut-être de Kells : quinze ans de fondations irlandaises.",
+    "note_en": "Foundation of Derry, then Durrow and perhaps Kells: fifteen years of Irish foundations.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Cúl Dreimne (Drumcliff)",
+    "place_en": "Cúl Dreimne (Drumcliff)",
+    "lat": 54.33,
+    "lon": -8.49,
+    "from": 561,
+    "to": 561,
+    "note": "Bataille sanglante que la tradition relie à une querelle de psautier copié sans permission ; un synode menace de l'excommunier.",
+    "note_en": "A bloody battle that tradition links to a quarrel over a psalter copied without permission; a synod threatened him with excommunication.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Iona",
+    "place_en": "Iona",
+    "lat": 56.33,
+    "lon": -6.42,
+    "from": 563,
+    "to": 565,
+    "note": "Exil pénitentiel avec douze compagnons ; il fonde le monastère qui va évangéliser l'Écosse et le nord de l'Angleterre.",
+    "note_en": "Penitential exile with twelve companions; he founded the monastery that would evangelise Scotland and the north of England.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Inverness (forteresse de Brude)",
+    "place_en": "Inverness (Bridei's fortress)",
+    "lat": 57.48,
+    "lon": -4.22,
+    "from": 565,
+    "to": 565,
+    "note": "Ambassade chez le roi des Pictes ; en chemin, il aurait repoussé un monstre dans la rivière Ness.",
+    "note_en": "An embassy to the king of the Picts; on the way, he is said to have driven off a monster in the River Ness.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Iona",
+    "place_en": "Iona",
+    "lat": 56.33,
+    "lon": -6.42,
+    "from": 565,
+    "to": 575,
+    "note": "Il reçoit Brendan, Comgall et Kenneth sur l'île voisine de Hinba et sacre Áedán roi de Dal Riada en 574.",
+    "note_en": "He received Brendan, Comgall and Kenneth on the neighbouring island of Hinba and consecrated Áedán king of Dál Riata in 574.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Druim Cett (Limavady)",
+    "place_en": "Druim Cett (Limavady)",
+    "lat": 55.05,
+    "lon": -6.94,
+    "from": 575,
+    "to": 575,
+    "note": "Convention qui règle l'indépendance du Dal Riada et sauve les poètes irlandais de l'exil.",
+    "note_en": "A convention that settled the independence of Dál Riata and saved the Irish poets from banishment.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Iona",
+    "place_en": "Iona",
+    "lat": 56.33,
+    "lon": -6.42,
+    "from": 575,
+    "to": 597,
+    "note": "Il meurt devant l'autel le 9 juin 597, après avoir béni l'île et son vieux cheval blanc.",
+    "note_en": "He died before the altar on 9 June 597, after blessing the island and his old white horse.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "brendan",
+    "where": "Hinba, près d'Iona",
+    "where_en": "Hinba, near Iona",
+    "year": 565,
+    "note": "Selon Adomnán, Brendan voit une colonne de feu au-dessus de la tête de Colomba pendant la messe : tradition hagiographique.",
+    "note_en": "According to Adomnán, Brendan sees a pillar of fire above Columba's head during Mass: hagiographical tradition."
+   }
+  ],
+  "blurb": "Un prince irlandais qui copie un psautier sans permission, déclenche une bataille, et part s'exiler sur un caillou écossais : Iona deviendra le phare du christianisme celtique.",
+  "blurb_en": "An Irish prince who copies a psalter without permission, starts a battle, and goes off into exile on a Scottish rock: Iona would become the beacon of Celtic Christianity.",
+  "fun": "Adomnán raconte qu'en 565, sur les bords du Ness, il a fait fuir une bête aquatique d'un signe de croix : la première apparition connue du monstre du Loch Ness.",
+  "fun_en": "Adomnán tells how in 565, on the banks of the Ness, he put a water beast to flight with the sign of the cross: the first recorded sighting of the Loch Ness monster.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Colomba_d'Iona",
+   "https://en.wikipedia.org/wiki/Columba"
+  ]
+ },
+ {
+  "id": "colomban",
+  "name": "Colomban",
+  "name_en": "Columbanus",
+  "full": "Saint Colomban de Luxeuil",
+  "full_en": "Saint Columbanus of Luxeuil",
+  "feast": "11-23",
+  "feast_note": "",
+  "born": 543,
+  "died": 615,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Leinster, Irlande",
+  "origin_en": "Leinster, Ireland",
+  "role": "moine missionnaire",
+  "role_en": "missionary monk",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "sga",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "frk",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Myshall (Leinster)",
+    "place_en": "Myshall (Leinster)",
+    "lat": 52.68,
+    "lon": -6.77,
+    "from": 543,
+    "to": 563,
+    "note": "Jeune homme trop beau pour son propre bien, selon son biographe ; une recluse lui conseille de fuir les femmes.",
+    "note_en": "A young man too handsome for his own good, according to his biographer; a female recluse advised him to flee from women.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Bangor",
+    "place_en": "Bangor",
+    "lat": 54.66,
+    "lon": -5.67,
+    "from": 563,
+    "to": 590,
+    "note": "Près de trente ans sous l'abbé Comgall, dans le monastère le plus austère d'Irlande.",
+    "note_en": "Nearly thirty years under Abbot Comgall, in the most austere monastery in Ireland.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Saint-Coulomb (Bretagne)",
+    "place_en": "Saint-Coulomb (Brittany)",
+    "lat": 48.68,
+    "lon": -1.91,
+    "from": 590,
+    "to": 591,
+    "note": "Débarquement traditionnel avec douze compagnons, dont Gall, après une escale en Cornouailles.",
+    "note_en": "Traditional landing place with twelve companions, Gall among them, after a stopover in Cornwall.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Annegray",
+    "place_en": "Annegray",
+    "lat": 47.9,
+    "lon": 6.6,
+    "from": 591,
+    "to": 595,
+    "note": "Première fondation dans les Vosges, avec l'accord du roi Childebert II ; un ours lui aurait cédé sa grotte.",
+    "note_en": "First foundation in the Vosges, with the blessing of King Childebert II; a bear is said to have given up its cave for him.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Luxeuil",
+    "place_en": "Luxeuil",
+    "lat": 47.82,
+    "lon": 6.38,
+    "from": 595,
+    "to": 610,
+    "note": "Le grand monastère, sa Règle, et des querelles sur la date de Pâques et sur les bâtards de Brunehaut.",
+    "note_en": "The great monastery, his Rule, and quarrels over the date of Easter and over Brunhilda's bastards.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Nantes",
+    "place_en": "Nantes",
+    "lat": 47.22,
+    "lon": -1.55,
+    "from": 610,
+    "to": 610,
+    "note": "Expulsé par Brunehaut, escorté jusqu'au port : le bateau pour l'Irlande est rejeté sur la côte par une tempête.",
+    "note_en": "Expelled by Brunhilda and escorted to the harbour: the ship for Ireland was thrown back onto the coast by a storm.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Soissons",
+    "place_en": "Soissons",
+    "lat": 49.38,
+    "lon": 3.32,
+    "from": 611,
+    "to": 611,
+    "note": "Accueilli par Clotaire II, l'ennemi de Brunehaut, qui l'envoie vers l'Austrasie.",
+    "note_en": "Welcomed by Chlothar II, Brunhilda's enemy, who sent him on to Austrasia.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Metz",
+    "place_en": "Metz",
+    "lat": 49.12,
+    "lon": 6.18,
+    "from": 611,
+    "to": 612,
+    "note": "Chez Thibert II, qui lui ouvre la route du Rhin.",
+    "note_en": "At the court of Theudebert II, who opened the road up the Rhine for him.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Bregenz",
+    "place_en": "Bregenz",
+    "lat": 47.5,
+    "lon": 9.75,
+    "from": 612,
+    "to": 613,
+    "note": "Mission chez les Alamans du lac de Constance ; Gall, malade ou récalcitrant, reste en arrière.",
+    "note_en": "Mission to the Alemanni of Lake Constance; Gall, ill or unwilling, stayed behind.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Bobbio",
+    "place_en": "Bobbio",
+    "lat": 44.77,
+    "lon": 9.39,
+    "from": 614,
+    "to": 615,
+    "note": "Après les Alpes et Milan, dernière fondation sous la protection du roi lombard Agilulf ; il meurt le 23 novembre 615.",
+    "note_en": "After the Alps and Milan, a last foundation under the protection of the Lombard king Agilulf; he died on 23 November 615.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "gall",
+    "where": "Luxeuil puis Bregenz",
+    "where_en": "Luxeuil, then Bregenz",
+    "year": 591,
+    "note": "Gall est son compagnon pendant plus de vingt ans ; leur séparation à Bregenz en 612 est racontée comme une brouille, suivie d'une réconciliation posthume.",
+    "note_en": "Gall was his companion for more than twenty years; their parting at Bregenz in 612 is told as a falling-out, followed by a posthumous reconciliation."
+   }
+  ],
+  "blurb": "Un Irlandais qui traverse l'Europe en semant des monastères et en engueulant des rois, des évêques et même le pape sur la date de Pâques.",
+  "blurb_en": "An Irishman who crosses Europe sowing monasteries and telling off kings, bishops and even the pope over the date of Easter.",
+  "fun": "Depuis la fin du XXe siècle, les motards italiens l'ont adopté comme patron : un saint qui a parcouru des milliers de kilomètres sans jamais s'arrêter longtemps, ça se respecte.",
+  "fun_en": "Since the late twentieth century Italian bikers have adopted him as their patron: a saint who covered thousands of kilometres without ever stopping for long commands respect.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Colomban_de_Luxeuil"
+  ]
+ },
+ {
+  "id": "gall",
+  "name": "Gall",
+  "name_en": "Gall",
+  "full": "Saint Gall",
+  "full_en": "Saint Gall",
+  "feast": "10-16",
+  "feast_note": "",
+  "born": 550,
+  "died": 640,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Irlande (ou Vosges, selon les historiens)",
+  "origin_en": "Ireland (or the Vosges, according to historians)",
+  "role": "ermite missionnaire",
+  "role_en": "missionary hermit",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "sga",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "goh",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Leinster (Irlande)",
+    "place_en": "Leinster (Ireland)",
+    "lat": 52.7,
+    "lon": -6.8,
+    "from": 550,
+    "to": 570,
+    "note": "Origine irlandaise selon la tradition ; des historiens récents le voient plutôt né en Alsace ou dans les Vosges.",
+    "note_en": "Irish by origin according to tradition; recent historians would rather have him born in Alsace or the Vosges.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Bangor",
+    "place_en": "Bangor",
+    "lat": 54.66,
+    "lon": -5.67,
+    "from": 570,
+    "to": 590,
+    "note": "Moine sous Comgall, où il rencontre Colomban.",
+    "note_en": "A monk under Comgall, where he met Columbanus.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Luxeuil",
+    "place_en": "Luxeuil",
+    "lat": 47.82,
+    "lon": 6.38,
+    "from": 591,
+    "to": 610,
+    "note": "L'un des douze compagnons de Colomban, vingt ans dans les Vosges.",
+    "note_en": "One of Columbanus's twelve companions, twenty years in the Vosges.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Tuggen (lac de Zurich)",
+    "place_en": "Tuggen (Lake Zurich)",
+    "lat": 47.2,
+    "lon": 8.94,
+    "from": 610,
+    "to": 611,
+    "note": "Il brûle les temples et jette les idoles dans le lac ; la population les chasse.",
+    "note_en": "He burned the temples and threw the idols into the lake; the locals ran them out of town.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Bregenz",
+    "place_en": "Bregenz",
+    "lat": 47.5,
+    "lon": 9.75,
+    "from": 611,
+    "to": 612,
+    "note": "Nouvelle mission ; quand Colomban repart pour l'Italie, Gall reste, officiellement malade.",
+    "note_en": "A new mission; when Columbanus left for Italy, Gall stayed behind, officially ill.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Vallée de la Steinach (Saint-Gall)",
+    "place_en": "Steinach valley (St Gallen)",
+    "lat": 47.42,
+    "lon": 9.37,
+    "from": 612,
+    "to": 640,
+    "note": "Ermitage dans la forêt, avec un ours pour aide-cuisinier selon la légende ; l'abbaye de Saint-Gall en sortira un siècle plus tard. Il meurt à Arbon vers 640.",
+    "note_en": "A hermitage in the forest, with a bear as kitchen hand according to legend; the abbey of St Gallen would grow out of it a century later. He died at Arbon around 640.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "colomban",
+    "where": "Luxeuil puis Bregenz",
+    "where_en": "Luxeuil, then Bregenz",
+    "year": 591,
+    "note": "Disciple et compagnon de route pendant vingt ans ; leur séparation à Bregenz en 612 est racontée comme une brouille.",
+    "note_en": "Disciple and travelling companion for twenty years; their parting at Bregenz in 612 is told as a falling-out."
+   }
+  ],
+  "blurb": "Le compagnon de Colomban qui a dit stop au bord du lac de Constance : pendant que le maître filait en Italie, lui restait prêcher aux Alamans dans leur langue.",
+  "blurb_en": "Columbanus's companion who called it a day on the shores of Lake Constance: while the master pressed on to Italy, he stayed to preach to the Alemanni in their own language.",
+  "fun": "Un ours lui aurait apporté du bois pour son feu en échange d'un pain : il est sur les armoiries de la ville de Saint-Gall, et un fromage à son nom a gagné une médaille d'or en 2008.",
+  "fun_en": "A bear is said to have brought him firewood in exchange for a loaf: it is on the coat of arms of the city of St Gallen, and a cheese named after him won a gold medal in 2008.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Gall_(saint)",
+   "https://en.wikipedia.org/wiki/Saint_Gall"
+  ]
+ },
+ {
+  "id": "augustin-de-cantorbery",
+  "name": "Augustin",
+  "name_en": "Augustine",
+  "full": "Saint Augustin de Cantorbéry",
+  "full_en": "Saint Augustine of Canterbury",
+  "feast": "05-27",
+  "feast_note": "26 mai en Angleterre et chez les orthodoxes",
+  "feast_note_en": "26 May in England and in the Orthodox calendar",
+  "born": 534,
+  "died": 604,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Rome",
+  "origin_en": "Rome",
+  "role": "archevêque missionnaire",
+  "role_en": "missionary archbishop",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   },
+   {
+    "code": "ang",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Rome (Saint-André du Cælius)",
+    "place_en": "Rome (St Andrew's on the Caelian)",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 534,
+    "to": 596,
+    "note": "Prieur du monastère fondé par Grégoire, qui le choisit en 595 pour mener la mission vers les Angles.",
+    "note_en": "Prior of the monastery founded by Gregory, who chose him in 595 to lead the mission to the Angles.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Provence (Lérins)",
+    "place_en": "Provence (Lérins)",
+    "lat": 43.51,
+    "lon": 7.05,
+    "from": 596,
+    "to": 596,
+    "note": "La troupe prend peur en route ; Augustin repart consulter le pape, qui refuse tout retour en arrière.",
+    "note_en": "The party lost its nerve on the way; Augustine went back to consult the pope, who refused to hear of turning back.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Arles",
+    "place_en": "Arles",
+    "lat": 43.68,
+    "lon": 4.63,
+    "from": 596,
+    "to": 597,
+    "note": "Étape chez l'évêque Virgile, qui l'aurait sacré évêque selon Bède ; les rois francs fournissent des interprètes.",
+    "note_en": "A stop with Bishop Virgilius, who consecrated him bishop according to Bede; the Frankish kings supplied interpreters.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Île de Thanet (Kent)",
+    "place_en": "Isle of Thanet (Kent)",
+    "lat": 51.33,
+    "lon": 1.38,
+    "from": 597,
+    "to": 597,
+    "note": "Débarquement et première entrevue en plein air avec le roi Æthelberht, méfiant envers la magie des étrangers.",
+    "note_en": "Landing and first open-air audience with King Æthelberht, wary of the strangers' magic.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Cantorbéry",
+    "place_en": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 597,
+    "to": 604,
+    "note": "Baptême du roi, pallium en 601, fondation de Londres et Rochester en 604 ; la rencontre avec les évêques bretons tourne au fiasco en 603.",
+    "note_en": "Baptism of the king, pallium in 601, foundation of London and Rochester in 604; the meeting with the British bishops turned into a fiasco in 603.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "gregoire-le-grand",
+    "where": "Rome",
+    "where_en": "Rome",
+    "year": 596,
+    "note": "Son abbé devenu pape l'envoie en Angleterre et le soutient ensuite par une série de lettres et de réponses pastorales.",
+    "note_en": "His abbot, now pope, sent him to England and backed him afterwards with a stream of letters and pastoral answers."
+   }
+  ],
+  "blurb": "Il n'avait aucune envie d'aller chez les Angles, il a fait demi-tour une fois en Provence, et il a quand même fondé l'Église d'Angleterre.",
+  "blurb_en": "He had no wish whatsoever to go to the Angles, he turned back once in Provence, and he founded the Church of England all the same.",
+  "fun": "Bède raconte qu'il est resté assis à l'arrivée des évêques bretons : vexés, ils ont refusé de le reconnaître. Un détail de protocole qui a coûté l'unité de l'Église en Grande-Bretagne.",
+  "fun_en": "Bede recounts that he stayed seated when the British bishops arrived: offended, they refused to acknowledge him. A point of protocol that cost the Church in Britain its unity.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Augustin_de_Cantorbéry"
+  ]
+ },
+ {
+  "id": "david-de-galles",
+  "name": "David",
+  "name_en": "David",
+  "full": "Saint David de Ménevie (Dewi Sant)",
+  "full_en": "Saint David of Menevia (Dewi Sant)",
+  "feast": "03-01",
+  "feast_note": "",
+  "born": 500,
+  "died": 589,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Ceredigion, pays de Galles",
+  "origin_en": "Ceredigion, Wales",
+  "role": "évêque ascète",
+  "role_en": "ascetic bishop",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "cym",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Henfynyw (Ceredigion)",
+    "place_en": "Henfynyw (Ceredigion)",
+    "lat": 52.21,
+    "lon": -4.25,
+    "from": 500,
+    "to": 510,
+    "note": "Né, selon la légende, d'une princesse violée par un roi, au bord d'une falaise en pleine tempête.",
+    "note_en": "Born, according to legend, to a princess raped by a king, on a clifftop in the middle of a storm.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Whitland (Hendy-gwyn)",
+    "place_en": "Whitland (Hendy-gwyn)",
+    "lat": 51.82,
+    "lon": -4.62,
+    "from": 510,
+    "to": 530,
+    "note": "Études auprès de Paulinus (ou d'Illtud, selon les versions), avec les futurs saints bretons.",
+    "note_en": "Studies under Paulinus (or Illtud, depending on the version), with the future saints of Brittany.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Glyn Rhosyn (St Davids)",
+    "place_en": "Glyn Rhosyn (St Davids)",
+    "lat": 51.88,
+    "lon": -5.27,
+    "from": 530,
+    "to": 550,
+    "note": "Fondation de son monastère dans un vallon reculé ; règle très dure : labour sans bœufs, eau, pain et légumes.",
+    "note_en": "Foundation of his monastery in a remote valley; a very harsh rule: ploughing without oxen, water, bread and vegetables.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Jérusalem",
+    "place_en": "Jerusalem",
+    "lat": 31.78,
+    "lon": 35.23,
+    "from": 550,
+    "to": 551,
+    "note": "Pèlerinage où le patriarche l'aurait sacré évêque : pure légende hagiographique.",
+    "note_en": "A pilgrimage during which the patriarch is said to have consecrated him bishop: pure hagiographical legend.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Llanddewi Brefi",
+    "place_en": "Llanddewi Brefi",
+    "lat": 52.16,
+    "lon": -3.96,
+    "from": 560,
+    "to": 560,
+    "note": "Synode contre le pélagianisme : le sol se soulève sous lui pour que tous l'entendent, et une colombe se pose sur son épaule.",
+    "note_en": "Synod against Pelagianism: the ground rose up beneath him so that everyone could hear, and a dove settled on his shoulder.",
+    "certainty": "legende"
+   },
+   {
+    "place": "Glyn Rhosyn (St Davids)",
+    "place_en": "Glyn Rhosyn (St Davids)",
+    "lat": 51.88,
+    "lon": -5.27,
+    "from": 560,
+    "to": 589,
+    "note": "Il meurt un mardi 1er mars, centenaire selon la tradition, en recommandant de faire les petites choses.",
+    "note_en": "He died on a Tuesday, 1 March, a centenarian according to tradition, urging his monks to do the little things.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "samson-de-dol",
+    "where": "Llantwit Major",
+    "where_en": "Llantwit Major",
+    "year": 510,
+    "note": "Tradition galloise : condisciples d'Illtud avec Gildas et Paul Aurélien, selon les Vies tardives.",
+    "note_en": "Welsh tradition: fellow pupils of Illtud with Gildas and Paul Aurelian, according to the late Lives."
+   }
+  ],
+  "blurb": "Le patron du pays de Galles buvait de l'eau, mangeait des poireaux et faisait tirer la charrue par ses moines : les Gallois lui ont pardonné et fêtent le 1er mars en portant un poireau.",
+  "blurb_en": "The patron saint of Wales drank water, ate leeks and had his monks pull the plough: the Welsh have forgiven him and celebrate 1 March wearing a leek.",
+  "fun": "Ses dernières paroles, selon Rhygyfarch : faites les petites choses. La phrase est devenue proverbe gallois, Gwnewch y pethau bychain.",
+  "fun_en": "His last words, according to Rhygyfarch: do the little things. The phrase has become a Welsh proverb, Gwnewch y pethau bychain.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/David_de_Ménevie"
+  ]
+ },
+ {
+  "id": "isaac-le-syrien",
+  "name": "Isaac",
+  "name_en": "Isaac",
+  "full": "Saint Isaac le Syrien (Isaac de Ninive)",
+  "full_en": "Saint Isaac the Syrian (Isaac of Nineveh)",
+  "feast": "01-28",
+  "feast_note": "inscrit au Martyrologe romain en 2024",
+  "feast_note_en": "entered in the Roman Martyrology in 2024",
+  "born": 640,
+  "died": 700,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Beth Qatraye (Qatar)",
+  "origin_en": "Beth Qatraye (Qatar)",
+  "role": "évêque ermite",
+  "role_en": "hermit bishop",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "syc",
+    "level": "natif"
+   },
+   {
+    "code": "ara",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Beth Qatraye (Qatar)",
+    "place_en": "Beth Qatraye (Qatar)",
+    "lat": 25.29,
+    "lon": 51.53,
+    "from": 640,
+    "to": 676,
+    "note": "Moine très jeune avec son frère, dans la florissante Église syriaque du golfe Persique.",
+    "note_en": "A monk from a very young age, together with his brother, in the flourishing Syriac Church of the Persian Gulf.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Ninive (Mossoul)",
+    "place_en": "Nineveh (Mosul)",
+    "lat": 36.34,
+    "lon": 43.13,
+    "from": 676,
+    "to": 677,
+    "note": "Sacré évêque par le catholicos Giwargis Ier, il démissionne au bout de cinq mois.",
+    "note_en": "Consecrated bishop by the catholicos Giwargis I, he resigned after five months.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Monastère de Rabban Shabur (Khuzistan)",
+    "place_en": "Monastery of Rabban Shabur (Khuzestan)",
+    "lat": 32.05,
+    "lon": 48.85,
+    "from": 677,
+    "to": 700,
+    "note": "Ermite dans les montagnes du Khuzistan, puis au monastère où, presque aveugle, il dicte ses Discours ascétiques.",
+    "note_en": "A hermit in the mountains of Khuzestan, then at the monastery where, almost blind, he dictated his Ascetical Homilies.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [],
+  "blurb": "Évêque pendant cinq mois, ermite pendant trente ans : il a démissionné parce que deux plaideurs refusaient de s'entendre, et a écrit les plus belles pages syriaques sur la miséricorde.",
+  "blurb_en": "Bishop for five months, hermit for thirty years: he resigned because two litigants refused to come to terms, and went on to write the finest Syriac pages ever written on mercy.",
+  "fun": "Il priait pour les reptiles et même pour les démons, dit-on ; moine de l'Église de l'Orient, il est lu par les orthodoxes depuis le IXe siècle et a été inscrit au Martyrologe romain en 2024.",
+  "fun_en": "He prayed for reptiles and even for demons, it is said; a monk of the Church of the East, he has been read by the Orthodox since the ninth century and was entered in the Roman Martyrology in 2024.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Isaac_de_Ninive"
+  ]
+ },
+ {
+  "id": "sophrone-de-jerusalem",
+  "name": "Sophrone",
+  "name_en": "Sophronius",
+  "full": "Saint Sophrone de Jérusalem",
+  "full_en": "Saint Sophronius of Jerusalem",
+  "feast": "03-11",
+  "feast_note": "",
+  "born": 560,
+  "died": 638,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Damas",
+  "origin_en": "Damascus",
+  "role": "patriarche",
+  "role_en": "patriarch",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "grc",
+    "level": "natif"
+   },
+   {
+    "code": "syc",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Damas",
+    "place_en": "Damascus",
+    "lat": 33.51,
+    "lon": 36.29,
+    "from": 560,
+    "to": 578,
+    "note": "Jeune professeur de rhétorique, d'où son surnom de Sophiste.",
+    "note_en": "A young teacher of rhetoric, hence his nickname, the Sophist.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Monastère de Saint-Théodose (Judée)",
+    "place_en": "Monastery of St Theodosius (Judaea)",
+    "lat": 31.7,
+    "lon": 35.25,
+    "from": 578,
+    "to": 579,
+    "note": "Il y rencontre Jean Moschos, qui devient son père spirituel et compagnon pour quarante ans.",
+    "note_en": "Here he met John Moschus, who became his spiritual father and companion for forty years.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Alexandrie",
+    "place_en": "Alexandria",
+    "lat": 31.2,
+    "lon": 29.92,
+    "from": 579,
+    "to": 584,
+    "note": "Disciple d'Étienne d'Alexandrie, puis tournée des monastères d'Égypte avec Moschos, matière du Pré spirituel.",
+    "note_en": "A disciple of Stephen of Alexandria, then a tour of the monasteries of Egypt with Moschus, the raw material of the Spiritual Meadow.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Jérusalem",
+    "place_en": "Jerusalem",
+    "lat": 31.78,
+    "lon": 35.23,
+    "from": 584,
+    "to": 614,
+    "note": "Vie monastique entrecoupée de voyages en Asie Mineure pour ramener des monophysites ; nouveau séjour en Égypte vers 610.",
+    "note_en": "Monastic life interspersed with journeys to Asia Minor to win back Monophysites; another stay in Egypt around 610.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 615,
+    "to": 619,
+    "note": "Fuite devant les Perses ; Jean Moschos y meurt en 619 et Sophrone ramène son corps en Palestine.",
+    "note_en": "Flight from the Persians; John Moschus died there in 619 and Sophronius carried his body back to Palestine.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Carthage",
+    "place_en": "Carthage",
+    "lat": 36.85,
+    "lon": 10.32,
+    "from": 628,
+    "to": 633,
+    "note": "Au monastère d'Eucratas, il devient le maître spirituel de Maxime le Confesseur, réfugié d'Orient.",
+    "note_en": "At the monastery of Eucratas he became the spiritual master of Maximus the Confessor, a refugee from the East.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Alexandrie",
+    "place_en": "Alexandria",
+    "lat": 31.2,
+    "lon": 29.92,
+    "from": 633,
+    "to": 633,
+    "note": "Il supplie en vain le patriarche Cyrus de renoncer au monoénergisme, puis va plaider à Constantinople.",
+    "note_en": "He begged the patriarch Cyrus, in vain, to give up Monoenergism, then went to plead his case in Constantinople.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Jérusalem",
+    "place_en": "Jerusalem",
+    "lat": 31.78,
+    "lon": 35.23,
+    "from": 634,
+    "to": 638,
+    "note": "Patriarche ; il négocie la reddition de la ville au calife Omar en 637 et meurt quelques mois plus tard.",
+    "note_en": "Patriarch; he negotiated the city's surrender to the caliph Umar in 637 and died a few months later.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "maxime-le-confesseur",
+    "where": "Carthage",
+    "where_en": "Carthage",
+    "year": 630,
+    "note": "Maxime le reconnaît comme son maître spirituel dans ses lettres ; ils partagent la lutte contre le monothélisme.",
+    "note_en": "Maximus acknowledges him as his spiritual master in his letters; they shared the fight against Monothelitism."
+   }
+  ],
+  "blurb": "Professeur de rhétorique, moine voyageur, patriarche in extremis : c'est lui qui remet les clés de Jérusalem au calife Omar, après avoir négocié que le calife entre en pèlerin.",
+  "blurb_en": "Teacher of rhetoric, wandering monk, patriarch at the eleventh hour: he is the one who handed the keys of Jerusalem to the caliph Umar, having negotiated that the caliph should enter as a pilgrim.",
+  "fun": "Il a passé des années à parcourir les monastères d'Égypte avec son ami Jean Moschos pour collecter des histoires de moines : le Pré spirituel, best-seller byzantin.",
+  "fun_en": "He spent years touring the monasteries of Egypt with his friend John Moschus collecting stories about monks: the Spiritual Meadow, a Byzantine bestseller.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Sophrone_de_Jérusalem",
+   "https://en.wikipedia.org/wiki/Sophronius_of_Jerusalem"
+  ]
+ },
+ {
+  "id": "maxime-le-confesseur",
+  "name": "Maxime",
+  "name_en": "Maximus",
+  "full": "Saint Maxime le Confesseur",
+  "full_en": "Saint Maximus the Confessor",
+  "feast": "08-13",
+  "feast_note": "21 janvier chez les orthodoxes",
+  "feast_note_en": "21 January in the Orthodox calendar",
+  "born": 580,
+  "died": 662,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Constantinople (ou Palestine)",
+  "origin_en": "Constantinople (or Palestine)",
+  "role": "moine théologien",
+  "role_en": "monk and theologian",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "grc",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Constantinople",
+    "place_en": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 580,
+    "to": 614,
+    "note": "Haut fonctionnaire de l'empereur Héraclius selon la vie grecque ; une vie syriaque hostile le fait naître en Palestine.",
+    "note_en": "A senior official under Emperor Heraclius according to the Greek Life; a hostile Syriac Life has him born in Palestine.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Chrysopolis (Üsküdar)",
+    "place_en": "Chrysopolis (Üsküdar)",
+    "lat": 41.02,
+    "lon": 29.02,
+    "from": 614,
+    "to": 624,
+    "note": "Moine en face de Constantinople, de l'autre côté du Bosphore.",
+    "note_en": "A monk across the Bosphorus, facing Constantinople.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Cyzique (Erdek)",
+    "place_en": "Cyzicus (Erdek)",
+    "lat": 40.4,
+    "lon": 27.8,
+    "from": 624,
+    "to": 626,
+    "note": "Monastère Saint-Georges, quitté devant l'avance des Perses et des Avars.",
+    "note_en": "The monastery of St George, abandoned before the advance of the Persians and Avars.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Carthage",
+    "place_en": "Carthage",
+    "lat": 36.85,
+    "lon": 10.32,
+    "from": 628,
+    "to": 645,
+    "note": "Monastère d'Eucratas sous Sophrone ; en 645, débat public où il ramène l'ex-patriarche Pyrrhus à l'orthodoxie.",
+    "note_en": "The monastery of Eucratas under Sophronius; in 645, a public debate in which he brought the ex-patriarch Pyrrhus back to orthodoxy.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 646,
+    "to": 653,
+    "note": "Il inspire le concile du Latran de 649 qui condamne le monothélisme, puis est arrêté avec le pape Martin.",
+    "note_en": "He inspired the Lateran Council of 649, which condemned Monothelitism, then was arrested along with Pope Martin.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Constantinople",
+    "place_en": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 655,
+    "to": 655,
+    "note": "Procès pour trahison : on lui reproche d'avoir dit que l'empereur n'est pas prêtre.",
+    "note_en": "Trial for treason: he was charged with having said that the emperor is not a priest.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Bizye (Vize, Thrace)",
+    "place_en": "Bizye (Vize, Thrace)",
+    "lat": 41.57,
+    "lon": 27.77,
+    "from": 655,
+    "to": 662,
+    "note": "Exil en Thrace, entrecoupé de nouvelles tentatives pour le faire plier.",
+    "note_en": "Exile in Thrace, interrupted by fresh attempts to make him give in.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Constantinople",
+    "place_en": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 662,
+    "to": 662,
+    "note": "Dernier procès : on lui arrache la langue et on lui coupe la main droite pour qu'il se taise.",
+    "note_en": "Last trial: they tore out his tongue and cut off his right hand to silence him.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Lazique (Tsageri, Géorgie)",
+    "place_en": "Lazica (Tsageri, Georgia)",
+    "lat": 42.65,
+    "lon": 42.77,
+    "from": 662,
+    "to": 662,
+    "note": "Déporté au bout du monde byzantin, il meurt le 13 août 662 ; sa tombe est dans les montagnes géorgiennes.",
+    "note_en": "Deported to the far end of the Byzantine world, he died on 13 August 662; his tomb lies in the Georgian mountains.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "sophrone-de-jerusalem",
+    "where": "Carthage",
+    "where_en": "Carthage",
+    "year": 630,
+    "note": "Sophrone est son maître spirituel au monastère d'Eucratas ; Maxime le dit dans ses lettres.",
+    "note_en": "Sophronius was his spiritual master at the monastery of Eucratas; Maximus says so in his letters."
+   }
+  ],
+  "blurb": "Le théologien qui a tenu tête à un empereur sur la question de savoir si le Christ avait deux volontés : réponse oui, au prix de sa langue et de sa main droite.",
+  "blurb_en": "The theologian who stood up to an emperor over whether Christ had two wills: the answer was yes, at the cost of his tongue and his right hand.",
+  "fun": "Mutilé pour l'empêcher de parler et d'écrire, il meurt en exil en Géorgie ; dix-huit ans plus tard, le VIe concile œcuménique lui donne entièrement raison.",
+  "fun_en": "Mutilated to stop him speaking and writing, he died in exile in Georgia; eighteen years later the Sixth Ecumenical Council ruled that he had been right all along.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Maxime_le_Confesseur"
+  ]
+ },
+ {
+  "id": "jean-damascene",
+  "name": "Jean",
+  "name_en": "John of Damascus",
+  "full": "Saint Jean Damascène",
+  "full_en": "Saint John of Damascus",
+  "feast": "12-04",
+  "feast_note": "",
+  "born": 675,
+  "died": 749,
+  "approx": true,
+  "tradition": "commune",
+  "origin": "Damas",
+  "origin_en": "Damascus",
+  "role": "moine théologien",
+  "role_en": "monk and theologian",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "ara",
+    "level": "natif"
+   },
+   {
+    "code": "grc",
+    "level": "courant"
+   },
+   {
+    "code": "syc",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Damas",
+    "place_en": "Damascus",
+    "lat": 33.51,
+    "lon": 36.29,
+    "from": 675,
+    "to": 705,
+    "note": "Fils d'un haut fonctionnaire chrétien du calife omeyyade, Mansour ibn Sarjoun, il aurait servi lui-même dans l'administration fiscale.",
+    "note_en": "Son of a senior Christian official of the Umayyad caliph, Mansur ibn Sarjun, he is thought to have served in the fiscal administration himself.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Mar Saba (désert de Judée)",
+    "place_en": "Mar Saba (Judaean desert)",
+    "lat": 31.7,
+    "lon": 35.33,
+    "from": 705,
+    "to": 749,
+    "note": "Moine puis prêtre en 735 ; il y écrit en grec, sous domination arabe, ses traités contre les iconoclastes de Byzance.",
+    "note_en": "Monk, then priest in 735; here he wrote in Greek, under Arab rule, his treatises against the iconoclasts of Byzantium.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [],
+  "blurb": "Un Arabe chrétien, fonctionnaire du calife, qui devient moine en Palestine et défend les icônes contre l'empereur de Constantinople : il écrivait depuis un territoire où l'empereur ne pouvait pas l'attraper.",
+  "blurb_en": "A Christian Arab and official of the caliph who became a monk in Palestine and defended icons against the emperor in Constantinople: he was writing from territory where the emperor could not get at him.",
+  "fun": "Une légende raconte que le calife lui fit couper la main et que la Vierge la lui recolla : l'icône de la Mère de Dieu aux trois mains en garde le souvenir. Les historiens n'y croient pas, les iconographes s'en moquent.",
+  "fun_en": "Legend has it that the caliph had his hand cut off and the Virgin stuck it back on: the icon of the Mother of God of the Three Hands keeps the memory alive. Historians do not believe it; icon painters could not care less.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Jean_Damascène"
+  ]
+ },
+ {
+  "id": "theodore-de-tarse",
+  "name": "Théodore",
+  "name_en": "Theodore",
+  "full": "Saint Théodore de Tarse, archevêque de Cantorbéry",
+  "full_en": "Saint Theodore of Tarsus, Archbishop of Canterbury",
+  "feast": "09-19",
+  "feast_note": "",
+  "born": 602,
+  "died": 690,
+  "approx": false,
+  "tradition": "commune",
+  "origin": "Tarse, Cilicie",
+  "origin_en": "Tarsus, Cilicia",
+  "role": "archevêque érudit",
+  "role_en": "scholar archbishop",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "grc",
+    "level": "natif"
+   },
+   {
+    "code": "syc",
+    "level": "courant"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "ang",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Tarse",
+    "place_en": "Tarsus",
+    "lat": 36.92,
+    "lon": 34.89,
+    "from": 602,
+    "to": 620,
+    "note": "Né dans la ville de saint Paul, en pleine guerre perso-byzantine.",
+    "note_en": "Born in Saint Paul's city, in the thick of the Persian-Byzantine war.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Antioche",
+    "place_en": "Antioch",
+    "lat": 36.2,
+    "lon": 36.16,
+    "from": 620,
+    "to": 637,
+    "note": "Études dans la tradition exégétique antiochienne, peut-être aussi à Édesse ; il connaît le christianisme syriaque de l'intérieur.",
+    "note_en": "Studies in the Antiochene exegetical tradition, perhaps also at Edessa; he knew Syriac Christianity from the inside.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Constantinople",
+    "place_en": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.98,
+    "from": 637,
+    "to": 649,
+    "note": "Fuite devant la conquête arabe ; études d'astronomie, de médecine et de droit dans la capitale.",
+    "note_en": "Flight from the Arab conquest; studies in astronomy, medicine and law in the capital.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 649,
+    "to": 668,
+    "note": "Moine oriental à Rome, probablement au monastère ad Aquas Salvias ; le pape Vitalien le sacre archevêque le 26 mars 668.",
+    "note_en": "An Eastern monk in Rome, probably at the monastery ad Aquas Salvias; Pope Vitalian consecrated him archbishop on 26 March 668.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Arles",
+    "place_en": "Arles",
+    "lat": 43.68,
+    "lon": 4.63,
+    "from": 668,
+    "to": 668,
+    "note": "Parti de Rome le 27 mai 668 avec Adrien et Benoît Biscop, il remonte par Marseille et Arles.",
+    "note_en": "Leaving Rome on 27 May 668 with Hadrian and Benedict Biscop, he travelled up through Marseille and Arles.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Paris",
+    "place_en": "Paris",
+    "lat": 48.85,
+    "lon": 2.35,
+    "from": 668,
+    "to": 669,
+    "note": "Hiver chez l'évêque Agilbert, ancien évêque des Saxons de l'Ouest, qui lui apprend ce qui l'attend.",
+    "note_en": "Winter with Bishop Agilbert, former bishop of the West Saxons, who told him what lay in store.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Cantorbéry",
+    "place_en": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 669,
+    "to": 672,
+    "note": "Arrivée le 27 mai 669, à 66 ans ; il parcourt toute l'Angleterre et rétablit Wilfrid à York.",
+    "note_en": "Arrival on 27 May 669, aged 66; he toured the whole of England and restored Wilfrid to York.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Hertford",
+    "place_en": "Hertford",
+    "lat": 51.8,
+    "lon": -0.08,
+    "from": 672,
+    "to": 672,
+    "note": "Premier concile de toute l'Église anglaise, qu'il préside.",
+    "note_en": "The first council of the entire English Church, which he presided over.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Cantorbéry",
+    "place_en": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 672,
+    "to": 685,
+    "note": "Il fonde avec Adrien l'école de Cantorbéry où l'on apprend le grec, divise les diocèses et dépose Wilfrid en 678.",
+    "note_en": "With Hadrian he founded the school of Canterbury, where Greek was taught, divided up the dioceses and deposed Wilfrid in 678.",
+    "certainty": "sur"
+   },
+   {
+    "place": "York",
+    "place_en": "York",
+    "lat": 53.96,
+    "lon": -1.08,
+    "from": 685,
+    "to": 685,
+    "note": "Il sacre Cuthbert évêque de Lindisfarne le jour de Pâques, devant le roi Ecgfrith.",
+    "note_en": "He consecrated Cuthbert bishop of Lindisfarne on Easter Day, before King Ecgfrith.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Cantorbéry",
+    "place_en": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 685,
+    "to": 690,
+    "note": "Réconcilié avec Wilfrid vers 686, il meurt le 19 septembre 690, à 88 ans.",
+    "note_en": "Reconciled with Wilfrid around 686, he died on 19 September 690, aged 88.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "adrien-de-cantorbery",
+    "where": "Rome puis Cantorbéry",
+    "where_en": "Rome, then Canterbury",
+    "year": 668,
+    "note": "Adrien refuse le siège, propose Théodore et l'accompagne ; ils dirigent ensemble l'école de Cantorbéry pendant vingt ans.",
+    "note_en": "Hadrian turned down the see, put Theodore forward and went with him; together they ran the school of Canterbury for twenty years."
+   },
+   {
+    "with": "benoit-biscop",
+    "where": "Rome puis Cantorbéry",
+    "where_en": "Rome, then Canterbury",
+    "year": 668,
+    "note": "Le pape Vitalien charge Biscop de guider Théodore jusqu'en Angleterre ; Biscop dirige l'abbaye Saint-Pierre de Cantorbéry en attendant Adrien.",
+    "note_en": "Pope Vitalian charged Biscop with guiding Theodore to England; Biscop ran the abbey of St Peter in Canterbury while waiting for Hadrian."
+   },
+   {
+    "with": "wilfrid",
+    "where": "York puis Londres",
+    "where_en": "York, then London",
+    "year": 669,
+    "note": "Il rétablit Wilfrid à York, le dépose en 678 en divisant son diocèse, puis se réconcilie avec lui vers 686.",
+    "note_en": "He restored Wilfrid to York, deposed him in 678 by dividing his diocese, then made peace with him around 686."
+   },
+   {
+    "with": "cuthbert",
+    "where": "York",
+    "where_en": "York",
+    "year": 685,
+    "note": "Il sacre Cuthbert évêque de Lindisfarne le jour de Pâques 685, selon Bède.",
+    "note_en": "He consecrated Cuthbert bishop of Lindisfarne on Easter Day 685, according to Bede."
+   }
+  ],
+  "blurb": "Un moine grec de 66 ans, né en Turquie, envoyé par Rome diriger l'Église d'Angleterre : il y passe vingt et un ans, la réorganise de fond en comble et y enseigne le grec.",
+  "blurb_en": "A Greek monk of 66, born in what is now Turkey, sent by Rome to run the Church of England: he spent twenty-one years there, reorganised it from top to bottom and taught Greek.",
+  "fun": "Il a dû attendre quatre mois à Rome que ses cheveux repoussent : tonsuré à l'orientale, il lui fallait la tonsure romaine avant d'être sacré.",
+  "fun_en": "He had to wait four months in Rome for his hair to grow back: tonsured in the Eastern fashion, he needed the Roman tonsure before he could be consecrated.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Théodore_de_Tarse"
+  ]
+ },
+ {
+  "id": "adrien-de-cantorbery",
+  "name": "Adrien",
+  "name_en": "Hadrian",
+  "full": "Saint Adrien de Cantorbéry",
+  "full_en": "Saint Hadrian of Canterbury",
+  "feast": "01-09",
+  "feast_note": "",
+  "born": 635,
+  "died": 710,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Cyrénaïque, Afrique du Nord",
+  "origin_en": "Cyrenaica, North Africa",
+  "role": "abbé enseignant",
+  "role_en": "abbot and teacher",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "grc",
+    "level": "natif"
+   },
+   {
+    "code": "lat",
+    "level": "courant"
+   },
+   {
+    "code": "ang",
+    "level": "notions"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Cyrène (Cyrénaïque)",
+    "place_en": "Cyrene (Cyrenaica)",
+    "lat": 32.82,
+    "lon": 21.86,
+    "from": 635,
+    "to": 645,
+    "note": "Né en Afrique byzantine, d'une famille peut-être berbère ; sa famille fuit la conquête arabe.",
+    "note_en": "Born in Byzantine Africa, to a family that may have been Berber; his family fled the Arab conquest.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Nisida (Naples)",
+    "place_en": "Nisida (Naples)",
+    "lat": 40.8,
+    "lon": 14.16,
+    "from": 645,
+    "to": 668,
+    "note": "Très jeune abbé du monastère de Niridano, dans la baie de Naples ; il y croise l'empereur Constant II lors de son séjour italien de 663.",
+    "note_en": "Abbot, while still very young, of the monastery of Niridano in the Bay of Naples; he crossed paths there with Emperor Constans II during his stay in Italy in 663.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 668,
+    "to": 668,
+    "note": "Le pape Vitalien veut en faire l'archevêque de Cantorbéry ; il refuse deux fois et suggère Théodore.",
+    "note_en": "Pope Vitalian wanted to make him archbishop of Canterbury; he refused twice and suggested Theodore.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Meaux (Neustrie)",
+    "place_en": "Meaux (Neustria)",
+    "lat": 48.96,
+    "lon": 2.88,
+    "from": 668,
+    "to": 670,
+    "note": "Retenu par le maire du palais Ébroïn, qui le soupçonne d'être un agent de l'empereur ; il attend chez les évêques de Sens et de Meaux.",
+    "note_en": "Held back by the mayor of the palace Ebroin, who suspected him of being an agent of the emperor; he waited it out with the bishops of Sens and Meaux.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Cantorbéry",
+    "place_en": "Canterbury",
+    "lat": 51.28,
+    "lon": 1.08,
+    "from": 670,
+    "to": 710,
+    "note": "Abbé de Saint-Pierre pendant quarante ans ; son école forme Aldhelm et fait de Cantorbéry un centre du grec et du latin.",
+    "note_en": "Abbot of St Peter's for forty years; his school trained Aldhelm and made Canterbury a centre of Greek and Latin learning.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "theodore-de-tarse",
+    "where": "Rome puis Cantorbéry",
+    "where_en": "Rome, then Canterbury",
+    "year": 668,
+    "note": "Il refuse le siège, désigne Théodore et devient son bras droit à Cantorbéry pendant vingt ans.",
+    "note_en": "He turned down the see, named Theodore and became his right-hand man at Canterbury for twenty years."
+   },
+   {
+    "with": "benoit-biscop",
+    "where": "Cantorbéry",
+    "where_en": "Canterbury",
+    "year": 670,
+    "note": "Biscop lui remet l'abbaye Saint-Pierre qu'il gardait depuis 669, avant de repartir fonder Wearmouth.",
+    "note_en": "Biscop handed over to him the abbey of St Peter, which he had been keeping since 669, before leaving to found Wearmouth."
+   }
+  ],
+  "blurb": "Un Africain qui refuse deux fois de devenir archevêque de Cantorbéry, propose un Grec à sa place, puis l'accompagne quand même pour ouvrir l'école la plus brillante du nord de l'Europe.",
+  "blurb_en": "An African who twice refuses to become archbishop of Canterbury, puts forward a Greek in his place, then goes along with him anyway to open the most brilliant school in northern Europe.",
+  "fun": "Il a été retenu deux ans en Gaule par le maire du palais Ébroïn, persuadé que ce moine africain était un espion de l'empereur byzantin.",
+  "fun_en": "He was held for two years in Gaul by the mayor of the palace Ebroin, convinced that this African monk was a spy for the Byzantine emperor.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Adrien_de_Cantorbéry"
+  ]
+ },
+ {
+  "id": "amand",
+  "name": "Amand",
+  "name_en": "Amandus",
+  "full": "Saint Amand de Maastricht",
+  "full_en": "Saint Amandus of Maastricht",
+  "feast": "02-06",
+  "feast_note": "",
+  "born": 584,
+  "died": 679,
+  "approx": true,
+  "tradition": "catholique",
+  "origin": "Bas-Poitou",
+  "origin_en": "Lower Poitou",
+  "role": "évêque missionnaire",
+  "role_en": "missionary bishop",
+  "sex": "m",
+  "languages": [
+   {
+    "code": "lat",
+    "level": "natif"
+   },
+   {
+    "code": "frk",
+    "level": "courant"
+   }
+  ],
+  "stops": [
+   {
+    "place": "Saint-Amand-sur-Sèvre (Bas-Poitou)",
+    "place_en": "Saint-Amand-sur-Sèvre (Lower Poitou)",
+    "lat": 46.87,
+    "lon": -0.76,
+    "from": 584,
+    "to": 604,
+    "note": "Fils d'un noble du pays d'Herbauges qui menace de le déshériter s'il se fait moine.",
+    "note_en": "Son of a nobleman of the Herbauges country who threatened to disinherit him if he became a monk.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Île d'Yeu",
+    "place_en": "Île d'Yeu",
+    "lat": 46.72,
+    "lon": -2.35,
+    "from": 604,
+    "to": 608,
+    "note": "Premier monastère ; il y aurait chassé un serpent dans un trou, d'où son attribut.",
+    "note_en": "His first monastery; he is said to have chased a snake into a hole there, hence his emblem.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Tours",
+    "place_en": "Tours",
+    "lat": 47.39,
+    "lon": 0.69,
+    "from": 608,
+    "to": 609,
+    "note": "Tonsuré au tombeau de saint Martin, modèle de tous les missionnaires gaulois.",
+    "note_en": "Tonsured at the tomb of Saint Martin, the model for every missionary in Gaul.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Bourges",
+    "place_en": "Bourges",
+    "lat": 47.08,
+    "lon": 2.4,
+    "from": 609,
+    "to": 624,
+    "note": "Quinze ans reclus dans une cellule contre la cathédrale, au pain et à l'eau, sous l'évêque Austregisile.",
+    "note_en": "Fifteen years as a recluse in a cell built against the cathedral, on bread and water, under Bishop Austregisilus.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Rome",
+    "place_en": "Rome",
+    "lat": 41.9,
+    "lon": 12.5,
+    "from": 625,
+    "to": 626,
+    "note": "Pèlerinage ; saint Pierre lui serait apparu pour l'envoyer évangéliser la Gaule du Nord.",
+    "note_en": "Pilgrimage; Saint Peter is said to have appeared to him and sent him to evangelise northern Gaul.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Gand",
+    "place_en": "Ghent",
+    "lat": 51.05,
+    "lon": 3.72,
+    "from": 630,
+    "to": 638,
+    "note": "Mission chez les païens de l'Escaut à la demande de Clotaire II et Dagobert ; il ressuscite un pendu et fonde Saint-Pierre et Saint-Bavon en 633.",
+    "note_en": "Mission to the pagans of the Scheldt at the request of Chlothar II and Dagobert; he raised a hanged man from the dead and founded St Peter's and St Bavo's in 633.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Vallée du Danube (Slaves)",
+    "place_en": "Danube valley (Slavs)",
+    "lat": 48.15,
+    "lon": 17.11,
+    "from": 638,
+    "to": 639,
+    "note": "Mission infructueuse chez les Slaves, quelque part en Pannonie ou en Carinthie : il rentre sans martyre et sans converti.",
+    "note_en": "A fruitless mission to the Slavs, somewhere in Pannonia or Carinthia: he came home without martyrdom and without a single convert.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Pays basque (Gascogne)",
+    "place_en": "Basque Country (Gascony)",
+    "lat": 43.71,
+    "lon": -1.05,
+    "from": 640,
+    "to": 641,
+    "note": "Prédication aux Basques, sans grand succès : un bouffon qui se moquait de lui serait mort possédé.",
+    "note_en": "Preaching to the Basques, with little success: a jester who mocked him is said to have died possessed.",
+    "certainty": "probable"
+   },
+   {
+    "place": "Maastricht",
+    "place_en": "Maastricht",
+    "lat": 50.85,
+    "lon": 5.69,
+    "from": 647,
+    "to": 650,
+    "note": "Évêque trois ans, mal accueilli par le clergé local ; il démissionne malgré le pape Martin Ier, au profit de Remacle.",
+    "note_en": "Bishop for three years, given a cold welcome by the local clergy; he resigned in spite of Pope Martin I, in favour of Remaclus.",
+    "certainty": "sur"
+   },
+   {
+    "place": "Elnone (Saint-Amand-les-Eaux)",
+    "place_en": "Elnone (Saint-Amand-les-Eaux)",
+    "lat": 50.45,
+    "lon": 3.43,
+    "from": 650,
+    "to": 679,
+    "note": "Son abbaye de prédilection, sur des terres de Dagobert ; il rédige son testament en 675 et meurt vers 679, nonagénaire.",
+    "note_en": "His favourite abbey, on land granted by Dagobert; he drew up his will in 675 and died around 679, in his nineties.",
+    "certainty": "sur"
+   }
+  ],
+  "met": [
+   {
+    "with": "eloi",
+    "where": "cour de Dagobert Ier",
+    "where_en": "court of Dagobert I",
+    "year": 630,
+    "note": "Tous deux conseillers et amis du roi ; Amand baptise le petit Sigebert III en 630 ou 631 et Éloi, alors trésorier royal, appartient au même cercle. Rencontre très probable, non datée précisément.",
+    "note_en": "Both advisers and friends of the king; Amandus baptised the infant Sigebert III in 630 or 631, and Eligius, then royal treasurer, belonged to the same circle. A highly likely meeting, not precisely dated."
+   }
+  ],
+  "blurb": "Il a réprimandé le roi Dagobert sur ses mœurs, s'est fait exiler, puis rappeler pour baptiser le prince héritier : le missionnaire des Flamands avait du caractère.",
+  "blurb_en": "He rebuked King Dagobert over his morals, got himself exiled, then was called back to baptise the heir to the throne: the missionary to the Flemish had character.",
+  "fun": "Patron des brasseurs, des cabaretiers et des marchands de vin, à cause de sa réputation d'hospitalité : l'évangélisateur de la Belgique veille sur ses bières.",
+  "fun_en": "Patron saint of brewers, innkeepers and wine merchants, thanks to his reputation for hospitality: the evangelist of Belgium keeps watch over its beers.",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Amand_de_Maastricht",
+   "https://en.wikipedia.org/wiki/Amandus"
+  ]
+ }
 ]

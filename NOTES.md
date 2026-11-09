@@ -50,3 +50,10 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 - À corriger après les traductions (fichiers data verrouillés par les agents) : Geneviève died 502 → 512 (tradition ; la rencontre
   Clotilde 508 est hors vie sinon). Rencontres non réciproques tolérées par l'app (théodore/cuthbert, amand/éloi, henri/étienne, edmond/louis).
 - Traductions EN en cours (5 agents : A, B, C, E, puis D).
+
+## 14:21 — traductions reçues, publication
+- 5 lots traduits (champs *_en, anglais britannique, indent=1). Geneviève : mort 512 (tradition) pour que la rencontre Clotilde 508 tienne.
+- Bug corrigé : verdict « presque » plantait quand le premier échantillon était le plus proche (pa/pb absents).
+- Nouveau cas de verdict « attested » : rencontre documentée par les sources alors que les itinéraires simplifiés ne coïncident pas
+  (François/Dominique à Rome 1216 par exemple). 120 paires aléatoires testées sans erreur.
+- dist/index.html : 830 ko (données inlinées). Publication artefact + push GitHub.

@@ -53,6 +53,8 @@
       nearHead: km => `Presque : ${km} km les séparent au plus près`,
       nearLede: (y, A, pa, B, pb, contemp) => `Vers ${y}, ${A} est à ${pa} et ${B} à ${pb} : quelques jours de marche, mais personne n'a fait le détour. ${contemp}`,
       apartHead: 'Contemporains, mais jamais à portée de voix',
+      attestedHead: where => `Rencontre attestée${where ? ' : ' + where : ''}`,
+      attestedLede: (y, contemp) => `Nos itinéraires, forcément simplifiés, ne les placent pas au même endroit au même moment, mais les sources sont formelles${y ? ' (' + y + ')' : ''}. ${contemp}`,
       apartLede: (contemp, km, y) => `${contemp} Au plus près, ${km} km les séparent vers ${y}.`,
       onTheWay: 'en chemin',
       langHead: 'En quelle langue ?',
@@ -104,6 +106,8 @@
       nearHead: km => `Almost: ${km} km apart at their closest`,
       nearLede: (y, A, pa, B, pb, contemp) => `Around ${y}, ${A} is in ${pa} and ${B} in ${pb}: a few days\' walk, but nobody made the detour. ${contemp}`,
       apartHead: 'Contemporaries, but never within earshot',
+      attestedHead: where => `A documented meeting${where ? ': ' + where : ''}`,
+      attestedLede: (y, contemp) => `Our itineraries, simplified by necessity, do not put them in the same place at the same time, but the sources are clear${y ? ' (' + y + ')' : ''}. ${contemp}`,
       apartLede: (contemp, km, y) => `${contemp} At their closest, ${km} km separate them around ${y}.`,
       onTheWay: 'on the road',
       langHead: 'In which language?',
@@ -703,7 +707,7 @@
       if (d < minD) { minD = d; minAt = { t, pa, pb }; }
       if (d <= MEET_KM) { if (!cur) cur = { t0: t, t1: t, samples: [] }; cur.t1 = t; cur.samples.push({ t, pa, pb, d }); }
       else if (cur) { windows.push(cur); cur = null; }
-      if (d <= NEAR_KM) { if (!curNear) curNear = { t0: t, t1: t, d, t }; curNear.t1 = t; if (d < curNear.d) { curNear.d = d; curNear.t = t; curNear.pa = pa; curNear.pb = pb; } }
+      if (d <= NEAR_KM) { if (!curNear) curNear = { t0: t, t1: t, d, t, pa, pb }; curNear.t1 = t; if (d < curNear.d) { curNear.d = d; curNear.t = t; curNear.pa = pa; curNear.pb = pb; } }
       else if (curNear) { near.push(curNear); curNear = null; }
     }
     if (cur) windows.push(cur); if (curNear) near.push(curNear);
@@ -718,7 +722,8 @@
       w.t0 = Math.floor(w.t0); w.t1 = Math.floor(w.t1);
       w.ageA = Math.floor((w.t0 + w.t1) / 2) - A.born; w.ageB = Math.floor((w.t0 + w.t1) / 2) - B.born;
     }
-    const kind = windows.length ? 'meet' : near.length ? 'near' : 'apart';
+    // rencontre documentée par les sources mais que nos itinéraires simplifiés ne font pas coïncider : on le dit
+    const kind = windows.length ? 'meet' : attested.length ? 'attested' : near.length ? 'near' : 'apart';
     return { kind, A, B, start, end, windows, near, minD, minAt, common, sharedPlaces, attested };
   }
   function sharedStops(A, B) {
@@ -779,6 +784,10 @@
         const badge = v.attested.length ? ` <span class="tag attested">${t.attested}</span>` : w.legend ? ` <span class="tag">${t.legend}</span>` : w.probable ? ` <span class="tag">${t.probable}</span>` : '';
         head = `${sealSVG('meet')}<h2>${t.meetHead(esc(placeName(w)))}${badge}</h2><p class="lede">${t.meetLede(when, w.inTransit, nm(A, 'a'), w.ageA, nm(B, 'b'), w.ageB, contemp)}</p>`;
         left = `<div><h3>${t.crossroads}</h3><ul>${v.windows.slice(0, 6).map(x => `<li>${placeBtn(x.lon, x.lat, placeName(x))}, ${x.t0 === x.t1 ? t.rangeIn(yr(x.t0)) : t.rangeFromTo(yr(x.t0), yr(x.t1))}${x.inTransit ? ' (' + t.inTransit + ')' : ''}${x.legend ? ' <span class="tag">' + t.legend + '</span>' : ''}</li>`).join('')}</ul>${v.attested.length ? `<h3>${t.sources}</h3><ul>${v.attested.map(m => `<li>${esc(F(m, 'where') || '')}${m.year ? ', ' + yr(m.year) : ''} : ${esc(F(m, 'note'))}</li>`).join('')}</ul>` : ''}</div>`;
+      } else if (v.kind === 'attested') {
+        const m = v.attested[0];
+        head = `${sealSVG('meet')}<h2>${t.attestedHead(esc(F(m, 'where') || ''))} <span class="tag attested">${t.attested}</span></h2><p class="lede">${t.attestedLede(m.year ? yr(m.year) : '', contemp)}</p>`;
+        left = `<div><h3>${t.sources}</h3><ul>${v.attested.map(x => `<li>${esc(F(x, 'where') || '')}${x.year ? ', ' + yr(x.year) : ''} : ${esc(F(x, 'note'))}</li>`).join('')}</ul><h3>${t.samePlacesOtherYears}</h3>${sharedList(v, t.sharedMissed, t.noCross)}</div>`;
       } else if (v.kind === 'near') {
         const n = v.near.slice().sort((x, y) => x.d - y.d)[0];
         const where = p => p.stop ? stopPlace(p.stop) : ((nearestCity(p.lat, p.lon, 150) || {}).modern || t.onTheWay);
@@ -803,7 +812,7 @@
     if (!v.A || !v.B) { tl.hidden = true; layers.pawns.innerHTML = ''; return; }
     const lo = Math.min(v.A.born, v.B.born), hi = Math.max(v.A.died, v.B.died);
     tl.hidden = false; yearInput.min = lo; yearInput.max = hi;
-    const target = v.kind === 'meet' ? v.windows[0].t0 : v.kind === 'near' ? Math.floor(v.near.slice().sort((x, y) => x.d - y.d)[0].t) : v.kind === 'never' ? v.first.died : Math.floor(v.minAt.t);
+    const target = v.kind === 'meet' ? v.windows[0].t0 : v.kind === 'attested' ? (v.attested[0].year || v.start) : v.kind === 'near' ? Math.floor(v.near.slice().sort((x, y) => x.d - y.d)[0].t) : v.kind === 'never' ? v.first.died : Math.floor(v.minAt.t);
     yearInput.value = target; setYear(target);
   }
   function setYear(tY) {
