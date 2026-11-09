@@ -26,3 +26,10 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 - data/rivers.json : shapefile NE 50m lu en pur Python (tools/rivers.py), ~45 fleuves nommés, 37 ko.
   Pièges : noms NE en graphie locale (Dnipro, Tajo, Duero, Rhein, Severnaya Dvina) ; pas de Tibre ni de Kura au 50m.
 - Projection prévue : équirectangulaire simple (x = lon, y = −lat × 1,3), comme les portulans (pas de projection).
+
+## 14:02 — premier squelette
+- src/template.html + src/style.css + src/app.js, assemblés par tools/build.py (données inlinées) → dist/index.html.
+- Lots reçus : places.json (219 villes, 44 régions, 33 features, 20 mers ; Volga = « Edil », Dniepr = « Borysthenes »),
+  saints-b.json (25 saints, 15 rencontres documentées). Séverin et Brendan très incertains (marqués).
+- Logique de rencontre : position interpolée par pas de 0,25 an ; rencontre ≤ 60 km, voisinage ≤ 250 km ;
+  occasions manquées = mêmes lieux à d'autres années ; langues = intersection pondérée natif/courant/notions.

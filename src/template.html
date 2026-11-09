@@ -1,0 +1,64 @@
+<title>Portulan des saints</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400&family=Almendra+SC&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap">
+<style>
+/*__CSS__*/
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="eyebrow">Carte marine à l'usage des curieux</p>
+    <h1>Portulan des saints</h1>
+    <p class="sub">Deux saints du calendrier auraient-ils pu se croiser de leur vivant ? Choisissez-en deux : la carte trace leurs chemins, cherche le carrefour et devine en quelle langue ils se seraient parlé.</p>
+  </div>
+</header>
+
+<main class="board">
+  <aside class="pickers" aria-label="Choix des deux saints">
+    <section class="picker picker-a" data-slot="a" aria-labelledby="label-a">
+      <h2 id="label-a"><span class="ink-dot"></span>Premier saint <small>encre rouge</small></h2>
+      <div class="picker-body"></div>
+    </section>
+    <section class="picker picker-b" data-slot="b" aria-labelledby="label-b">
+      <h2 id="label-b"><span class="ink-dot"></span>Second saint <small>encre verte</small></h2>
+      <div class="picker-body"></div>
+    </section>
+    <div class="actions">
+      <button type="button" id="btn-random" class="btn">Tirer deux saints au sort</button>
+      <button type="button" id="btn-today" class="btn btn-ghost">Les saints du jour</button>
+      <button type="button" id="btn-swap" class="btn btn-ghost" title="Échanger les deux saints">Échanger</button>
+    </div>
+  </aside>
+
+  <section class="chart-wrap" aria-label="Carte">
+    <div class="chart-tools">
+      <div class="zoom">
+        <button type="button" id="zoom-in" class="tool" aria-label="Agrandir">+</button>
+        <button type="button" id="zoom-out" class="tool" aria-label="Réduire">−</button>
+        <button type="button" id="zoom-fit" class="tool tool-text" aria-label="Cadrer sur les deux chemins">Cadrer</button>
+        <button type="button" id="zoom-all" class="tool tool-text" aria-label="Toute la carte">Tout</button>
+      </div>
+      <div class="timeline" id="timeline" hidden>
+        <button type="button" id="play" class="tool" aria-label="Faire défiler les années">▶</button>
+        <input type="range" id="year" min="300" max="1450" value="300" step="1" aria-label="Année">
+        <output id="year-label" for="year">an 300</output>
+      </div>
+    </div>
+    <div class="chart-frame" id="chart-frame">
+      <svg id="chart" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte façon portulan de l'Europe et de l'Asie"></svg>
+    </div>
+    <p class="chart-hint">Molette ou pincement pour zoomer, glisser pour déplacer. Les noms des petits ports apparaissent en zoomant.</p>
+  </section>
+
+  <section class="verdict" id="verdict" aria-live="polite"></section>
+</main>
+
+<footer class="colophon">
+  <p>Itinéraires reconstitués d'après les vies des saints (Wikipédia, notices hagiographiques) : les dates sont souvent approximatives et certains voyages relèvent de la légende, signalée comme telle. Trait de côte Natural Earth. Dessin inspiré du portulan de Vesconte Maggiolo (1541) et de l'Atlas catalan (1375).</p>
+  <p id="colophon-count"></p>
+</footer>
+
+<script>
+/*__DATA__*/
+/*__JS__*/
+</script>
