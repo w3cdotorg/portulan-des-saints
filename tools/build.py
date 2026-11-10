@@ -1,5 +1,8 @@
-"""Assemble dist/index.html : src/template.html + src/style.css + src/app.js + données JSON inlinées."""
-import json, glob, re, sys, os, datetime
+"""Assemble dist/index.html (corps de page pour l'artefact Claude) et docs/index.html (page complète pour GitHub Pages)
+à partir de src/template.html + src/style.css + src/app.js + données JSON inlinées."""
+import json, glob, sys, os, datetime
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from page import wrap
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def rd(p): return open(os.path.join(ROOT, p), encoding='utf-8').read()
 saints = []
@@ -24,4 +27,8 @@ html = rd('src/template.html')
 html = html.replace('/*__CSS__*/', rd('src/style.css')).replace('/*__DATA__*/', 'const DATA = ' + blob + ';').replace('/*__JS__*/', rd('src/app.js'))
 out = os.path.join(ROOT, 'dist', 'index.html')
 open(out, 'w', encoding='utf-8').write(html)
-print('%d saints, %d villes, %d ko -> %s' % (len(saints), len(data['places']['cities']), len(html.encode()) // 1024, out))
+pages = os.path.join(ROOT, 'docs', 'index.html')
+os.makedirs(os.path.dirname(pages), exist_ok=True)
+open(pages, 'w', encoding='utf-8').write(wrap(html))
+open(os.path.join(ROOT, 'docs', '.nojekyll'), 'w').close()
+print('%d saints, %d villes, %d ko -> %s et %s' % (len(saints), len(data['places']['cities']), len(html.encode()) // 1024, out, pages))
