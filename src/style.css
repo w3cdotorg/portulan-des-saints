@@ -1,5 +1,5 @@
 /* Mise en page : une table de bibliothèque (fond thémé) sur laquelle est posé un vélin (couleurs fixes).
-   Colonne de choix à gauche, carte large à droite, verdict en pleine largeur dessous. */
+   Colonne de choix à gauche, carte large à droite, verdict juste sous la carte (demande de Clément). */
 :root {
   --bg: #e6dccb;            /* drap de table, lin clair */
   --bg-deep: #d8cbb4;
@@ -81,13 +81,13 @@ h1::after { content: ""; display: block; width: 7rem; height: 2px; margin: .6rem
 .board {
   max-width: 1400px; margin: 0 auto;
   display: grid; grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
-  grid-template-areas: "pickers chart" "verdict verdict";
+  grid-template-areas: "pickers chart" "pickers verdict";
   gap: 1.2rem; align-items: start;
 }
 @media (max-width: 900px) {
   .board { grid-template-columns: minmax(0, 1fr); grid-template-areas: "pickers" "chart" "verdict"; }
 }
-.pickers { grid-area: pickers; display: grid; gap: 1rem; min-width: 0; }
+.pickers { grid-area: pickers; display: grid; gap: 1rem; min-width: 0; align-content: start; }
 .chart-wrap { grid-area: chart; min-width: 0; }
 .verdict { grid-area: verdict; min-width: 0; }
 

@@ -109,3 +109,17 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 - Bouton soleil / lune (#theme-toggle) sous le sélecteur de langue, dans un conteneur .corner (colonne à droite, rangée
   centrée sous 600 px). Il fixe data-theme sur <html>, mémorisé dans localStorage 'portulan-theme' ; sans préférence
   enregistrée on suit le système (ou le data-theme posé par l'hôte claude.ai). Libellés FR/EN (toDark / toLight).
+
+## 10/11 21:26-21:40 — bande claire sur la Scandinavie, verdict sous la carte
+- Clément : la carte est « coupée » au nord (Norvège, Suède) par une bande claire sur toute la largeur ; et placer le
+  bandeau de verdict directement sous la carte.
+- Cause de la bande : l'anneau Afro-Eurasie de Natural Earth franchit l'antiméridien par la Tchoukotka (179,9 → −180
+  aux latitudes 65 et 69). En projection plate, ces deux sauts tracent deux segments horizontaux sur toute la largeur et
+  le remplissage pair-impair s'inverse entre eux : terre effacée, mer teintée d'ivoire. Vu en sondant avec
+  elementsFromPoint (path.land présent en mer à 5E 68N, absent sur terre à 25E 68N). Reproduit dans Chrome aussi.
+- Correctif : tools/geo.py déplie l'anneau (points à l'ouest de −100° passés à +360°, ils finissent hors carte sous le
+  cache) ; data/land.json régénéré (211 anneaux, 7 738 points, inchangé en nombre).
+- Mise en page : grille « pickers chart » / « pickers verdict », le verdict occupe la colonne de la carte ; sur
+  téléphone l'empilement reste choix → carte → verdict.
+- Le Firefox du MCP a changé de révision (1573) ; réinstallé avec `npx @playwright/mcp install-browser firefox`. Quand sa
+  fenêtre est masquée, requestAnimationFrame s'arrête et les mesures de zoom ne tournent plus : vérifier avant de mesurer.

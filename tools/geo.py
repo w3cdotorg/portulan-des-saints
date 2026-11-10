@@ -22,7 +22,14 @@ def ring(arc_idx, arcs):
         a = arcs[i] if i >= 0 else arcs[~i][::-1]
         if out and out[-1] == a[0]: a = a[1:]
         out.extend(a)
-    return out
+    return unwrap(out)
+
+def unwrap(pts):
+    """L'anneau Afro-Eurasie franchit l'antiméridien par la Tchoukotka (179.9 -> -180) : en projection plate, ces deux
+    sauts tracent des segments horizontaux sur toute la largeur de la carte et inversent le remplissage pair-impair
+    entre 65 et 69 N. On déplie : les points à l'ouest de -100 passent à +360 (ils finissent hors carte, sous le cache)."""
+    if not (any(x < -100 for x, _ in pts) and any(x > 100 for x, _ in pts)): return pts
+    return [(x + 360 if x < -100 else x, y) for x, y in pts]
 
 def dp(pts, tol):
     if len(pts) < 3: return pts
