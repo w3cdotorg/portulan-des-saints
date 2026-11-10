@@ -165,13 +165,13 @@ h1::after { content: ""; display: block; width: 7rem; height: 2px; margin: .6rem
 
 /* Calques SVG */
 .coast { fill: none; stroke: #6b4a2b; stroke-width: .9; stroke-linejoin: round; }
-.coast-glow { fill: none; stroke: #8a6a45; stroke-width: 3.2; stroke-linejoin: round; opacity: .14; }
 .land { fill: var(--vellum); }
 .river { fill: none; stroke: #4a7ca3; stroke-width: .9; stroke-linecap: round; stroke-linejoin: round; opacity: .9; }
 .rhumb-main { stroke: #3b2a1b; stroke-width: .55; opacity: .5; }
 .rhumb-half { stroke: #2f6b2c; stroke-width: .45; opacity: .5; }
 .rhumb-quarter { stroke: #b23a2c; stroke-width: .45; opacity: .55; }
 #chart { --ts: 1; }
+.cover { fill: var(--bg-deep); }
 .city-label { font-family: var(--font-body); font-style: italic; fill: #4a2f1a; }
 .city-label.t1 { fill: #a8321f; font-size: calc(9px * var(--ts)); font-style: normal; }
 .city-label.t2 { font-size: calc(8px * var(--ts)); }

@@ -88,3 +88,18 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 - En ligne : https://w3cdotorg.github.io/portulan-des-saints/ ; vérifié sous Playwright, 0 erreur console, page en anglais
   car la langue suit le navigateur quand le hash ne la fixe pas.
 - Pas de licence dans le repo pour l'instant (choix de Clément) ; Natural Earth est du domaine public.
+
+## 10/11 08:30-09:10 — zoom saccadé sous Firefox
+- Clément : zoom moins fluide dans Firefox, pas dans Safari/Chrome. Mesuré dans le Firefox du MCP Playwright (durée des
+  images pendant 12 coups de molette, variantes CSS qui neutralisent un élément à la fois). Chrome : médiane 17 ms.
+  Firefox avant : médiane 22 ms, 15 images sur 69 au-dessus de 33 ms.
+- Causes, par ordre d'effet : (1) halo de côte = trait large translucide sur 7 700 points, (2) grain en <pattern> SVG
+  rééchantillonné à chaque viewBox, (3) clip-path sur le groupe racine. Firefox rasterise tout le SVG sur CPU à chaque
+  changement de viewBox, là où Chrome/Safari gardent des caches. Jointures (round/bevel/miter) : aucun effet.
+- Correctifs : grain + halo pré-rasterisés dans un seul canvas (2048×1280) posé en <image> étirée sur la carte ;
+  clip-path remplacé par un chemin « cache » evenodd couleur du cadre (classe .cover, fill var(--bg-deep)), inséré sous
+  les trajets ; événements de molette regroupés en une étape de zoom par image (Firefox en émet au rythme du pavé).
+- Firefox après : médiane 15-19 ms, 3-6 images sur ~75 au-dessus de 33 ms. Chrome inchangé.
+- Au passage : le hash acceptait --en mais pas --fr (et --fr faisait perdre les deux saints) ; les deux suffixes sont
+  acceptés et toujours écrits.
+- tools/page.py et docs/ rebuild ; artefact republié.

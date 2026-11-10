@@ -169,13 +169,13 @@ h1::after { content: ""; display: block; width: 7rem; height: 2px; margin: .6rem
 
 /* Calques SVG */
 .coast { fill: none; stroke: #6b4a2b; stroke-width: .9; stroke-linejoin: round; }
-.coast-glow { fill: none; stroke: #8a6a45; stroke-width: 3.2; stroke-linejoin: round; opacity: .14; }
 .land { fill: var(--vellum); }
 .river { fill: none; stroke: #4a7ca3; stroke-width: .9; stroke-linecap: round; stroke-linejoin: round; opacity: .9; }
 .rhumb-main { stroke: #3b2a1b; stroke-width: .55; opacity: .5; }
 .rhumb-half { stroke: #2f6b2c; stroke-width: .45; opacity: .5; }
 .rhumb-quarter { stroke: #b23a2c; stroke-width: .45; opacity: .55; }
 #chart { --ts: 1; }
+.cover { fill: var(--bg-deep); }
 .city-label { font-family: var(--font-body); font-style: italic; fill: #4a2f1a; }
 .city-label.t1 { fill: #a8321f; font-size: calc(9px * var(--ts)); font-style: normal; }
 .city-label.t2 { font-size: calc(8px * var(--ts)); }
@@ -505,9 +505,13 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
       L ${x0 - 2} ${MAP_H * 0.62} Q ${x0 - 12} ${MAP_H * 0.6} ${x0 - 14} ${MAP_H * 0.56} L ${x0 - 15} ${MAP_H * 0.47} Q ${x0 - 12} ${MAP_H * 0.43} ${x0 - 1} ${MAP_H * 0.41}
       L ${x0 + 1} ${y0 + 70} Q ${x0} ${y0 + 6} ${x0 + 60} ${y0} Z`;
   }
-  function grainDataUrl() {
-    const c = document.createElement('canvas'); c.width = c.height = 256;
-    const ctx = c.getContext('2d'); const img = ctx.createImageData(256, 256);
+  // Peau du parchemin : grain + halo des côtes rasterisés une fois pour toutes dans une seule image étirée sur la carte.
+  // En SVG pur (motif <pattern>, trait large translucide le long de 7 700 points de côte), Firefox refaisait tout ce
+  // travail à chaque changement de viewBox et le zoom saccadait ; une image se redessine pour rien.
+  const SKIN_W = 2048, SKIN_H = 1280, SKIN_PAD = 70;
+  function skinDataUrl(coastD) {
+    const c = document.createElement('canvas'); c.width = SKIN_W; c.height = SKIN_H;
+    const ctx = c.getContext('2d'); const img = ctx.createImageData(SKIN_W, SKIN_H);
     let seed = 1234567;
     const rnd = () => { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; };
     for (let i = 0; i < img.data.length; i += 4) {
@@ -516,16 +520,16 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
       img.data[i + 3] = Math.floor((dark ? 14 : 10) * rnd() + (v > 0.995 ? 60 : 0));
     }
     ctx.putImageData(img, 0, 0);
+    const k = SKIN_W / (MAP_W + 2 * SKIN_PAD);
+    ctx.setTransform(k, 0, 0, k, SKIN_PAD * k, SKIN_PAD * k);
+    ctx.strokeStyle = 'rgba(138, 106, 69, .16)'; ctx.lineWidth = 3.4; ctx.lineJoin = 'round';
+    ctx.stroke(new Path2D(coastD));
     return c.toDataURL('image/png');
   }
 
   function buildMap() {
     applyView();
     const defs = svg('defs', null, chart);
-    const clip = svg('clipPath', { id: 'skin' }, defs);
-    svg('path', { d: parchmentPath() }, clip);
-    const grain = svg('pattern', { id: 'grain', width: 256, height: 256, patternUnits: 'userSpaceOnUse' }, defs);
-    svg('image', { href: grainDataUrl(), width: 256, height: 256 }, grain);
     const vig = svg('radialGradient', { id: 'vignette', cx: '50%', cy: '50%', r: '72%' }, defs);
     svg('stop', { offset: '55%', 'stop-color': '#7a5a30', 'stop-opacity': 0 }, vig);
     svg('stop', { offset: '100%', 'stop-color': '#6b4a26', 'stop-opacity': .28 }, vig);
@@ -544,11 +548,13 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
     svg('path', { d: 'M10 23 Q9 14 10 8', stroke: '#6b4a2b', 'stroke-width': 1.4, fill: 'none' }, palm);
     ['M10 8 Q4 6 1 10 Q6 8 10 9', 'M10 8 Q16 6 19 10 Q14 8 10 9', 'M10 8 Q5 2 4 3 Q8 4 10 8', 'M10 8 Q15 2 16 3 Q12 4 10 8', 'M10 8 Q10 1 12 1 Q10 4 10 8'].forEach(d => svg('path', { d, fill: '#5d8244', stroke: '#3d5f2c', 'stroke-width': .4 }, palm));
 
-    const root = svg('g', { 'clip-path': 'url(#skin)' }, chart);
+    // Pas de clip-path sur le groupe racine (Firefox le recompose à chaque image) : ce qui dépasse du parchemin
+    // est recouvert par un chemin « cache » de la couleur du cadre, inséré sous les trajets.
+    const root = svg('g', null, chart);
     // la mer en bleu (choix de Clément, un peu anachronique mais lisible), la terre en vélin, le grain sur les deux
     svg('path', { d: parchmentPath(), fill: '#6a98bd' }, root);
-    svg('path', { d: parchmentPath(), fill: 'url(#grain)' }, root);
     ['water', 'land', 'rhumbs', 'rivers', 'coast', 'lakes', 'mountains', 'cities', 'labels', 'deco', 'dim', 'meet', 'routes', 'pawns'].forEach(k => { layers[k] = svg('g', { id: 'l-' + k }, root); });
+    root.insertBefore(svg('path', { class: 'cover', d: 'M-9000 -9000H9000V9000H-9000Z' + parchmentPath(), 'fill-rule': 'evenodd', 'pointer-events': 'none' }), layers.dim);
     layers.dimPath = svg('path', { d: parchmentPath(), fill: '#f4ead2', opacity: 0, 'pointer-events': 'none' }, layers.dim);
     svg('path', { d: parchmentPath(), fill: 'url(#vignette)', 'pointer-events': 'none' }, root);
     svg('path', { d: parchmentPath(), fill: 'none', stroke: '#6b4a2b', 'stroke-width': 1.4, opacity: .6 }, chart);
@@ -564,8 +570,7 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
     const outer = DATA.land.filter(r => !r.hole), holes = DATA.land.filter(r => r.hole);
     const d = outer.map(r => ringPath(r.pts)).join('');
     svg('path', { class: 'land', d, 'fill-rule': 'evenodd' }, layers.land);
-    svg('path', { d, 'fill-rule': 'evenodd', fill: 'url(#grain)' }, layers.land);
-    svg('path', { class: 'coast-glow', d }, layers.coast);
+    svg('image', { href: skinDataUrl(d), x: -SKIN_PAD, y: -SKIN_PAD, width: MAP_W + 2 * SKIN_PAD, height: MAP_H + 2 * SKIN_PAD, preserveAspectRatio: 'none', 'pointer-events': 'none' }, layers.land);
     svg('path', { class: 'coast', d }, layers.coast);
     for (const h of holes) svg('path', { d: ringPath(h.pts), fill: '#5f8fb8', stroke: '#2f4a63', 'stroke-width': .6, opacity: .9 }, layers.lakes);
   }
@@ -788,7 +793,16 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
     });
     const up = e => { pointers.delete(e.pointerId); if (pointers.size < 2) pinch = null; if (!pointers.size) { last = null; chart.classList.remove('dragging'); } else last = [...pointers.values()][0]; };
     chart.addEventListener('pointerup', up); chart.addEventListener('pointercancel', up);
-    frame.addEventListener('wheel', e => { e.preventDefault(); zoomAt(e.deltaY > 0 ? 1.18 : 1 / 1.18, e.clientX, e.clientY); }, { passive: false });
+    // Firefox envoie les événements de molette au rythme du matériel (pavé tactile : bien plus d'un par image) ;
+    // on les regroupe et on applique une seule étape de zoom par image.
+    let wheel = null;
+    frame.addEventListener('wheel', e => {
+      e.preventDefault();
+      const dir = Math.sign(e.deltaY) || 0; if (!dir) return;
+      if (wheel) { wheel.dir = dir; wheel.x = e.clientX; wheel.y = e.clientY; return; }
+      wheel = { dir, x: e.clientX, y: e.clientY };
+      requestAnimationFrame(() => { const w = wheel; wheel = null; zoomAt(w.dir > 0 ? 1.18 : 1 / 1.18, w.x, w.y); });
+    }, { passive: false });
     $('#zoom-in').addEventListener('click', () => { const r = chart.getBoundingClientRect(); zoomAt(1 / 1.5, r.left + r.width / 2, r.top + r.height / 2); });
     $('#zoom-out').addEventListener('click', () => { const r = chart.getBoundingClientRect(); zoomAt(1.5, r.left + r.width / 2, r.top + r.height / 2); });
     $('#zoom-all').addEventListener('click', () => animateTo(fullView(), 600));
@@ -902,7 +916,7 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
     renderChosen(slot);
     update(opts);
   }
-  function hashFor() { const h = [state.a, state.b].filter(Boolean).join('--'); return h ? '#' + h + (lang === 'en' ? '--en' : '') : ''; }
+  function hashFor() { const h = [state.a, state.b].filter(Boolean).join('--'); return h ? '#' + h + '--' + lang : ''; }
   function update(opts) {
     opts = opts || {};
     stopPlay();
@@ -1203,13 +1217,14 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
   pickers.a = buildPicker('a'); pickers.b = buildPicker('b');
   function fromHash() {
     const parts = location.hash.slice(1).split('--').filter(Boolean);
-    const wantEn = parts[parts.length - 1] === 'en'; if (wantEn) parts.pop();
-    if (parts.length === 2 && byId[parts[0]] && byId[parts[1]] && parts[0] !== parts[1]) return { ids: parts, en: wantEn };
-    return wantEn ? { ids: null, en: true } : null;
+    // suffixe de langue facultatif (--fr / --en) : un lien partagé s'ouvre dans la langue de celui qui l'a copié
+    const last = parts[parts.length - 1], hashLang = last === 'en' || last === 'fr' ? last : null; if (hashLang) parts.pop();
+    if (parts.length === 2 && byId[parts[0]] && byId[parts[1]] && parts[0] !== parts[1]) return { ids: parts, lang: hashLang };
+    return hashLang ? { ids: null, lang: hashLang } : null;
   }
   const h0 = fromHash();
   let stored = null; try { stored = localStorage.getItem('portulan-lang'); } catch (e) { stored = null; }
-  const initialLang = h0 && h0.en ? 'en' : stored === 'en' || stored === 'fr' ? stored : (navigator.language || 'fr').toLowerCase().startsWith('fr') ? 'fr' : 'en';
+  const initialLang = h0 && h0.lang ? h0.lang : stored === 'en' || stored === 'fr' ? stored : (navigator.language || 'fr').toLowerCase().startsWith('fr') ? 'fr' : 'en';
   applyLang(initialLang, { initial: true });
   const defaults = ['francois-d-assise', 'dominique'].every(id => byId[id]) ? ['francois-d-assise', 'dominique'] : [saints[0].id, saints[1].id];
   const init = (h0 && h0.ids) || defaults;
