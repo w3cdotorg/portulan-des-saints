@@ -77,3 +77,14 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
   trajets gainés d'ivoire, pastilles plus grandes avec ombre, étiquettes d'étapes en gras à la couleur du saint,
   pions à 1,5× avec cartouche au-dessus de l'auréole. Vérifié en vue totale et à 12× sur Trèves.
 - Artefact republié (même URL). Pièges notés : navigation vers la même URL avec un autre hash ne recharge pas la page (ajouter ?v=N).
+
+## 10/11 08:25-08:30 — repo public et GitHub Pages
+- Demande de Clément : passer le repo en public et déployer sur GitHub Pages.
+- tools/page.py : squelette HTML complet (doctype, head, titre remonté depuis le corps, favicon rose des vents en data URI),
+  partagé par build.py (écrit docs/index.html + docs/.nojekyll) et preview.py. dist/index.html reste le corps nu pour l'artefact.
+- README.md ajouté (FR, résumé EN), .gitignore : __pycache__.
+- Repo w3cdotorg/portulan-des-saints passé en PUBLIC ; Pages activé sur master:/docs (build_type legacy).
+  Premier build « errored » (activation avant indexation du push), le second a réussi dans la minute.
+- En ligne : https://w3cdotorg.github.io/portulan-des-saints/ ; vérifié sous Playwright, 0 erreur console, page en anglais
+  car la langue suit le navigateur quand le hash ne la fixe pas.
+- Pas de licence dans le repo pour l'instant (choix de Clément) ; Natural Earth est du domaine public.
