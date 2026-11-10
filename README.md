@@ -39,3 +39,10 @@ Ne pas éditer `dist/` ni `docs/` à la main : ils sont régénérés à chaque 
 Vesconte Maggiolo (1541), l'Atlas catalan (1375), la Carte pisane et les cartes d'Angelino Dulcert
 (1339) et de Mecia de Viladestes (1413). Les mers sont bleues, les roses des vents et les tentes
 décoratives, les monstres marins sans garantie.
+
+## Licences
+
+- Le code (`src/`, `tools/`, pages construites) est sous licence [MIT](LICENSE).
+- Les données (`data/saints-*.json`, `data/places.json`, `data/SCHEMA.md`, `data/TRANSLATION.md`) sont sous
+  [Creative Commons Attribution 4.0](data/LICENSE) : réutilisation libre en citant « Portulan des saints, Clément Larrivé ».
+- `data/land.json` et `data/rivers.json` dérivent de [Natural Earth](https://www.naturalearthdata.com/) (domaine public).
