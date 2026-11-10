@@ -67,7 +67,7 @@
       todayOne: (d, n, other, od) => `Aujourd'hui ${d} : ${n}. Pour lui tenir compagnie, le plus proche au calendrier : ${other} (${od}).`,
       todayNone: (d, list) => `Personne du portulan n'est fêté ce ${d}. Les plus proches au calendrier : ${list}.`,
       and: ' et ', count: (n, a, b, c) => `${n} saints et saintes, de ${a} à ${b}, ${c} lieux nommés.`,
-      play: 'Faire défiler les années', pause: 'Arrêter', zoomIn: 'Agrandir', zoomOut: 'Réduire',
+      play: 'Faire défiler les années', pause: 'Arrêter', zoomIn: 'Agrandir', zoomOut: 'Réduire', toDark: 'Passer en mode sombre', toLight: 'Passer en mode clair',
       stTitle: s => (s.sex === 'f' ? 'sainte ' : 'saint ') + s.name
     },
     en: {
@@ -120,7 +120,7 @@
       todayOne: (d, n, other, od) => `Today, ${d}: ${n}. To keep company, the nearest in the calendar: ${other} (${od}).`,
       todayNone: (d, list) => `Nobody on this chart is celebrated on ${d}. The nearest in the calendar: ${list}.`,
       and: ' and ', count: (n, a, b, c) => `${n} saints, from ${a} to ${b}, ${c} named places.`,
-      play: 'Play the years', pause: 'Pause', zoomIn: 'Zoom in', zoomOut: 'Zoom out',
+      play: 'Play the years', pause: 'Pause', zoomIn: 'Zoom in', zoomOut: 'Zoom out', toDark: 'Switch to dark mode', toLight: 'Switch to light mode',
       stTitle: s => 'St ' + F(s, 'name')
     }
   };
@@ -896,6 +896,7 @@
     document.querySelectorAll('[data-i18n]').forEach(n => { const k = n.getAttribute('data-i18n'); if (T()[k]) n.textContent = T()[k]; });
     document.title = T().title; const ct = $('#cartouche-title'); if (ct) ct.textContent = T().title;
     $('#zoom-in').setAttribute('aria-label', T().zoomIn); $('#zoom-out').setAttribute('aria-label', T().zoomOut); yearInput.setAttribute('aria-label', l === 'en' ? 'Year' : 'Année');
+    labelTheme();
     slots.forEach(k => { pickers[k].relabel(); renderChosen(k); });
     toast.textContent = '';
     $('#colophon-count').textContent = T().count(saints.length, saints[0].born, Math.max(...saints.map(s => s.died)), cities.length) + ' ' + (l === 'en' ? 'Built on ' : 'Construit le ') + DATA.built + '.';
@@ -903,6 +904,20 @@
   }
   $('#lang-fr').addEventListener('click', () => applyLang('fr'));
   $('#lang-en').addEventListener('click', () => applyLang('en'));
+
+  /* ---------- Clair / sombre ---------- */
+  // Sans préférence enregistrée, on suit le système (ou le thème imposé par l'hôte via data-theme) ; le bouton fixe un choix.
+  const themeBtn = $('#theme-toggle'), darkMedia = matchMedia('(prefers-color-scheme: dark)');
+  function labelTheme() { const dark = document.documentElement.dataset.theme === 'dark'; themeBtn.setAttribute('aria-pressed', String(dark)); themeBtn.setAttribute('aria-label', dark ? T().toLight : T().toDark); }
+  function applyTheme(t, opts) {
+    document.documentElement.dataset.theme = t;
+    if (!(opts && opts.initial)) { try { localStorage.setItem('portulan-theme', t); } catch (e) { /* stockage indisponible : tant pis */ } }
+    labelTheme();
+  }
+  let storedTheme = null; try { storedTheme = localStorage.getItem('portulan-theme'); } catch (e) { storedTheme = null; }
+  applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : document.documentElement.dataset.theme || (darkMedia.matches ? 'dark' : 'light'), { initial: true });
+  darkMedia.addEventListener('change', e => { if (!storedTheme) applyTheme(e.matches ? 'dark' : 'light', { initial: true }); });
+  themeBtn.addEventListener('click', () => { storedTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; applyTheme(storedTheme); });
 
   /* ---------- Démarrage ---------- */
   buildMap(); setupPointer();

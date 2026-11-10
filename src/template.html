@@ -6,9 +6,15 @@
 </style>
 
 <header class="masthead">
-  <div class="lang-switch" role="group" aria-label="Langue / Language">
-    <button type="button" id="lang-fr" aria-pressed="true" lang="fr">Français</button>
-    <button type="button" id="lang-en" aria-pressed="false" lang="en">English</button>
+  <div class="corner">
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <button type="button" id="lang-fr" aria-pressed="true" lang="fr">Français</button>
+      <button type="button" id="lang-en" aria-pressed="false" lang="en">English</button>
+    </div>
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Passer en mode sombre">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>
+    </button>
   </div>
   <div class="masthead-inner">
     <p class="eyebrow" data-i18n="eyebrow">Carte marine à l'usage des curieux</p>

@@ -75,11 +75,18 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 
 /* En-tête */
 .masthead { padding-block: 1.6rem 1rem; position: relative; }
-.lang-switch { position: absolute; right: 0; top: 1rem; display: flex; border: 1px solid var(--panel-edge); border-radius: 3px; overflow: hidden; }
+.corner { position: absolute; right: 0; top: 1rem; display: flex; flex-direction: column; align-items: flex-end; gap: .45rem; }
+.lang-switch { display: flex; border: 1px solid var(--panel-edge); border-radius: 3px; overflow: hidden; }
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 2.1rem; height: 2.1rem; padding: 0; background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 3px; color: var(--muted); }
+.theme-toggle:hover { color: var(--fg); }
+.theme-toggle svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 .lang-switch button { background: var(--panel); border: 0; padding: .3rem .7rem; font-family: var(--font-caps); font-size: .9rem; letter-spacing: .04em; color: var(--muted); }
 .lang-switch button + button { border-left: 1px solid var(--panel-edge); }
 .lang-switch button[aria-pressed="true"] { color: var(--fg); background: color-mix(in srgb, var(--gold) 22%, var(--panel)); }
-@media (max-width: 600px) { .lang-switch { position: static; justify-content: center; width: max-content; margin: 0 auto .8rem; } }
+@media (max-width: 600px) { .corner { position: static; flex-direction: row; justify-content: center; align-items: stretch; margin: 0 auto .8rem; } .lang-switch { width: max-content; } }
 .masthead-inner { max-width: 1400px; margin: 0 auto; text-align: center; }
 .eyebrow { font-family: var(--font-caps); letter-spacing: .14em; text-transform: lowercase; font-size: .9rem; color: var(--muted); margin: 0 0 .3rem; }
 h1 { font-family: var(--font-title); font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.05; letter-spacing: .01em; }
@@ -260,9 +267,15 @@ svg.zoomed .city-label.t3 { opacity: .9; }
 </style>
 
 <header class="masthead">
-  <div class="lang-switch" role="group" aria-label="Langue / Language">
-    <button type="button" id="lang-fr" aria-pressed="true" lang="fr">Français</button>
-    <button type="button" id="lang-en" aria-pressed="false" lang="en">English</button>
+  <div class="corner">
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <button type="button" id="lang-fr" aria-pressed="true" lang="fr">Français</button>
+      <button type="button" id="lang-en" aria-pressed="false" lang="en">English</button>
+    </div>
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Passer en mode sombre">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>
+    </button>
   </div>
   <div class="masthead-inner">
     <p class="eyebrow" data-i18n="eyebrow">Carte marine à l'usage des curieux</p>
@@ -387,7 +400,7 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
       todayOne: (d, n, other, od) => `Aujourd'hui ${d} : ${n}. Pour lui tenir compagnie, le plus proche au calendrier : ${other} (${od}).`,
       todayNone: (d, list) => `Personne du portulan n'est fêté ce ${d}. Les plus proches au calendrier : ${list}.`,
       and: ' et ', count: (n, a, b, c) => `${n} saints et saintes, de ${a} à ${b}, ${c} lieux nommés.`,
-      play: 'Faire défiler les années', pause: 'Arrêter', zoomIn: 'Agrandir', zoomOut: 'Réduire',
+      play: 'Faire défiler les années', pause: 'Arrêter', zoomIn: 'Agrandir', zoomOut: 'Réduire', toDark: 'Passer en mode sombre', toLight: 'Passer en mode clair',
       stTitle: s => (s.sex === 'f' ? 'sainte ' : 'saint ') + s.name
     },
     en: {
@@ -440,7 +453,7 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
       todayOne: (d, n, other, od) => `Today, ${d}: ${n}. To keep company, the nearest in the calendar: ${other} (${od}).`,
       todayNone: (d, list) => `Nobody on this chart is celebrated on ${d}. The nearest in the calendar: ${list}.`,
       and: ' and ', count: (n, a, b, c) => `${n} saints, from ${a} to ${b}, ${c} named places.`,
-      play: 'Play the years', pause: 'Pause', zoomIn: 'Zoom in', zoomOut: 'Zoom out',
+      play: 'Play the years', pause: 'Pause', zoomIn: 'Zoom in', zoomOut: 'Zoom out', toDark: 'Switch to dark mode', toLight: 'Switch to light mode',
       stTitle: s => 'St ' + F(s, 'name')
     }
   };
@@ -1216,6 +1229,7 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
     document.querySelectorAll('[data-i18n]').forEach(n => { const k = n.getAttribute('data-i18n'); if (T()[k]) n.textContent = T()[k]; });
     document.title = T().title; const ct = $('#cartouche-title'); if (ct) ct.textContent = T().title;
     $('#zoom-in').setAttribute('aria-label', T().zoomIn); $('#zoom-out').setAttribute('aria-label', T().zoomOut); yearInput.setAttribute('aria-label', l === 'en' ? 'Year' : 'Année');
+    labelTheme();
     slots.forEach(k => { pickers[k].relabel(); renderChosen(k); });
     toast.textContent = '';
     $('#colophon-count').textContent = T().count(saints.length, saints[0].born, Math.max(...saints.map(s => s.died)), cities.length) + ' ' + (l === 'en' ? 'Built on ' : 'Construit le ') + DATA.built + '.';
@@ -1223,6 +1237,20 @@ const DATA = {"saints":[{"id":"helene","name":"Hélène","name_en":"Helena","ful
   }
   $('#lang-fr').addEventListener('click', () => applyLang('fr'));
   $('#lang-en').addEventListener('click', () => applyLang('en'));
+
+  /* ---------- Clair / sombre ---------- */
+  // Sans préférence enregistrée, on suit le système (ou le thème imposé par l'hôte via data-theme) ; le bouton fixe un choix.
+  const themeBtn = $('#theme-toggle'), darkMedia = matchMedia('(prefers-color-scheme: dark)');
+  function labelTheme() { const dark = document.documentElement.dataset.theme === 'dark'; themeBtn.setAttribute('aria-pressed', String(dark)); themeBtn.setAttribute('aria-label', dark ? T().toLight : T().toDark); }
+  function applyTheme(t, opts) {
+    document.documentElement.dataset.theme = t;
+    if (!(opts && opts.initial)) { try { localStorage.setItem('portulan-theme', t); } catch (e) { /* stockage indisponible : tant pis */ } }
+    labelTheme();
+  }
+  let storedTheme = null; try { storedTheme = localStorage.getItem('portulan-theme'); } catch (e) { storedTheme = null; }
+  applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : document.documentElement.dataset.theme || (darkMedia.matches ? 'dark' : 'light'), { initial: true });
+  darkMedia.addEventListener('change', e => { if (!storedTheme) applyTheme(e.matches ? 'dark' : 'light', { initial: true }); });
+  themeBtn.addEventListener('click', () => { storedTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; applyTheme(storedTheme); });
 
   /* ---------- Démarrage ---------- */
   buildMap(); setupPointer();

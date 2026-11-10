@@ -59,11 +59,18 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 
 /* En-tête */
 .masthead { padding-block: 1.6rem 1rem; position: relative; }
-.lang-switch { position: absolute; right: 0; top: 1rem; display: flex; border: 1px solid var(--panel-edge); border-radius: 3px; overflow: hidden; }
+.corner { position: absolute; right: 0; top: 1rem; display: flex; flex-direction: column; align-items: flex-end; gap: .45rem; }
+.lang-switch { display: flex; border: 1px solid var(--panel-edge); border-radius: 3px; overflow: hidden; }
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 2.1rem; height: 2.1rem; padding: 0; background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 3px; color: var(--muted); }
+.theme-toggle:hover { color: var(--fg); }
+.theme-toggle svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 .lang-switch button { background: var(--panel); border: 0; padding: .3rem .7rem; font-family: var(--font-caps); font-size: .9rem; letter-spacing: .04em; color: var(--muted); }
 .lang-switch button + button { border-left: 1px solid var(--panel-edge); }
 .lang-switch button[aria-pressed="true"] { color: var(--fg); background: color-mix(in srgb, var(--gold) 22%, var(--panel)); }
-@media (max-width: 600px) { .lang-switch { position: static; justify-content: center; width: max-content; margin: 0 auto .8rem; } }
+@media (max-width: 600px) { .corner { position: static; flex-direction: row; justify-content: center; align-items: stretch; margin: 0 auto .8rem; } .lang-switch { width: max-content; } }
 .masthead-inner { max-width: 1400px; margin: 0 auto; text-align: center; }
 .eyebrow { font-family: var(--font-caps); letter-spacing: .14em; text-transform: lowercase; font-size: .9rem; color: var(--muted); margin: 0 0 .3rem; }
 h1 { font-family: var(--font-title); font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.05; letter-spacing: .01em; }

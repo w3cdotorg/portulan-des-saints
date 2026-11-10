@@ -103,3 +103,9 @@ auraient pu se croiser, et en quelle(s) langue(s) ils auraient pu se parler.
 - Au passage : le hash acceptait --en mais pas --fr (et --fr faisait perdre les deux saints) ; les deux suffixes sont
   acceptés et toujours écrits.
 - tools/page.py et docs/ rebuild ; artefact republié.
+
+## 10/11 09:06-09:15 — bouton clair / sombre
+- Demande de Clément : comment passer en sombre ? Jusqu'ici, le thème suivait uniquement le système (prefers-color-scheme).
+- Bouton soleil / lune (#theme-toggle) sous le sélecteur de langue, dans un conteneur .corner (colonne à droite, rangée
+  centrée sous 600 px). Il fixe data-theme sur <html>, mémorisé dans localStorage 'portulan-theme' ; sans préférence
+  enregistrée on suit le système (ou le data-theme posé par l'hôte claude.ai). Libellés FR/EN (toDark / toLight).
